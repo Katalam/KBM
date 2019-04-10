@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://raw.githubusercontent.com/Katalam/kat_10thmods/master/logo.jpg">
+    <img src="https://raw.githubusercontent.com/Katalam/kat_10thmods/master/logo.png">
 </p>
 
 <p align="center">
