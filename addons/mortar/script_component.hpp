@@ -14,4 +14,4 @@
     #define DEBUG_SETTINGS DEBUG_SETTINGS_AIRWAY
 #endif
 
-#include "\x\kat\addons\main\script_macros.hpp"
+#include "\x\kat_10thmods\addons\main\script_macros.hpp"
