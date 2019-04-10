@@ -12,7 +12,7 @@ class CfgPatches {
         requiredAddons[] = {
             "ace_medical",
             "cba_settings",
-            "kat_main"
+            "kat_10thmods_main"
         };
         author = "Katalam";
         authors[] = {"Katalam"};
