@@ -7,13 +7,13 @@
         <img src="https://img.shields.io/badge/Version-1.0.0.0-blue.svg?style=flat-square" alt="KAT 10thMods Version">
     </a>
     <a href="https://github.com/Katalam/kat_10thmods/issues">
-        <img src="https://img.shields.io/github/issues-raw/Katalam/kat_aceAdvMedical.svg?style=flat-square&label=Issues" alt="KAT 10thMods Issues">
+        <img src="https://img.shields.io/github/issues-raw/Katalam/kat_10thmods.svg?style=flat-square&label=Issues" alt="KAT 10thMods Issues">
     </a>
     <a href="https://github.com/Katalam/kat_10thmods/releases">
-        <img src="https://img.shields.io/github/downloads/Katalam/kat_aceAdvMedical/total.svg?style=flat-square&label=Downloads" alt="KAT 10thMods Downloads">
+        <img src="https://img.shields.io/github/downloads/Katalam/kat_10thmods/total.svg?style=flat-square&label=Downloads" alt="KAT 10thMods Downloads">
     </a>
     <a href="https://circleci.com/gh/Katalam/kat_10thmods">
-        <img src="https://circleci.com/gh/Katalam/kat_aceAdvMedical.svg?style=svg" alt="KAT 10thMods Build Status">
+        <img src="https://circleci.com/gh/Katalam/kat_10thmods.svg?style=svg" alt="KAT 10thMods Build Status">
     </a>
 </p>
 
