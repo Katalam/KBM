@@ -22,7 +22,6 @@ private _config = (configFile >> "CfgVehicles" >> _type);
 
 [_unit] call FUNC(clearPlayerLoadout);
 
-
 if (isNumber(_config >> "loadoutVarMedic")) then {
 	private _loadoutVarMedic = getNumber(_config >> "loadoutVarMedic");
 	_unit setVariable ["ACE_medical_medicClass", _loadoutVarMedic, true];
