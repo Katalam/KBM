@@ -15,7 +15,7 @@
  * Public: No
  */
 params [
-	["_vehicle", objNull, [objNull]]
+    ["_vehicle", objNull, [objNull]]
 ];
 
 clearMagazineCargoGlobal _vehicle;
