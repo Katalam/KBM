@@ -55,6 +55,7 @@ fabric.properties
 # All
 .idea
 *.iml
+*.xcf
 
 # ArmA 3
 *.pbo
