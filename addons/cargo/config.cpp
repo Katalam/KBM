@@ -10,6 +10,7 @@ class CfgPatches {
         weapons[] = {};
         magazines[] = {};
         requiredAddons[] = {
+            "ace_cargo",
             "cba_settings",
             "kat_10thmods_main"
         };
