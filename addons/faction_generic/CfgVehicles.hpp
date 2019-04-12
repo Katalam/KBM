@@ -219,4 +219,75 @@ class CfgVehicles {
             init = "_this call kat_10thMods_faction_generic_fnc_applyVehicleLoadout";
         };
     };
+
+    // UH-60
+    class RHS_UH60M;
+    class RHS_UH60M_d: RHS_UH60M {
+        class EventHandlers;
+    };
+    class GVAR(USAM_UH60): RHS_UH60M_d {
+        author = "Katalam";
+        displayName = "UH-60M";
+        loadoutCargo[] = {};
+        loadoutItems[] = {{"ACE_packingBandage", 32}, {"ACE_elasticBandage", 32}, {"ACE_morphine", 8}, {"ACE_epinephrine", 8}, {"ACE_tourniquet", 4}, {"ACE_plasmaIV_500", 12}, {"adv_aceSplint_splint", 12}};
+        loadoutWeapon[] = {};
+        loadoutMagazine[] = {};
+        loadoutBackpack[] = {};
+        loadoutBackpackInv[] = {};
+        crew = QGVAR(USAM_HELI_PIL);
+        typicalCargo[] = {QGVAR(USAM_HELI_CRW)};
+        scope = 2;
+        curatorScope = 1;
+        faction = QGVAR(USAM_D);
+        class EventHandlers: EventHandlers {
+            init = "_this call kat_10thMods_faction_generic_fnc_applyVehicleLoadout";
+        };
+    };
+
+    // AH-64D
+    class RHS_AH64_base;
+    class RHS_AH64D: RHS_AH64_base {
+        class EventHandlers;
+    };
+    class GVAR(USAM_AH64): RHS_AH64D {
+        author = "Katalam";
+        displayName = "AH-64D";
+        loadoutCargo[] = {};
+        loadoutItems[] = {};
+        loadoutWeapon[] = {};
+        loadoutMagazine[] = {};
+        loadoutBackpack[] = {};
+        loadoutBackpackInv[] = {};
+        crew = QGVAR(USAM_HELI_PIL_AH);
+        scope = 2;
+        curatorScope = 1;
+        faction = QGVAR(USAM_D);
+        class EventHandlers: EventHandlers {
+            init = "_this call kat_10thMods_faction_generic_fnc_applyVehicleLoadout";
+        };
+    };
+
+    // CH-47F
+    class RHS_CH_47F;
+    class RHS_CH_47F_10: RHS_CH_47F {
+        class EventHandlers;
+    };
+    class GVAR(USAM_CH47): RHS_CH_47F_10 {
+        author = "Katalam";
+        displayName = "CH-47F";
+        loadoutCargo[] = {};
+        loadoutItems[] = {{"ACE_packingBandage", 32}, {"ACE_elasticBandage", 32}, {"ACE_morphine", 8}, {"ACE_epinephrine", 8}, {"ACE_tourniquet", 4}, {"ACE_plasmaIV_500", 12}, {"adv_aceSplint_splint", 12}};
+        loadoutWeapon[] = {};
+        loadoutMagazine[] = {};
+        loadoutBackpack[] = {};
+        loadoutBackpackInv[] = {};
+        crew = QGVAR(USAM_HELI_PIL);
+        typicalCargo[] = {QGVAR(USAM_HELI_CRW)};
+        scope = 2;
+        curatorScope = 1;
+        faction = QGVAR(USAM_D);
+        class EventHandlers: EventHandlers {
+            init = "_this call kat_10thMods_faction_generic_fnc_applyVehicleLoadout";
+        };
+    };
 };

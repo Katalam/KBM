@@ -40,6 +40,12 @@ class GVAR(USAM_HELI_PIL): GVAR(USAM_SQL) {
     loadoutVarG = 0.3;
     loadoutVarEng = 2;
 };
+class GVAR(USAM_HELI_PIL_AH): GVAR(USAM_HELI_PIL) {
+    displayName = "AH-64 Pilot";
+    description = "Helicopter Pilot@Falcon 1-X";
+    loadout = "USAM_HELI_PIL_AH";
+    loadoutHeadgear[] = {"rhsusf_ihadss"};
+};
 class GVAR(USAM_HELI_CRW): GVAR(USAM_RFM) {
     displayName = "Helicopter Crew";
     description = "Helicopter Crew";
