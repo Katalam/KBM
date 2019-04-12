@@ -6,12 +6,12 @@
 // #define DISABLE_COMPILE_CACHE
 // #define ENABLE_PERFORMANCE_COUNTERS
 
-#ifdef DEBUG_ENABLED_AIRWAY
+#ifdef DEBUG_ENABLED_MORTAR
     #define DEBUG_MODE_FULL
 #endif
 
-#ifdef DEBUG_SETTINGS_AIRWAY
-    #define DEBUG_SETTINGS DEBUG_SETTINGS_AIRWAY
+#ifdef DEBUG_SETTINGS_MORTAR
+    #define DEBUG_SETTINGS DEBUG_SETTINGS_MORTAR
 #endif
 
 #include "\x\kat_10thmods\addons\main\script_macros.hpp"
