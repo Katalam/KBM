@@ -79,3 +79,52 @@ class GVAR(USAM_MOR_AMB): GVAR(USAM_MOR_GUN) {
 	loadoutVestInvNew[] = {{"VSM_OPS_2_multicam", 1}};
 	loadoutBackpackInvNew[] = {{"ACE_1Rnd_82mm_Mo_HE", 5}, {"ACE_1Rnd_82mm_Mo_Smoke", 1}};
 };
+
+// Rifleman (Extra)
+class GVAR(USAM_EOD): GVAR(USAM_RFM) {
+	displayName = "EOD";
+	description = "EOD";
+	loadout = "USAM_EOD";
+	loadoutBackpack[] = {};
+	loadoutWeapon[] = { {"rhs_weap_m4a1_carryhandle", {"rhsusf_acc_anpeq15side_bk", "rhsusf_acc_acog", "rhs_mag_30Rnd_556x45_M855A1_PMAG"}},
+						{"", {}}, // secondary
+						{"rhsusf_weap_m9", {"rhsusf_mag_15Rnd_9x19_FMJ"}}, // handgun
+						{"ACE_VMM3", {}}}; // binocular
+	loadoutUniformInvNew[] = {{"ACE_Clacker", 1}, {"ACE_DefusalKit", 1}, {"rhs_mag_30Rnd_556x45_M855A1_PMAG", 2}};
+	loadoutVestInv[] = {{"rhs_mag_30Rnd_556x45_M855A1_PMAG", 8}};
+	loadoutVestInvNew[] = {{"DemoCharge_Remote_Mag", 2}};
+	loadoutBackpackInv[] = {};
+	loadoutBackpackInvNew[] = {};
+	loadoutVarEOD = 1;
+};
+class GVAR(USAM_ESP): GVAR(USAM_RFM) {
+	displayName = "Rifleman (Explosives)";
+	description = "Rifleman (Explosives)";
+	loadout = "USAM_ESP";
+	loadoutUniformInvNew[] = {{"ACE_Clacker", 1}, {"ACE_DefusalKit", 2}};
+	loadoutBackpackInvNew[] = {{"SatchelCharge_Remote_Mag", 1}, {"DemoCharge_Remote_Mag", 1}};
+	loadoutVarEOD = 1;
+};
+
+// Logistic
+class GVAR(USAM_LOG_LEAD): GVAR(USAM_SQL) {
+	displayName = "Logistic Leader";
+	description = "Logistic Leader";
+	loadout = "USAM_LOG_LEAD";
+	loadoutBackpack[] = {"TFAR_rt1523g_big_rhs"};
+	loadoutHeadgear[] = {"H_Cap_usblack"};
+	loadoutGrenade[] = {{"rhs_mag_an_m8hc", 2}, {"rhs_mag_m18_green", 1}, {"rhs_mag_m18_purple", 1}, {"HandGrenade", 1}};
+	loadoutVestInv[] = {{"rhs_mag_30Rnd_556x45_M855A1_PMAG", 6}, {"rhsusf_mag_15Rnd_9x19_FMJ", 2}};
+	loadoutBackpackInvNew[] = {{"Toolkit", 1}, {"VSM_OPS_2_multicam", 1}};
+	loadoutVarEng = 2;
+};
+class GVAR(USAM_LOG): GVAR(USAM_RFM) {
+	displayName = "Logistic Assistant";
+	description = "Logistic Assistant";
+	loadout = "USAM_LOG";
+	loadoutHeadgear[] = {"H_Cap_usblack"};
+	loadoutGrenade[] = {{"rhs_mag_an_m8hc", 2}, {"rhs_mag_m18_green", 1}, {"rhs_mag_m18_purple", 1}, {"HandGrenade", 1}};
+	loadoutVestInv[] = {{"rhs_mag_30Rnd_556x45_M855A1_PMAG", 6}, {"rhsusf_mag_15Rnd_9x19_FMJ", 2}};
+	loadoutBackpackInvNew[] = {{"Toolkit", 1}, {"VSM_OPS_2_multicam", 1}};
+	loadoutVarEng = 2;
+};
