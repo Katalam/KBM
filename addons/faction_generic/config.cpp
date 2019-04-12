@@ -19,8 +19,30 @@ class CfgPatches {
             QGVAR(USAM_AAT),
             QGVAR(USAM_CLS),
             QGVAR(USAM_MED),
+            QGVAR(USAM_LOG_MED),
             QGVAR(USAM_MED_LEAD),
-            QGVAR(USAM_MED_LEAD_C)
+            QGVAR(USAM_MED_LEAD_C),
+            QGVAR(USAM_PSG),
+            QGVAR(USAM_RTO),
+            QGVAR(USAM_FO),
+            QGVAR(USAM_JTAC),
+            QGVAR(USAM_CRW_LEAD),
+            QGVAR(USAM_CRW),
+            QGVAR(USAM_HELI_PIL),
+            QGVAR(USAM_HELI_CRW),
+            QGVAR(USAM_JET),
+            QGVAR(USAM_RTO),
+            QGVAR(USAM_SNI),
+            QGVAR(USAM_SPO),
+            QGVAR(USAM_TL),
+            QGVAR(USAM_MOR_SQL),
+            QGVAR(USAM_MOR_ASS),
+            QGVAR(USAM_MOR_GUN),
+            QGVAR(USAM_MOR_AMB),
+            QGVAR(USAM_EOD),
+            QGVAR(USAM_ESP),
+            QGVAR(USAM_LOG_LEAD),
+            QGVAR(USAM_LOG)
         };
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
