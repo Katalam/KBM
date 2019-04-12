@@ -5,7 +5,7 @@ class CfgPatches {
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
         units[] = {
-            KAT_Mortar_M252
+            QUOTE(KAT_Mortar_M252)
         };
         weapons[] = {};
         magazines[] = {};
