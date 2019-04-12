@@ -49,6 +49,7 @@ class CfgVehicles {
         class EventHandlers: EventHandlers {
             init = "_this call kat_10thMods_faction_generic_fnc_applyPlayerLoadout";
             AttributesChanged3DEN = "_this call kat_10thmods_faction_generic_fnc_addRoleDescription";
+            Respawn = "[_this select 0] call kat_10thMods_faction_generic_fnc_applyPlayerLoadout";
         };
     };
     class GVAR(USAM_FTL): GVAR(USAM_RFM) {
