@@ -103,10 +103,119 @@ class CfgVehicles {
         loadoutVarEOD = 1;
         loadoutInsignia = "Curator";
     };
+
     #include "Squad.hpp"
     #include "HSquad.hpp"
     #include "Medic.hpp"
     #include "Platoon.hpp"
     #include "Crew.hpp"
     #include "Extra.hpp"
+
+    class rhsusf_m1025_w;
+    class rhsusf_m1025_d: rhsusf_m1025_w {
+        class EventHandlers;
+    };
+    class GVAR(USAM_CAR): rhsusf_m1025_d {
+        author = "Katalam";
+        displayName = "Humvee (Unarmed)";
+        loadoutCargo[] = {{"ACE_Wheel", 2}};
+        loadoutItems[] = {{"ACE_key_west", 1}, {"rhs_weap_M136", 4}};
+        loadoutWeapon[] = {};
+        loadoutMagazine[] = {};
+        loadoutBackpack[] = {{"VSM_Multicam_Backpack_Compact", 1}, {"VSM_Multicam_carryall", 1}, {"VSM_Multicam_Backpack_Kitbag", 1}};
+        loadoutBackpackInv[] = {{{"ToolKit", 1}}, {{"ACE_packingBandage", 1}}, {{"ACE_elasticBandage", 1}}};
+        crew = QGVAR(USAM_RFM);
+        scope = 2;
+        curatorScope = 1;
+        faction = QGVAR(USAM_D);
+        class EventHandlers: EventHandlers {
+            init = "_this call kat_10thMods_faction_generic_fnc_applyVehicleLoadout";
+        };
+    };
+    class rhsusf_m1025_w_m2;
+    class rhsusf_m1025_d_m2: rhsusf_m1025_w_m2 {
+        class EventHandlers;
+    };
+    class GVAR(USAM_CAR_M2): rhsusf_m1025_d_m2 {
+        author = "Katalam";
+        displayName = "Humvee (M2)";
+        loadoutCargo[] = {{"ACE_Wheel", 2}};
+        loadoutItems[] = {{"ACE_key_west", 1}, {"rhs_weap_M136", 4}};
+        loadoutWeapon[] = {};
+        loadoutMagazine[] = {};
+        loadoutBackpack[] = {{"VSM_Multicam_Backpack_Compact", 1}, {"VSM_Multicam_carryall", 1}, {"VSM_Multicam_Backpack_Kitbag", 1}};
+        loadoutBackpackInv[] = {{{"ToolKit", 1}}, {{"ACE_packingBandage", 1}}, {{"ACE_elasticBandage", 1}}};
+        crew = QGVAR(USAM_RFM);
+        scope = 2;
+        curatorScope = 1;
+        faction = QGVAR(USAM_D);
+        class EventHandlers: EventHandlers {
+            init = "_this call kat_10thMods_faction_generic_fnc_applyVehicleLoadout";
+        };
+    };
+    class rhsusf_m1025_w_mk19;
+    class rhsusf_m1025_d_Mk19: rhsusf_m1025_w_mk19 {
+        class EventHandlers;
+    };
+    class GVAR(USAM_CAR_Mk19): rhsusf_m1025_d_Mk19 {
+        author = "Katalam";
+        displayName = "Humvee (Mk19)";
+        loadoutCargo[] = {{"ACE_Wheel", 2}};
+        loadoutItems[] = {{"ACE_key_west", 1}, {"rhs_weap_M136", 4}};
+        loadoutWeapon[] = {};
+        loadoutMagazine[] = {};
+        loadoutBackpack[] = {{"VSM_Multicam_Backpack_Compact", 1}, {"VSM_Multicam_carryall", 1}, {"VSM_Multicam_Backpack_Kitbag", 1}};
+        loadoutBackpackInv[] = {{{"ToolKit", 1}}, {{"ACE_packingBandage", 1}}, {{"ACE_elasticBandage", 1}}};
+        crew = QGVAR(USAM_RFM);
+        scope = 2;
+        curatorScope = 1;
+        faction = QGVAR(USAM_D);
+        class EventHandlers: EventHandlers {
+            init = "_this call kat_10thMods_faction_generic_fnc_applyVehicleLoadout";
+        };
+    };
+    class rhsusf_m966_w;
+    class rhsusf_m966_d: rhsusf_m966_w {
+        class EventHandlers;
+    };
+    class GVAR(USAM_CAR_TOW): rhsusf_m966_d {
+        author = "Katalam";
+        displayName = "Humvee (TOW)";
+        loadoutCargo[] = {{"ACE_Wheel", 2}};
+        loadoutItems[] = {{"ACE_key_west", 1}, {"rhs_weap_M136", 4}};
+        loadoutWeapon[] = {};
+        loadoutMagazine[] = {};
+        loadoutBackpack[] = {{"VSM_Multicam_Backpack_Compact", 1}, {"VSM_Multicam_carryall", 1}, {"VSM_Multicam_Backpack_Kitbag", 1}};
+        loadoutBackpackInv[] = {{{"ToolKit", 1}}, {{"ACE_packingBandage", 1}}, {{"ACE_elasticBandage", 1}}};
+        crew = QGVAR(USAM_RFM);
+        scope = 2;
+        curatorScope = 1;
+        faction = QGVAR(USAM_D);
+        class EventHandlers: EventHandlers {
+            init = "_this call kat_10thMods_faction_generic_fnc_applyVehicleLoadout";
+        };
+    };
+
+    // M2
+    class RHS_M2A3_BUSKI;
+    class RHS_M2A3_BUSKIII: RHS_M2A3_BUSKI {
+        class EventHandlers;
+    };
+    class GVAR(USAM_IFV): RHS_M2A3_BUSKIII {
+        author = "Katalam";
+        displayName = "Bradley";
+        loadoutCargo[] = {{"ACE_Track", 2}};
+        loadoutItems[] = {{"ACE_key_west", 1}, {"rhs_weap_M136", 4}};
+        loadoutWeapon[] = {};
+        loadoutMagazine[] = {};
+        loadoutBackpack[] = {{"VSM_Multicam_Backpack_Compact", 1}, {"VSM_Multicam_carryall", 2}, {"VSM_Multicam_Backpack_Kitbag", 1}};
+        loadoutBackpackInv[] = {{{"ToolKit", 1}}, {{"ACE_packingBandage", 1}}, {{"ACE_packingBandage", 1}}, {{"ACE_elasticBandage", 1}}};
+        crew = QGVAR(USAM_CRW);
+        scope = 2;
+        curatorScope = 1;
+        faction = QGVAR(USAM_D);
+        class EventHandlers: EventHandlers {
+            init = "_this call kat_10thMods_faction_generic_fnc_applyVehicleLoadout";
+        };
+    };
 };
