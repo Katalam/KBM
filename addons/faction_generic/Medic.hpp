@@ -25,7 +25,7 @@ class GVAR(USAM_LOG_MED): GVAR(USAM_FTL) {
     loadoutHeadgear[] = {"H_Cap_usblack"};
     loadoutGrenade[] = {{"rhs_mag_an_m8hc", 2}, {"rhs_mag_m18_green", 1}, {"rhs_mag_m18_purple", 1}, {"HandGrenade", 1}};
     loadoutVestInv[] = {{"rhs_mag_30Rnd_556x45_M855A1_PMAG", 6}, {"rhsusf_mag_15Rnd_9x19_FMJ", 2}};
-    loadoutVestInvNew[] = {{"ACE_morphine", 6}, {"ACE_epinephrine", 8}, {"ACE_surgicalKit", 1}, {"adv_aceCPR_AED", 1}, {"ACE_tourniquet", 4}};
+    loadoutVestInvNew[] = {{"ACE_morphine", 6}, {"ACE_epinephrine", 8}, {"ACE_surgicalKit", 1}, {"adv_aceCPR_AED", 1}, {"ACE_tourniquet", 4}, {"H_Cap_usblack", 1}};
     loadoutBackpackInvNew[] = {{"Toolkit", 1}, {"VSM_OPS_2_multicam", 1}, {"ACE_packingBandage", 16}, {"ACE_elasticBandage", 16}, {"ACE_plasmaIV_500", 6}};
     loadoutVarMedic = 2;
     loadoutVarEng = 2;

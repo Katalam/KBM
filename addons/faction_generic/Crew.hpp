@@ -2,6 +2,7 @@ class GVAR(USAM_CRW_LEAD): GVAR(USAM_SQL) {
     displayName = "Tank Commander";
     description = "Tank Commander@Outlaw 1-X";
     loadout = "USAM_CRW_LEAD";
+    loadoutVest[] = {"VSM_FAPC_Operator_Multicam"};
     loadoutBackpack[] = {"VSM_Multicam_Backpack_Compact"};
     loadoutHeadgear[] = {"rhsusf_cvc_alt_helmet"};
     loadoutGrenade[] = {{"rhs_mag_an_m8hc", 2}, {"rhs_mag_m18_green", 1}, {"rhs_mag_m18_purple", 1}, {"HandGrenade", 1}};
@@ -28,6 +29,10 @@ class GVAR(USAM_HELI_PIL): GVAR(USAM_SQL) {
     loadout = "USAM_HELI_PIL";
     loadoutVest[] = {"V_TacVest_khk"};
     loadoutHeadgear[] = {"rhsusf_hgu56p"};
+    loadoutWeapon[] = { {"rhs_weap_m4a1_carryhandle", {"rhsusf_acc_anpeq15side_bk", "rhsusf_acc_acog", "rhs_mag_30Rnd_556x45_M855A1_PMAG"}},
+                        {"", {}}, // secondary
+                        {"rhsusf_weap_m9", {"rhsusf_mag_15Rnd_9x19_FMJ"}}, // handgun
+                        {"", {}}}; // binocular
     loadoutGrenade[] = {{"rhs_mag_an_m8hc", 2}, {"rhs_mag_m18_green", 1}, {"rhs_mag_m18_purple", 1}, {"HandGrenade", 1}};
     loadoutUniformInvNew[] = {{"rhs_mag_30Rnd_556x45_M855A1_PMAG", 1}};
     loadoutVestInv[] = {{"rhs_mag_30Rnd_556x45_M855A1_PMAG", 2}, {"rhsusf_mag_15Rnd_9x19_FMJ", 2}};

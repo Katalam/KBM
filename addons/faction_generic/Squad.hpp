@@ -2,6 +2,8 @@ class GVAR(USAM_LMG): GVAR(USAM_RFM) {
     displayName = "Autorifleman";
     description = "Autorifleman";
     loadout = "USAM_LMG";
+    loadoutUniform[] = {"VSM_Multicam_Crye_Tee_Camo"};
+    loadoutVest[] = {"VSM_LBT6094_MG_Multicam"};
     loadoutBackpack[] = {};
     loadoutWeapon[] = { {"hlc_m249_pip3", {"rhsusf_acc_ELCAN", "rhsusf_200Rnd_556x45_soft_pouch"}},
                         {"", {}},

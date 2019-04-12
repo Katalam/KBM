@@ -15,9 +15,15 @@
  * Public: Yes
  */
 
-params [["_unit", objNull, [objNull]]];
+params [
+    ["_unit", objNull, [objNull]],
+    ["_loadout", "", [""]]
+];
 
 private _type = typeOf _unit;
+if !(_loadout isEqualTo "") then {
+    _type = str formatText ["kat_10thMods_faction_generic_%1", _loadout];
+};
 private _config = (configFile >> "CfgVehicles" >> _type);
 
 [_unit] call FUNC(clearPlayerLoadout);

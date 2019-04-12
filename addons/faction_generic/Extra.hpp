@@ -42,6 +42,7 @@ class GVAR(USAM_TL): GVAR(USAM_SPO) {
     loadoutUniformInvNew[] = {{"ACE_20Rnd_762x51_Mag_Tracer", 2}};
     loadoutVestInv[] = {{"rhs_mag_30Rnd_556x45_M855A1_PMAG", 6}, {"rhsusf_mag_15Rnd_9x19_FMJ", 2}};
     loadoutVestInvNew[] = {{"ACE_salineIV_500", 6}, {"1Rnd_HE_Grenade_shell", 2}, {"1Rnd_SmokeBlue_Grenade_shell", 2}, {"1Rnd_SmokePurple_Grenade_shell", 2}, {"1Rnd_SmokeRed_Grenade_shell", 2}};
+    loadoutBackpackInvNew[] = {};
     loadoutGunBackpack[] = {"ace_gunbag_tan", {"rhs_weap_M107_d", {"optic_LRPS"}, {"rhsusf_mag_10Rnd_STD_50BMG_M33", 10}}};
 };
 
@@ -101,7 +102,7 @@ class GVAR(USAM_ESP): GVAR(USAM_RFM) {
     displayName = "Rifleman (Explosives)";
     description = "Rifleman (Explosives)";
     loadout = "USAM_ESP";
-    loadoutUniformInvNew[] = {{"ACE_Clacker", 1}, {"ACE_DefusalKit", 2}};
+    loadoutUniformInvNew[] = {{"ACE_Clacker", 1}, {"ACE_DefusalKit", 1}};
     loadoutBackpackInvNew[] = {{"SatchelCharge_Remote_Mag", 1}, {"DemoCharge_Remote_Mag", 1}};
     loadoutVarEOD = 1;
 };
@@ -115,7 +116,7 @@ class GVAR(USAM_LOG_LEAD): GVAR(USAM_SQL) {
     loadoutHeadgear[] = {"H_Cap_usblack"};
     loadoutGrenade[] = {{"rhs_mag_an_m8hc", 2}, {"rhs_mag_m18_green", 1}, {"rhs_mag_m18_purple", 1}, {"HandGrenade", 1}};
     loadoutVestInv[] = {{"rhs_mag_30Rnd_556x45_M855A1_PMAG", 6}, {"rhsusf_mag_15Rnd_9x19_FMJ", 2}};
-    loadoutBackpackInvNew[] = {{"Toolkit", 1}, {"VSM_OPS_2_multicam", 1}};
+    loadoutBackpackInvNew[] = {{"Toolkit", 1}, {"VSM_OPS_2_multicam", 1}, {"H_Cap_usblack", 1}};
     loadoutVarEng = 2;
 };
 class GVAR(USAM_LOG): GVAR(USAM_RFM) {
@@ -125,6 +126,6 @@ class GVAR(USAM_LOG): GVAR(USAM_RFM) {
     loadoutHeadgear[] = {"H_Cap_usblack"};
     loadoutGrenade[] = {{"rhs_mag_an_m8hc", 2}, {"rhs_mag_m18_green", 1}, {"rhs_mag_m18_purple", 1}, {"HandGrenade", 1}};
     loadoutVestInv[] = {{"rhs_mag_30Rnd_556x45_M855A1_PMAG", 6}, {"rhsusf_mag_15Rnd_9x19_FMJ", 2}};
-    loadoutBackpackInvNew[] = {{"Toolkit", 1}, {"VSM_OPS_2_multicam", 1}};
+    loadoutBackpackInvNew[] = {{"Toolkit", 1}, {"VSM_OPS_2_multicam", 1}, {"H_Cap_usblack", 1}};
     loadoutVarEng = 2;
 };
