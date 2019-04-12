@@ -1,5 +1,5 @@
 #define COMPONENT faction_generic
-#define COMPONENT_BEAUTIFIED KAT - FactionGeneric
+#define COMPONENT_BEAUTIFIED FactionGeneric
 #include "\x\kat_10thmods\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL

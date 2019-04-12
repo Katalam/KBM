@@ -1,5 +1,5 @@
 #define COMPONENT cargo
-#define COMPONENT_BEAUTIFIED KAT - Cargo
+#define COMPONENT_BEAUTIFIED Cargo
 #include "\x\kat_10thmods\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL
