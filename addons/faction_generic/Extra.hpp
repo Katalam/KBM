@@ -18,7 +18,7 @@ class GVAR(USAM_SNI): GVAR(USAM_SQL) {
 };
 class GVAR(USAM_SPO): GVAR(USAM_SNI) {
 	displayName = "Recon Spotter";
-	description = "Spotter@Stalker 1-X";
+	description = "Spotter";
 	loadout = "USAM_SPO";
 	loadoutBackpack[] = {"TFAR_rt1523g_big_rhs"};
 	loadoutWeapon[] = { {"rhs_weap_m4a1_carryhandle", {"rhsusf_acc_anpeq15side_bk", "rhsusf_acc_acog", "hlc_muzzle_556NATO_rotexiiic_grey", "rhs_mag_30Rnd_556x45_M855A1_PMAG"}},
@@ -32,7 +32,7 @@ class GVAR(USAM_SPO): GVAR(USAM_SNI) {
 };
 class GVAR(USAM_TL): GVAR(USAM_SPO) {
 	displayName = "Recon Team Leader";
-	description = "Team Leader";
+	description = "Team Leader@Stalker 1-X";
 	loadout = "USAM_TL";
 	loadoutBackpack[] = {};
 	loadoutWeapon[] = { {"rhs_weap_m4_m320", {"rhsusf_acc_anpeq15side_bk", "rhsusf_acc_acog", "hlc_muzzle_556NATO_rotexiiic_grey", "rhs_mag_30Rnd_556x45_M855A1_PMAG", "1Rnd_HE_Grenade_shell"}},
