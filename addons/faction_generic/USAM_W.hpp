@@ -258,6 +258,7 @@ class GVAR(USAM_W_HELI_CRW): GVAR(USAM_HELI_CRW) {
 };
 class GVAR(USAM_W_JET): GVAR(USAM_JET) {
     loadout = "USAM_W_JET";
+    faction = QGVAR(USAM_W);
 };
 
 // Sniper
