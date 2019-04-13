@@ -13,4 +13,9 @@ class cfgFactionClasses {
         icon = "\A3\data_f\cfgfactionclasses_blu_ca.paa";
         scopeCurator = 1;
     };
+    class GVAR(Loadout) {
+        displayName = "KAT Loadout";
+        priority = 2;
+        side = 7;
+    };
 };

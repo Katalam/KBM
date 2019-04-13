@@ -11,6 +11,7 @@
  *
  * Example:
  * [cursorTarget] call kat_10thMods_faction_generic_fnc_applyPlayerLoadout;
+ * [cursorTarget, "USAM_RFM"] call kat_10thMods_faction_generic_fnc_applyPlayerLoadout;
  *
  * Public: Yes
  */
@@ -50,6 +51,11 @@ if (isNumber(_config >> "loadoutVarEOD")) then {
     } else {
         _unit setVariable ["ACE_isEOD", false, true];
     };
+};
+
+if (isText(_config >> "loadout")) then {
+    private _loadout = getText(_config >> "loadout");
+    _unit setVariable [QGVAR(loadout), _loadout, true];
 };
 
 if (isText(_config >> "loadoutRank")) then {

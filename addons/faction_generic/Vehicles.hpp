@@ -2,7 +2,7 @@ class rhsusf_m1025_w;
 class rhsusf_m1025_d: rhsusf_m1025_w {
     class EventHandlers;
 };
-class GVAR(USAM_CAR): rhsusf_m1025_d {
+class GVAR(USAM_Veh_CAR): rhsusf_m1025_d {
     author = "Katalam";
     displayName = "Humvee (Unarmed)";
     loadoutCargo[] = {{"ACE_Wheel", 2}};
@@ -24,7 +24,7 @@ class rhsusf_m1025_w_m2;
 class rhsusf_m1025_d_m2: rhsusf_m1025_w_m2 {
     class EventHandlers;
 };
-class GVAR(USAM_CAR_M2): rhsusf_m1025_d_m2 {
+class GVAR(USAM_Veh_CAR_M2): rhsusf_m1025_d_m2 {
     author = "Katalam";
     displayName = "Humvee (M2)";
     loadoutCargo[] = {{"ACE_Wheel", 2}};
@@ -46,7 +46,7 @@ class rhsusf_m1025_w_mk19;
 class rhsusf_m1025_d_Mk19: rhsusf_m1025_w_mk19 {
     class EventHandlers;
 };
-class GVAR(USAM_CAR_Mk19): rhsusf_m1025_d_Mk19 {
+class GVAR(USAM_Veh_CAR_Mk19): rhsusf_m1025_d_Mk19 {
     author = "Katalam";
     displayName = "Humvee (Mk19)";
     loadoutCargo[] = {{"ACE_Wheel", 2}};
@@ -68,7 +68,7 @@ class rhsusf_m966_w;
 class rhsusf_m966_d: rhsusf_m966_w {
     class EventHandlers;
 };
-class GVAR(USAM_CAR_TOW): rhsusf_m966_d {
+class GVAR(USAM_Veh_CAR_TOW): rhsusf_m966_d {
     author = "Katalam";
     displayName = "Humvee (TOW)";
     loadoutCargo[] = {{"ACE_Wheel", 2}};
@@ -92,7 +92,7 @@ class RHS_M2A3_BUSKI;
 class RHS_M2A3_BUSKIII: RHS_M2A3_BUSKI {
     class EventHandlers;
 };
-class GVAR(USAM_IFV): RHS_M2A3_BUSKIII {
+class GVAR(USAM_Veh_IFV): RHS_M2A3_BUSKIII {
     author = "Katalam";
     displayName = "Bradley";
     loadoutCargo[] = {{"ACE_Track", 2}};
@@ -116,7 +116,7 @@ class RHS_UH60M;
 class RHS_UH60M_d: RHS_UH60M {
     class EventHandlers;
 };
-class GVAR(USAM_UH60): RHS_UH60M_d {
+class GVAR(USAM_Veh_UH60): RHS_UH60M_d {
     author = "Katalam";
     displayName = "UH-60M";
     loadoutCargo[] = {};
@@ -141,7 +141,7 @@ class RHS_AH64_base;
 class RHS_AH64D: RHS_AH64_base {
     class EventHandlers;
 };
-class GVAR(USAM_AH64): RHS_AH64D {
+class GVAR(USAM_Veh_AH64): RHS_AH64D {
     author = "Katalam";
     displayName = "AH-64D";
     loadoutCargo[] = {};
@@ -165,7 +165,7 @@ class RHS_CH_47F;
 class RHS_CH_47F_10: RHS_CH_47F {
     class EventHandlers;
 };
-class GVAR(USAM_CH47): RHS_CH_47F_10 {
+class GVAR(USAM_Veh_CH47): RHS_CH_47F_10 {
     author = "Katalam";
     displayName = "CH-47F";
     loadoutCargo[] = {};
