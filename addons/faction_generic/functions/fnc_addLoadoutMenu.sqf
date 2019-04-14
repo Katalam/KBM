@@ -69,29 +69,29 @@ private _guiArray = _company + _platoon + _squad + _weaponSquad + _logistic + _c
 
 // Loadout GUI
 [_object, 0, [],
-	["KAT_loadoutActionParent", "Loadout", "", {}, {true}, {}, [], _pos] call ace_interact_menu_fnc_createAction
+	[QGVAR(loadoutActionParent), "Loadout", "", {}, {true}, {}, [], _pos] call ace_interact_menu_fnc_createAction
 ] call ace_interact_menu_fnc_addActionToObject;
 
 {
 	if (_x isEqualType "") then {
-		_currentParent = [_object, 0, ["KAT_loadoutActionParent"],
-			["KAT_loadoutAction" + (str _forEachIndex), _x, "", {}, {true}] call ace_interact_menu_fnc_createAction
+		_currentParent = [_object, 0, [QGVAR(loadoutActionParent)],
+			[QGVAR(loadoutAction) + (str _forEachIndex), _x, "", {}, {true}] call ace_interact_menu_fnc_createAction
 		] call ace_interact_menu_fnc_addActionToObject;
 	} else {
 		[_object, 0, _currentParent,
-			["KAT_loadoutAction" + (str _forEachIndex), _x select 0, "", {[player, _this select 2] call kat_10thMods_faction_generic_fnc_applyPlayerLoadout;}, {true}, {}, _x select 1] call ace_interact_menu_fnc_createAction
+			[QGVAR(loadoutAction) + (str _forEachIndex), _x select 0, "", {[player, _this select 2] call kat_10thMods_faction_generic_fnc_applyPlayerLoadout;}, {true}, {}, _x select 1] call ace_interact_menu_fnc_createAction
 		] call ace_interact_menu_fnc_addActionToObject;
 	};
 } forEach _guiArray;
 
 // Scope
-[_object, 0, ["KAT_loadoutActionParent"],
 	["KAT_loadoutAction_S", "Scope", "", {}, {true}, {_this call kat_10thMods_faction_generic_fnc_childrenScope;}] call ace_interact_menu_fnc_createAction
+[_object, 0, [QGVAR(loadoutActionParent)],
 ] call ace_interact_menu_fnc_addActionToObject;
 
 // Night Vision
-[_object, 0, ["KAT_loadoutActionParent"],
 	["KAT_loadoutAction_N", "Nightvision", "", {}, {true}, {_this call kat_10thMods_faction_generic_fnc_childrenNightvision;}] call ace_interact_menu_fnc_createAction
+[_object, 0, [QGVAR(loadoutActionParent)],
 ] call ace_interact_menu_fnc_addActionToObject;
 
 /*
