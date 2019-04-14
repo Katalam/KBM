@@ -17,8 +17,8 @@
  */
 
 params [
-	["_player", objNull, [objNull]],
-	["_add", false, [false]]
+    ["_player", objNull, [objNull]],
+    ["_add", false, [false]]
 ];
 
 private _loadout = _player getVariable [QGVAR(loadout), "USAM_RFM"];
@@ -29,8 +29,8 @@ private _uniformContainer = uniformContainer _player;
 private _vestContainer = vestContainer _player;
 
 if (_add) then {
-	_player linkItem _goggle;
-	{_uniformContainer addItemCargoGlobal [_x select 0, _x select 1];} forEach _items;
+    _player linkItem _goggle;
+    {_uniformContainer addItemCargoGlobal [_x select 0, _x select 1];} forEach _items;
     {_vestContainer addMagazineCargoGlobal [_x select 0, _x select 1];} forEach _magazines;
 } else {
     _player unlinkItem _goggle;

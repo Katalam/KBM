@@ -35,7 +35,7 @@ class GVAR(USAM_RFM): B_Soldier_F {
     loadoutVarEOD = 0;
     loadoutInsignia = "";
     loadoutScope[] = {  {"RCO","optic_hamr"}, {"ACOG RMR","rhsusf_acc_ACOG_RMR"}, {"G33 + XPS3","rhsusf_acc_g33_xps3"},
-                        {"EOTECH","rhsusf_acc_eotech_552"},	{"ELCAN SpectreDR","rhsusf_acc_su230a_mrds"},
+                        {"EOTECH","rhsusf_acc_eotech_552"},    {"ELCAN SpectreDR","rhsusf_acc_su230a_mrds"},
                         {"ACOG","rhsusf_acc_acog"}};
     loadoutScopeDMR[] = {};
     scope = 2;
