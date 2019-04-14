@@ -69,89 +69,89 @@ private _guiArray = _company + _platoon + _squad + _weaponSquad + _logistic + _c
 
 // Loadout GUI
 [_object, 0, [],
-	[QGVAR(loadoutActionParent), "Loadout", "", {}, {true}, {}, [], _pos] call ace_interact_menu_fnc_createAction
+    [QGVAR(loadoutActionParent), "Loadout", "", {}, {true}, {}, [], _pos] call ace_interact_menu_fnc_createAction
 ] call ace_interact_menu_fnc_addActionToObject;
 
 {
-	if (_x isEqualType "") then {
-		_currentParent = [_object, 0, [QGVAR(loadoutActionParent)],
-			[QGVAR(loadoutAction) + (str _forEachIndex), _x, "", {}, {true}] call ace_interact_menu_fnc_createAction
-		] call ace_interact_menu_fnc_addActionToObject;
-	} else {
-		[_object, 0, _currentParent,
-			[QGVAR(loadoutAction) + (str _forEachIndex), _x select 0, "", {[player, _this select 2] call kat_10thMods_faction_generic_fnc_applyPlayerLoadout;}, {true}, {}, _x select 1] call ace_interact_menu_fnc_createAction
-		] call ace_interact_menu_fnc_addActionToObject;
-	};
+    if (_x isEqualType "") then {
+        _currentParent = [_object, 0, [QGVAR(loadoutActionParent)],
+            [QGVAR(loadoutAction) + (str _forEachIndex), _x, "", {}, {true}] call ace_interact_menu_fnc_createAction
+        ] call ace_interact_menu_fnc_addActionToObject;
+    } else {
+        [_object, 0, _currentParent,
+            [QGVAR(loadoutAction) + (str _forEachIndex), _x select 0, "", {[player, _this select 2] call kat_10thMods_faction_generic_fnc_applyPlayerLoadout;}, {true}, {}, _x select 1] call ace_interact_menu_fnc_createAction
+        ] call ace_interact_menu_fnc_addActionToObject;
+    };
 } forEach _guiArray;
 
 // Scope
-	["KAT_loadoutAction_S", "Scope", "", {}, {true}, {_this call kat_10thMods_faction_generic_fnc_childrenScope;}] call ace_interact_menu_fnc_createAction
 [_object, 0, [QGVAR(loadoutActionParent)],
+    ["KAT_loadoutAction_S", "Scope", "", {}, {true}, _this call FUNC(childrenScope)] call ace_interact_menu_fnc_createAction
 ] call ace_interact_menu_fnc_addActionToObject;
 
 // Night Vision
-	["KAT_loadoutAction_N", "Nightvision", "", {}, {true}, {_this call kat_10thMods_faction_generic_fnc_childrenNightvision;}] call ace_interact_menu_fnc_createAction
 [_object, 0, [QGVAR(loadoutActionParent)],
+    ["KAT_loadoutAction_N", "Nightvision", "", {}, {true}, _this call FUNC(childrenNightvision)] call ace_interact_menu_fnc_createAction
 ] call ace_interact_menu_fnc_addActionToObject;
 
 /*
 // Helmet for Helicopter pilots and crew
 [_object, 0, ["KAT_loadoutActionParent"],
-	["KAT_loadoutAction_H", "Helmet", "", {}, {true}] call ace_interact_menu_fnc_createAction
+    ["KAT_loadoutAction_H", "Helmet", "", {}, {true}] call ace_interact_menu_fnc_createAction
 ] call ace_interact_menu_fnc_addActionToObject;
 
 {
-	[_object, 0, ["KAT_loadoutActionParent", "KAT_loadoutAction_H"],
-		["KAT_loadoutAction_H1" + (str _forEachIndex), _x select 0, "", {
-				player addHeadgear (_this select 2);
-		}, {
-			player getVariable ["KAT_loadout", "USAM_RFM"] isEqualTo "USAM_HELI_PIL";
-		}, {}, _x select 1] call ace_interact_menu_fnc_createAction
-	] call ace_interact_menu_fnc_addActionToObject;
+    [_object, 0, ["KAT_loadoutActionParent", "KAT_loadoutAction_H"],
+        ["KAT_loadoutAction_H1" + (str _forEachIndex), _x select 0, "", {
+                player addHeadgear (_this select 2);
+        }, {
+            player getVariable ["KAT_loadout", "USAM_RFM"] isEqualTo "USAM_HELI_PIL";
+        }, {}, _x select 1] call ace_interact_menu_fnc_createAction
+    ] call ace_interact_menu_fnc_addActionToObject;
 } forEach KAT_gui_helmet_PIL_USAM;
 
 {
-	[_object, 0, ["KAT_loadoutActionParent", "KAT_loadoutAction_H"],
-		["KAT_loadoutAction_H2" + (str _forEachIndex), _x select 0, "", {
-				player addHeadgear (_this select 2);
-		}, {
-			player getVariable ["KAT_loadout", "USAM_RFM"] isEqualTo "USAM_HELI_CRW";
-		}, {}, _x select 1] call ace_interact_menu_fnc_createAction
-	] call ace_interact_menu_fnc_addActionToObject;
+    [_object, 0, ["KAT_loadoutActionParent", "KAT_loadoutAction_H"],
+        ["KAT_loadoutAction_H2" + (str _forEachIndex), _x select 0, "", {
+                player addHeadgear (_this select 2);
+        }, {
+            player getVariable ["KAT_loadout", "USAM_RFM"] isEqualTo "USAM_HELI_CRW";
+        }, {}, _x select 1] call ace_interact_menu_fnc_createAction
+    ] call ace_interact_menu_fnc_addActionToObject;
 } forEach KAT_gui_helmet_CRW_USAM;
 
 // Silencer
 [_object, 0, ["KAT_loadoutActionParent"],
-	["KAT_loadoutAction_Silence", "Schalldämpfer", "", {
-		private _item = (primaryWeaponItems player) select 0;
-		if (_item isEqualTo "") exitWith {
-			player addPrimaryWeaponItem "hlc_muzzle_556NATO_rotexiiic_grey";
-		};
-		player removePrimaryWeaponItem _item;
-	}, {true}, {}] call ace_interact_menu_fnc_createAction
+    ["KAT_loadoutAction_Silence", "Schalldämpfer", "", {
+        private _item = (primaryWeaponItems player) select 0;
+        if (_item isEqualTo "") exitWith {
+            player addPrimaryWeaponItem "hlc_muzzle_556NATO_rotexiiic_grey";
+        };
+        player removePrimaryWeaponItem _item;
+    }, {true}, {}] call ace_interact_menu_fnc_createAction
 ] call ace_interact_menu_fnc_addActionToObject;
 
 // Goggles
 [_object, 0, ["KAT_loadoutActionParent"],
-	["KAT_loadoutAction_G", "Goggles", "", {}, {true}] call ace_interact_menu_fnc_createAction
+    ["KAT_loadoutAction_G", "Goggles", "", {}, {true}] call ace_interact_menu_fnc_createAction
 ] call ace_interact_menu_fnc_addActionToObject;
 
 {
-	[_object, 0, ["KAT_loadoutActionParent", "KAT_loadoutAction_G"],
-		["KAT_loadoutAction_G" + (str _forEachIndex), _x select 0, "", {[player, _this select 2] call FUNC(goggle);}, {true}, {}, _x select 1] call ace_interact_menu_fnc_createAction
-	] call ace_interact_menu_fnc_addActionToObject;
+    [_object, 0, ["KAT_loadoutActionParent", "KAT_loadoutAction_G"],
+        ["KAT_loadoutAction_G" + (str _forEachIndex), _x select 0, "", {[player, _this select 2] call FUNC(goggle);}, {true}, {}, _x select 1] call ace_interact_menu_fnc_createAction
+    ] call ace_interact_menu_fnc_addActionToObject;
 } forEach KAT_gui_attachments_goggles_USAM;
 
 // Launcher
 [_object, 0, ["KAT_loadoutActionParent"],
-	["KAT_loadoutAction_L", "Launcher", "", {}, {true}] call ace_interact_menu_fnc_createAction
+    ["KAT_loadoutAction_L", "Launcher", "", {}, {true}] call ace_interact_menu_fnc_createAction
 ] call ace_interact_menu_fnc_addActionToObject;
 
 [_object, 0, ["KAT_loadoutActionParent", "KAT_loadoutAction_L"],
-	["KAT_loadoutAction_L1", "Launcher hinzufügen", "", {[player, "rhs_weap_M136"] call FUNC(launcher);}, {true}] call ace_interact_menu_fnc_createAction
+    ["KAT_loadoutAction_L1", "Launcher hinzufügen", "", {[player, "rhs_weap_M136"] call FUNC(launcher);}, {true}] call ace_interact_menu_fnc_createAction
 ] call ace_interact_menu_fnc_addActionToObject;
 
 [_object, 0, ["KAT_loadoutActionParent", "KAT_loadoutAction_L"],
-	["KAT_loadoutAction_L2", "Launcher entfernen", "", {[player, "REMOVE"] call FUNC(launcher);}, {true}] call ace_interact_menu_fnc_createAction
+    ["KAT_loadoutAction_L2", "Launcher entfernen", "", {[player, "REMOVE"] call FUNC(launcher);}, {true}] call ace_interact_menu_fnc_createAction
 ] call ace_interact_menu_fnc_addActionToObject;
 */

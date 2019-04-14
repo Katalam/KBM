@@ -17,8 +17,8 @@
  */
 
 params [
-	["_player", objNull, [objNull]],
-	["_scope", "", [""]]
+    ["_player", objNull, [objNull]],
+    ["_scope", "", [""]]
 ];
 
 _player removePrimaryWeaponItem (primaryWeaponItems _player select 2);
