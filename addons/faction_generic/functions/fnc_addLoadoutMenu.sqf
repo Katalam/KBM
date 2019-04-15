@@ -113,6 +113,11 @@ private _guiArray = _company + _platoon + _squad + _weaponSquad + _logistic + _c
     [QGVAR(loadoutAction_L), localize LSTRING(launcher), "", {}, {true}, FUNC(childrenLauncher)] call ace_interact_menu_fnc_createAction
 ] call ace_interact_menu_fnc_addActionToObject;
 
+// Helmet
+[_object, 0, [QGVAR(loadoutActionParent)],
+    [QGVAR(loadoutAction_H), localize LSTRING(helmet), "", {}, {true}, FUNC(childrenHelmet)] call ace_interact_menu_fnc_createAction
+] call ace_interact_menu_fnc_addActionToObject;
+
 /*
 // Helmet for Helicopter pilots and crew
 [_object, 0, ["KAT_loadoutActionParent"],

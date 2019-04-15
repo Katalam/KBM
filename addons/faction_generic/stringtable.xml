@@ -65,5 +65,9 @@
             <English>Remove silencer</English>
             <German>Entferne Schalldämpfer</German>
         </Key>
+        <Key ID="STR_kat_10thmods_faction_generic_helmet">
+            <English>Helmet</English>
+            <German>Helm</German>
+        </Key>
     </Package>
 </Project>
