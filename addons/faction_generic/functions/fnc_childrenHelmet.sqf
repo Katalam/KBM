@@ -25,7 +25,8 @@ private _loadout = _player getVariable [QGVAR(loadout), "USAM_RFM"];
 private _type = str formatText ["kat_10thMods_faction_generic_%1", _loadout];
 
 {
-    private _action = [QGVAR(loadoutAction_H) + (str _forEachIndex), _x select 0, "", FUNC(helmet), {true}, {}, _x select 1] call ace_interact_menu_fnc_createAction;
+    private _displayName = (getText (configFile >> "CfgWeapons" >> _x >> "displayName"));
+    private _action = [QGVAR(loadoutAction_H) + (str _forEachIndex), _displayName, "", FUNC(helmet), {true}, {}, _x] call ace_interact_menu_fnc_createAction;
     _actions pushBack [_action, [], _target];
 } forEach (getArray (configFile >> "CfgVehicles" >> _type >> "loadoutHelmet"));
 
