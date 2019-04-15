@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="kat_10thmods">
+    <Package name="faction_generic">
+        <Key ID="STR_kat_10thmods_faction_generic_loadout">
+            <English>Loadout</English>
+            <German>Loadout</German>
+        </Key>
+        <Key ID="STR_kat_10thmods_faction_generic_company">
+            <English>Company</English>
+            <German>Kompanie</German>
+        </Key>
+        <Key ID="STR_kat_10thmods_faction_generic_platoon">
+            <English>Platoon</English>
+            <German>Zug</German>
+        </Key>
+        <Key ID="STR_kat_10thmods_faction_generic_squad">
+            <English>Squad</English>
+            <German>Gruppe</German>
+        </Key>
+        <Key ID="STR_kat_10thmods_faction_generic_weaponsquad">
+            <English>Weapon Squad</English>
+            <German>schwer. Waffengruppe</German>
+        </Key>
+        <Key ID="STR_kat_10thmods_faction_generic_logistic">
+            <English>Logistic</English>
+            <German>Logistik</German>
+        </Key>
+        <Key ID="STR_kat_10thmods_faction_generic_crew">
+            <English>Crew</English>
+            <German>Besatzung</German>
+        </Key>
+        <Key ID="STR_kat_10thmods_faction_generic_other">
+            <English>Other</English>
+            <German>Andere</German>
+        </Key>
+        <Key ID="STR_kat_10thmods_faction_generic_scope">
+            <English>Scope</English>
+            <German>Optik</German>
+        </Key>
+        <Key ID="STR_kat_10thmods_faction_generic_nightvision">
+            <English>Nightvision</English>
+            <German>Nachtsicht</German>
+        </Key>
+        <Key ID="STR_kat_10thmods_faction_generic_nightvision_add">
+            <English>Add Nightvision</English>
+            <German>Nachtsicht hinzufügen</German>
+        </Key>
+        <Key ID="STR_kat_10thmods_faction_generic_nightvision_remove">
+            <English>Remove Nightvision</English>
+            <German>Entferne Nachtsicht</German>
+        </Key>
+        <Key ID="STR_kat_10thmods_faction_generic_goggle">
+            <English>Goggle</English>
+            <German>Brille</German>
+        </Key>
+        <Key ID="STR_kat_10thmods_faction_generic_launcher">
+            <English>Launcher</English>
+            <German>Werfer</German>
+        </Key>
+    </Package>
+</Project>

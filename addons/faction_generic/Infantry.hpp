@@ -9,7 +9,7 @@ class GVAR(USAM_RFM): B_Soldier_F {
     displayName = "Rifleman";
     description = "Rifleman";
     loadout = "USAM_RFM";
-    loadoutGroup = "Squad";
+    loadoutGroup = "Squad"; // CASE SENSITIVE !
     loadoutRank = "PRIVATE";
     loadoutUniform[] = {"VSM_Multicam_Crye_Camo", "VSM_Multicam_Crye_SS_Camo"};
     loadoutVest[] = {"VSM_LBT6094_operator_Multicam"};
@@ -38,6 +38,9 @@ class GVAR(USAM_RFM): B_Soldier_F {
                         {"EOTECH","rhsusf_acc_eotech_552"},    {"ELCAN SpectreDR","rhsusf_acc_su230a_mrds"},
                         {"ACOG","rhsusf_acc_acog"}};
     loadoutScopeDMR[] = {};
+    loadoutGoggle[] = { 	{"Black", "rhs_googles_black"}, {"Yellow", "rhs_googles_yellow"}, {"Orange", "rhs_googles_orange"},
+                            {"Big Black", "rhs_ess_black"}, {"Clear", "rhs_googles_clear"}, {"Remove", "REMOVE"}};
+    loadoutLauncher[] = {   {"M72A7", "rhs_weap_m72a7", "rhs_m72a7_mag"}, {"M136", "rhs_weap_M136", "rhs_m136_mag"}};
     scope = 2;
     curatorScope = 1;
     faction = QGVAR(USAM_D);
@@ -52,9 +55,9 @@ class GVAR(USAM_RFM): B_Soldier_F {
     magazines[] = {};
     respawnMagazines[] = {};
     class EventHandlers: EventHandlers {
-        init = "_this call kat_10thMods_faction_generic_fnc_applyPlayerLoadout";
+        init = "[objNull, _this select 0] call kat_10thMods_faction_generic_fnc_applyPlayerLoadout";
         AttributesChanged3DEN = "_this call kat_10thmods_faction_generic_fnc_addRoleDescription";
-        Respawn = "[_this select 0] call kat_10thMods_faction_generic_fnc_applyPlayerLoadout";
+        Respawn = "[objNull, _this select 0] call kat_10thMods_faction_generic_fnc_applyPlayerLoadout";
     };
 };
 class GVAR(USAM_FTL): GVAR(USAM_RFM) {

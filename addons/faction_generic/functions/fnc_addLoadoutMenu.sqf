@@ -18,6 +18,10 @@
 
 params [["_object", objNull, [objNull]]];
 
+if (isServer) then {
+    _object allowDamage false;
+};
+
 private "_currentParent";
 private _pos = [0,0,0];
 
@@ -69,7 +73,7 @@ private _guiArray = _company + _platoon + _squad + _weaponSquad + _logistic + _c
 
 // Loadout GUI
 [_object, 0, [],
-    [QGVAR(loadoutActionParent), "Loadout", "", {}, {true}, {}, [], _pos] call ace_interact_menu_fnc_createAction
+    [QGVAR(loadoutActionParent), localize LSTRING(loadout), "", {}, {true}, {}, [], _pos] call ace_interact_menu_fnc_createAction
 ] call ace_interact_menu_fnc_addActionToObject;
 
 {
@@ -79,19 +83,29 @@ private _guiArray = _company + _platoon + _squad + _weaponSquad + _logistic + _c
         ] call ace_interact_menu_fnc_addActionToObject;
     } else {
         [_object, 0, _currentParent,
-            [QGVAR(loadoutAction) + (str _forEachIndex), _x select 0, "", {[player, _this select 2] call kat_10thMods_faction_generic_fnc_applyPlayerLoadout;}, {true}, {}, _x select 1] call ace_interact_menu_fnc_createAction
+            [QGVAR(loadoutAction) + (str _forEachIndex), _x select 0, "", FUNC(applyPlayerLoadout), {true}, {}, _x select 1] call ace_interact_menu_fnc_createAction
         ] call ace_interact_menu_fnc_addActionToObject;
     };
 } forEach _guiArray;
 
 // Scope
 [_object, 0, [QGVAR(loadoutActionParent)],
-    ["KAT_loadoutAction_S", "Scope", "", {}, {true}, _this call FUNC(childrenScope)] call ace_interact_menu_fnc_createAction
+    [QGVAR(loadoutAction_S), localize LSTRING(scope), "", {}, {true}, FUNC(childrenScope)] call ace_interact_menu_fnc_createAction
 ] call ace_interact_menu_fnc_addActionToObject;
 
 // Night Vision
 [_object, 0, [QGVAR(loadoutActionParent)],
-    ["KAT_loadoutAction_N", "Nightvision", "", {}, {true}, _this call FUNC(childrenNightvision)] call ace_interact_menu_fnc_createAction
+    [QGVAR(loadoutAction_N), localize LSTRING(nightvision), "", {}, {true}, FUNC(childrenNightvision)] call ace_interact_menu_fnc_createAction
+] call ace_interact_menu_fnc_addActionToObject;
+
+// Goggle
+[_object, 0, [QGVAR(loadoutActionParent)],
+    [QGVAR(loadoutAction_G), localize LSTRING(goggle), "", {}, {true}, FUNC(childrenGoggle)] call ace_interact_menu_fnc_createAction
+] call ace_interact_menu_fnc_addActionToObject;
+
+// launcher
+[_object, 0, [QGVAR(loadoutActionParent)],
+    [QGVAR(loadoutAction_G), localize LSTRING(launcher), "", {}, {true}, FUNC(childrenLauncher)] call ace_interact_menu_fnc_createAction
 ] call ace_interact_menu_fnc_addActionToObject;
 
 /*

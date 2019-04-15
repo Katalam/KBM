@@ -17,6 +17,7 @@
  */
 
 params [
+    "",
     ["_unit", objNull, [objNull]],
     ["_loadout", "", [""]]
 ];

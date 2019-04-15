@@ -25,12 +25,12 @@ private _loadout = _player getVariable [QGVAR(loadout), "USAM_RFM"];
 private _type = str formatText ["kat_10thMods_faction_generic_%1", _loadout];
 
 {
-    private _action = ["KAT_loadoutAction_S" + (str _forEachIndex), _x select 0, "", {[player, _this select 2] call kat_10thMods_faction_generic_fnc_scope;}, {true}, {}, _x select 1] call ace_interact_menu_fnc_createAction;
+    private _action = [QGVAR(loadoutAction_S) + (str _forEachIndex), _x select 0, "", FUNC(scope), {true}, {}, _x select 1] call ace_interact_menu_fnc_createAction;
     _actions pushBack [_action, [], _target];
 } forEach (getArray (configFile >> "CfgVehicles" >> _type >> "loadoutScope"));
 
 {
-    private _action = ["KAT_loadoutAction_S2" + (str _forEachIndex), _x select 0, "", {
+    private _action = [QGVAR(loadoutAction_S2) + (str _forEachIndex), _x select 0, "", {
         private _scope = _this select 2;
         private _gunbag = backpackContainer player;
         private _array = _gunbag getVariable ["ace_gunbag_gunbagWeapon", []];

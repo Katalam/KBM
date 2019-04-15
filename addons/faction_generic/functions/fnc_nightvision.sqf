@@ -4,19 +4,21 @@
  * Add or remove nightvision
  *
  * Arguments:
- * 0: Unit <OBJECT>
- * 1: Goggle <STRING>
+ * 0: Target <OBJECT>
+ * 1: Unit <OBJECT>
+ * 2: Goggle <STRING>
  *
  * Return Value:
  * None
  *
  * Example:
- * [player, true] call kat_10thMods_faction_generic_fnc_nightvision;
+ * [cursorTarget, player, true] call kat_10thMods_faction_generic_fnc_nightvision;
  *
  * Public: No
  */
 
 params [
+    "",
     ["_player", objNull, [objNull]],
     ["_add", false, [false]]
 ];

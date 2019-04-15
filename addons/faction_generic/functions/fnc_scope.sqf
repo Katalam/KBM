@@ -4,19 +4,21 @@
  * Switches the scope
  *
  * Arguments:
- * 0: Unit <OBJECT>
- * 1: Scope <STRING>
+ * 0: Target <OBJECT>
+ * 1: Unit <OBJECT>
+ * 2: Scope <STRING>
  *
  * Return Value:
  * None
  *
  * Example:
- * [player, ""] call kat_10thMods_faction_generic_fnc_scope;
+ * [cursorTarget, player, ""] call kat_10thMods_faction_generic_fnc_scope;
  *
  * Public: No
  */
 
 params [
+    "",
     ["_player", objNull, [objNull]],
     ["_scope", "", [""]]
 ];

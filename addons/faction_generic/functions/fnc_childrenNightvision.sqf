@@ -27,10 +27,10 @@ private _config = (getArray (configFile >> "CfgVehicles" >> _type >> "loadoutNVG
 private _nvg = (_config select 0) in (assignedItems _player);
 
 if !(_nvg) then {
-    private _action = ["KAT_loadoutAction_N_Add", "Add nightvision", "", {[player, true] call kat_10thMods_faction_generic_fnc_nightvision;}, {true}] call ace_interact_menu_fnc_createAction;
+    private _action = [QGVAR(loadoutAction_N_Add), localize LSTRING(nightvision_add), "", FUNC(nightvision), {true}, {}, true] call ace_interact_menu_fnc_createAction;
     _actions pushBack [_action, [], _target];
 } else {
-    private _action = ["KAT_loadoutAction_N_Remove", "Remove nightvision", "", {[player, false] call kat_10thMods_faction_generic_fnc_nightvision;}, {true}] call ace_interact_menu_fnc_createAction;
+    private _action = [QGVAR(loadoutAction_N_Remove), localize LSTRING(nightvision_remove), "", FUNC(nightvision), {true}, {}, false] call ace_interact_menu_fnc_createAction;
     _actions pushBack [_action, [], _target];
 };
 
