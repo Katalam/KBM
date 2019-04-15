@@ -57,5 +57,13 @@
             <English>Launcher</English>
             <German>Werfer</German>
         </Key>
+        <Key ID="STR_kat_10thmods_faction_generic_silencer">
+            <English>Silencer</English>
+            <German>Schalldämpfer</German>
+        </Key>
+        <Key ID="STR_kat_10thmods_faction_generic_silencer_r">
+            <English>Remove silencer</English>
+            <German>Entferne Schalldämpfer</German>
+        </Key>
     </Package>
 </Project>
