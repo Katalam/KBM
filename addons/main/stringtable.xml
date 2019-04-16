@@ -2,8 +2,8 @@
 <Project name="kat">
     <Package name="main">
         <Key ID="STR_kat_main_URL">
-            <English>https://github.com/Katalam/kat_aceAdvMedical</English>
-            <German>https://github.com/Katalam/kat_aceAdvMedical</German>
+            <English>https://github.com/Katalam/</English>
+            <German>https://github.com/Katalam/</German>
         </Key>
     </Package>
 </Project>
