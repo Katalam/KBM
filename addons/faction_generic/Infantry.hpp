@@ -56,9 +56,9 @@ class GVAR(USAM_RFM): B_Soldier_F {
     magazines[] = {};
     respawnMagazines[] = {};
     class EventHandlers: EventHandlers {
-        init = "[objNull, _this select 0] call kat_10thMods_faction_generic_fnc_applyPlayerLoadout";
-        AttributesChanged3DEN = "_this call kat_10thmods_faction_generic_fnc_addRoleDescription";
-        Respawn = "[objNull, _this select 0] call kat_10thMods_faction_generic_fnc_applyPlayerLoadout";
+        init = QUOTE([ARR_2(objNull, _this select 0)] call FUNC(applyPlayerLoadout));
+        AttributesChanged3DEN = QUOTE(_this call FUNC(addRoleDescription));
+        Respawn = QUOTE([ARR_2(objNull, _this select 0)] call FUNC(applyPlayerLoadout));
     };
 };
 class GVAR(USAM_FTL): GVAR(USAM_RFM) {
