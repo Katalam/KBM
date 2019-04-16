@@ -5,5 +5,9 @@
             <English>Add breathing fog</English>
             <German>Füge Atmennebel hinzu</German>
         </Key>
+        <Key ID="STR_kat_10thmods_weather_setting_breathing_intensity">
+            <English>Breathing fog intensity</English>
+            <German>Atmennebel Intenssität</German>
+        </Key>
     </Package>
 </Project>

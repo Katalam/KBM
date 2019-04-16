@@ -19,12 +19,13 @@ params ["_unit", "_int"];
 
 if (GVAR(breathingFogForceDisable)) exitWith {};
 
-[FUNC(breathingFog), [_unit, _int], (3 + random 2)] call CBA_fnc_waitAndExecute;
+[FUNC(breathingFog), [_unit, _int], (5 + random 2)] call CBA_fnc_waitAndExecute;
 
 private _playerAltitude = (getPosASL _unit) select 2;
 private _temperature = _playerAltitude call ace_weather_fnc_calculateTemperatureAtHeight;
 
 if (GVAR(breathing) == 1 && {!(_temperature < 4)}) exitWith {};
+if !(vehicle _unit == _unit) exitWith {};
 
 private _source = "logic" createVehicleLocal (getpos _unit);
 private _fog = "#particlesource" createVehicleLocal getpos _source;

@@ -14,7 +14,16 @@ PREP_RECOMPILE_END;
     localize LSTRING(setting_breathing),
     CBA_SETTINGS_CAT,
     [[0, 1, 2], ["Disabled", "Temperature", "Force"], 1],
-    1
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(breathing_intensity),
+    "SLIDER", // type of setting
+    localize LSTRING(setting_breathing_intensity),
+    CBA_SETTINGS_CAT,
+    [0, 1, 0.01, 2],
+    true
 ] call CBA_Settings_fnc_init;
 
 ADDON = true;
