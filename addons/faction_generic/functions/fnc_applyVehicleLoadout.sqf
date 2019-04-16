@@ -15,11 +15,18 @@
  * Public: Yes
  */
 
-params [["_box", objNull, [objNull]]];
+params [
+    ["_box", objNull, [objNull]],
+    "",
+    ["_loadout", "", [""]]
+];
 
 if (is3DEN) exitWith {};
 
 private _type = typeOf _box;
+if !(_loadout isEqualTo "") then {
+    _type = str formatText ["kat_10thMods_logistic_%1", _loadout];
+};
 private _config = (configFile >> "CfgVehicles" >> _type);
 
 [_box] call FUNC(clearVehicleLoadout);

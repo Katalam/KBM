@@ -9,8 +9,22 @@ class GVAR(USAM_Veh_CAR): rhsusf_m1025_d {
     loadoutItems[] = {{"ACE_key_west", 1}, {"rhs_weap_M136", 4}};
     loadoutWeapon[] = {};
     loadoutMagazine[] = {};
-    loadoutBackpack[] = {{"VSM_Multicam_Backpack_Compact", 1}, {"VSM_Multicam_carryall", 1}, {"VSM_Multicam_Backpack_Kitbag", 1}};
-    loadoutBackpackInv[] = {{{"ToolKit", 1}}, {{"ACE_packingBandage", 1}}, {{"ACE_elasticBandage", 1}}};
+    loadoutBackpack[] = {{"VSM_Multicam_Backpack_Compact", 1}, {"VSM_Multicam_Backpack_Kitbag", 1}, {"VSM_Multicam_carryall", 1}};
+    loadoutBackpackInv[] = {{
+            {"ToolKit", 1}
+        }, {
+            {"ACE_packingBandage", 32},
+            {"ACE_elasticBandage", 32},
+            {"ACE_morphine", 8},
+            {"ACE_epinephrine", 8},
+            {"ACE_tourniquet", 4},
+            {"ACE_plasmaIV_500", 12},
+            {"adv_aceSplint_splint", 12}
+        }, {
+            {"rhs_mag_30Rnd_556x45_M855A1_PMAG", 12},
+            {"1Rnd_HE_Grenade_shell", 12},
+            {"rhs_mag_30Rnd_556x45_M855A1_PMAG", 5}
+        }};
     crew = QGVAR(USAM_RFM);
     scope = 2;
     curatorScope = 2;
@@ -31,8 +45,22 @@ class GVAR(USAM_Veh_CAR_M2): rhsusf_m1025_d_m2 {
     loadoutItems[] = {{"ACE_key_west", 1}, {"rhs_weap_M136", 4}};
     loadoutWeapon[] = {};
     loadoutMagazine[] = {};
-    loadoutBackpack[] = {{"VSM_Multicam_Backpack_Compact", 1}, {"VSM_Multicam_carryall", 1}, {"VSM_Multicam_Backpack_Kitbag", 1}};
-    loadoutBackpackInv[] = {{{"ToolKit", 1}}, {{"ACE_packingBandage", 1}}, {{"ACE_elasticBandage", 1}}};
+    loadoutBackpack[] = {{"VSM_Multicam_Backpack_Compact", 1}, {"VSM_Multicam_Backpack_Kitbag", 1}, {"VSM_Multicam_carryall", 1}};
+    loadoutBackpackInv[] = {{
+            {"ToolKit", 1}
+        }, {
+            {"ACE_packingBandage", 32},
+            {"ACE_elasticBandage", 32},
+            {"ACE_morphine", 8},
+            {"ACE_epinephrine", 8},
+            {"ACE_tourniquet", 4},
+            {"ACE_plasmaIV_500", 12},
+            {"adv_aceSplint_splint", 12}
+        }, {
+            {"rhs_mag_30Rnd_556x45_M855A1_PMAG", 12},
+            {"1Rnd_HE_Grenade_shell", 12},
+            {"rhs_mag_30Rnd_556x45_M855A1_PMAG", 5}
+        }};
     crew = QGVAR(USAM_RFM);
     scope = 2;
     curatorScope = 2;
@@ -53,8 +81,22 @@ class GVAR(USAM_Veh_CAR_Mk19): rhsusf_m1025_d_Mk19 {
     loadoutItems[] = {{"ACE_key_west", 1}, {"rhs_weap_M136", 4}};
     loadoutWeapon[] = {};
     loadoutMagazine[] = {};
-    loadoutBackpack[] = {{"VSM_Multicam_Backpack_Compact", 1}, {"VSM_Multicam_carryall", 1}, {"VSM_Multicam_Backpack_Kitbag", 1}};
-    loadoutBackpackInv[] = {{{"ToolKit", 1}}, {{"ACE_packingBandage", 1}}, {{"ACE_elasticBandage", 1}}};
+    loadoutBackpack[] = {{"VSM_Multicam_Backpack_Compact", 1}, {"VSM_Multicam_Backpack_Kitbag", 1}, {"VSM_Multicam_carryall", 1}};
+    loadoutBackpackInv[] = {{
+            {"ToolKit", 1}
+        }, {
+            {"ACE_packingBandage", 32},
+            {"ACE_elasticBandage", 32},
+            {"ACE_morphine", 8},
+            {"ACE_epinephrine", 8},
+            {"ACE_tourniquet", 4},
+            {"ACE_plasmaIV_500", 12},
+            {"adv_aceSplint_splint", 12}
+        }, {
+            {"rhs_mag_30Rnd_556x45_M855A1_PMAG", 12},
+            {"1Rnd_HE_Grenade_shell", 12},
+            {"rhs_mag_30Rnd_556x45_M855A1_PMAG", 5}
+        }};
     crew = QGVAR(USAM_RFM);
     scope = 2;
     curatorScope = 2;
@@ -75,8 +117,22 @@ class GVAR(USAM_Veh_CAR_TOW): rhsusf_m966_d {
     loadoutItems[] = {{"ACE_key_west", 1}, {"rhs_weap_M136", 4}};
     loadoutWeapon[] = {};
     loadoutMagazine[] = {};
-    loadoutBackpack[] = {{"VSM_Multicam_Backpack_Compact", 1}, {"VSM_Multicam_carryall", 1}, {"VSM_Multicam_Backpack_Kitbag", 1}};
-    loadoutBackpackInv[] = {{{"ToolKit", 1}}, {{"ACE_packingBandage", 1}}, {{"ACE_elasticBandage", 1}}};
+    loadoutBackpack[] = {{"VSM_Multicam_Backpack_Compact", 1}, {"VSM_Multicam_Backpack_Kitbag", 1}, {"VSM_Multicam_carryall", 1}};
+    loadoutBackpackInv[] = {{
+            {"ToolKit", 1}
+        }, {
+            {"ACE_packingBandage", 32},
+            {"ACE_elasticBandage", 32},
+            {"ACE_morphine", 8},
+            {"ACE_epinephrine", 8},
+            {"ACE_tourniquet", 4},
+            {"ACE_plasmaIV_500", 12},
+            {"adv_aceSplint_splint", 12}
+        }, {
+            {"rhs_mag_30Rnd_556x45_M855A1_PMAG", 12},
+            {"1Rnd_HE_Grenade_shell", 12},
+            {"rhs_mag_30Rnd_556x45_M855A1_PMAG", 5}
+        }};
     crew = QGVAR(USAM_RFM);
     scope = 2;
     curatorScope = 2;
@@ -99,8 +155,30 @@ class GVAR(USAM_Veh_IFV): RHS_M2A3_BUSKIII {
     loadoutItems[] = {{"ACE_key_west", 1}, {"rhs_weap_M136", 4}};
     loadoutWeapon[] = {};
     loadoutMagazine[] = {};
-    loadoutBackpack[] = {{"VSM_Multicam_Backpack_Compact", 1}, {"VSM_Multicam_carryall", 2}, {"VSM_Multicam_Backpack_Kitbag", 1}};
-    loadoutBackpackInv[] = {{{"ToolKit", 1}}, {{"ACE_packingBandage", 1}}, {{"ACE_packingBandage", 1}}, {{"ACE_elasticBandage", 1}}};
+    loadoutBackpack[] = {{"VSM_Multicam_Backpack_Compact", 1}, {"VSM_Multicam_Backpack_Kitbag", 2}, {"VSM_Multicam_carryall", 1}};
+    loadoutBackpackInv[] = {{
+            {"ToolKit", 1}
+        }, {
+            {"ACE_packingBandage", 32},
+            {"ACE_elasticBandage", 32},
+            {"ACE_morphine", 8},
+            {"ACE_epinephrine", 8},
+            {"ACE_tourniquet", 4},
+            {"ACE_plasmaIV_500", 12},
+            {"adv_aceSplint_splint", 12}
+        }, {
+            {"ACE_packingBandage", 32},
+            {"ACE_elasticBandage", 32},
+            {"ACE_morphine", 8},
+            {"ACE_epinephrine", 8},
+            {"ACE_tourniquet", 4},
+            {"ACE_plasmaIV_500", 12},
+            {"adv_aceSplint_splint", 12}
+        }, {
+            {"rhs_mag_30Rnd_556x45_M855A1_PMAG", 12},
+            {"1Rnd_HE_Grenade_shell", 12},
+            {"rhs_mag_30Rnd_556x45_M855A1_PMAG", 5}
+        }};
     crew = QGVAR(USAM_CRW);
     scope = 2;
     curatorScope = 2;
@@ -120,7 +198,14 @@ class GVAR(USAM_Veh_UH60): RHS_UH60M_d {
     author = "Katalam";
     displayName = "UH-60M";
     loadoutCargo[] = {};
-    loadoutItems[] = {{"ACE_packingBandage", 32}, {"ACE_elasticBandage", 32}, {"ACE_morphine", 8}, {"ACE_epinephrine", 8}, {"ACE_tourniquet", 4}, {"ACE_plasmaIV_500", 12}, {"adv_aceSplint_splint", 12}};
+    loadoutItems[] = {
+        {"ACE_packingBandage", 32},
+        {"ACE_elasticBandage", 32},
+        {"ACE_morphine", 8},
+        {"ACE_epinephrine", 8},
+        {"ACE_tourniquet", 4},
+        {"ACE_plasmaIV_500", 12},
+        {"adv_aceSplint_splint", 12}};
     loadoutWeapon[] = {};
     loadoutMagazine[] = {};
     loadoutBackpack[] = {};
@@ -169,7 +254,14 @@ class GVAR(USAM_Veh_CH47): RHS_CH_47F_10 {
     author = "Katalam";
     displayName = "CH-47F";
     loadoutCargo[] = {};
-    loadoutItems[] = {{"ACE_packingBandage", 32}, {"ACE_elasticBandage", 32}, {"ACE_morphine", 8}, {"ACE_epinephrine", 8}, {"ACE_tourniquet", 4}, {"ACE_plasmaIV_500", 12}, {"adv_aceSplint_splint", 12}};
+    loadoutItems[] = {
+        {"ACE_packingBandage", 32},
+        {"ACE_elasticBandage", 32},
+        {"ACE_morphine", 8},
+        {"ACE_epinephrine", 8},
+        {"ACE_tourniquet", 4},
+        {"ACE_plasmaIV_500", 12},
+        {"adv_aceSplint_splint", 12}};
     loadoutWeapon[] = {};
     loadoutMagazine[] = {};
     loadoutBackpack[] = {};
