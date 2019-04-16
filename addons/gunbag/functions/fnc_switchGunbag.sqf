@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [player] call kat_10thMods_faction_generic_fnc_switchGunbag;
+ * [player] call kat_10thMods_gunbag_fnc_switchGunbag;
  *
  * Public: Yes
  */

@@ -10,7 +10,7 @@
  * 0: Can interact <BOOLEAN>
  *
  * Example:
- * [player] call kat_10thMods_faction_generic_fnc_canSwitch;
+ * [player] call kat_10thMods_gunbag_fnc_canSwitch;
  *
  * Public: Yes
  */

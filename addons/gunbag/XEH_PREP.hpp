@@ -1,0 +1,2 @@
+PREP(canSwitch);
+PREP(switchGunbag);
