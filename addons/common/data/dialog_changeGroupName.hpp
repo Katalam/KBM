@@ -88,7 +88,7 @@ class GVAR(changeGroupName) {
     class controls {
         class RscButton_1600: GVAR(Button) {
             idc = 1600;
-            text = CSTRING(changeGroupName)
+            text = CSTRING(changeGroupName);
             x = 0.419792 * safezoneW + safezoneX;
             y = 0.478009 * safezoneH + safezoneY;
             w = 0.160417 * safezoneW;
