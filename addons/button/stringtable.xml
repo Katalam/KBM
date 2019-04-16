@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="kat_10thmods">
+    <Package name="button">
+        <Key ID="STR_kat_10thmods_button_text">
+            <English>COMBAT OP SERVER</English>
+            <German>COMBAT OP SERVER</German>
+        </Key>
+        <Key ID="STR_kat_10thmods_button_actionText">
+            <English>Join server: COMBAT OP SERVER</English>
+            <German>Server beitreten: COMBAT OP SERVER</German>
+        </Key>
+        </Package>
+</Project>
