@@ -16,7 +16,7 @@ class GVAR(USAM_Veh_CAR): rhsusf_m1025_d {
     curatorScope = 2;
     faction = QGVAR(USAM_D);
     class EventHandlers: EventHandlers {
-        init = "_this call kat_10thMods_faction_generic_fnc_applyVehicleLoadout";
+        init = QUOTE(_this call FUNC(applyVehicleLoadout));
     };
     class TransportBackpacks {};
 };
@@ -38,7 +38,7 @@ class GVAR(USAM_Veh_CAR_M2): rhsusf_m1025_d_m2 {
     curatorScope = 2;
     faction = QGVAR(USAM_D);
     class EventHandlers: EventHandlers {
-        init = "_this call kat_10thMods_faction_generic_fnc_applyVehicleLoadout";
+        init = QUOTE(_this call FUNC(applyVehicleLoadout));
     };
     class TransportBackpacks {};
 };
@@ -60,7 +60,7 @@ class GVAR(USAM_Veh_CAR_Mk19): rhsusf_m1025_d_Mk19 {
     curatorScope = 2;
     faction = QGVAR(USAM_D);
     class EventHandlers: EventHandlers {
-        init = "_this call kat_10thMods_faction_generic_fnc_applyVehicleLoadout";
+        init = QUOTE(_this call FUNC(applyVehicleLoadout));
     };
     class TransportBackpacks {};
 };
@@ -82,7 +82,7 @@ class GVAR(USAM_Veh_CAR_TOW): rhsusf_m966_d {
     curatorScope = 2;
     faction = QGVAR(USAM_D);
     class EventHandlers: EventHandlers {
-        init = "_this call kat_10thMods_faction_generic_fnc_applyVehicleLoadout";
+        init = QUOTE(_this call FUNC(applyVehicleLoadout));
     };
     class TransportBackpacks {};
 };
@@ -106,7 +106,7 @@ class GVAR(USAM_Veh_IFV): RHS_M2A3_BUSKIII {
     curatorScope = 2;
     faction = QGVAR(USAM_D);
     class EventHandlers: EventHandlers {
-        init = "_this call kat_10thMods_faction_generic_fnc_applyVehicleLoadout";
+        init = QUOTE(_this call FUNC(applyVehicleLoadout));
     };
     class TransportBackpacks {};
 };
@@ -131,7 +131,7 @@ class GVAR(USAM_Veh_UH60): RHS_UH60M_d {
     curatorScope = 2;
     faction = QGVAR(USAM_D);
     class EventHandlers: EventHandlers {
-        init = "_this call kat_10thMods_faction_generic_fnc_applyVehicleLoadout";
+        init = QUOTE(_this call FUNC(applyVehicleLoadout));
     };
     class TransportBackpacks {};
 };
@@ -155,7 +155,7 @@ class GVAR(USAM_Veh_AH64): RHS_AH64D {
     curatorScope = 2;
     faction = QGVAR(USAM_D);
     class EventHandlers: EventHandlers {
-        init = "_this call kat_10thMods_faction_generic_fnc_applyVehicleLoadout";
+        init = QUOTE(_this call FUNC(applyVehicleLoadout));
     };
     class TransportBackpacks {};
 };
@@ -180,7 +180,7 @@ class GVAR(USAM_Veh_CH47): RHS_CH_47F_10 {
     curatorScope = 2;
     faction = QGVAR(USAM_D);
     class EventHandlers: EventHandlers {
-        init = "_this call kat_10thMods_faction_generic_fnc_applyVehicleLoadout";
+        init = QUOTE(_this call FUNC(applyVehicleLoadout));
     };
     class TransportBackpacks {};
 };
