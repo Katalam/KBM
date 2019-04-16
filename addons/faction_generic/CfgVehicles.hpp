@@ -41,7 +41,7 @@ class CfgVehicles {
         displayName = "Add Loadout Menu";
         category = QGVAR(Loadout);
         function = QFUNC(moduleAddLoadoutMenu3den);
-        icon = QPATHTOF(ui\icon_loadout_menu.paa);
+        icon = QPATHTOF(data\icon_loadout_menu.paa);
     };
 
     #include "Infantry.hpp"
