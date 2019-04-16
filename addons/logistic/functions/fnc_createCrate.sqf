@@ -18,35 +18,35 @@
 
 params [
     "",
-	["_player", objNull, [objNull]],
-	["_className", "", [""]]
+    ["_player", objNull, [objNull]],
+    ["_className", "", [""]]
 ];
 
 private _spawnPos = [getPos _player, 0, 3, 2.8] call BIS_fnc_findSafePos;
 
 switch (_className) do {
-	case "WHEEL": {
-		private _box = "ACE_Wheel" createVehicle [0, 0, 0];
-		_box setPos _spawnPos;
-	};
-	case "TRACK": {
-		private _box = "ACE_Track" createVehicle [0, 0, 0];
-		_box setPos _spawnPos;
-	};
-	case QGVAR(USAM_Crate_EMP): {
-		private _box = _className createVehicle [0, 0, 0];
-		_box allowDamage false;
-		_box setPos _spawnPos;
+    case "WHEEL": {
+        private _box = "ACE_Wheel" createVehicle [0, 0, 0];
+        _box setPos _spawnPos;
+    };
+    case "TRACK": {
+        private _box = "ACE_Track" createVehicle [0, 0, 0];
+        _box setPos _spawnPos;
+    };
+    case QGVAR(USAM_Crate_EMP): {
+        private _box = _className createVehicle [0, 0, 0];
+        _box allowDamage false;
+        _box setPos _spawnPos;
 
         [_box] call FUNC(deleteCrate);
-		[_box] call EFUNC(faction_generic,clearVehicleLoadout);
-	};
-	default {
-		private _box = _className createVehicle [0, 0, 0];
-		_box allowDamage false;
-		_box setPos _spawnPos;
+        [_box] call EFUNC(faction_generic,clearVehicleLoadout);
+    };
+    default {
+        private _box = _className createVehicle [0, 0, 0];
+        _box allowDamage false;
+        _box setPos _spawnPos;
 
         [_box] call FUNC(deleteCrate);
-		[_box] call EFUNC(faction_generic,applyVehicleLoadout);
-	};
+        [_box] call EFUNC(faction_generic,applyVehicleLoadout);
+    };
 };
