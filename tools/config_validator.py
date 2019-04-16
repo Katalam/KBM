@@ -75,7 +75,7 @@ def fullDump(p):
 def main(argv):
     print("""
   ################################
-  # KAT ADV Medical Config Check #
+  # KAT 10th Mods Config Check #
   ################################
 """)
 

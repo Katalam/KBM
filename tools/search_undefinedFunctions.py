@@ -61,7 +61,7 @@ def getFunctions(filepath):
         fileFuncs.append("kat_{0}_fnc_{1}".format(selfmodule,func))
 
     for exModule,func in exfuncs:
-        fileFuncs.append("kat_medical_{0}_fnc_{1}".format(exModule, func))
+        fileFuncs.append("kat_10th_mods_{0}_fnc_{1}".format(exModule, func))
 
     return fileFuncs
 

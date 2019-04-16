@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 ##################################
-#  KAT ADV Medical Setup Script  #
+#  KAT 10th Mods Setup Script  #
 ##################################
 
 import os
