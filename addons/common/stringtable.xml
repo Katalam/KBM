@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="kat_10thmods">
+    <Package name="common">
+        <Key ID="STR_kat_10thmods_common_flag">
+            <English>10th MntD Flag</English>
+            <German>10th MntD Flagge</German>
+        </Key>
+        <Key ID="STR_kat_10thmods_common_banner">
+            <English>10th MntD Banner</English>
+            <German>10th MntD Banner</German>
+        </Key>
+    </Package>
+</Project>
