@@ -562,7 +562,7 @@ class GVAR(USAM_ESP): GVAR(USAM_RFM) {
 // Logistic
 class GVAR(USAM_LOG_LEAD): GVAR(USAM_SQL) {
     displayName = "Logistic Leader";
-    description = "Logistic Leader";
+    description = "Logistic Leader@Workhorse 1-1";
     loadout = "USAM_LOG_LEAD";
     loadoutGroup = "Logistic";
     loadoutBackpack[] = {"TFAR_rt1523g_big_rhs"};
