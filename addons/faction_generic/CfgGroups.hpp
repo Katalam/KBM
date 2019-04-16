@@ -263,6 +263,39 @@ class CfgGroups {
                         position[] = {0,-4,0};
                     };
                 };
+                class GVAR(USAM_D_PTL) {
+                    name = "Platoon Lead";
+                    class Unit0 {
+                        vehicle = QGVAR(USAM_PTL);
+                        rank = "LIEUTENANT";
+                        position[] = {0,0,0};
+                    };
+                    class Unit1 {
+                        vehicle = QGVAR(USAM_PSG);
+                        rank = "SERGEANT";
+                        position[] = {-2,0,0};
+                    };
+                    class Unit2 {
+                        vehicle = QGVAR(USAM_RTO);
+                        rank = "PRIVATE";
+                        position[] = {-4,0,0};
+                    };
+                    class Unit3 {
+                        vehicle = QGVAR(USAM_MED_LEAD);
+                        rank = "CORPORAL";
+                        position[] = {-6,0,0};
+                    };
+                    class Unit4 {
+                        vehicle = QGVAR(USAM_FO);
+                        rank = "SERGEANT";
+                        position[] = {-8,0,0};
+                    };
+                    class Unit5 {
+                        vehicle = QGVAR(USAM_JTAC);
+                        rank = "SERGEANT";
+                        position[] = {-10,0,0};
+                    };
+                };
                 #include "PlatoonGroup.hpp"
             };
         };
