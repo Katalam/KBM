@@ -18,3 +18,7 @@ class CfgPatches {
 #include "CfgEventHandlers.hpp"
 #include "CfgVehicles.hpp"
 #include "CfgAmmo.hpp"
+
+#include "defines.hpp"
+
+#include "data\dialog_changeGroupName.hpp"

@@ -31,6 +31,16 @@ class CfgVehicles {
                 showDisabled = 0;
                 priority = 2.5;
             };
+            class ACE_TeamManagement {
+                class GVAR(changeGroupName) {
+                    displayName = CSTRING(changeGroupName);
+                    condition = QUOTE(leader group player == player);
+                    exceptions[] = {};
+                    statement = QUOTE(createDialog QQGVAR(changeGroupName));
+                    showDisabled = 0;
+                    priority = 2.5;
+                };
+            };
         };
     };
 };

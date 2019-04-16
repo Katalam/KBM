@@ -13,5 +13,9 @@
             <English>Break window</English>
             <German>Zerstöre Fenster</German>
         </Key>
+        <Key ID="STR_kat_10thmods_common_changeGroupName">
+            <English>Change groupname</English>
+            <German>Gruppennamen ändern</German>
+        </Key>
     </Package>
 </Project>
