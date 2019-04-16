@@ -33,7 +33,7 @@ class GVAR(USAM_RFM): B_Soldier_F {
     loadoutVarG = 0.7;
     loadoutVarEng = 0;
     loadoutVarEOD = 0;
-    loadoutInsignia = "";
+    loadoutInsignia = QGVAR(private);
     loadoutScope[] = {  {"RCO","optic_hamr"}, {"ACOG RMR","rhsusf_acc_ACOG_RMR"}, {"G33 + XPS3","rhsusf_acc_g33_xps3"},
                         {"EOTECH","rhsusf_acc_eotech_552"},    {"ELCAN SpectreDR","rhsusf_acc_su230a_mrds"},
                         {"ACOG","rhsusf_acc_acog"}};
@@ -72,6 +72,7 @@ class GVAR(USAM_FTL): GVAR(USAM_RFM) {
                         {"Binocular", {}}};
     loadoutLinked[] = {"ItemMap", "ItemCompass", "ItemWatch", "TFAR_anprc152", "ItemAndroid"};
     loadoutGrenade[] = {{"rhs_mag_an_m8hc", 2}, {"rhs_mag_mk84", 2}, {"rhs_mag_m18_green", 1}, {"rhs_mag_m18_purple", 1}, {"HandGrenade", 2}};
+    loadoutInsignia = QGVAR(corporal);
 };
 class GVAR(USAM_SQL): GVAR(USAM_FTL) {
     displayName = "Squad Leader";
@@ -85,6 +86,7 @@ class GVAR(USAM_SQL): GVAR(USAM_FTL) {
                         {"ACE_Vector", {}}};
     loadoutUniformInv[] = {{"ACE_MapTools", 1}, {"ACE_microDAGR", 1}, {"ACE_CableTie", 2}, {"ItemcTabHCam", 1}};
     loadoutBackpackInvNew[] = {};
+    loadoutInsignia = QGVAR(sergeant);
 };
 class GVAR(USAM_PTL): GVAR(USAM_SQL) {
     displayName = "Platoon Leader";
@@ -94,6 +96,7 @@ class GVAR(USAM_PTL): GVAR(USAM_SQL) {
     loadoutRank = "LIEUTENANT";
     loadoutBackpack[] = {"TFAR_rt1523g_big_rhs"};
     loadoutBackpackInvNew[] = {{"ItemcTab", 1}};
+    loadoutInsignia = QGVAR(lieutenant);
 };
 class GVAR(USAM_CO): GVAR(USAM_PTL) {
     displayName = "Company Commander";
@@ -101,6 +104,7 @@ class GVAR(USAM_CO): GVAR(USAM_PTL) {
     loadout = "USAM_CO";
     loadoutGroup = "Company";
     loadoutRank = "CAPTAIN";
+    loadoutInsignia = QGVAR(captain);
 };
 class GVAR(USAM_ADM): GVAR(USAM_PTL) {
     displayName = "Zeus";
