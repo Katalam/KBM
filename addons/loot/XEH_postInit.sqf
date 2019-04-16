@@ -42,11 +42,13 @@ private _action = [
 
 
 if (isServer) then {
-    [missionNamespace, "EntityKilled", {
-        params ["_unit"];
+    if (GVAR(loot) > 0) then {
+        [missionNamespace, "EntityKilled", {
+            params ["_unit"];
 
-        if (_unit isKindOf "CAManBase" && {!isPlayer _unit}) then {
-            [{(_this select 0) call FUNC(onEntityKilled)}, [_this], 5] call CBA_fnc_waitAndExecute;
-        };
-    }, diag_frameno + 300] call CBA_fnc_addBISEventHandler;
+            if (_unit isKindOf "CAManBase" && {!isPlayer _unit}) then {
+                [{(_this select 0) call FUNC(onEntityKilled)}, [_this], 5] call CBA_fnc_waitAndExecute;
+            };
+        }, diag_frameno + 300] call CBA_fnc_addBISEventHandler;
+    };
 };

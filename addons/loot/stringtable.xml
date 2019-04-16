@@ -5,5 +5,9 @@
             <English>Transfer loot to vehicle</English>
             <German>Räume alles ins Auto</German>
         </Key>
+        <Key ID="STR_kat_10thmods_loot_setting_loot">
+            <English>Prevent looting</English>
+            <German>Verhindere looten</German>
+        </Key>
     </Package>
 </Project>
