@@ -17,6 +17,8 @@
 
 params [["_box", objNull, [objNull]]];
 
+if (is3DEN) exitWith {};
+
 private _type = typeOf _box;
 private _config = (configFile >> "CfgVehicles" >> _type);
 

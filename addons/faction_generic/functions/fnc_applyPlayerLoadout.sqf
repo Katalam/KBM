@@ -22,6 +22,8 @@ params [
     ["_loadout", "", [""]]
 ];
 
+if (is3DEN) exitWith {};
+
 private _type = typeOf _unit;
 if !(_loadout isEqualTo "") then {
     _type = str formatText ["kat_10thMods_faction_generic_%1", _loadout];

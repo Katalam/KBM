@@ -33,13 +33,13 @@ private _loadoutArray = "(
     (getText (_x >> 'faction') == 'kat_10thMods_faction_generic_USAM_D') &&
     {getText (_x >> 'vehicleClass') isEqualTo 'Men'})" configClasses (configFile >> "CfgVehicles");
 
-private _company = ["Company"];
-private _platoon = ["Platoon"];
-private _squad = ["Squad"];
-private _weaponSquad = ["Weapon Squad"];
-private _logistic = ["Logistic"];
-private _crew = ["Crew"];
-private _other = ["Other"];
+private _company = [localize LSTRING(company)];
+private _platoon = [localize LSTRING(platoon)];
+private _squad = [localize LSTRING(squad)];
+private _weaponSquad = [localize LSTRING(weaponSquad)];
+private _logistic = [localize LSTRING(logistic)];
+private _crew = [localize LSTRING(crew)];
+private _other = [localize LSTRING(other)];
 
 {
     private _displayName = getText (_x >> 'displayName');
