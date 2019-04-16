@@ -17,6 +17,6 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         editorPreview = QPATHTOF(data\10th_banner.paa);
-        hiddenSelectionsTextures[] = {QPATHTOF(data\10th_banner.paa);};
+        hiddenSelectionsTextures[] = {QPATHTOF(data\10th_banner.paa)};
     };
 };
