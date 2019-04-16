@@ -17,5 +17,9 @@
             <English>Change groupname</English>
             <German>Gruppennamen ändern</German>
         </Key>
+        <Key ID="STR_kat_10thmods_common_unflipVehicle">
+            <English>Unflip vehicle</English>
+            <German>Richte Fahrzeug auf</German>
+        </Key>
     </Package>
 </Project>

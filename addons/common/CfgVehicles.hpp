@@ -43,4 +43,20 @@ class CfgVehicles {
             };
         };
     };
+
+    class LandVehicle;
+    class Car: LandVehicle {
+        class ACE_Actions {
+            class ACE_MainActions {
+                class GVAR(unflipVehicle) {
+                    displayName = CSTRING(unflipVehicle);
+                    condition = QUOTE(true);
+                    exceptions[] = {};
+                    statement = QUOTE(_this spawn FUNC(unflipVehicle));
+                    showDisabled = 0;
+                    priority = 2.5;
+                };
+            };
+        };
+    };
 };
