@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project name="keko">
-    <Package name="common">
+<Project name="kat_10thmods">
+    <Package name="statistic">
         <Key ID="STR_kat_10thmods_statistic_statsMissionWin">
             <English>&lt;t color='#00ff00'&gt;Mission accomplished&lt;/t&gt;</English>
             <German>&lt;t color='#00ff00'&gt;Mission erfolgreich&lt;/t&gt;</German>
