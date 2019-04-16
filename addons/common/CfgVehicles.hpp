@@ -19,4 +19,18 @@ class CfgVehicles {
         editorPreview = QPATHTOF(data\10th_banner.paa);
         hiddenSelectionsTextures[] = {QPATHTOF(data\10th_banner.paa)};
     };
+
+    class Man;
+    class CAManBase: Man {
+        class ACE_SelfActions {
+            class GVAR(breakWindow) {
+                displayName = CSTRING(break);
+                condition = QUOTE(_this call FUNC(canBreakWindow));
+                exceptions[] = {};
+                statement = QUOTE(_this call FUNC(breakWindow));
+                showDisabled = 0;
+                priority = 2.5;
+            };
+        };
+    };
 };

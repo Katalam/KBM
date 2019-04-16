@@ -9,5 +9,9 @@
             <English>10th MntD Banner</English>
             <German>10th MntD Banner</German>
         </Key>
+        <Key ID="STR_kat_10thmods_common_break">
+            <English>Break window</English>
+            <German>Zerstöre Fenster</German>
+        </Key>
     </Package>
 </Project>
