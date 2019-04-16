@@ -18,5 +18,5 @@
 params [["_target", objNull, [objNull]]];
 
 [_target, 0, ["ACE_MainActions"], [
-    "DeleteCrate", localize LSTRING(deleteCrate), "", {deleteVehicle _target;}, {true}] call ace_interact_menu_fnc_createAction
+    QGVAR(DeleteCrate), localize LSTRING(deleteCrate), "", {deleteVehicle _target;}, {true}] call ace_interact_menu_fnc_createAction
 ] remoteExec ["ace_interact_menu_fnc_addActionToObject", [0, -2] select isDedicated, _target];
