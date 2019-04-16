@@ -11,7 +11,7 @@
  * None
  *
  * Example:
- * [cursorTarget] call kat_10thMods_faction_generic_fnc_addLoadoutMenu;
+ * [cursorTarget] call kat_10thMods_logistic_fnc_addLoadoutMenu;
  *
  * Public: Yes
  */
@@ -25,43 +25,27 @@ if (isServer) then {
 private "_currentParent";
 private _pos = [0,0,0];
 
-if (typeOf _object isEqualTo "SignAd_Sponsor_F") then {
-    _pos = [0, -0.6, 0.8];
-};
-
 private _loadoutArray = "(
     (getText (_x >> 'faction') == 'kat_10thMods_faction_generic_USAM_D') &&
     {getText (_x >> 'vehicleClass') isEqualTo 'Men'})" configClasses (configFile >> "CfgVehicles");
 
-private _company = ["Company"];
-private _platoon = ["Platoon"];
-private _squad = ["Squad"];
-private _weaponSquad = ["Weapon Squad"];
-private _logistic = ["Logistic"];
-private _crew = ["Crew"];
+private _infantry = ["Infantry"];
+private _vehicle = ["Vehicle"];
+private _mortar = ["Mortar"];
 private _other = ["Other"];
 
 {
     private _displayName = getText (_x >> 'displayName');
     private _loadout = getText (_x >> 'loadout');
     switch (getText (_x >> 'loadoutGroup')) do {
-        case "Company": {
-            _company pushBack [_displayName, _loadout];
+        case "Infantry": {
+            _infantry pushBack [_displayName, _loadout];
         };
-        case "Platoon": {
-            _platoon pushBack [_displayName, _loadout];
+        case "Vehicle": {
+            _vehicle pushBack [_displayName, _loadout];
         };
-        case "Squad": {
-            _squad pushBack [_displayName, _loadout];
-        };
-        case "WeaponSquad": {
-            _weaponSquad pushBack [_displayName, _loadout];
-        };
-        case "Logistic": {
-            _logistic pushBack [_displayName, _loadout];
-        };
-        case "Crew": {
-            _crew pushBack [_displayName, _loadout];
+        case "Mortar": {
+            _mortar pushBack [_displayName, _loadout];
         };
         default {
             _other pushBack [_displayName, _loadout];
@@ -69,7 +53,7 @@ private _other = ["Other"];
     };
 } forEach _loadoutArray;
 
-private _guiArray = _company + _platoon + _squad + _weaponSquad + _logistic + _crew + _other;
+private _guiArray = _infantry + _vehicle + _mortar + _other;
 
 // Loadout GUI
 [_object, 0, [],

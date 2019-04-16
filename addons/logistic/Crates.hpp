@@ -17,7 +17,7 @@ class GVAR(USAM_Crate_INF): Box_NATO_Ammo_F {
     faction = QGVAR(USAM_D);
     editorCategory = QGVAR(USAM_D);
     class EventHandlers: EventHandlers {
-        init = "_this call kat_10thMods_faction_generic_fnc_applyVehicleLoadout";
+        init = QUOTE(_this call EFUNC(faction_generic,applyVehicleLoadout));
     };
 };
 
@@ -36,7 +36,7 @@ class GVAR(USAM_Crate_FRAG): Box_NATO_Ammo_F {
     faction = QGVAR(USAM_D);
     editorCategory = QGVAR(USAM_D);
     class EventHandlers: EventHandlers {
-        init = "_this call kat_10thMods_faction_generic_fnc_applyVehicleLoadout";
+        init = QUOTE(_this call EFUNC(faction_generic,applyVehicleLoadout));
     };
 };
 
@@ -59,7 +59,7 @@ class GVAR(USAM_Crate_ESP): Box_IED_Exp_F {
     faction = QGVAR(USAM_D);
     editorCategory = QGVAR(USAM_D);
     class EventHandlers: EventHandlers {
-        init = "_this call kat_10thMods_faction_generic_fnc_applyVehicleLoadout";
+        init = QUOTE(_this call EFUNC(faction_generic,applyVehicleLoadout));
     };
     class TransportBackpacks {};
 };
@@ -81,7 +81,7 @@ class GVAR(USAM_Crate_LAT): Box_NATO_WpsLaunch_F {
     faction = QGVAR(USAM_D);
     editorCategory = QGVAR(USAM_D);
     class EventHandlers: EventHandlers {
-        init = "_this call kat_10thMods_faction_generic_fnc_applyVehicleLoadout";
+        init = QUOTE(_this call EFUNC(faction_generic,applyVehicleLoadout));
     };
     class TransportBackpacks {};
 };
@@ -90,7 +90,7 @@ class GVAR(USAM_Crate_HAT): GVAR(USAM_Crate_LAT) {
     loadoutItems[] = {};
     loadoutMagazine[] = {{"rhs_fgm148_magazine_AT", 4}};
     class EventHandlers: EventHandlers {
-        init = "_this call kat_10thMods_faction_generic_fnc_applyVehicleLoadout";
+        init = QUOTE(_this call EFUNC(faction_generic,applyVehicleLoadout));
     };
 };
 
@@ -112,7 +112,7 @@ class GVAR(USAM_Crate_WPN): Box_NATO_Wps_F {
     faction = QGVAR(USAM_D);
     editorCategory = QGVAR(USAM_D);
     class EventHandlers: EventHandlers {
-        init = "_this call kat_10thMods_faction_generic_fnc_applyVehicleLoadout";
+        init = QUOTE(_this call EFUNC(faction_generic,applyVehicleLoadout));
     };
 };
 
@@ -133,7 +133,7 @@ class GVAR(USAM_Crate_MMG): Box_NATO_WpsSpecial_F {
     faction = QGVAR(USAM_D);
     editorCategory = QGVAR(USAM_D);
     class EventHandlers: EventHandlers {
-        init = "_this call kat_10thMods_faction_generic_fnc_applyVehicleLoadout";
+        init = QUOTE(_this call EFUNC(faction_generic,applyVehicleLoadout));
     };
 };
 
@@ -156,7 +156,7 @@ class GVAR(USAM_Crate_MED): ACE_medicalSupplyCrate_advanced {
     faction = QGVAR(USAM_D);
     editorCategory = QGVAR(USAM_D);
     class EventHandlers: EventHandlers {
-        init = "_this call kat_10thMods_faction_generic_fnc_applyVehicleLoadout";
+        init = QUOTE(_this call EFUNC(faction_generic,applyVehicleLoadout));
     };
 };
 
@@ -177,7 +177,7 @@ class GVAR(USAM_Crate_MOR_HE): Box_Syndicate_WpsLaunch_F {
     faction = QGVAR(USAM_D);
     editorCategory = QGVAR(USAM_D);
     class EventHandlers: EventHandlers {
-        init = "_this call kat_10thMods_faction_generic_fnc_applyVehicleLoadout";
+        init = QUOTE(_this call EFUNC(faction_generic,applyVehicleLoadout));
     };
     class TransportBackpacks {};
 };
@@ -207,7 +207,7 @@ class GVAR(USAM_Crate_FULL): B_CargoNet_01_ammo_F {
     faction = QGVAR(USAM_D);
     editorCategory = QGVAR(USAM_D);
     class EventHandlers: EventHandlers {
-        init = "_this call kat_10thMods_faction_generic_fnc_applyVehicleLoadout";
+        init = QUOTE(_this call EFUNC(faction_generic,applyVehicleLoadout));
     };
     class TransportBackpacks {};
 };
