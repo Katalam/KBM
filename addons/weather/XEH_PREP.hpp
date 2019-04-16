@@ -1,3 +1,4 @@
+PREP(breathingFog);
 PREP(dust_adminCheck);
 PREP(dust_al_duststorm);
 PREP(dust_alias_dust_wall);
