@@ -15,8 +15,8 @@
  */
 
 // only continue with admins and curators
-private _isAdmin = (call BIS_fnc_admin) == 2;
-private _isCurator = (!isNull (getAssignedCuratorLogic player)) || (player isKindOf QEGVAR(faction_generic,blufor_command) || (player isKindOf QEGVAR(faction_generic,indfor_command)) || (player isKindOf QEGVAR(faction_generic,opfor_command)));
+private _isAdmin = (call BIS_fnc_admin) isEqualTo 2;
+private _isCurator = (!isNull (getAssignedCuratorLogic player));
 if !(_isCurator || _isAdmin) exitWith {};
 
 // for curators and admins show FPS counter underneath players
@@ -27,7 +27,7 @@ addMissionEventHandler ["Draw3D", {
         if (_distance < 1000) then {
             private _playerFPS = _x getVariable [QGVAR(PlayerFPS), 50];
             // if the FPS is below 20 it turns red and becomes more visible for zeus/admin to see so they are aware
-            if(GVAR(showUI)) then {
+            if (GVAR(showUI)) then {
                 drawIcon3D
                 [
                     "", // path to image displayed near text
