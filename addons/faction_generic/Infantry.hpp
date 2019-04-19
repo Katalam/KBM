@@ -85,7 +85,7 @@ class GVAR(USAM_SQL): GVAR(USAM_FTL) {
                         {"rhsusf_weap_m9", {"rhsusf_mag_15Rnd_9x19_FMJ"}},
                         {"ACE_Vector", {}}};
     loadoutUniformInv[] = {{"ACE_MapTools", 1}, {"ACE_microDAGR", 1}, {"ACE_CableTie", 2}, {"ItemcTabHCam", 1}};
-    loadoutBackpackInvNew[] = {};
+    loadoutBackpackInvNew[] = {{"rhs_mag_m18_yellow", 1}, {"rhs_mag_m18_purple", 1}};
     loadoutInsignia = QGVAR(sergeant);
 };
 class GVAR(USAM_PTL): GVAR(USAM_SQL) {
@@ -257,8 +257,8 @@ class GVAR(USAM_MKM): GVAR(USAM_RFM) {
                         {"rhsusf_weap_m9", {"rhsusf_mag_15Rnd_9x19_FMJ"}},
                         {"ACE_Vector", {}}};
     loadoutUniformInvNew[] = {{"ACE_20Rnd_762x51_Mag_Tracer", 2}};
-    loadoutVestInv[] = {{"ACE_20Rnd_762x51_Mag_Tracer", 7}, {"rhsusf_mag_15Rnd_9x19_FMJ", 2}};
-    loadoutVestInvNew[] = {{"rhsusf_acc_acog", 1}};
+    loadoutVestInv[] = {{"ACE_20Rnd_762x51_Mag_Tracer", 7}, {"rhsusf_mag_15Rnd_9x19_FMJ", 4}};
+    loadoutVestInvNew[] = {{"rhsusf_acc_acog", 1}, {"ACE_RangeCard", 1}};
     loadoutBackpackInvNew[] = {};
 };
 
