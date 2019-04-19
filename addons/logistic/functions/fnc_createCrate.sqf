@@ -39,7 +39,6 @@ switch (_className) do {
         _box setPos _spawnPos;
 
         [_box] call FUNC(deleteCrate);
-        [_box] call EFUNC(faction_generic,clearVehicleLoadout);
     };
     default {
         private _box = _className createVehicle [0, 0, 0];
@@ -47,6 +46,5 @@ switch (_className) do {
         _box setPos _spawnPos;
 
         [_box] call FUNC(deleteCrate);
-        [_box] call EFUNC(faction_generic,applyVehicleLoadout);
     };
 };

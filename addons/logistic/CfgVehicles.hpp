@@ -4,7 +4,7 @@ class CfgVehicles {
         displayName = "Add Logistic Menu";
         category = QEGVAR(faction_generic,Loadout);
         function = QFUNC(moduleAddLogisticMenu3den);
-        icon = QPATHTOF(data\icon_logistics.paa);
+        icon = QPATHTOF(data\icon_crate.paa);
     };
 
     #include "Crates.hpp"
