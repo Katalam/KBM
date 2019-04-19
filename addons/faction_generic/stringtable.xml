@@ -69,5 +69,13 @@
             <English>Helmet</English>
             <German>Helm</German>
         </Key>
+        <Key ID="STR_kat_10thmods_faction_generic_vehicle">
+            <English>Vehicle</English>
+            <German>Fahrzeuge</German>
+        </Key>
+        <Key ID="STR_kat_10thmods_faction_generic_remove">
+            <English>Remove</English>
+            <German>Entfernen</German>
+        </Key>
     </Package>
 </Project>

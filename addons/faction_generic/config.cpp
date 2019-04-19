@@ -43,7 +43,9 @@ class CfgPatches {
             QGVAR(USAM_ESP),
             QGVAR(USAM_LOG_LEAD),
             QGVAR(USAM_LOG),
-            QGVAR(moduleAddLoadoutMenu3den)
+            QGVAR(moduleAddLoadoutMenu3den),
+            QGVAR(moduleAddVehicleMenu3den),
+            QGVAR(moduleInitVehicleMenu3den)
         };
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;

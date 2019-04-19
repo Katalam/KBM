@@ -20,10 +20,10 @@ class CfgVehicles {
         author = "Katalam";
         category = "KAT";
         function = QEFUNC(main,dummy);
-        scope              = 1;
-        scopeCurator       = 2;
-        functionPriority   = 1;
-        isGlobal           = 1;
+        scope = 1;
+        scopeCurator = 2;
+        functionPriority = 1;
+        isGlobal = 1;
         isTriggerActivated = 0;
     };
     class GVAR(moduleBase3den): Module_F {
@@ -42,6 +42,18 @@ class CfgVehicles {
         category = QGVAR(Loadout);
         function = QFUNC(moduleAddLoadoutMenu3den);
         icon = QPATHTOF(data\icon_loadout_menu.paa);
+    };
+    class GVAR(moduleAddVehicleMenu3den): GVAR(moduleBase3den) {
+        displayName = "Add Vehicle Menu";
+        category = QGVAR(Loadout);
+        function = QFUNC(moduleAddVehicleMenu3den);
+        icon = QPATHTOF(data\icon_logistics.paa);
+    };
+    class GVAR(moduleInitVehicleMenu3den): GVAR(moduleBase3den) {
+        displayName = "Spawn position vehicle spawner";
+        category = QGVAR(Loadout);
+        function = QFUNC(vehiclePos);
+        icon = QPATHTOF(data\icon_logistics.paa);
     };
 
     #include "Infantry.hpp"
