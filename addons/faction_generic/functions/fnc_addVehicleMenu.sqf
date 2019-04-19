@@ -35,12 +35,12 @@ private _aas = [getText (_config >> "EdSubcat_AAs" >> "displayName")];
 private _apcs = [getText (_config >> "EdSubcat_APCs" >> "displayName")];
 private _artillery = [getText (_config >> "EdSubcat_Artillery" >> "displayName")];
 private _cars = [getText (_config >> "EdSubcat_Cars" >> "displayName")];
+private _ifv = [getText (_config >> "rhs_EdSubcat_ifv" >> "displayName")];
 private _drones = [getText (_config >> "EdSubcat_Drones" >> "displayName")];
 private _helicopters = [getText (_config >> "EdSubcat_Helicopters" >> "displayName")];
 private _planes = [getText (_config >> "EdSubcat_Planes" >> "displayName")];
 private _tanks = [getText (_config >> "EdSubcat_Tanks" >> "displayName")];
 private _other = [localize LSTRING(other), [localize LSTRING(remove), "REMOVE"]];
-
 {
     private _displayName = getText (_x >> 'displayName');
     private _vehicle = configName _x;
@@ -57,6 +57,9 @@ private _other = [localize LSTRING(other), [localize LSTRING(remove), "REMOVE"]]
         };
         case "EdSubcat_Cars": {
             _cars pushBack [_displayName, _vehicle];
+        };
+        case "rhs_EdSubcat_ifv": {
+            _ifv pushBack [_displayName, _vehicle];
         };
         case "EdSubcat_Drones": {
             _drones pushBack [_displayName, _vehicle];
@@ -76,7 +79,7 @@ private _other = [localize LSTRING(other), [localize LSTRING(remove), "REMOVE"]]
     };
 } forEach _vehicleArray;
 
-private _guiArray = _aas + _apcs + _artillery + _cars + _drones + _helicopters + _tanks + _other;
+private _guiArray = _aas + _apcs + _artillery + _cars + _ifv + _drones + _helicopters + _tanks + _other;
 
 // vehicle GUI
 [_object, 0, [],
