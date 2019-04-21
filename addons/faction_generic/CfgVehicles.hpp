@@ -55,6 +55,18 @@ class CfgVehicles {
         function = QFUNC(vehiclePos);
         icon = QPATHTOF(data\icon_logistics.paa);
     };
+    class GVAR(moduleAddPlaneMenu3den): GVAR(moduleBase3den) {
+        displayName = "Add Plane Menu";
+        category = QGVAR(Loadout);
+        function = QFUNC(moduleAddPlaneMenu3den);
+        icon = QPATHTOF(data\icon_logistics.paa);
+    };
+    class GVAR(moduleInitPlaneMenu3den): GVAR(moduleBase3den) {
+        displayName = "Spawn position plane spawner";
+        category = QGVAR(Loadout);
+        function = QFUNC(planePos);
+        icon = QPATHTOF(data\icon_logistics.paa);
+    };
 
     #include "Infantry.hpp"
     #include "Vehicles.hpp"

@@ -1,4 +1,5 @@
 PREP(addLoadoutMenu);
+PREP(addPlaneMenu);
 PREP(addRoleDescription);
 PREP(addVehicleMenu);
 PREP(applyPlayerLoadout);
@@ -16,8 +17,10 @@ PREP(goggle);
 PREP(helmet);
 PREP(launcher);
 PREP(moduleAddLoadoutMenu3den);
+PREP(moduleAddPlaneMenu3den);
 PREP(moduleAddVehicleMenu3den);
 PREP(nightvision);
+PREP(planePos);
 PREP(scope);
 PREP(silencer);
 PREP(vehiclePos);

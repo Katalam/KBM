@@ -44,6 +44,7 @@ class CfgPatches {
             QGVAR(USAM_LOG_LEAD),
             QGVAR(USAM_LOG),
             QGVAR(moduleAddLoadoutMenu3den),
+            QGVAR(moduleAddPlaneMenu3den),
             QGVAR(moduleAddVehicleMenu3den),
             QGVAR(moduleInitVehicleMenu3den)
         };

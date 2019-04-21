@@ -18,10 +18,18 @@
 params [
     "",
     "",
-    ["_className", "", [""]]
+    "_arr"
 ];
-
-private _missionNamespace = missionNamespace getVariable [QGVAR(vehicleSpawnPos), [[0,0,0], 0]];
+_arr params [
+    ["_className", "", [""]],
+    ["_plane", false, [false]]
+];
+private "_missionNamespace";
+if (_plane) then {
+    _missionNamespace = missionNamespace getVariable [QGVAR(vehicleSpawnPos), [[0,0,0], 0]];
+} else {
+    _missionNamespace = missionNamespace getVariable [QGVAR(planeSpawnPos), [[0,0,0], 0]];
+};
 _missionNamespace params ["_pos", "_dir"];
 
 // remove old vehciles
