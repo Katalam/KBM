@@ -143,6 +143,282 @@ class GVAR(USAM_Veh_CAR_TOW): rhsusf_m966_d {
     class TransportBackpacks {};
 };
 
+// M1237 M2
+class rhsusf_RG33L_GPK_base;
+class rhsusf_M1237_M2_usarmy_d: rhsusf_RG33L_GPK_base {
+    class EventHandlers;
+};
+class GVAR(USAM_Veh_M1237_M2): rhsusf_M1237_M2_usarmy_d {
+    author = "Katalam";
+    displayName = "M1237 M2";
+    loadoutCargo[] = {{"ACE_Wheel", 2}};
+    loadoutItems[] = {{"ACE_key_west", 1}, {"rhs_weap_M136", 4}};
+    loadoutWeapon[] = {};
+    loadoutMagazine[] = {};
+    loadoutBackpack[] = {{"VSM_Multicam_Backpack_Compact", 1}, {"VSM_Multicam_Backpack_Kitbag", 1}, {"VSM_Multicam_carryall", 1}};
+    loadoutBackpackInv[] = {{
+            {"ToolKit", 1}
+        }, {
+            {"ACE_packingBandage", 32},
+            {"ACE_elasticBandage", 32},
+            {"ACE_morphine", 8},
+            {"ACE_epinephrine", 8},
+            {"ACE_tourniquet", 4},
+            {"ACE_plasmaIV_500", 12},
+            {"adv_aceSplint_splint", 12}
+        }, {
+            {"rhs_mag_30Rnd_556x45_M855A1_PMAG", 12},
+            {"1Rnd_HE_Grenade_shell", 12},
+            {"rhs_mag_30Rnd_556x45_M855A1_PMAG", 5}
+        }};
+    crew = QGVAR(USAM_RFM);
+    scope = 2;
+    curatorScope = 2;
+    faction = QGVAR(USAM_D);
+    class EventHandlers: EventHandlers {
+        init = QUOTE(_this call FUNC(applyVehicleLoadout));
+    };
+    class TransportBackpacks {};
+};
+
+// M1237 Mk19
+class rhsusf_M1232_M2_usarmy_d;
+class rhsusf_M1237_MK19_usarmy_d: rhsusf_M1232_M2_usarmy_d {
+    class EventHandlers;
+};
+class GVAR(USAM_Veh_M1237_Mk19): rhsusf_M1237_MK19_usarmy_d {
+    author = "Katalam";
+    displayName = "M1237 Mk19";
+    loadoutCargo[] = {{"ACE_Wheel", 2}};
+    loadoutItems[] = {{"ACE_key_west", 1}, {"rhs_weap_M136", 4}};
+    loadoutWeapon[] = {};
+    loadoutMagazine[] = {};
+    loadoutBackpack[] = {{"VSM_Multicam_Backpack_Compact", 1}, {"VSM_Multicam_Backpack_Kitbag", 1}, {"VSM_Multicam_carryall", 1}};
+    loadoutBackpackInv[] = {{
+            {"ToolKit", 1}
+        }, {
+            {"ACE_packingBandage", 32},
+            {"ACE_elasticBandage", 32},
+            {"ACE_morphine", 8},
+            {"ACE_epinephrine", 8},
+            {"ACE_tourniquet", 4},
+            {"ACE_plasmaIV_500", 12},
+            {"adv_aceSplint_splint", 12}
+        }, {
+            {"rhs_mag_30Rnd_556x45_M855A1_PMAG", 12},
+            {"1Rnd_HE_Grenade_shell", 12},
+            {"rhs_mag_30Rnd_556x45_M855A1_PMAG", 5}
+        }};
+    crew = QGVAR(USAM_RFM);
+    scope = 2;
+    curatorScope = 2;
+    faction = QGVAR(USAM_D);
+    class EventHandlers: EventHandlers {
+        init = QUOTE(_this call FUNC(applyVehicleLoadout));
+    };
+    class TransportBackpacks {};
+};
+
+// Truck cargo
+class rhsusf_M1078A1P2_B_M2_fmtv_usarmy;
+class rhsusf_M1078A1P2_B_M2_D_fmtv_usarmy: rhsusf_M1078A1P2_B_M2_fmtv_usarmy {
+    class EventHandlers;
+};
+class GVAR(USAM_Veh_Cargo_M2): rhsusf_M1078A1P2_B_M2_D_fmtv_usarmy {
+    author = "Katalam";
+    displayName = "Cargo M2";
+    loadoutCargo[] = {{"ACE_Wheel", 2}};
+    loadoutItems[] = {{"ACE_key_west", 1}, {"rhs_weap_M136", 4}};
+    loadoutWeapon[] = {};
+    loadoutMagazine[] = {};
+    loadoutBackpack[] = {{"VSM_Multicam_Backpack_Compact", 1}, {"VSM_Multicam_Backpack_Kitbag", 1}, {"VSM_Multicam_carryall", 1}};
+    loadoutBackpackInv[] = {{
+            {"ToolKit", 1}
+        }, {
+            {"ACE_packingBandage", 32},
+            {"ACE_elasticBandage", 32},
+            {"ACE_morphine", 8},
+            {"ACE_epinephrine", 8},
+            {"ACE_tourniquet", 4},
+            {"ACE_plasmaIV_500", 12},
+            {"adv_aceSplint_splint", 12}
+        }, {
+            {"rhs_mag_30Rnd_556x45_M855A1_PMAG", 12},
+            {"1Rnd_HE_Grenade_shell", 12},
+            {"rhs_mag_30Rnd_556x45_M855A1_PMAG", 5}
+        }};
+    crew = QGVAR(USAM_RFM);
+    scope = 2;
+    curatorScope = 2;
+    faction = QGVAR(USAM_D);
+    class EventHandlers: EventHandlers {
+        init = QUOTE(_this call FUNC(applyVehicleLoadout));
+    };
+    class TransportBackpacks {};
+};
+
+// Truck empty
+class rhsusf_M977A4_BKIT_usarmy_wd;
+class rhsusf_M977A4_BKIT_usarmy_d: rhsusf_M977A4_BKIT_usarmy_wd {
+    class EventHandlers;
+};
+class GVAR(USAM_Veh_EMPTY_M2): rhsusf_M977A4_BKIT_usarmy_d {
+    author = "Katalam";
+    displayName = "Empty M2";
+    loadoutCargo[] = {{"ACE_Wheel", 4}, {"ACE_Track", 4}};
+    loadoutItems[] = {{"ACE_key_west", 1}};
+    loadoutWeapon[] = {};
+    loadoutMagazine[] = {};
+    loadoutBackpack[] = {{"VSM_Multicam_Backpack_Compact", 1}};
+    loadoutBackpackInv[] = {{{"ToolKit", 1}}};
+    crew = QGVAR(USAM_LOG);
+    scope = 2;
+    curatorScope = 2;
+    faction = QGVAR(USAM_D);
+    class EventHandlers: EventHandlers {
+        init = QUOTE(_this call FUNC(applyVehicleLoadout));
+    };
+    class TransportBackpacks {};
+};
+
+// Repair
+class rhsusf_M977A4_REPAIR_BKIT_M2_usarmy_wd;
+class rhsusf_M977A4_REPAIR_BKIT_M2_usarmy_d: rhsusf_M977A4_REPAIR_BKIT_M2_usarmy_wd {
+    class EventHandlers;
+};
+class GVAR(USAM_Veh_REPAIR_M2): rhsusf_M977A4_REPAIR_BKIT_M2_usarmy_d {
+    author = "Katalam";
+    displayName = "Repair M2";
+    loadoutCargo[] = {{"ACE_Wheel", 4}, {"ACE_Track", 4}};
+    loadoutItems[] = {{"ACE_key_west", 1}};
+    loadoutWeapon[] = {};
+    loadoutMagazine[] = {};
+    loadoutBackpack[] = {{"VSM_Multicam_Backpack_Compact", 1}};
+    loadoutBackpackInv[] = {{{"ToolKit", 1}}};
+    crew = QGVAR(USAM_LOG);
+    scope = 2;
+    curatorScope = 2;
+    faction = QGVAR(USAM_D);
+    class EventHandlers: EventHandlers {
+        init = QUOTE(_this call FUNC(applyVehicleLoadout));
+    };
+    class TransportBackpacks {};
+};
+
+// Ammo
+class rhsusf_M977A4_AMMO_BKIT_M2_usarmy_wd;
+class rhsusf_M977A4_AMMO_BKIT_M2_usarmy_d: rhsusf_M977A4_AMMO_BKIT_M2_usarmy_wd {
+    class EventHandlers;
+};
+class GVAR(USAM_Veh_AMMO_M2): rhsusf_M977A4_AMMO_BKIT_M2_usarmy_d {
+    author = "Katalam";
+    displayName = "Ammo M2";
+    loadoutCargo[] = {{"ACE_Wheel", 4}, {"ACE_Track", 4}};
+    loadoutItems[] = {{"ACE_key_west", 1}};
+    loadoutWeapon[] = {};
+    loadoutMagazine[] = {};
+    loadoutBackpack[] = {{"VSM_Multicam_Backpack_Compact", 1}};
+    loadoutBackpackInv[] = {{{"ToolKit", 1}}};
+    crew = QGVAR(USAM_LOG);
+    scope = 2;
+    curatorScope = 2;
+    faction = QGVAR(USAM_D);
+    class EventHandlers: EventHandlers {
+        init = QUOTE(_this call FUNC(applyVehicleLoadout));
+    };
+    class TransportBackpacks {};
+};
+
+// Fuel
+class rhsusf_M978A4_BKIT_usarmy_wd;
+class rhsusf_M978A4_BKIT_usarmy_d: rhsusf_M978A4_BKIT_usarmy_wd {
+    class EventHandlers;
+};
+class GVAR(USAM_Veh_FUEL): rhsusf_M978A4_BKIT_usarmy_d {
+    author = "Katalam";
+    displayName = "Fuel";
+    loadoutCargo[] = {};
+    loadoutItems[] = {{"ACE_key_west", 1}};
+    loadoutWeapon[] = {};
+    loadoutMagazine[] = {};
+    loadoutBackpack[] = {{"VSM_Multicam_Backpack_Compact", 1}};
+    loadoutBackpackInv[] = {{{"ToolKit", 1}}};
+    crew = QGVAR(USAM_LOG);
+    scope = 2;
+    curatorScope = 2;
+    faction = QGVAR(USAM_D);
+    class EventHandlers: EventHandlers {
+        init = QUOTE(_this call FUNC(applyVehicleLoadout));
+    };
+    class TransportBackpacks {};
+};
+
+// Medical
+class rhsusf_M1085A1P2_B_Medical_fmtv_usarmy;
+class rhsusf_M1085A1P2_B_D_Medical_fmtv_usarmy: rhsusf_M1085A1P2_B_Medical_fmtv_usarmy {
+    class EventHandlers;
+};
+class GVAR(USAM_Veh_MEDICAL): rhsusf_M1085A1P2_B_D_Medical_fmtv_usarmy {
+    author = "Katalam";
+    displayName = "Medical";
+    loadoutCargo[] = {{"ACE_Wheel", 4}, {"ACE_Track", 4}};
+    loadoutItems[] = {
+        {"ACE_key_west", 1},
+        {"ACE_packingBandage", 32},
+        {"ACE_elasticBandage", 32},
+        {"ACE_morphine", 8},
+        {"ACE_epinephrine", 8},
+        {"ACE_tourniquet", 4},
+        {"ACE_plasmaIV_500", 12},
+        {"adv_aceSplint_splint", 12}};
+    loadoutWeapon[] = {};
+    loadoutMagazine[] = {};
+    loadoutBackpack[] = {{"VSM_Multicam_Backpack_Compact", 1}, {"VSM_Multicam_Backpack_Kitbag", 4}};
+    loadoutBackpackInv[] = {{
+            {"ToolKit", 1}
+        }, {
+            {"ACE_packingBandage", 32},
+            {"ACE_elasticBandage", 32},
+            {"ACE_morphine", 8},
+            {"ACE_epinephrine", 8},
+            {"ACE_tourniquet", 4},
+            {"ACE_plasmaIV_500", 12},
+            {"adv_aceSplint_splint", 12}
+        }, {
+            {"ACE_packingBandage", 32},
+            {"ACE_elasticBandage", 32},
+            {"ACE_morphine", 8},
+            {"ACE_epinephrine", 8},
+            {"ACE_tourniquet", 4},
+            {"ACE_plasmaIV_500", 12},
+            {"adv_aceSplint_splint", 12}
+        }, {
+            {"ACE_packingBandage", 32},
+            {"ACE_elasticBandage", 32},
+            {"ACE_morphine", 8},
+            {"ACE_epinephrine", 8},
+            {"ACE_tourniquet", 4},
+            {"ACE_plasmaIV_500", 12},
+            {"adv_aceSplint_splint", 12}
+        }, {
+            {"ACE_packingBandage", 32},
+            {"ACE_elasticBandage", 32},
+            {"ACE_morphine", 8},
+            {"ACE_epinephrine", 8},
+            {"ACE_tourniquet", 4},
+            {"ACE_plasmaIV_500", 12},
+            {"adv_aceSplint_splint", 12}
+        }};
+    crew = QGVAR(USAM_MED_LEAD);
+    scope = 2;
+    curatorScope = 2;
+    faction = QGVAR(USAM_D);
+    class EventHandlers: EventHandlers {
+        init = QUOTE(_this call FUNC(applyVehicleLoadout));
+    };
+    class TransportBackpacks {};
+};
+
 // M2
 class RHS_M2A3_BUSKI;
 class RHS_M2A3_BUSKIII: RHS_M2A3_BUSKI {
@@ -166,6 +442,82 @@ class GVAR(USAM_Veh_IFV): RHS_M2A3_BUSKIII {
             {"ACE_tourniquet", 4},
             {"ACE_plasmaIV_500", 12},
             {"adv_aceSplint_splint", 12}
+        }, {
+            {"ACE_packingBandage", 32},
+            {"ACE_elasticBandage", 32},
+            {"ACE_morphine", 8},
+            {"ACE_epinephrine", 8},
+            {"ACE_tourniquet", 4},
+            {"ACE_plasmaIV_500", 12},
+            {"adv_aceSplint_splint", 12}
+        }, {
+            {"rhs_mag_30Rnd_556x45_M855A1_PMAG", 12},
+            {"1Rnd_HE_Grenade_shell", 12},
+            {"rhs_mag_30Rnd_556x45_M855A1_PMAG", 5}
+        }};
+    crew = QGVAR(USAM_CRW);
+    scope = 2;
+    curatorScope = 2;
+    faction = QGVAR(USAM_D);
+    class EventHandlers: EventHandlers {
+        init = QUOTE(_this call FUNC(applyVehicleLoadout));
+    };
+    class TransportBackpacks {};
+};
+
+// M109A6
+class rhsusf_m109_usarmy;
+class rhsusf_m109d_usarmy: rhsusf_m109_usarmy {
+    class EventHandlers;
+};
+class GVAR(USAM_Veh_M109A6): rhsusf_m109d_usarmy {
+    author = "Katalam";
+    displayName = "M109A6";
+    loadoutCargo[] = {{"ACE_Track", 2}};
+    loadoutItems[] = {{"ACE_key_west", 1}};
+    loadoutWeapon[] = {};
+    loadoutMagazine[] = {};
+    loadoutBackpack[] = {{"VSM_Multicam_Backpack_Compact", 1}, {"VSM_Multicam_Backpack_Kitbag", 1}, {"VSM_Multicam_carryall", 1}};
+    loadoutBackpackInv[] = {{
+            {"ToolKit", 1}
+        }, {
+            {"ACE_packingBandage", 32},
+            {"ACE_elasticBandage", 32},
+            {"ACE_morphine", 8},
+            {"ACE_epinephrine", 8},
+            {"ACE_tourniquet", 4},
+            {"ACE_plasmaIV_500", 12},
+            {"adv_aceSplint_splint", 12}
+        }, {
+            {"rhs_mag_30Rnd_556x45_M855A1_PMAG", 12},
+            {"1Rnd_HE_Grenade_shell", 12},
+            {"rhs_mag_30Rnd_556x45_M855A1_PMAG", 5}
+        }};
+    crew = QGVAR(USAM_CRW);
+    scope = 2;
+    curatorScope = 2;
+    faction = QGVAR(USAM_D);
+    class EventHandlers: EventHandlers {
+        init = QUOTE(_this call FUNC(applyVehicleLoadout));
+    };
+    class TransportBackpacks {};
+};
+
+// M142
+class rhsusf_himars_base;
+class rhsusf_M142_usarmy_D: rhsusf_himars_base {
+    class EventHandlers;
+};
+class GVAR(USAM_Veh_M142): rhsusf_M142_usarmy_D {
+    author = "Katalam";
+    displayName = "M142";
+    loadoutCargo[] = {{"ACE_Wheel", 2}};
+    loadoutItems[] = {{"ACE_key_west", 1}};
+    loadoutWeapon[] = {};
+    loadoutMagazine[] = {};
+    loadoutBackpack[] = {{"VSM_Multicam_Backpack_Compact", 1}, {"VSM_Multicam_Backpack_Kitbag", 1}, {"VSM_Multicam_carryall", 1}};
+    loadoutBackpackInv[] = {{
+            {"ToolKit", 1}
         }, {
             {"ACE_packingBandage", 32},
             {"ACE_elasticBandage", 32},
@@ -268,6 +620,56 @@ class GVAR(USAM_Veh_CH47): RHS_CH_47F_10 {
     loadoutBackpackInv[] = {};
     crew = QGVAR(USAM_HELI_PIL);
     typicalCargo[] = {QGVAR(USAM_HELI_CRW)};
+    scope = 2;
+    curatorScope = 2;
+    faction = QGVAR(USAM_D);
+    class EventHandlers: EventHandlers {
+        init = QUOTE(_this call FUNC(applyVehicleLoadout));
+    };
+    class TransportBackpacks {};
+};
+
+// A-10C
+class FIR_A10C_Base;
+class FIR_A10C: FIR_A10C_Base {
+    class EventHandlers;
+};
+class GVAR(USAM_Veh_A10): FIR_A10C {
+    author = "Katalam";
+    displayName = "A-10C";
+    loadoutCargo[] = {};
+    loadoutItems[] = {};
+    loadoutWeapon[] = {};
+    loadoutMagazine[] = {};
+    loadoutBackpack[] = {};
+    loadoutBackpackInv[] = {};
+    crew = QGVAR(USAM_JET);
+    typicalCargo[] = {QGVAR(USAM_JET)};
+    scope = 2;
+    curatorScope = 2;
+    faction = QGVAR(USAM_D);
+    class EventHandlers: EventHandlers {
+        init = QUOTE(_this call FUNC(applyVehicleLoadout));
+    };
+    class TransportBackpacks {};
+};
+
+// F/A-18 E
+class Plane_Base_F;
+class JS_JC_FA18E: Plane_Base_F {
+    class EventHandlers;
+};
+class GVAR(USAM_Veh_FA18E): JS_JC_FA18E {
+    author = "Katalam";
+    displayName = "F/A-18 E";
+    loadoutCargo[] = {};
+    loadoutItems[] = {};
+    loadoutWeapon[] = {};
+    loadoutMagazine[] = {};
+    loadoutBackpack[] = {};
+    loadoutBackpackInv[] = {};
+    crew = QGVAR(USAM_JET);
+    typicalCargo[] = {QGVAR(USAM_JET)};
     scope = 2;
     curatorScope = 2;
     faction = QGVAR(USAM_D);

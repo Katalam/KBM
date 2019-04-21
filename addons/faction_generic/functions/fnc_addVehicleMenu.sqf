@@ -36,6 +36,7 @@ private _apcs = [getText (_config >> "EdSubcat_APCs" >> "displayName")];
 private _artillery = [getText (_config >> "EdSubcat_Artillery" >> "displayName")];
 private _cars = [getText (_config >> "EdSubcat_Cars" >> "displayName")];
 private _ifv = [getText (_config >> "rhs_EdSubcat_ifv" >> "displayName")];
+private _mrap = [getText (_config >> "rhs_EdSubcat_mrap" >> "displayName")];
 private _tanks = [getText (_config >> "EdSubcat_Tanks" >> "displayName")];
 private _other = [localize LSTRING(other), [localize LSTRING(remove), "REMOVE"]];
 {
@@ -61,7 +62,9 @@ private _other = [localize LSTRING(other), [localize LSTRING(remove), "REMOVE"]]
         case "EdSubcat_Drones": {};
         case "EdSubcat_Helicopters": {};
         case "EdSubcat_Planes": {};
-
+        case "rhs_EdSubcat_mrap": {
+            _mrap pushBack [_displayName, _vehicle];
+        };
         case "EdSubcat_Tanks": {
             _tanks pushBack [_displayName, _vehicle];
         };
@@ -71,7 +74,7 @@ private _other = [localize LSTRING(other), [localize LSTRING(remove), "REMOVE"]]
     };
 } forEach _vehicleArray;
 
-private _guiArray = _aas + _apcs + _artillery + _cars + _ifv + _tanks + _other;
+private _guiArray = _aas + _apcs + _artillery + _cars + _ifv + _mrap + _tanks + _other;
 
 // vehicle GUI
 [_object, 0, [],

@@ -435,6 +435,7 @@ class GVAR(USAM_JET): GVAR(USAM_SQL) {
     loadoutVarMedic = 1;
     loadoutVarG = 0.3;
     loadoutVarEng = 1;
+    uniformClass = "U_B_PilotCoveralls";
 };
 
 // Sniper
