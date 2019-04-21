@@ -2,8 +2,8 @@
 <Project name="kat_10thmods">
     <Package name="zeusfpsmonitor">
         <Key ID="STR_kat_10thmods_zeusfpsmonitor_cbaSettingsCategory">
-            <English>KAT Zeus FPS Monitor</English>
-            <German>KAT Zeus FPS Monitor</German>
+            <English>KAT 10th Mods - Zeus FPS Monitor</English>
+            <German>KAT 10th Mods - Zeus FPS Monitor</German>
         </Key>
     </Package>
 </Project>
