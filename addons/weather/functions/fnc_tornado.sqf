@@ -7,7 +7,7 @@ if (!isServer) exitWith {};
 params ["_tornado_start", "_tornado_dest"];
 
 private _tornadasource = "Land_HelipadEmpty_F" createVehicle getMarkerPos _tornado_start;
-private _tornadamid     = "Land_HelipadEmpty_F" createVehicle getMarkerPos _tornado_start;
+private _tornadamid = "Land_HelipadEmpty_F" createVehicle getMarkerPos _tornado_start;
 _tornadamid setPosATL [getPosATL _tornadasource select 0,getPosATL _tornadasource select 1,100];
 [_tornadasource,_tornadamid] remoteExec [QFUNC(tornado_effect),0,true];
 [_tornadamid] remoteExec [QFUNC(tornado_sound),0,true];

@@ -50,4 +50,4 @@ _IntSnowDuration = [_IntSnowDuration,0] call BIS_fnc_cutDecimals;
 _IntAmbientSoundDelay = [_IntAmbientSoundDelay,0] call BIS_fnc_cutDecimals;
 
 
-[[[_IntSnowWindDir, _IntSnowDuration, BoolEffectOnObjects, _IntAmbientSoundDelay, BoolBreath, BoolSnowBurstServer, BoolSnowBurstClient, BoolChangeFog, BoolHoverUnit],FUNC(snow_al_snow)],'BIS_fnc_spawn',true,true,false] call BIS_fnc_MP;
+[[[_IntSnowWindDir, _IntSnowDuration, BoolEffectOnObjects, _IntAmbientSoundDelay, BoolBreath, BoolSnowBurstServer, BoolSnowBurstClient, BoolChangeFog, BoolHoverUnit], FUNC(snow_al_snow)], 'BIS_fnc_spawn', true, true, false] call BIS_fnc_MP;

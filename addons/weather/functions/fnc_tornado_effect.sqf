@@ -15,7 +15,7 @@ waitUntil {sleep 1; (player distance _tsource < 3000)};
 enableCamShake true;
 
 [_tsource] spawn {
-    private _torsouce = _this select 0;
+    params ["_torsouce"];
     while {!isNull _torsouce} do {
         if ((player distance _torsouce) < 500) then {
             addCamShake [0.3,7,11];
@@ -56,7 +56,7 @@ _palarie setParticleParams [["\A3\data_f\cl_basic", 1, 0, 1],"","Billboard",1,16
 _palarie setDropInterval 0.002;
 
 private _effect_screen = "";
-While { tornadosino != "goof" } do {
+while {tornadosino != "goof"} do {
     _effect_screen = ppEffectCreate ["FilmGrain", 2000];
     _effect_screen ppEffectEnable true;
     _effect_screen ppEffectAdjust [0.1,0.1,0.5,0.1,0.1,true];
