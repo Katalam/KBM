@@ -25,5 +25,5 @@ class CfgPatches {
 #include "CfgVehicles.hpp"
 #include "CfgWeapons.hpp"
 
-#include "BOMB\L1\def_l1.hpp"
-#include "BOMB\L1\inc_l1.hpp"
+#include "bomb\L1\def_l1.hpp"
+#include "bomb\L1\inc_l1.hpp"
