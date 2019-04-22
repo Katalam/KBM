@@ -29,12 +29,28 @@ class GVAR(USAM_Crate_EMP): GVAR(USAM_Crate_INF) {
     loadoutItems[] = {};
 };
 
-class GVAR(USAM_Crate_FRAG): GVAR(USAM_Crate_INF) {
+class NATO_Box_Base;
+class Box_NATO_Grenades_F: NATO_Box_Base {
+    class EventHandlers;
+};
+class GVAR(USAM_Crate_FRAG): Box_NATO_Grenades_F {
+    author = "Katalam";
     displayName = "Grenade Ammunition";
     loadout = GVAR(USAM_Crate_FRAG);
+    loadoutCargo[] = {};
     loadoutItems[] = {  {"rhs_mag_an_m8hc", 8}, {"rhs_mag_m18_green", 4}, {"rhs_mag_m18_red", 4}, {"HandGrenade", 8},
                         {"rhs_mag_mk84", 4}};
+    loadoutWeapon[] = {};
     loadoutMagazine[] = {{"1Rnd_HE_Grenade_shell", 16}, {"1Rnd_SmokeRed_Grenade_shell", 2}, {"1Rnd_SmokePurple_Grenade_shell", 2}, {"1Rnd_SmokeBlue_Grenade_shell", 2}};
+    loadoutBackpack[] = {};
+    loadoutBackpackInv[] = {};
+    scope = 2;
+    curatorScope = 2;
+    faction = QGVAR(USAM_D);
+    editorCategory = QGVAR(USAM_D);
+    class EventHandlers: EventHandlers {
+        init = QUOTE(_this call EFUNC(faction_generic,applyVehicleLoadout));
+    };
 };
 
 class ReammoBox_F;
