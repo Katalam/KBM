@@ -17,6 +17,8 @@
 
 params ["_unit"];
 
+if !(is3DEN) exitWith {};
+
 if !(((_unit get3DENAttribute "description") select 0) isEqualTo "") exitWith {};
 
 _unit set3DENAttribute ["ControlMP", true];
