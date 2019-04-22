@@ -114,6 +114,7 @@ class GVAR(USAM_ADM): GVAR(USAM_PTL) {
     loadoutRank = "COLONEL";
     loadoutHeadgear[] = {"H_Beret_02"};
     loadoutLinked[] = {"ItemMap", "ItemCompass", "ItemWatch", "TFAR_anprc152", "ItemMicroDAGR"};
+    loadoutBackpackInvNew[] = {};
     loadoutVarMedic = 2;
     loadoutVarG = 0.3;
     loadoutVarEng = 2;
