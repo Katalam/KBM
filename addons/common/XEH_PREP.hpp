@@ -1,3 +1,4 @@
+PREP(addBriefingEntries);
 PREP(breakWindow);
 PREP(canBreakWindow);
 PREP(changeGroupNameDialogCallback);
