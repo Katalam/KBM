@@ -22,5 +22,6 @@ PREP(moduleAddVehicleMenu3den);
 PREP(nightvision);
 PREP(planePos);
 PREP(scope);
+PREP(setChannels);
 PREP(silencer);
 PREP(vehiclePos);

@@ -10,8 +10,8 @@
  * None
  *
  * Example:
- * [cursorTarget] call kat_10thMods_faction_generic_fnc_applyPlayerLoadout;
- * [cursorTarget, "USAM_RFM"] call kat_10thMods_faction_generic_fnc_applyPlayerLoadout;
+ * ["", player] call kat_10thMods_faction_generic_fnc_applyPlayerLoadout;
+ * ["", player, "USAM_RFM"] call kat_10thMods_faction_generic_fnc_applyPlayerLoadout;
  *
  * Public: Yes
  */
@@ -182,5 +182,7 @@ if (isArray(_config >> "loadoutBackpackInvNew")) then {
 if (isText(_config >> "loadoutInsignia")) then {
     [_unit, (getText(_config >> "loadoutInsignia"))] call BIS_fnc_setUnitInsignia;
 };
+
+[_unit] call FUNC(setChannels);
 
 true;
