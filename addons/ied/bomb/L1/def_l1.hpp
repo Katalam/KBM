@@ -83,8 +83,8 @@ class GVAR(L1_T1_CutWire) {
     font = FontHTML;
     sizeEx = 0.025;
     soundPush[] = {"", 0.2, 1};
-    soundClick[] = {"ui\ui_ok", 0.2, 1};
-    soundEscape[] = {"ui\ui_cc", 0.2, 1};
+    //soundClick[] = {"ui\ui_ok", 0.2, 1};
+    //soundEscape[] = {"ui\ui_cc", 0.2, 1};
     default = false;
     text = "";
     action = QUOTE([player] call FUNC(disarmed));
@@ -112,8 +112,8 @@ class GVAR(L1_T1_ClickAnywhere) {
     font = FontHTML;
     sizeEx = 0.025;
     soundPush[] = {"", 0.2, 1};
-    soundClick[] = {"ui\ui_ok", 0.2, 1};
-    soundEscape[] = {"ui\ui_cc", 0.2, 1};
+    //soundClick[] = {"ui\ui_ok", 0.2, 1};
+    //soundEscape[] = {"ui\ui_cc", 0.2, 1};
     default = false;
     text = "";
     action = QUOTE([player] call FUNC(explode));
