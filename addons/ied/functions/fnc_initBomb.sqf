@@ -25,7 +25,7 @@ _object setVariable [QGVAR(bombLevel), 1, true];
 
 // ace interaction
 [_object, 0, ["ACE_MainActions"],
-	[QGVAR(bomb), "Visual Inspection", "", FUNC(visual), {alive _target}] call ace_interact_menu_fnc_createAction
+    [QGVAR(bomb), "Visual Inspection", "", FUNC(visual), {alive _target}] call ace_interact_menu_fnc_createAction
 ] call ace_interact_menu_fnc_addActionToObject;
 
 // bomb variant
