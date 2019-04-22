@@ -13,6 +13,7 @@
  * Example:
  * call kat_10thmods_common_fnc_changeGroupNameDialogCallback
  *
+ * Public: No
  */
 
 disableSerialization;

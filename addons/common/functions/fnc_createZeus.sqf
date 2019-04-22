@@ -12,6 +12,7 @@
  * Example:
  * [player] call kat_10thmods_common_fnc_createZeus
  *
+ * Public: No
  */
 
 #define IDD_DISPLAY3DEN 313

@@ -12,6 +12,7 @@
  * Example:
  * call kat_10thmods_common_fnc_canBreakWindow
  *
+ * Public: No
  */
 
 private _window_pos_arr = [];

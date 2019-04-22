@@ -12,6 +12,7 @@
  * Example:
  * [cursorTarget] call kat_10thmods_common_fnc_unflipVehicle
  *
+ * Public: No
  */
 
 params ["_vehicle"];

@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [player] call kat_10thMods_faction_generic_fnc_clearPlayerInventory;
+ * [player] call kat_10thMods_faction_generic_fnc_clearPlayerLoadout;
  *
  * Public: No
  */
