@@ -74,5 +74,6 @@ texHeaders.bin
 Thumbs.db
 CHANGELOG.md
 
-# folder
+# extensions
 extensions/
+calculator.dll
