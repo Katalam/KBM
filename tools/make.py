@@ -58,7 +58,7 @@ if sys.platform == "win32":
 
 ######## GLOBALS #########
 project = "@kat_10thMods"
-project_version = "1.0.0.0"
+project_version = "1.0.0"
 arma3tools_path = ""
 work_drive = ""
 module_root = ""
@@ -66,11 +66,11 @@ make_root = ""
 release_dir = ""
 module_root_parent = ""
 optionals_root = ""
-key_name = "kat"
+key_name = "kat_10thmods"
 key = ""
 dssignfile = ""
-prefix = "kat"
-pbo_name_prefix = "kat_"
+prefix = "kat_10thmods"
+pbo_name_prefix = "kat_10thmods_"
 signature_blacklist = []
 importantFiles = ["mod.cpp"]
 versionFiles = ["mod.cpp"]
