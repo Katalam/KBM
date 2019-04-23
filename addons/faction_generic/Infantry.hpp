@@ -503,7 +503,7 @@ class GVAR(USAM_MOR_SQL): GVAR(USAM_SQL) {
     loadoutGroup = "Other";
     loadoutHeadgear[] = {"VSM_Multicam_Boonie"};
     loadoutVestInv[] = {{"rhs_mag_30Rnd_556x45_M855A1_PMAG", 6}, {"rhsusf_mag_15Rnd_9x19_FMJ", 2}};
-    loadoutVestInvNew[] = {{"VSM_OPS_2_multicam", 1}, {"ACE_RangeTable_82mm", 1}, {"ACE_Kestrel4500", 1}};
+    loadoutVestInvNew[] = {{"VSM_OPS_2_multicam", 1}, {"ACE_RangeTable_82mm", 1}, {"KAT_artilleryTable", 1}, {"ACE_Kestrel4500", 1}};
 };
 class GVAR(USAM_MOR_ASS): GVAR(USAM_RFM) {
     displayName = "Mortar Assistant Gunner";
@@ -522,7 +522,7 @@ class GVAR(USAM_MOR_GUN): GVAR(USAM_MOR_ASS) {
     loadout = "USAM_MOR_GUN";
     loadoutGroup = "Other";
     loadoutBackpack[] = {"KAT_Mortar_Bipod_Bag"};
-    loadoutVestInvNew[] = {{"VSM_OPS_2_multicam", 1}, {"ACE_RangeTable_82mm", 1}, {"ACE_Kestrel4500", 1}};
+    loadoutVestInvNew[] = {{"VSM_OPS_2_multicam", 1}, {"ACE_RangeTable_82mm", 1}, {"KAT_artilleryTable", 1}, {"ACE_Kestrel4500", 1}};
 };
 class GVAR(USAM_MOR_AMB): GVAR(USAM_MOR_GUN) {
     displayName = "Mortar Ammunition Bearer";
