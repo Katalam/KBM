@@ -29,7 +29,6 @@ class GVAR(USAM_Crate_EMP): GVAR(USAM_Crate_INF) {
     loadoutItems[] = {};
 };
 
-class NATO_Box_Base;
 class Box_NATO_Grenades_F: NATO_Box_Base {
     class EventHandlers;
 };
