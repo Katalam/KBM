@@ -84,8 +84,9 @@ class GVAR(USAM_SQL): GVAR(USAM_FTL) {
                         {"", {}},
                         {"rhsusf_weap_m9", {"rhsusf_mag_15Rnd_9x19_FMJ"}},
                         {"ACE_Vector", {}}};
+    loadoutLinked[] = {"ItemMap", "ItemCompass", "ItemWatch", "TFAR_anprc152", "ItemcTab"};
     loadoutUniformInv[] = {{"ACE_MapTools", 1}, {"ACE_microDAGR", 1}, {"ACE_CableTie", 2}, {"ItemcTabHCam", 1}};
-    loadoutBackpackInvNew[] = {{"rhs_mag_m18_yellow", 1}, {"rhs_mag_m18_purple", 1}};
+    loadoutBackpackInvNew[] = {{"rhs_mag_m18_yellow", 1}, {"rhs_mag_m18_purple", 1}, {"ItemAndroid", 1}};
     loadoutInsignia = QGVAR(sergeant);
 };
 class GVAR(USAM_PTL): GVAR(USAM_SQL) {
