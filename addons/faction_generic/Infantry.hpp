@@ -96,7 +96,7 @@ class GVAR(USAM_PTL): GVAR(USAM_SQL) {
     loadoutGroup = "Platoon";
     loadoutRank = "LIEUTENANT";
     loadoutBackpack[] = {"TFAR_rt1523g_big_rhs"};
-    loadoutBackpackInvNew[] = {{"ItemcTab", 1}};
+    loadoutBackpackInvNew[] = {{"ItemAndroid", 1}};
     loadoutInsignia = QGVAR(lieutenant);
 };
 class GVAR(USAM_CO): GVAR(USAM_PTL) {
