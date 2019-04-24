@@ -17,4 +17,4 @@
 
 params ["_logic"];
 
-missionNamespace setVariable [QGVAR(planeSpawnPos), [(getPos _logic), getDir _logic]];
+missionNamespace setVariable [QGVAR(planeSpawnPos), [(getPos _logic), getDir _logic], true];

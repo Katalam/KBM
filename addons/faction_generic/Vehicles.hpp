@@ -1,7 +1,4 @@
-class rhsusf_m1025_w;
-class rhsusf_m1025_d: rhsusf_m1025_w {
-    class EventHandlers;
-};
+class rhsusf_m1025_d;
 class GVAR(USAM_Veh_CAR): rhsusf_m1025_d {
     author = "Katalam";
     displayName = "Humvee (Unarmed)";
@@ -29,9 +26,6 @@ class GVAR(USAM_Veh_CAR): rhsusf_m1025_d {
     scope = 2;
     curatorScope = 2;
     faction = QGVAR(USAM_D);
-    class EventHandlers: EventHandlers {
-        init = QUOTE(_this call FUNC(applyVehicleLoadout));
-    };
     class TransportBackpacks {};
 };
 class rhsusf_m1025_w_m2;
@@ -65,15 +59,9 @@ class GVAR(USAM_Veh_CAR_M2): rhsusf_m1025_d_m2 {
     scope = 2;
     curatorScope = 2;
     faction = QGVAR(USAM_D);
-    class EventHandlers: EventHandlers {
-        init = QUOTE(_this call FUNC(applyVehicleLoadout));
-    };
     class TransportBackpacks {};
 };
-class rhsusf_m1025_w_mk19;
-class rhsusf_m1025_d_Mk19: rhsusf_m1025_w_mk19 {
-    class EventHandlers;
-};
+class rhsusf_m1025_d_Mk19;
 class GVAR(USAM_Veh_CAR_Mk19): rhsusf_m1025_d_Mk19 {
     author = "Katalam";
     displayName = "Humvee (Mk19)";
@@ -101,15 +89,9 @@ class GVAR(USAM_Veh_CAR_Mk19): rhsusf_m1025_d_Mk19 {
     scope = 2;
     curatorScope = 2;
     faction = QGVAR(USAM_D);
-    class EventHandlers: EventHandlers {
-        init = QUOTE(_this call FUNC(applyVehicleLoadout));
-    };
     class TransportBackpacks {};
 };
-class rhsusf_m966_w;
-class rhsusf_m966_d: rhsusf_m966_w {
-    class EventHandlers;
-};
+class rhsusf_m966_d;
 class GVAR(USAM_Veh_CAR_TOW): rhsusf_m966_d {
     author = "Katalam";
     displayName = "Humvee (TOW)";
@@ -137,17 +119,11 @@ class GVAR(USAM_Veh_CAR_TOW): rhsusf_m966_d {
     scope = 2;
     curatorScope = 2;
     faction = QGVAR(USAM_D);
-    class EventHandlers: EventHandlers {
-        init = QUOTE(_this call FUNC(applyVehicleLoadout));
-    };
     class TransportBackpacks {};
 };
 
 // M1237 M2
-class rhsusf_RG33L_GPK_base;
-class rhsusf_M1237_M2_usarmy_d: rhsusf_RG33L_GPK_base {
-    class EventHandlers;
-};
+class rhsusf_M1237_M2_usarmy_d;
 class GVAR(USAM_Veh_M1237_M2): rhsusf_M1237_M2_usarmy_d {
     author = "Katalam";
     displayName = "M1237 M2";
@@ -175,17 +151,11 @@ class GVAR(USAM_Veh_M1237_M2): rhsusf_M1237_M2_usarmy_d {
     scope = 2;
     curatorScope = 2;
     faction = QGVAR(USAM_D);
-    class EventHandlers: EventHandlers {
-        init = QUOTE(_this call FUNC(applyVehicleLoadout));
-    };
     class TransportBackpacks {};
 };
 
 // M1237 Mk19
-class rhsusf_M1232_M2_usarmy_d;
-class rhsusf_M1237_MK19_usarmy_d: rhsusf_M1232_M2_usarmy_d {
-    class EventHandlers;
-};
+class rhsusf_M1237_MK19_usarmy_d;
 class GVAR(USAM_Veh_M1237_Mk19): rhsusf_M1237_MK19_usarmy_d {
     author = "Katalam";
     displayName = "M1237 Mk19";
@@ -213,17 +183,11 @@ class GVAR(USAM_Veh_M1237_Mk19): rhsusf_M1237_MK19_usarmy_d {
     scope = 2;
     curatorScope = 2;
     faction = QGVAR(USAM_D);
-    class EventHandlers: EventHandlers {
-        init = QUOTE(_this call FUNC(applyVehicleLoadout));
-    };
     class TransportBackpacks {};
 };
 
 // Truck cargo
-class rhsusf_M1078A1P2_B_M2_fmtv_usarmy;
-class rhsusf_M1078A1P2_B_M2_D_fmtv_usarmy: rhsusf_M1078A1P2_B_M2_fmtv_usarmy {
-    class EventHandlers;
-};
+class rhsusf_M1078A1P2_B_M2_D_fmtv_usarmy;
 class GVAR(USAM_Veh_Cargo_M2): rhsusf_M1078A1P2_B_M2_D_fmtv_usarmy {
     author = "Katalam";
     displayName = "Cargo M2";
@@ -251,17 +215,11 @@ class GVAR(USAM_Veh_Cargo_M2): rhsusf_M1078A1P2_B_M2_D_fmtv_usarmy {
     scope = 2;
     curatorScope = 2;
     faction = QGVAR(USAM_D);
-    class EventHandlers: EventHandlers {
-        init = QUOTE(_this call FUNC(applyVehicleLoadout));
-    };
     class TransportBackpacks {};
 };
 
 // Truck empty
-class rhsusf_M977A4_BKIT_usarmy_wd;
-class rhsusf_M977A4_BKIT_usarmy_d: rhsusf_M977A4_BKIT_usarmy_wd {
-    class EventHandlers;
-};
+class rhsusf_M977A4_BKIT_usarmy_d;
 class GVAR(USAM_Veh_EMPTY_M2): rhsusf_M977A4_BKIT_usarmy_d {
     author = "Katalam";
     displayName = "Empty M2";
@@ -275,17 +233,11 @@ class GVAR(USAM_Veh_EMPTY_M2): rhsusf_M977A4_BKIT_usarmy_d {
     scope = 2;
     curatorScope = 2;
     faction = QGVAR(USAM_D);
-    class EventHandlers: EventHandlers {
-        init = QUOTE(_this call FUNC(applyVehicleLoadout));
-    };
     class TransportBackpacks {};
 };
 
 // Repair
-class rhsusf_M977A4_REPAIR_BKIT_M2_usarmy_wd;
-class rhsusf_M977A4_REPAIR_BKIT_M2_usarmy_d: rhsusf_M977A4_REPAIR_BKIT_M2_usarmy_wd {
-    class EventHandlers;
-};
+class rhsusf_M977A4_REPAIR_BKIT_M2_usarmy_d;
 class GVAR(USAM_Veh_REPAIR_M2): rhsusf_M977A4_REPAIR_BKIT_M2_usarmy_d {
     author = "Katalam";
     displayName = "Repair M2";
@@ -299,17 +251,11 @@ class GVAR(USAM_Veh_REPAIR_M2): rhsusf_M977A4_REPAIR_BKIT_M2_usarmy_d {
     scope = 2;
     curatorScope = 2;
     faction = QGVAR(USAM_D);
-    class EventHandlers: EventHandlers {
-        init = QUOTE(_this call FUNC(applyVehicleLoadout));
-    };
     class TransportBackpacks {};
 };
 
 // Ammo
-class rhsusf_M977A4_AMMO_BKIT_M2_usarmy_wd;
-class rhsusf_M977A4_AMMO_BKIT_M2_usarmy_d: rhsusf_M977A4_AMMO_BKIT_M2_usarmy_wd {
-    class EventHandlers;
-};
+class rhsusf_M977A4_AMMO_BKIT_M2_usarmy_d;
 class GVAR(USAM_Veh_AMMO_M2): rhsusf_M977A4_AMMO_BKIT_M2_usarmy_d {
     author = "Katalam";
     displayName = "Ammo M2";
@@ -323,17 +269,11 @@ class GVAR(USAM_Veh_AMMO_M2): rhsusf_M977A4_AMMO_BKIT_M2_usarmy_d {
     scope = 2;
     curatorScope = 2;
     faction = QGVAR(USAM_D);
-    class EventHandlers: EventHandlers {
-        init = QUOTE(_this call FUNC(applyVehicleLoadout));
-    };
     class TransportBackpacks {};
 };
 
 // Fuel
-class rhsusf_M978A4_BKIT_usarmy_wd;
-class rhsusf_M978A4_BKIT_usarmy_d: rhsusf_M978A4_BKIT_usarmy_wd {
-    class EventHandlers;
-};
+class rhsusf_M978A4_BKIT_usarmy_d;
 class GVAR(USAM_Veh_FUEL): rhsusf_M978A4_BKIT_usarmy_d {
     author = "Katalam";
     displayName = "Fuel";
@@ -347,17 +287,11 @@ class GVAR(USAM_Veh_FUEL): rhsusf_M978A4_BKIT_usarmy_d {
     scope = 2;
     curatorScope = 2;
     faction = QGVAR(USAM_D);
-    class EventHandlers: EventHandlers {
-        init = QUOTE(_this call FUNC(applyVehicleLoadout));
-    };
     class TransportBackpacks {};
 };
 
 // Medical
-class rhsusf_M1085A1P2_B_Medical_fmtv_usarmy;
-class rhsusf_M1085A1P2_B_D_Medical_fmtv_usarmy: rhsusf_M1085A1P2_B_Medical_fmtv_usarmy {
-    class EventHandlers;
-};
+class rhsusf_M1085A1P2_B_D_Medical_fmtv_usarmy;
 class GVAR(USAM_Veh_MEDICAL): rhsusf_M1085A1P2_B_D_Medical_fmtv_usarmy {
     author = "Katalam";
     displayName = "Medical";
@@ -413,17 +347,11 @@ class GVAR(USAM_Veh_MEDICAL): rhsusf_M1085A1P2_B_D_Medical_fmtv_usarmy {
     scope = 2;
     curatorScope = 2;
     faction = QGVAR(USAM_D);
-    class EventHandlers: EventHandlers {
-        init = QUOTE(_this call FUNC(applyVehicleLoadout));
-    };
     class TransportBackpacks {};
 };
 
 // M2
-class RHS_M2A3_BUSKI;
-class RHS_M2A3_BUSKIII: RHS_M2A3_BUSKI {
-    class EventHandlers;
-};
+class RHS_M2A3_BUSKIII;
 class GVAR(USAM_Veh_IFV): RHS_M2A3_BUSKIII {
     author = "Katalam";
     displayName = "Bradley";
@@ -459,17 +387,11 @@ class GVAR(USAM_Veh_IFV): RHS_M2A3_BUSKIII {
     scope = 2;
     curatorScope = 2;
     faction = QGVAR(USAM_D);
-    class EventHandlers: EventHandlers {
-        init = QUOTE(_this call FUNC(applyVehicleLoadout));
-    };
     class TransportBackpacks {};
 };
 
 // M109A6
-class rhsusf_m109_usarmy;
-class rhsusf_m109d_usarmy: rhsusf_m109_usarmy {
-    class EventHandlers;
-};
+class rhsusf_m109d_usarmy;
 class GVAR(USAM_Veh_M109A6): rhsusf_m109d_usarmy {
     author = "Katalam";
     displayName = "M109A6";
@@ -497,17 +419,11 @@ class GVAR(USAM_Veh_M109A6): rhsusf_m109d_usarmy {
     scope = 2;
     curatorScope = 2;
     faction = QGVAR(USAM_D);
-    class EventHandlers: EventHandlers {
-        init = QUOTE(_this call FUNC(applyVehicleLoadout));
-    };
     class TransportBackpacks {};
 };
 
 // M142
-class rhsusf_himars_base;
-class rhsusf_M142_usarmy_D: rhsusf_himars_base {
-    class EventHandlers;
-};
+class rhsusf_M142_usarmy_D;
 class GVAR(USAM_Veh_M142): rhsusf_M142_usarmy_D {
     author = "Katalam";
     displayName = "M142";
@@ -535,17 +451,11 @@ class GVAR(USAM_Veh_M142): rhsusf_M142_usarmy_D {
     scope = 2;
     curatorScope = 2;
     faction = QGVAR(USAM_D);
-    class EventHandlers: EventHandlers {
-        init = QUOTE(_this call FUNC(applyVehicleLoadout));
-    };
     class TransportBackpacks {};
 };
 
 // UH-60
-class RHS_UH60M;
-class RHS_UH60M_d: RHS_UH60M {
-    class EventHandlers;
-};
+class RHS_UH60M_d;
 class GVAR(USAM_Veh_UH60): RHS_UH60M_d {
     author = "Katalam";
     displayName = "UH-60M";
@@ -567,9 +477,6 @@ class GVAR(USAM_Veh_UH60): RHS_UH60M_d {
     scope = 2;
     curatorScope = 2;
     faction = QGVAR(USAM_D);
-    class EventHandlers: EventHandlers {
-        init = QUOTE(_this call FUNC(applyVehicleLoadout));
-    };
     class TransportBackpacks {};
 };
 
@@ -591,17 +498,11 @@ class GVAR(USAM_Veh_AH64): RHS_AH64D {
     scope = 2;
     curatorScope = 2;
     faction = QGVAR(USAM_D);
-    class EventHandlers: EventHandlers {
-        init = QUOTE(_this call FUNC(applyVehicleLoadout));
-    };
     class TransportBackpacks {};
 };
 
 // CH-47F
-class RHS_CH_47F;
-class RHS_CH_47F_10: RHS_CH_47F {
-    class EventHandlers;
-};
+class RHS_CH_47F_10;
 class GVAR(USAM_Veh_CH47): RHS_CH_47F_10 {
     author = "Katalam";
     displayName = "CH-47F";
@@ -623,9 +524,6 @@ class GVAR(USAM_Veh_CH47): RHS_CH_47F_10 {
     scope = 2;
     curatorScope = 2;
     faction = QGVAR(USAM_D);
-    class EventHandlers: EventHandlers {
-        init = QUOTE(_this call FUNC(applyVehicleLoadout));
-    };
     class TransportBackpacks {};
 };
 
@@ -655,10 +553,7 @@ class GVAR(USAM_Veh_A10): FIR_A10C {
 };
 
 // F/A-18 E
-class Plane_Base_F;
-class JS_JC_FA18E: Plane_Base_F {
-    class EventHandlers;
-};
+class JS_JC_FA18E;
 class GVAR(USAM_Veh_FA18E): JS_JC_FA18E {
     author = "Katalam";
     displayName = "F/A-18 E";
@@ -673,8 +568,5 @@ class GVAR(USAM_Veh_FA18E): JS_JC_FA18E {
     scope = 2;
     curatorScope = 2;
     faction = QGVAR(USAM_D);
-    class EventHandlers: EventHandlers {
-        init = QUOTE(_this call FUNC(applyVehicleLoadout));
-    };
     class TransportBackpacks {};
 };
