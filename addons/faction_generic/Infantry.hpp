@@ -35,7 +35,7 @@ class GVAR(USAM_RFM): B_Soldier_F {
     loadoutVarEOD = 0;
     loadoutInsignia = QGVAR(private);
     loadoutScope[] = {  {"RCO","optic_hamr"}, {"ACOG RMR","rhsusf_acc_ACOG_RMR"}, {"G33 + XPS3","rhsusf_acc_g33_xps3"},
-                        {"EOTECH","rhsusf_acc_eotech_552"},    {"ELCAN SpectreDR","rhsusf_acc_su230a_mrds"},
+                        {"EOTECH","rhsusf_acc_eotech_552"}, {"ELCAN SpectreDR","rhsusf_acc_su230a_mrds"},
                         {"ACOG","rhsusf_acc_acog"}};
     loadoutScopeDMR[] = {};
     loadoutGoggle[] = {     {"Black", "rhs_googles_black"}, {"Yellow", "rhs_googles_yellow"}, {"Orange", "rhs_googles_orange"},
@@ -254,7 +254,7 @@ class GVAR(USAM_MKM): GVAR(USAM_RFM) {
     description = "Marksman";
     loadout = "USAM_MKM";
     loadoutBackpack[] = {};
-    loadoutWeapon[] = { {"rhs_weap_sr25", {"rhsusf_acc_anpeq15side_bk", "optic_DMS", "rhsusf_acc_harris_bipod", "ACE_20Rnd_762x51_Mag_Tracer"}},
+    loadoutWeapon[] = { {"rhs_weap_sr25", {"rhsusf_acc_anpeq15side_bk", "optic_AMS", "rhsusf_acc_harris_bipod", "ACE_20Rnd_762x51_Mag_Tracer"}},
                         {"", {}},
                         {"rhsusf_weap_m9", {"rhsusf_mag_15Rnd_9x19_FMJ"}},
                         {"ACE_Vector", {}}};
