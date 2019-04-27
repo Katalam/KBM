@@ -1,3 +1,3 @@
 #include "script_component.hpp"
 
-// call loop
+call FUNC(loopDeleteCatridge);
