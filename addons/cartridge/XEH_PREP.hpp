@@ -1,2 +1,2 @@
 PREP(createCartridge);
-PREP(loopDeleteCatridge);
+PREP(loopDeleteCartridge);
