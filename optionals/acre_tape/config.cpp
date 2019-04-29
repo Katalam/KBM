@@ -18,4 +18,5 @@ class CfgPatches {
     };
 };
 
+#include "CfgEventHandlers.hpp"
 #include "Prc152_RadioDialog.hpp"
