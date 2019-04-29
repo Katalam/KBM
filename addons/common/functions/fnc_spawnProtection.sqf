@@ -33,7 +33,7 @@ switch (side player) do {
     };
 };
 
-if (GVAR(spawnProtectPos) isEqualTo [0, 0, 0]) exitWith{};
+if (GVAR(spawnProtectPos) isEqualTo [0, 0, 0]) exitWith {};
 
 [typeOf player, "Fired", {
     params ["_unit", "_weapon", "", "", "", "_magazine", "_projectile"];
