@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="kat_10thmods">
+    <Package name="radio">
+        <Key ID="STR_kat_10thmods_radio_enable">
+            <English>Enable radio in vehicle</English>
+            <German>Activiere Fahrzeugradio</German>
+        </Key>
+    </Package>
+</Project>
