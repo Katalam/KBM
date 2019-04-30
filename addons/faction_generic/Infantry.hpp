@@ -287,6 +287,8 @@ class GVAR(USAM_MMG): GVAR(USAM_RFM) {
     description = "Machine Gunner";
     loadout = "USAM_MMG";
     loadoutGroup = "WeaponSquad";
+    loadoutUniform[] = {"VSM_Multicam_Crye_Tee_Camo"};
+    loadoutVest[] = {"VSM_LBT6094_MG_Multicam"};
     loadoutWeapon[] = { {"rhs_weap_m240B", {"rhsusf_acc_ARDEC_M240", "rhsusf_acc_anpeq15side_bk", "rhsusf_acc_ELCAN", "rhsusf_100Rnd_762x51_m62_tracer"}},
                         {"", {}}, // secondary
                         {"rhsusf_weap_m9", {"rhsusf_mag_15Rnd_9x19_FMJ"}}, // handgun
@@ -438,6 +440,7 @@ class GVAR(USAM_JET): GVAR(USAM_SQL) {
                         {"rhsusf_weap_m9", {"rhsusf_mag_15Rnd_9x19_FMJ"}}, // handgun
                         {"", {}}}; // binocular
     loadoutGrenade[] = {};
+    loadoutLinked[] = {"ItemMap", "ItemCompass", "ItemWatch", "TFAR_anprc152", "ItemAndroid"};
     loadoutUniformInv[] = {{"ACE_MapTools", 1}, {"ACE_microDAGR", 1}};
     loadoutUniformInvNew[] = {};
     loadoutVestInv[] = {};
