@@ -23,4 +23,7 @@ if (_data isEqualTo []) exitWith {};
 
 [_data] remoteExec ["playMusic", _player];
 
+private _text = getText (configFile >> "CfgMusic" >> _data select 0 >> "name");
+_text remoteExec [QFUNC(text), _player];
+
 true;

@@ -42,8 +42,11 @@ if !(_music) exitWith {
     _vehicle setVariable [QGVAR(radioIsOn), false, true];
 };
 
+private _text = getText (configFile >> "CfgMusic" >> _musicData >> "name");
+
 {
     _musicData remoteExec ["playMusic", _x];
+    _text remoteExec [QFUNC(text), _x];
 } forEach _passengers;
 
 if (_musicData isEqualType []) then {_musicData = _musicData select 0};
