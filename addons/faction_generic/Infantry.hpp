@@ -188,6 +188,16 @@ class GVAR(USAM_RTO): GVAR(USAM_RFM) {
     loadoutBackpack[] = {"TFAR_rt1523g_rhs"};
     loadoutBackpackInvNew[] = {};
 };
+class GVAR(USAM_ATC): GVAR(USAM_PSG) {
+    displayName = "ATC";
+    description = "ATC@Castle";
+    loadout = "USAM_RTO";
+    loadoutGroup = "Platoon";
+    loadoutHeadgear[] = {"VSM_Peltor_coyote"};
+    loadoutBackpack[] = {"TFAR_anarc210"};
+    loadoutBackpackInvNew[] = {};
+    loadoutInsignia = QGVAR(atc);
+};
 class GVAR(USAM_FO): GVAR(USAM_SQL) {
     displayName = "JFO";
     description = "JFO - Warrior 1-F";

@@ -24,6 +24,7 @@ class CfgPatches {
             QGVAR(USAM_MED_LEAD_C),
             QGVAR(USAM_PSG),
             QGVAR(USAM_RTO),
+            QGVAR(USAM_ATC),
             QGVAR(USAM_FO),
             QGVAR(USAM_JTAC),
             QGVAR(USAM_CRW_LEAD),

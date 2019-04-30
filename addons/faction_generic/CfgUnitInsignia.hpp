@@ -33,4 +33,8 @@ class CfgUnitInsignia {
         displayName = "Captain";
         texture = QPATHTOF(data\captain.paa);
     };
+    class GVAR(atc): GVAR(medic) {
+        displayName = "ATC";
+        texture = QPATHTOF(data\atc.paa);
+    };
 };
