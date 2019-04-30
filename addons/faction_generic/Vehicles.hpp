@@ -28,10 +28,8 @@ class GVAR(USAM_Veh_CAR): rhsusf_m1025_d {
     faction = QGVAR(USAM_D);
     class TransportBackpacks {};
 };
-class rhsusf_m1025_w_m2;
-class rhsusf_m1025_d_m2: rhsusf_m1025_w_m2 {
-    class EventHandlers;
-};
+
+class rhsusf_m1025_d_m2;
 class GVAR(USAM_Veh_CAR_M2): rhsusf_m1025_d_m2 {
     author = "Katalam";
     displayName = "Humvee (M2)";
@@ -61,6 +59,7 @@ class GVAR(USAM_Veh_CAR_M2): rhsusf_m1025_d_m2 {
     faction = QGVAR(USAM_D);
     class TransportBackpacks {};
 };
+
 class rhsusf_m1025_d_Mk19;
 class GVAR(USAM_Veh_CAR_Mk19): rhsusf_m1025_d_Mk19 {
     author = "Katalam";
@@ -91,6 +90,7 @@ class GVAR(USAM_Veh_CAR_Mk19): rhsusf_m1025_d_Mk19 {
     faction = QGVAR(USAM_D);
     class TransportBackpacks {};
 };
+
 class rhsusf_m966_d;
 class GVAR(USAM_Veh_CAR_TOW): rhsusf_m966_d {
     author = "Katalam";
@@ -484,6 +484,18 @@ class GVAR(USAM_Veh_UH60): RHS_UH60M_d {
 class RHS_AH64_base;
 class RHS_AH64D: RHS_AH64_base {
     class EventHandlers;
+    class Components {
+        class TransportPylonsComponent {
+            class pylons {
+                class pylon2;
+                class pylon3;
+                class pylon4;
+                class pylon5;
+                class pylonTip1;
+                class pylonTip6;
+            };
+        };
+    };
 };
 class GVAR(USAM_Veh_AH64): RHS_AH64D {
     author = "Katalam";
@@ -499,6 +511,24 @@ class GVAR(USAM_Veh_AH64): RHS_AH64D {
     curatorScope = 2;
     faction = QGVAR(USAM_D);
     class TransportBackpacks {};
+    class Components: Components {
+        class TransportPylonsComponent: TransportPylonsComponent {
+            class pylons: pylons {
+                class pylon4: pylon4 {
+                    attachment = "rhs_mag_AGM114L_4";
+                };
+                class pylon5: pylon5 {
+                    attachment = "rhs_mag_AGM114L_4";
+                };
+                class pylonTip1: pylonTip1 {
+                    attachment = "rhs_mag_Sidewinder_heli";
+                };
+                class pylonTip6: pylonTip6 {
+                    attachment = "rhs_mag_Sidewinder_heli";
+                };
+            };
+        };
+    };
 };
 
 // CH-47F
@@ -528,10 +558,7 @@ class GVAR(USAM_Veh_CH47): RHS_CH_47F_10 {
 };
 
 // A-10C
-class FIR_A10C_Base;
-class FIR_A10C: FIR_A10C_Base {
-    class EventHandlers;
-};
+class FIR_A10C;
 class GVAR(USAM_Veh_A10): FIR_A10C {
     author = "Katalam";
     displayName = "A-10C";
@@ -546,9 +573,6 @@ class GVAR(USAM_Veh_A10): FIR_A10C {
     scope = 2;
     curatorScope = 2;
     faction = QGVAR(USAM_D);
-    class EventHandlers: EventHandlers {
-        init = QUOTE(_this call FUNC(applyVehicleLoadout));
-    };
     class TransportBackpacks {};
 };
 
@@ -557,6 +581,25 @@ class JS_JC_FA18E;
 class GVAR(USAM_Veh_FA18E): JS_JC_FA18E {
     author = "Katalam";
     displayName = "F/A-18 E";
+    loadoutCargo[] = {};
+    loadoutItems[] = {};
+    loadoutWeapon[] = {};
+    loadoutMagazine[] = {};
+    loadoutBackpack[] = {};
+    loadoutBackpackInv[] = {};
+    crew = QGVAR(USAM_JET);
+    typicalCargo[] = {QGVAR(USAM_JET)};
+    scope = 2;
+    curatorScope = 2;
+    faction = QGVAR(USAM_D);
+    class TransportBackpacks {};
+};
+
+// F/A-18 F
+class JS_JC_FA18F;
+class GVAR(USAM_Veh_FA18F): JS_JC_FA18F {
+    author = "Katalam";
+    displayName = "F/A-18 F";
     loadoutCargo[] = {};
     loadoutItems[] = {};
     loadoutWeapon[] = {};
