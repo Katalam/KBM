@@ -1,7 +1,4 @@
-class NATO_Box_Base;
-class Box_NATO_Ammo_F: NATO_Box_Base {
-    class EventHandlers;
-};
+class Box_NATO_Ammo_F;
 class GVAR(USAM_Crate_INF): Box_NATO_Ammo_F {
     author = "Katalam";
     displayName = "Fire Team Ammunition";
@@ -18,9 +15,6 @@ class GVAR(USAM_Crate_INF): Box_NATO_Ammo_F {
     curatorScope = 2;
     faction = QGVAR(USAM_D);
     editorCategory = QGVAR(USAM_D);
-    class EventHandlers: EventHandlers {
-        init = QUOTE(_this call EFUNC(faction_generic,applyVehicleLoadout));
-    };
 };
 class GVAR(USAM_Crate_EMP): GVAR(USAM_Crate_INF) {
     displayName = "Empty";
@@ -29,13 +23,12 @@ class GVAR(USAM_Crate_EMP): GVAR(USAM_Crate_INF) {
     loadoutItems[] = {};
 };
 
-class Box_NATO_Grenades_F: NATO_Box_Base {
-    class EventHandlers;
-};
+class Box_NATO_Grenades_F;
 class GVAR(USAM_Crate_FRAG): Box_NATO_Grenades_F {
     author = "Katalam";
     displayName = "Grenade Ammunition";
     loadout = GVAR(USAM_Crate_FRAG);
+    loadoutGroup = "Infantry";
     loadoutCargo[] = {};
     loadoutItems[] = {  {"rhs_mag_an_m8hc", 8}, {"rhs_mag_m18_green", 4}, {"rhs_mag_m18_red", 4}, {"HandGrenade", 8},
                         {"rhs_mag_mk84", 4}};
@@ -47,15 +40,9 @@ class GVAR(USAM_Crate_FRAG): Box_NATO_Grenades_F {
     curatorScope = 2;
     faction = QGVAR(USAM_D);
     editorCategory = QGVAR(USAM_D);
-    class EventHandlers: EventHandlers {
-        init = QUOTE(_this call EFUNC(faction_generic,applyVehicleLoadout));
-    };
 };
 
-class ReammoBox_F;
-class Box_IED_Exp_F: ReammoBox_F {
-    class EventHandlers;
-};
+class Box_IED_Exp_F;
 class GVAR(USAM_Crate_ESP): Box_IED_Exp_F {
     author = "Katalam";
     displayName = "Explosive Crate";
@@ -72,15 +59,10 @@ class GVAR(USAM_Crate_ESP): Box_IED_Exp_F {
     curatorScope = 2;
     faction = QGVAR(USAM_D);
     editorCategory = QGVAR(USAM_D);
-    class EventHandlers: EventHandlers {
-        init = QUOTE(_this call EFUNC(faction_generic,applyVehicleLoadout));
-    };
     class TransportBackpacks {};
 };
 
-class Box_NATO_WpsLaunch_F: NATO_Box_Base {
-    class EventHandlers;
-};
+class Box_NATO_WpsLaunch_F;
 class GVAR(USAM_Crate_LAT): Box_NATO_WpsLaunch_F {
     author = "Katalam";
     displayName = "Light AT";
@@ -96,9 +78,6 @@ class GVAR(USAM_Crate_LAT): Box_NATO_WpsLaunch_F {
     curatorScope = 2;
     faction = QGVAR(USAM_D);
     editorCategory = QGVAR(USAM_D);
-    class EventHandlers: EventHandlers {
-        init = QUOTE(_this call EFUNC(faction_generic,applyVehicleLoadout));
-    };
     class TransportBackpacks {};
 };
 class GVAR(USAM_Crate_HAT): GVAR(USAM_Crate_LAT) {
@@ -106,14 +85,9 @@ class GVAR(USAM_Crate_HAT): GVAR(USAM_Crate_LAT) {
     loadout = GVAR(USAM_Crate_HAT);
     loadoutItems[] = {};
     loadoutMagazine[] = {{"rhs_fgm148_magazine_AT", 4}};
-    class EventHandlers: EventHandlers {
-        init = QUOTE(_this call EFUNC(faction_generic,applyVehicleLoadout));
-    };
 };
 
-class Box_NATO_Wps_F: NATO_Box_Base {
-    class EventHandlers;
-};
+class Box_NATO_Wps_F;
 class GVAR(USAM_Crate_WPN): Box_NATO_Wps_F {
     author = "Katalam";
     displayName = "Weapon Crate";
@@ -130,14 +104,9 @@ class GVAR(USAM_Crate_WPN): Box_NATO_Wps_F {
     curatorScope = 2;
     faction = QGVAR(USAM_D);
     editorCategory = QGVAR(USAM_D);
-    class EventHandlers: EventHandlers {
-        init = QUOTE(_this call EFUNC(faction_generic,applyVehicleLoadout));
-    };
 };
 
-class Box_NATO_WpsSpecial_F: NATO_Box_Base {
-    class EventHandlers;
-};
+class Box_NATO_WpsSpecial_F;
 class GVAR(USAM_Crate_MMG): Box_NATO_WpsSpecial_F {
     author = "Katalam";
     displayName = "MMG Crate";
@@ -153,15 +122,9 @@ class GVAR(USAM_Crate_MMG): Box_NATO_WpsSpecial_F {
     curatorScope = 2;
     faction = QGVAR(USAM_D);
     editorCategory = QGVAR(USAM_D);
-    class EventHandlers: EventHandlers {
-        init = QUOTE(_this call EFUNC(faction_generic,applyVehicleLoadout));
-    };
 };
 
-class ACE_medicalSupplyCrate;
-class ACE_medicalSupplyCrate_advanced: ACE_medicalSupplyCrate {
-    class EventHandlers;
-};
+class ACE_medicalSupplyCrate_advanced;
 class GVAR(USAM_Crate_MED): ACE_medicalSupplyCrate_advanced {
     author = "Katalam";
     displayName = "Medic Crate";
@@ -178,14 +141,9 @@ class GVAR(USAM_Crate_MED): ACE_medicalSupplyCrate_advanced {
     curatorScope = 2;
     faction = QGVAR(USAM_D);
     editorCategory = QGVAR(USAM_D);
-    class EventHandlers: EventHandlers {
-        init = QUOTE(_this call EFUNC(faction_generic,applyVehicleLoadout));
-    };
 };
 
-class Box_Syndicate_WpsLaunch_F: ReammoBox_F {
-    class EventHandlers;
-};
+class Box_Syndicate_WpsLaunch_F;
 class GVAR(USAM_Crate_MOR_HE): Box_Syndicate_WpsLaunch_F {
     author = "Katalam";
     displayName = "Mortar HE";
@@ -201,9 +159,6 @@ class GVAR(USAM_Crate_MOR_HE): Box_Syndicate_WpsLaunch_F {
     curatorScope = 2;
     faction = QGVAR(USAM_D);
     editorCategory = QGVAR(USAM_D);
-    class EventHandlers: EventHandlers {
-        init = QUOTE(_this call EFUNC(faction_generic,applyVehicleLoadout));
-    };
     class TransportBackpacks {};
 };
 
@@ -213,10 +168,7 @@ class GVAR(USAM_Crate_MOR_SMK): GVAR(USAM_Crate_MOR_HE) {
     loadoutItems[] = {{"ACE_1Rnd_82mm_Mo_Smoke", 8}};
 };
 
-class CargoNet_01_ammo_base_F;
-class B_CargoNet_01_ammo_F: CargoNet_01_ammo_base_F {
-    class EventHandlers;
-};
+class B_CargoNet_01_ammo_F;
 class GVAR(USAM_Crate_FULL): B_CargoNet_01_ammo_F {
     author = "Katalam";
     displayName = "Full Crate";
@@ -234,8 +186,5 @@ class GVAR(USAM_Crate_FULL): B_CargoNet_01_ammo_F {
     curatorScope = 2;
     faction = QGVAR(USAM_D);
     editorCategory = QGVAR(USAM_D);
-    class EventHandlers: EventHandlers {
-        init = QUOTE(_this call EFUNC(faction_generic,applyVehicleLoadout));
-    };
     class TransportBackpacks {};
 };
