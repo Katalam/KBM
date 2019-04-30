@@ -53,7 +53,7 @@ if (isServer) then {
 if (hasInterface) then {
     // Parent
     [_vehicle, 1, ["ACE_SelfActions"],
-    	[QGVAR(radioActions), "Music Radio", "", {}, {true}] call ace_interact_menu_fnc_createAction
+        [QGVAR(radioActions), "Music Radio", "", {}, {true}] call ace_interact_menu_fnc_createAction
     ] call ace_interact_menu_fnc_addActionToObject;
 
     // Music off
