@@ -400,8 +400,10 @@ class GVAR(USAM_HELI_PIL): GVAR(USAM_SQL) {
                         {"rhsusf_weap_m9", {"rhsusf_mag_15Rnd_9x19_FMJ"}}, // handgun
                         {"", {}}}; // binocular
     loadoutGrenade[] = {{"rhs_mag_an_m8hc", 2}, {"rhs_mag_m18_green", 1}, {"rhs_mag_m18_purple", 1}, {"HandGrenade", 1}};
+    loadoutLinked[] = {"ItemMap", "ItemCompass", "ItemWatch", "TFAR_anprc152", "ItemAndroid"};
     loadoutUniformInvNew[] = {{"rhs_mag_30Rnd_556x45_M855A1_PMAG", 1}};
     loadoutVestInv[] = {{"rhs_mag_30Rnd_556x45_M855A1_PMAG", 2}, {"rhsusf_mag_15Rnd_9x19_FMJ", 2}};
+    loadoutBackpackInvNew[] = {};
     loadoutVarMedic = 1;
     loadoutVarG = 0.3;
     loadoutVarEng = 2;
@@ -416,6 +418,7 @@ class GVAR(USAM_HELI_PIL_AH): GVAR(USAM_HELI_PIL) {
     description = "Helicopter Pilot@Falcon 1-X";
     loadout = "USAM_HELI_PIL_AH";
     loadoutGroup = "Crew";
+    loadoutLinked[] = {"ItemMap", "ItemCompass", "ItemWatch", "TFAR_anprc152", "ItemAndroid"};
     loadoutHeadgear[] = {"rhsusf_ihadss"};
 };
 class GVAR(USAM_HELI_CRW): GVAR(USAM_RFM) {
@@ -438,6 +441,14 @@ class GVAR(USAM_HELI_CRW): GVAR(USAM_RFM) {
                         "rhsusf_hgu56p_mask_smiley", "rhsusf_hgu56p_visor_mask_smiley", "rhsusf_hgu56p_mask", "rhsusf_hgu56p_mask_mo",
                         "rhsusf_hgu56p_mask_skull", "rhsusf_hgu56p_visor_mask", "rhsusf_hgu56p_visor_mask_mo", "rhsusf_hgu56p_visor_mask_skull",
                         "rhsusf_hgu56p_mask_pink", "rhsusf_hgu56p_visor_mask_pink", "rhsusf_hgu56p_mask_saf", "rhsusf_hgu56p_visor_mask_saf"};
+};
+class GVAR(USAM_HELI_MED): GVAR(USAM_HELI_CRW) {
+    description = "Pararescueman";
+    loadoutBackpack[] = {"VSM_Multicam_Backpack_Kitbag"};
+    loadoutVestInvNew[] = {{"ACE_epinephrine", 8}, {"adv_aceCPR_AED", 1}, {"ACE_surgicalKit", 1}};
+    loadoutBackpackInvNew[] = {{"ACE_packingBandage", 48}, {"ACE_elasticBandage", 48}, {"ACE_morphine", 10}, {"ACE_plasmaIV_500", 12}, {"ACE_tourniquet", 4}, {"adv_aceSplint_splint", 15}};
+    loadoutVarMedic = 2;
+    loadoutInsignia = QGVAR(medic);
 };
 class GVAR(USAM_JET): GVAR(USAM_SQL) {
     displayName = "Jet Pilot";
