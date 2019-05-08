@@ -222,6 +222,7 @@ class GVAR(USAM_JTAC): GVAR(USAM_SQL) {
     description = "JTAC - Warrior 1-J";
     loadout = "USAM_JTAC";
     loadoutGroup = "Platoon";
+    loadoutBackpack[] = {"TFAR_rt1523g_big_rhs"};
     loadoutWeapon[] = { {"rhs_weap_m4_m320", {"rhsusf_acc_anpeq15side_bk", "rhsusf_acc_acog", "rhs_mag_30Rnd_556x45_M855A1_PMAG", "1Rnd_HE_Grenade_shell"}},
                         {"", {}},
                         {"rhsusf_weap_m9", {"rhsusf_mag_15Rnd_9x19_FMJ"}},
