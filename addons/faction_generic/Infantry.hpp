@@ -137,7 +137,7 @@ class GVAR(USAM_CLS): GVAR(USAM_RFM) {
     displayName = "Combat Life Saver";
     description = "Combat Life Saver";
     loadout = "USAM_CLS";
-    loadoutBackpackInvNew[] = {{"ACE_elasticBandage", 12}, {"ACE_morphine", 5}, {"ACE_epinephrine", 5}, {"ACE_plasmaIV_500", 5}};
+    loadoutBackpackInvNew[] = {{"ACE_packingBandage", 20}, {"ACE_morphine", 5}, {"ACE_epinephrine", 5}, {"ACE_plasmaIV_500", 5}};
     loadoutVarMedic = 1;
 };
 class GVAR(USAM_MED): GVAR(USAM_FTL) {
