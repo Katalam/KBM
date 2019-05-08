@@ -3,7 +3,18 @@ class B_Soldier_F: B_Soldier_base_F {
     class EventHandlers;
     modelsides[] = {3,2,1,0};
 };
-
+/*
+class I_Story_Crew_F;
+class GVAR(tank): I_Story_Crew_F {
+    author = "Katalam";
+    displayName = "Tank Uniform (American)";
+    scope = 2;
+    curatorScope = 1;
+    uniformClass = "KAT_Tank";
+    hiddenSelections[] = {"Camo","insignia"};
+    hiddenSelectionsTextures[] = {QPATHTOF(data\U_Tank_crew_F_CO.paa)};
+};
+*/
 class GVAR(USAM_RFM): B_Soldier_F {
     author = "Katalam";
     displayName = "Rifleman";

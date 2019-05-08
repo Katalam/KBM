@@ -69,10 +69,13 @@ class CfgPatches {
             QGVAR(USAM_Veh_A10),
             QGVAR(USAM_Veh_FA18E)
         };
-        weapons[] = {};
+        weapons[] = {
+            QGVAR(KAT_Tank)
+        };
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "kat_10thmods_main"
+            "kat_10thmods_main",
+            "A3_Characters_F"
         };
         author = "Katalam";
         authors[] = {"Katalam"};
@@ -84,6 +87,7 @@ class CfgPatches {
 #include "CfgFactionClasses.hpp"
 #include "CfgVehicleClasses.hpp"
 #include "CfgVehicles.hpp"
+//#include "CfgWeapons.hpp"
 #include "CfgGroups.hpp"
 #include "CfgEventHandlers.hpp"
 #include "CfgUnitInsignia.hpp"
