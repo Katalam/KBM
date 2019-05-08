@@ -147,7 +147,8 @@ class GVAR(USAM_MED): GVAR(USAM_FTL) {
     loadoutBackpack[] = {"VSM_Multicam_Backpack_Kitbag"};
     loadoutMedical[] = {};
     loadoutGrenade[] = {{"rhs_mag_an_m8hc", 4}, {"rhs_mag_m18_green", 4}};
-    loadoutVestInvNew[] = {{"ACE_epinephrine", 8}, {"adv_aceCPR_AED", 1}, {"ACE_surgicalKit", 1}};
+    loadoutUniformInvNew[] = {{"ACE_surgicalKit", 1}, {"adv_aceCPR_AED", 1}};
+    loadoutVestInvNew[] = {{"ACE_epinephrine", 8}};
     loadoutBackpackInvNew[] = {{"ACE_packingBandage", 48}, {"ACE_elasticBandage", 48}, {"ACE_morphine", 10}, {"ACE_plasmaIV_500", 12}, {"ACE_tourniquet", 4}, {"adv_aceSplint_splint", 15}};
     loadoutVarMedic = 2;
     loadoutInsignia = QGVAR(medic);
@@ -160,7 +161,7 @@ class GVAR(USAM_MED_LEAD): GVAR(USAM_MED) {
     loadoutMedical[] = {};
     loadoutGrenade[] = {{"rhs_mag_an_m8hc", 4}, {"rhs_mag_m18_green", 2}};
     loadoutUniformInvNew[] = {{"ACE_epinephrine", 16}};
-    loadoutVestInvNew[] = {{"adv_aceCPR_AED", 1}, {"ACE_surgicalKit", 1}};
+    loadoutVestInvNew[] = {{"adv_aceCPR_AED", 1}}; // TODO Defi weg nehmen
     loadoutBackpackInvNew[] = {{"ACE_packingBandage", 48}, {"ACE_elasticBandage", 48}, {"ACE_morphine", 10}, {"ACE_plasmaIV_500", 12}, {"ACE_tourniquet", 4}, {"adv_aceSplint_splint", 15}};
 };
 class GVAR(USAM_MED_LEAD_C): GVAR(USAM_SQL) {
@@ -172,7 +173,7 @@ class GVAR(USAM_MED_LEAD_C): GVAR(USAM_SQL) {
     loadoutMedical[] = {};
     loadoutGrenade[] = {{"rhs_mag_an_m8hc", 4}, {"rhs_mag_m18_green", 2}};
     loadoutUniformInvNew[] = {{"ACE_epinephrine", 16}};
-    loadoutVestInvNew[] = {{"adv_aceCPR_AED", 1}, {"ACE_surgicalKit", 1}};
+    loadoutVestInvNew[] = {{"adv_aceCPR_AED", 1}};
     loadoutBackpackInvNew[] = {{"ACE_packingBandage", 48}, {"ACE_elasticBandage", 48}, {"ACE_morphine", 10}, {"ACE_plasmaIV_500", 12}, {"ACE_tourniquet", 4}, {"adv_aceSplint_splint", 15}};
     loadoutInsignia = QGVAR(medic);
 };
