@@ -51,7 +51,7 @@ class GVAR(USAM_RFM): B_Soldier_F {
     loadoutScopeDMR[] = {};
     loadoutGoggle[] = {     {"Black", "rhs_googles_black"}, {"Yellow", "rhs_googles_yellow"}, {"Orange", "rhs_googles_orange"},
                             {"Big Black", "rhs_ess_black"}, {"Clear", "rhs_googles_clear"}, {"Remove", "REMOVE"}};
-    loadoutLauncher[] = {   {"M72A7", "rhs_weap_m72a7", "rhs_m72a7_mag"}, {"M136", "rhs_weap_M136", "rhs_m136_mag"}};
+    loadoutLauncher[] = {   {"Remove", "REMOVE", ""}, {"M72A7", "rhs_weap_m72a7", "rhs_m72a7_mag"}, {"M136", "rhs_weap_M136", "rhs_m136_mag"}};
     loadoutSilencer[] = {{"Rotex III", "hlc_muzzle_556NATO_rotexiiic_grey"}};
     scope = 2;
     curatorScope = 1;
