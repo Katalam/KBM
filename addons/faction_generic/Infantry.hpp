@@ -203,7 +203,7 @@ class GVAR(USAM_RTO): GVAR(USAM_RFM) {
 class GVAR(USAM_ATC): GVAR(USAM_PSG) {
     displayName = "ATC";
     description = "ATC@Castle";
-    loadout = "USAM_RTO";
+    loadout = "USAM_ATC";
     loadoutGroup = "Platoon";
     loadoutHeadgear[] = {"VSM_Peltor_coyote"};
     loadoutBackpack[] = {"TFAR_anarc210"};
