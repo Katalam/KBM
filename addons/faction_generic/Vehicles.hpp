@@ -511,6 +511,7 @@ class GVAR(USAM_Veh_AH64): RHS_AH64D {
     curatorScope = 2;
     faction = QGVAR(USAM_D);
     class TransportBackpacks {};
+    /*
     class Components: Components {
         class TransportPylonsComponent: TransportPylonsComponent {
             class pylons: pylons {
@@ -529,6 +530,7 @@ class GVAR(USAM_Veh_AH64): RHS_AH64D {
             };
         };
     };
+    */
 };
 
 // CH-47F
