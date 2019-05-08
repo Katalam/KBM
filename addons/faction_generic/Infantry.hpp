@@ -207,7 +207,7 @@ class GVAR(USAM_ATC): GVAR(USAM_PSG) {
     loadoutGroup = "Platoon";
     loadoutHeadgear[] = {"VSM_Peltor_coyote"};
     loadoutBackpack[] = {"TFAR_anarc210"};
-    loadoutBackpackInvNew[] = {};
+    loadoutBackpackInvNew[] = {{"B_UavTerminal", 1}};
     loadoutInsignia = QGVAR(atc);
 };
 class GVAR(USAM_FO): GVAR(USAM_SQL) {
