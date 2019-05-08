@@ -605,6 +605,7 @@ class GVAR(USAM_LOG_LEAD): GVAR(USAM_SQL) {
     loadoutGroup = "Logistic";
     loadoutBackpack[] = {"TFAR_rt1523g_big_rhs"};
     loadoutHeadgear[] = {"rhs_beanie"};
+    loadoutLinked[] = {"ItemMap", "ItemCompass", "ItemWatch", "TFAR_anprc152", "ItemAndroid"};
     loadoutGrenade[] = {{"rhs_mag_an_m8hc", 2}, {"rhs_mag_m18_green", 1}, {"rhs_mag_m18_purple", 1}, {"HandGrenade", 1}};
     loadoutVestInv[] = {{"rhs_mag_30Rnd_556x45_M855A1_PMAG", 6}, {"rhsusf_mag_15Rnd_9x19_FMJ", 2}};
     loadoutBackpackInvNew[] = {{"Toolkit", 1}, {"VSM_OPS_2_multicam", 1}, {"H_Cap_usblack", 1}};
