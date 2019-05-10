@@ -456,7 +456,7 @@ class GVAR(USAM_Veh_M142): rhsusf_M142_usarmy_D {
 
 // UH-60
 class RHS_UH60M_d;
-class GVAR(USAM_Veh_UH60): RHS_UH60M_d {
+class GVAR(USAM_Veh_UH60): RHS_UH60M_d { // TODO
     author = "Katalam";
     displayName = "UH-60M";
     loadoutCargo[] = {};
@@ -464,6 +464,8 @@ class GVAR(USAM_Veh_UH60): RHS_UH60M_d {
         {"ACE_packingBandage", 32},
         {"ACE_elasticBandage", 32},
         {"ACE_morphine", 8},
+        {"KAT_Painkiller", 10},
+        {"KAT_larynx", 10},
         {"ACE_epinephrine", 8},
         {"ACE_tourniquet", 4},
         {"ACE_plasmaIV_500", 12},
