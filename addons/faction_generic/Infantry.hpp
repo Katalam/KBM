@@ -550,7 +550,7 @@ class GVAR(USAM_MOR_ASS): GVAR(USAM_RFM) {
     description = "Assistant Gunner";
     loadout = "USAM_MOR_ASS";
     loadoutGroup = "Other";
-    loadoutBackpack[] = {"KAT_Mortar_Gun_Bag"};
+    loadoutBackpack[] = {"rhs_M252_Gun_Bag"};
     loadoutHeadgear[] = {"VSM_Multicam_Boonie"};
     loadoutVestInv[] = {{"rhs_mag_30Rnd_556x45_M855A1_PMAG", 6}, {"rhsusf_mag_15Rnd_9x19_FMJ", 2}};
     loadoutVestInvNew[] = {{"ACE_EntrenchingTool", 1}, {"VSM_OPS_2_multicam", 1}};
@@ -561,7 +561,7 @@ class GVAR(USAM_MOR_GUN): GVAR(USAM_MOR_ASS) {
     description = "Gunner";
     loadout = "USAM_MOR_GUN";
     loadoutGroup = "Other";
-    loadoutBackpack[] = {"KAT_Mortar_Bipod_Bag"};
+    loadoutBackpack[] = {"rhs_M252_Bipod_Bag"};
     loadoutVestInvNew[] = {{"VSM_OPS_2_multicam", 1}, {"ACE_RangeTable_82mm", 1}, {"KAT_artilleryTable", 1}, {"ACE_Kestrel4500", 1}};
 };
 class GVAR(USAM_MOR_AMB): GVAR(USAM_MOR_GUN) {
