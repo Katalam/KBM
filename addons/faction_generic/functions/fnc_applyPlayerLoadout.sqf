@@ -24,6 +24,10 @@ params [
 
 if (is3DEN) exitWith {};
 
+if !(local _unit) exitWith {
+    [0, _unit, _loadout] remoteExec [QFUNC(applyPlayerLoadout), _unit];
+};
+
 private _type = typeOf _unit;
 if !(_loadout isEqualTo "") then {
     _type = str formatText ["kat_10thMods_faction_generic_%1", _loadout];

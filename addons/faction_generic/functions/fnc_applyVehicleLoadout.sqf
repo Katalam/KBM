@@ -23,6 +23,10 @@ params [
 
 if (is3DEN) exitWith {};
 
+if !(local _box) exitWith {
+    [_box, 0, _loadout] remoteExec [QFUNC(applyVehicleLoadout), _box];
+};
+
 private _type = typeOf _box;
 if !(_loadout isEqualTo "") then {
     _type = str formatText ["kat_10thMods_logistic_%1", _loadout];
