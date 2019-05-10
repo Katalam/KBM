@@ -21,6 +21,10 @@
             <English>Weapon Squad</English>
             <German>schwer. Waffengruppe</German>
         </Key>
+        <Key ID="STR_kat_10thmods_faction_generic_heavyWeaponsquad">
+            <English>Heavy Weapon Squad</English>
+            <German>sehr schwer. Waffengruppe</German>
+        </Key>
         <Key ID="STR_kat_10thmods_faction_generic_logistic">
             <English>Logistic</English>
             <German>Logistik</German>

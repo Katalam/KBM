@@ -37,6 +37,7 @@ private _company = [localize LSTRING(company)];
 private _platoon = [localize LSTRING(platoon)];
 private _squad = [localize LSTRING(squad)];
 private _weaponSquad = [localize LSTRING(weaponSquad)];
+private _heavyWeaponSquad = [localize LSTRING(heavyWeaponSquad)];
 private _logistic = [localize LSTRING(logistic)];
 private _crew = [localize LSTRING(crew)];
 private _other = [localize LSTRING(other)];
@@ -57,6 +58,9 @@ private _other = [localize LSTRING(other)];
         case "WeaponSquad": {
             _weaponSquad pushBack [_displayName, _loadout];
         };
+        case "HeavyWeaponSquad": {
+            _heavyWeaponSquad pushBack [_displayName, _loadout];
+        };
         case "Logistic": {
             _logistic pushBack [_displayName, _loadout];
         };
@@ -69,7 +73,7 @@ private _other = [localize LSTRING(other)];
     };
 } forEach _loadoutArray;
 
-private _guiArray = _company + _platoon + _squad + _weaponSquad + _logistic + _crew + _other;
+private _guiArray = _company + _platoon + _squad + _weaponSquad + _heavyWeaponSquad + _logistic + _crew + _other;
 
 // Loadout GUI
 [_object, 0, [],

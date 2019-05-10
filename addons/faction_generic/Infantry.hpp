@@ -287,7 +287,7 @@ class GVAR(USAM_MKM): GVAR(USAM_RFM) {
     loadoutBackpackInvNew[] = {};
 };
 
-// Heavy Squad
+// Weapon Squad
 class GVAR(USAM_WTL_MMG): GVAR(USAM_SQL) {
     displayName = "Weapon Squad Leader";
     description = "Weapon Squad Leader@Warrior 1-4";
@@ -360,6 +360,83 @@ class GVAR(USAM_AAT): GVAR(USAM_RFM) {
     loadoutGrenade[] = {{"rhs_mag_an_m8hc", 6}, {"HandGrenade", 2}};
     loadoutVestInv[] = {{"rhs_mag_30Rnd_556x45_M855A1_PMAG", 6}, {"rhsusf_mag_15Rnd_9x19_FMJ", 2}};
     loadoutBackpackInvNew[] = {{"ACE_EntrenchingTool", 1}, {"rhs_fgm148_magazine_AT", 1}};
+};
+
+// Heavy Weapon Squad
+class GVAR(USAM_HWTL_HMG): GVAR(USAM_SQL) {
+    displayName = "Heavy Weapon Squad Leader";
+    description = "Heavy Weapon Squad Leader@Warrior 1-5";
+    loadout = "USAM_HWTL_HMG";
+    loadoutGroup = "HeavyWeaponSquad";
+    loadoutGrenade[] = {{"rhs_mag_an_m8hc", 6}, {"HandGrenade", 2}};
+    loadoutVestInv[] = {{"rhs_mag_30Rnd_556x45_M855A1_PMAG", 6}, {"rhsusf_mag_15Rnd_9x19_FMJ", 2}};
+    loadoutBackpackInvNew[] = {};
+};
+class GVAR(USAM_HMG): GVAR(USAM_RFM) {
+    displayName = "Heavy Machine Gunner";
+    description = "Heavy Machine Gunner";
+    loadout = "USAM_HMG";
+    loadoutGroup = "HeavyWeaponSquad";
+    loadoutUniform[] = {"VSM_Multicam_Crye_Tee_Camo"};
+    loadoutBackpack[] = {"RHS_M2_Gun_Bag"};
+    loadoutGrenade[] = {{"rhs_mag_an_m8hc", 6}, {"HandGrenade", 2}};
+    loadoutBackpackInvNew[] = {};
+};
+class GVAR(USAM_AHG): GVAR(USAM_RFM) {
+    displayName = "Assistant Heavy Machine Gunner";
+    description = "Assistant Heavy Machine Gunner";
+    loadout = "USAM_AHG";
+    loadoutGroup = "HeavyWeaponSquad";
+    loadoutBackpack[] = {"RHS_M2_Tripod_Bag"};
+    loadoutGrenade[] = {{"rhs_mag_an_m8hc", 6}, {"HandGrenade", 2}};
+    loadoutBackpackInvNew[] = {};
+};
+class GVAR(USAM_HWTL_GMG): GVAR(USAM_FTL) {
+    displayName = "Heavy Weapon Team Leader";
+    description = "Heavy Weapon Team Leader";
+    loadout = "USAM_HWTL_GMG";
+    loadoutGroup = "HeavyWeaponSquad";
+    loadoutBackpack[] = {"RHS_M2_MiniTripod_Bag"};
+    loadoutGrenade[] = {{"rhs_mag_an_m8hc", 6}, {"HandGrenade", 2}};
+    loadoutBackpackInvNew[] = {};
+};
+class GVAR(USAM_GMG): GVAR(USAM_RFM) {
+    displayName = "Grenade Machine Gunnner";
+    description = "Grenade Machine Gunnner";
+    loadout = "USAM_GMG";
+    loadoutGroup = "HeavyWeaponSquad";
+    loadoutUniform[] = {"VSM_Multicam_Crye_Tee_Camo"};
+    loadoutBackpack[] = {"RHS_Mk19_Gun_Bag"};
+    loadoutGrenade[] = {{"rhs_mag_an_m8hc", 6}, {"HandGrenade", 2}};
+    loadoutBackpackInvNew[] = {};
+};
+class GVAR(USAM_AGG): GVAR(USAM_RFM) {
+    displayName = "Assistant Grenade Machine Gunnner";
+    description = "Assistant Grenade Machine Gunnner";
+    loadout = "USAM_AGG";
+    loadoutGroup = "HeavyWeaponSquad";
+    loadoutBackpack[] = {"RHS_Mk19_Tripod_Bag"};
+    loadoutGrenade[] = {{"rhs_mag_an_m8hc", 6}, {"HandGrenade", 2}};
+    loadoutBackpackInvNew[] = {};
+};
+class GVAR(USAM_TOW): GVAR(USAM_RFM) {
+    displayName = "TOW Gunner";
+    description = "TOW Gunner";
+    loadout = "USAM_TOW";
+    loadoutGroup = "HeavyWeaponSquad";
+    loadoutUniform[] = {"VSM_Multicam_Crye_Tee_Camo"};
+    loadoutBackpack[] = {"rhs_Tow_Gun_Bag"};
+    loadoutGrenade[] = {{"rhs_mag_an_m8hc", 6}, {"HandGrenade", 2}};
+    loadoutBackpackInvNew[] = {};
+};
+class GVAR(USAM_ATW): GVAR(USAM_RFM) {
+    displayName = "Assistant TOW Gunner";
+    description = "Assistant TOW Gunner";
+    loadout = "USAM_ATW";
+    loadoutGroup = "HeavyWeaponSquad";
+    loadoutBackpack[] = {"rhs_TOW_Tripod_Bag"};
+    loadoutGrenade[] = {{"rhs_mag_an_m8hc", 6}, {"HandGrenade", 2}};
+    loadoutBackpackInvNew[] = {};
 };
 
 // Crew
