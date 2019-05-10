@@ -483,7 +483,7 @@ class GVAR(USAM_Veh_UH60): RHS_UH60M_d {
 // AH-64D
 class RHS_AH64_base;
 class RHS_AH64D: RHS_AH64_base {
-    class EventHandlers;
+    /*
     class Components {
         class TransportPylonsComponent {
             class pylons {
@@ -496,6 +496,7 @@ class RHS_AH64D: RHS_AH64_base {
             };
         };
     };
+    */
 };
 class GVAR(USAM_Veh_AH64): RHS_AH64D {
     author = "Katalam";
