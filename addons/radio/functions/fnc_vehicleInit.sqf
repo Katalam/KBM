@@ -22,9 +22,8 @@ if !(GVAR(enable)) exitWith {};
 private _simType = toLower getText (configFile >> "CfgVehicles" >> typeOf _vehicle >> "simulation");
 if (_simType in ["parachute", "paraglide"]) exitWith {};
 
-if (_vehicle getVariable [QGVAR(actionAdded), false]) exitWith {};
-
 if (isServer) then {
+    if (_vehicle getVariable [QGVAR(actionAdded), false]) exitWith {};
     _vehicle setVariable [QGVAR(actionAdded), true, true];
     _vehicle setVariable [QGVAR(radioIsOn), false, true];
     _vehicle setVariable [QGVAR(loudRadioIsOn), false, true];
