@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project name="kat_10thmods">
+    <Package name="suppress">
+        <Key ID="STR_kat_10thmods_suppress_setting_enable">
+            <English>Enable suppress effect</English>
+            <German>Aktiviere Unterdrückungseffekt</German>
+        </Key>
+    </Package>
+</Project>
