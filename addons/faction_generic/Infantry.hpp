@@ -31,7 +31,7 @@ class GVAR(USAM_RFM): B_Soldier_F {
                         {"rhsusf_weap_m9", {"rhsusf_mag_15Rnd_9x19_FMJ"}}, // handgun
                         {"", {}}}; // binocular
     loadoutLinked[] = {"ItemMap", "ItemCompass", "ItemWatch", "TFAR_anprc152", "ItemMicroDAGR"};
-    loadoutMedical[] = {{"ACE_packingBandage", 10}, {"ACE_elasticBandage", 8}, {"KAT_Painkiller", 1}, {"ACE_tourniquet", 2}, {"adv_aceSplint_splint", 2}, {"ACE_morphine", 1}}; // TODO
+    loadoutMedical[] = {{"ACE_packingBandage", 10}, {"ACE_elasticBandage", 8}, {"ACE_tourniquet", 2}, {"adv_aceSplint_splint", 2}, {"ACE_morphine", 1}};
     loadoutNVG[] = {"ACE_NVG_Wide", {{"ACE_Flashlight_XL50", 1}, {"ACE_IR_Strobe_Item", 1}}, {{"Chemlight_red", 3}}};
     loadoutGrenade[] = {{"rhs_mag_an_m8hc", 4}, {"rhs_mag_mk84", 4}, {"HandGrenade", 2}};
     loadoutUniformInv[] = {{"ACE_MapTools", 1}, {"ACE_microDAGR", 1}, {"ACE_CableTie", 2}};
@@ -137,9 +137,7 @@ class GVAR(USAM_CLS): GVAR(USAM_RFM) {
     displayName = "Combat Life Saver";
     description = "Combat Life Saver";
     loadout = "USAM_CLS";
-    loadoutBackpack[] = {"kat_stretcher_bag"};
-    loadoutVestInvNew[] = {{"ACE_packingBandage", 20}, {"ACE_morphine", 5}, {"ACE_epinephrine", 5}, {"KAT_Guedel", 10}, {"ACE_plasmaIV_500", 5}};
-    loadoutBackpackInvNew[] = {}; // TODO loadoutBackpackInvNew[] = {{"ACE_packingBandage", 20}, {"ACE_morphine", 5}, {"ACE_epinephrine", 5}, {"ACE_plasmaIV_500", 5}};
+    loadoutBackpackInvNew[] = {{"ACE_packingBandage", 20}, {"ACE_morphine", 5}, {"ACE_epinephrine", 5}, {"ACE_plasmaIV_500", 5}};
     loadoutVarMedic = 1;
 };
 class GVAR(USAM_MED): GVAR(USAM_FTL) {
@@ -163,7 +161,7 @@ class GVAR(USAM_MED_LEAD): GVAR(USAM_MED) {
     loadoutMedical[] = {};
     loadoutGrenade[] = {{"rhs_mag_an_m8hc", 4}, {"rhs_mag_m18_green", 2}};
     loadoutUniformInvNew[] = {{"ACE_epinephrine", 16}};
-    loadoutVestInvNew[] = {{"kat_pulseoximeter", 1}, {"KAT_Accuvac", 1}, {"KAT_larynx", 20}}; // TODO {"adv_aceCPR_AED", 1}
+    loadoutVestInvNew[] = {{"adv_aceCPR_AED", 1}, {"ACE_surgicalKit", 1}};
     loadoutBackpackInvNew[] = {{"ACE_packingBandage", 48}, {"ACE_elasticBandage", 48}, {"ACE_morphine", 10}, {"ACE_plasmaIV_500", 12}, {"ACE_tourniquet", 4}, {"adv_aceSplint_splint", 15}};
 };
 class GVAR(USAM_MED_LEAD_C): GVAR(USAM_SQL) {
@@ -526,8 +524,8 @@ class GVAR(USAM_HELI_MED): GVAR(USAM_HELI_CRW) {
     description = "Pararescueman";
     loadout = "USAM_HELI_MED";
     loadoutBackpack[] = {"VSM_Multicam_Backpack_Kitbag"};
-    loadoutVestInvNew[] = {{"ACE_epinephrine", 8}, {"ACE_surgicalKit", 1}}; // TODO {"adv_aceCPR_AED", 1}
-    loadoutBackpackInvNew[] = {{"KAT_Accuvac", 1}, {"ACE_packingBandage", 48}, {"ACE_elasticBandage", 48}, {"ACE_morphine", 10}, {"KAT_Painkiller", 10}, {"KAT_larynx", 15}, {"ACE_plasmaIV_500", 12}, {"ACE_tourniquet", 4}, {"adv_aceSplint_splint", 15}};
+    loadoutVestInvNew[] = {{"ACE_epinephrine", 8}, {"adv_aceCPR_AED", 1}, {"ACE_surgicalKit", 1}};
+    loadoutBackpackInvNew[] = {{"ACE_packingBandage", 48}, {"ACE_elasticBandage", 48}, {"ACE_morphine", 10}, {"ACE_plasmaIV_500", 12}, {"ACE_tourniquet", 4}, {"adv_aceSplint_splint", 15}};
     loadoutVarMedic = 2;
     loadoutInsignia = QGVAR(medic);
 };
@@ -651,7 +649,6 @@ class GVAR(USAM_MOR_AMB): GVAR(USAM_MOR_GUN) {
 };
 
 // Rifleman (Extra)
-/*
 class GVAR(USAM_EOD): GVAR(USAM_RFM) {
     displayName = "EOD";
     description = "EOD";
@@ -668,59 +665,6 @@ class GVAR(USAM_EOD): GVAR(USAM_RFM) {
     loadoutBackpackInv[] = {};
     loadoutBackpackInvNew[] = {};
     loadoutVarEOD = 1;
-};
-*/
-class GVAR(USAM_EOD): GVAR(USAM_RFM) { // TODO
-    displayName = "EOD";
-    description = "EOD";
-    loadout = "USAM_EOD";
-    loadoutGroup = "Other";
-    loadoutUniform[] = {"EOD_Uniform"};
-    loadoutVest[] = {"EOD_SUIT_vest"};
-    loadoutBackpack[] = {};
-    loadoutHeadgear[] = {"EOD9_HELMET"};
-    loadoutWeapon[] = { {"", {}},
-                        {"", {}}, // secondary
-                        {"", {""}}, // handgun
-                        {"", {}}}; // binocular
-    loadoutLinked[] = {"ItemMap", "ItemCompass", "ItemWatch", "ItemMicroDAGR"};
-    loadoutMedical[] = {};
-    loadoutNVG[] = {};
-    loadoutGrenade[] = {};
-    loadoutUniformInvNew[] = {};
-    loadoutUniformInv[] = {};
-    loadoutVestInv[] = {
-        {QEGVAR(ied,Snips), 1},
-        {QEGVAR(ied,ESD_DSnips), 1},
-        {QEGVAR(ied,NNPliers), 1},
-        {QEGVAR(ied,ESD_NNPliers), 1},
-        {QEGVAR(ied,ESD_Tweezers_R), 1},
-        {QEGVAR(ied,ESD_Tweezers_F), 1},
-        {QEGVAR(ied,ESD_Tweezers_C), 1},
-        {QEGVAR(ied,Spudger_Set), 1},
-        {QEGVAR(ied,Mini_inspection_Mirror), 1},
-        {QEGVAR(ied,Screwdriver_Phillips), 1},
-        {QEGVAR(ied,Screwdriver_Flathead), 1},
-        {QEGVAR(ied,Ceramic_Knife), 1},
-        {QEGVAR(ied,Fuse_CrimperCutter), 1},
-        {QEGVAR(ied,Hex_Keys), 1},
-        {QEGVAR(ied,Alligator_Clips), 1},
-        {QEGVAR(ied,Jumper_Wires), 1},
-        {QEGVAR(ied,Multi_Tool), 1},
-        {QEGVAR(ied,PryBar), 1},
-        {QEGVAR(ied,Reamer), 1},
-        {QEGVAR(ied,MultiMeter), 1},
-        {QEGVAR(ied,Shock_Initiator), 1}};
-    loadoutVestInvNew[] = {};
-    loadoutBackpackInv[] = {};
-    loadoutBackpackInvNew[] = {};
-    loadoutVarEng = 2;
-    loadoutVarEOD = 1;
-    loadoutScope[] = {};
-    loadoutScopeDMR[] = {};
-    loadoutGoggle[] = {};
-    loadoutLauncher[] = {};
-    loadoutSilencer[] = {};
 };
 class GVAR(USAM_ESP): GVAR(USAM_RFM) {
     displayName = "Rifleman (Explosives)";
