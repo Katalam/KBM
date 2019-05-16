@@ -9,3 +9,8 @@ if ((typeOf player find "kat_10thmods") >= 0) then {
         [objNull, _unit, _loadout] call FUNC(applyPlayerLoadout);
     }];
 };
+
+if !(hasInterface) exitWith {};
+
+["CAManBase", "Take", FUNC(setInsignia)] call CBA_fnc_addClassEventHandler;
+["CAManBase", "InventoryOpened", FUNC(getInsignia)] call CBA_fnc_addClassEventHandler;

@@ -183,8 +183,10 @@ if (isArray (_config >> "loadoutBackpackInvNew")) then {
     } forEach _loadoutBackpackInvNew;
 };
 
-if (isText(_config >> "loadoutInsignia")) then {
-    [_unit, (getText(_config >> "loadoutInsignia"))] call BIS_fnc_setUnitInsignia;
+if (isText (_config >> "loadoutInsignia")) then {
+    private _insignia = getText (_config >> "loadoutInsignia");
+    [_unit, _insignia] call BIS_fnc_setUnitInsignia;
+    _unit setVariable [QGVAR(activeInsignia), _insignia];
 };
 
 [_unit] call FUNC(setChannels);
