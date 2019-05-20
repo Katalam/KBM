@@ -65,6 +65,7 @@
 ["ACRE_PRC117F", "master1", 43, "name", "Optional 2"] call acre_api_fnc_setPresetChannelField;
 ["ACRE_PRC117F", "master1", 44, "name", "Optional 3"] call acre_api_fnc_setPresetChannelField;
 ["ACRE_PRC117F", "master1", 45, "name", "Optional 4"] call acre_api_fnc_setPresetChannelField;
+["ACRE_PRC117F", "master1", 99, "name", "EMERGENCY"] call acre_api_fnc_setPresetChannelField;
 
 //PRC 152 Presets
 ["ACRE_PRC152", "master1", 1, "description", "Warrior"] call acre_api_fnc_setPresetChannelField;
@@ -112,6 +113,7 @@
 ["ACRE_PRC152", "master1", 43, "description", "Optional 2"] call acre_api_fnc_setPresetChannelField;
 ["ACRE_PRC152", "master1", 44, "description", "Optional 3"] call acre_api_fnc_setPresetChannelField;
 ["ACRE_PRC152", "master1", 45, "description", "Optional 4"] call acre_api_fnc_setPresetChannelField;
+["ACRE_PRC152", "master1", 99, "description", "EMERGENCY"] call acre_api_fnc_setPresetChannelField;
 
 //Set Preset on Radio
 ["ACRE_PRC117F", "master1"] call acre_api_fnc_setPreset;
