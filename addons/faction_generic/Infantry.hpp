@@ -53,7 +53,7 @@ class GVAR(empty): B_Soldier_F {
     loadoutSilencer[] = {};
     scope = 1;
     curatorScope = 1;
-    faction = QGVAR(USAM_D);
+    faction = "";
     uniformClass = "";
     backpack = "";
     weapons[] = {"Throw","Put"};
