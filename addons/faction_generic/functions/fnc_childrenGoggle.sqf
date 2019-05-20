@@ -20,9 +20,7 @@ params [
     ["_player", objNull, [objNull]],
     ["_typeFormat", "", [""]]
 ];
-for "_i" from 0 to 20 do {
-    diag_log _this;
-};
+
 private _actions = [];
 private _loadout = _player getVariable [QGVAR(loadout), "USAM_RFM"];
 private _type = str formatText [_typeFormat, _loadout];
