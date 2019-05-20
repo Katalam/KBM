@@ -1,3 +1,22 @@
+#define UNIFORM_1 "VSM_Multicam_Crye_Camo", "VSM_Multicam_Crye_SS_Camo"
+#define UNIFORM_2 "VSM_Multicam_Crye_Tee_Camo"
+#define VEST_1 "VSM_LBT6094_operator_Multicam"
+#define VEST_2 "VSM_LBT6094_MG_Multicam"
+#define VEST_CREW "VSM_FAPC_Operator_Multicam"
+#define HELMET_1 "VSM_OPS_2_multicam", "VSM_OPS_multicam"
+#define HELMET_CREW "rhsusf_cvc_alt_helmet"
+#define BACKPACK_COMPACT "VSM_Multicam_Backpack_Compact"
+#define BACKPACK_KITBAG "VSM_Multicam_Backpack_Kitbag"
+#define BACKPACK_CARRYALL "VSM_Multicam_carryall"
+#define WEAPON_1 "rhs_weap_m4a1_carryhandle"
+#define WEAPON_1_AMMO "rhs_mag_30Rnd_556x45_M855A1_PMAG"
+#define WEAPON_1_STUFF "rhsusf_acc_anpeq15side_bk","rhsusf_acc_acog",WEAPON_1_AMMO
+#define WEAPON_2 "rhs_weap_m4_m320"
+#define WEAPON_2_AMMO "1Rnd_HE_Grenade_shell"
+#define WEAPON_2_STUFF "rhsusf_acc_anpeq15side_bk","rhsusf_acc_acog",WEAPON_1_AMMO,WEAPON_2_AMMO
+#define HANDGUN_1 "rhsusf_weap_m9"
+#define HANDGUN_1_AMMO "rhsusf_mag_15Rnd_9x19_FMJ"
+
 class B_Soldier_base_F;
 class B_Soldier_F: B_Soldier_base_F {
     class EventHandlers;
@@ -76,13 +95,13 @@ class GVAR(USAM_RFM): B_Soldier_F {
     loadout = "USAM_RFM";
     loadoutGroup = "Squad"; // CASE SENSITIVE !
     loadoutRank = "PRIVATE";
-    loadoutUniform[] = {"VSM_Multicam_Crye_Camo", "VSM_Multicam_Crye_SS_Camo"};
-    loadoutVest[] = {"VSM_LBT6094_operator_Multicam"};
-    loadoutBackpack[] = {"VSM_Multicam_Backpack_Compact"};
-    loadoutHeadgear[] = {"VSM_OPS_2_multicam", "VSM_OPS_multicam"};
-    loadoutWeapon[] = { {"rhs_weap_m4a1_carryhandle", {"rhsusf_acc_anpeq15side_bk", "rhsusf_acc_acog", "rhs_mag_30Rnd_556x45_M855A1_PMAG"}},
+    loadoutUniform[] = {UNIFORM_1};
+    loadoutVest[] = {VEST_1};
+    loadoutBackpack[] = {BACKPACK_COMPACT};
+    loadoutHeadgear[] = {HELMET_1};
+    loadoutWeapon[] = { {WEAPON_1, {WEAPON_1_STUFF}},
                         {"", {}}, // secondary
-                        {"rhsusf_weap_m9", {"rhsusf_mag_15Rnd_9x19_FMJ"}}, // handgun
+                        {HANDGUN_1, {HANDGUN_1_AMMO}}, // handgun
                         {"", {}}}; // binocular
     loadoutLinked[] = {"ItemMap", "ItemCompass", "ItemWatch", "ItemMicroDAGR"};
     loadoutMedical[] = {{"ACE_packingBandage", 10}, {"ACE_elasticBandage", 8}, {"ACE_tourniquet", 2}, {"adv_aceSplint_splint", 2}, {"ACE_morphine", 1}};
@@ -90,7 +109,7 @@ class GVAR(USAM_RFM): B_Soldier_F {
     loadoutGrenade[] = {{"rhs_mag_an_m8hc", 4}, {"rhs_mag_mk84", 4}, {"HandGrenade", 2}};
     loadoutUniformInv[] = {{"ACE_MapTools", 1}, {"ACE_microDAGR", 1}, {"ACE_CableTie", 2}, {"ACRE_PRC152", 1}};
     loadoutUniformInvNew[] = {};
-    loadoutVestInv[] = {{"rhs_mag_30Rnd_556x45_M855A1_PMAG", 10}, {"rhsusf_mag_15Rnd_9x19_FMJ", 2}};
+    loadoutVestInv[] = {{WEAPON_1_AMMO, 10}, {HANDGUN_1_AMMO, 2}};
     loadoutVestInvNew[] = {};
     loadoutBackpackInv[] = {};
     loadoutBackpackInvNew[] = {{"rhsusf_200Rnd_556x45_soft_pouch", 2}};
@@ -129,9 +148,9 @@ class GVAR(USAM_FTL): GVAR(USAM_RFM) {
     description = "Fire Team Leader";
     loadout = "USAM_FTL";
     loadoutRank = "CORPORAL";
-    loadoutWeapon[] = { {"rhs_weap_m4a1_carryhandle", {"rhsusf_acc_anpeq15side_bk", "rhsusf_acc_acog", "rhs_mag_30Rnd_556x45_M855A1_PMAG"}},
+    loadoutWeapon[] = { {WEAPON_1, {WEAPON_1_STUFF}},
                         {"", {}},
-                        {"rhsusf_weap_m9", {"rhsusf_mag_15Rnd_9x19_FMJ"}},
+                        {HANDGUN_1, {HANDGUN_1_AMMO}},
                         {"Binocular", {}}};
     loadoutLinked[] = {"ItemMap", "ItemCompass", "ItemWatch", "ItemAndroid"};
     loadoutUniformInv[] = {{"ACE_MapTools", 1}, {"ACE_microDAGR", 1}, {"ACE_CableTie", 2}, {"ACRE_PRC152", 2}};
@@ -143,9 +162,9 @@ class GVAR(USAM_SQL): GVAR(USAM_FTL) {
     description = "Squad Leader@Warrior 1-X";
     loadout = "USAM_SQL";
     loadoutRank = "SERGEANT";
-    loadoutWeapon[] = { {"rhs_weap_m4a1_carryhandle", {"rhsusf_acc_anpeq15side_bk", "rhsusf_acc_acog", "rhs_mag_30Rnd_556x45_M855A1_PMAG"}},
+    loadoutWeapon[] = { {WEAPON_1, {WEAPON_1_STUFF}},
                         {"", {}},
-                        {"rhsusf_weap_m9", {"rhsusf_mag_15Rnd_9x19_FMJ"}},
+                        {HANDGUN_1, {HANDGUN_1_AMMO}},
                         {"ACE_Vector", {}}};
     loadoutLinked[] = {"ItemMap", "ItemCompass", "ItemWatch", "ItemcTab"};
     loadoutUniformInv[] = {{"ACE_MapTools", 1}, {"ACE_microDAGR", 1}, {"ACE_CableTie", 2}, {"ItemcTabHCam", 1}, {"ACRE_PRC152", 1}};
@@ -197,7 +216,7 @@ class GVAR(USAM_MED): GVAR(USAM_FTL) {
     displayName = "Squad Medic";
     description = "Squad Medic";
     loadout = "USAM_MED";
-    loadoutBackpack[] = {"VSM_Multicam_Backpack_Kitbag"};
+    loadoutBackpack[] = {BACKPACK_KITBAG};
     loadoutMedical[] = {};
     loadoutGrenade[] = {{"rhs_mag_an_m8hc", 4}, {"rhs_mag_m18_green", 4}};
     loadoutUniformInvNew[] = {{"ACE_surgicalKit", 1}, {"adv_aceCPR_AED", 1}};
@@ -222,7 +241,7 @@ class GVAR(USAM_MED_LEAD_C): GVAR(USAM_SQL) {
     description = "Company Medic";
     loadout = "USAM_MED_LEAD_C";
     loadoutGroup = "Company";
-    loadoutBackpack[] = {"VSM_Multicam_Backpack_Kitbag"};
+    loadoutBackpack[] = {BACKPACK_KITBAG};
     loadoutMedical[] = {};
     loadoutGrenade[] = {{"rhs_mag_an_m8hc", 4}, {"rhs_mag_m18_green", 2}};
     loadoutUniformInvNew[] = {{"ACE_epinephrine", 16}};
@@ -237,12 +256,12 @@ class GVAR(USAM_PSG): GVAR(USAM_SQL) {
     description = "Platoon Sergeant";
     loadout = "USAM_PSG";
     loadoutGroup = "Platoon";
-    loadoutWeapon[] = { {"rhs_weap_m4_m320", {"rhsusf_acc_anpeq15side_bk", "rhsusf_acc_acog", "rhs_mag_30Rnd_556x45_M855A1_PMAG", "1Rnd_HE_Grenade_shell"}},
+    loadoutWeapon[] = { {WEAPON_2, {WEAPON_2_STUFF}},
                         {"", {}},
-                        {"rhsusf_weap_m9", {"rhsusf_mag_15Rnd_9x19_FMJ"}},
+                        {HANDGUN_1, {HANDGUN_1_AMMO}},
                         {"ACE_Vector", {}}};
-    loadoutVestInv[] = {{"rhs_mag_30Rnd_556x45_M855A1_PMAG", 6}, {"rhsusf_mag_15Rnd_9x19_FMJ", 2}};
-    loadoutVestInvNew[] = {{"1Rnd_HE_Grenade_shell", 6}};
+    loadoutVestInv[] = {{WEAPON_1_AMMO, 6}, {HANDGUN_1_AMMO, 2}};
+    loadoutVestInvNew[] = {{WEAPON_2_AMMO, 6}};
     loadoutBackpackInvNew[] = {{"ACRE_PRC117F", 1}, {"1Rnd_SmokeBlue_Grenade_shell", 2}, {"1Rnd_SmokePurple_Grenade_shell", 2}, {"1Rnd_SmokeRed_Grenade_shell", 2}};
 };
 class GVAR(USAM_RTO): GVAR(USAM_RFM) {
@@ -273,13 +292,13 @@ class GVAR(USAM_JTAC): GVAR(USAM_SQL) {
     description = "JTAC - Warrior 1-J";
     loadout = "USAM_JTAC";
     loadoutGroup = "Platoon";
-    loadoutWeapon[] = { {"rhs_weap_m4_m320", {"rhsusf_acc_anpeq15side_bk", "rhsusf_acc_acog", "rhs_mag_30Rnd_556x45_M855A1_PMAG", "1Rnd_HE_Grenade_shell"}},
+    loadoutWeapon[] = { {WEAPON_2, {WEAPON_2_STUFF}},
                         {"", {}},
-                        {"rhsusf_weap_m9", {"rhsusf_mag_15Rnd_9x19_FMJ"}},
+                        {HANDGUN_1, {HANDGUN_1_AMMO}},
                         {"Laserdesignator", {"Laserbatteries", 1}}};
     loadoutGrenade[] = {{"rhs_mag_an_m8hc", 2}, {"rhs_mag_m18_green", 4}, {"rhs_mag_m18_purple", 2}, {"HandGrenade", 2}};
-    loadoutVestInv[] = {{"rhs_mag_30Rnd_556x45_M855A1_PMAG", 6}, {"rhsusf_mag_15Rnd_9x19_FMJ", 2}};
-    loadoutVestInvNew[] = {{"1Rnd_HE_Grenade_shell", 3}};
+    loadoutVestInv[] = {{WEAPON_1_AMMO, 6}, {HANDGUN_1_AMMO, 2}};
+    loadoutVestInvNew[] = {{WEAPON_2_AMMO, 3}};
     loadoutBackpackInvNew[] = {{"ACRE_PRC117F", 1},{"1Rnd_SmokeBlue_Grenade_shell", 3}, {"1Rnd_SmokePurple_Grenade_shell", 3}, {"1Rnd_SmokeRed_Grenade_shell", 3}};
     loadoutInsignia = QGVAR(jtac);
 };
@@ -289,34 +308,34 @@ class GVAR(USAM_LMG): GVAR(USAM_RFM) {
     displayName = "Autorifleman";
     description = "Autorifleman";
     loadout = "USAM_LMG";
-    loadoutUniform[] = {"VSM_Multicam_Crye_Tee_Camo"};
-    loadoutVest[] = {"VSM_LBT6094_MG_Multicam"};
+    loadoutUniform[] = {UNIFORM_2};
+    loadoutVest[] = {VEST_2};
     loadoutBackpack[] = {};
     loadoutWeapon[] = { {"hlc_m249_pip3", {"rhsusf_acc_ELCAN", "rhsusf_200Rnd_556x45_soft_pouch"}},
                         {"", {}},
-                        {"rhsusf_weap_m9", {"rhsusf_mag_15Rnd_9x19_FMJ"}},
+                        {HANDGUN_1, {HANDGUN_1_AMMO}},
                         {"", {}}};
-    loadoutVestInv[] = {{"rhsusf_200Rnd_556x45_soft_pouch", 3}, {"rhsusf_mag_15Rnd_9x19_FMJ", 2}};
+    loadoutVestInv[] = {{"rhsusf_200Rnd_556x45_soft_pouch", 3}, {HANDGUN_1_AMMO, 2}};
     loadoutBackpackInvNew[] = {};
 };
 class GVAR(USAM_UGL): GVAR(USAM_RFM) {
     displayName = "Grenadier";
     description = "Grenadier";
     loadout = "USAM_UGL";
-    loadoutWeapon[] = { {"rhs_weap_m4_m320", {"rhsusf_acc_anpeq15side_bk", "rhsusf_acc_acog", "rhs_mag_30Rnd_556x45_M855A1_PMAG", "1Rnd_HE_Grenade_shell"}},
+    loadoutWeapon[] = { {WEAPON_2, {WEAPON_2_STUFF}},
                         {"", {}},
-                        {"rhsusf_weap_m9", {"rhsusf_mag_15Rnd_9x19_FMJ"}},
+                        {HANDGUN_1, {HANDGUN_1_AMMO}},
                         {"", {}}};
-    loadoutBackpackInvNew[] = {{"1Rnd_HE_Grenade_shell", 15}};
+    loadoutBackpackInvNew[] = {{WEAPON_2_AMMO, 15}};
 };
 class GVAR(USAM_LAT): GVAR(USAM_RFM) {
     displayName = "Rifleman (AT)";
     description = "Rifleman (AT)";
     loadout = "USAM_LAT";
     loadoutBackpack[] = {};
-    loadoutWeapon[] = { {"rhs_weap_m4a1_carryhandle", {"rhsusf_acc_anpeq15side_bk", "rhsusf_acc_acog", "rhs_mag_30Rnd_556x45_M855A1_PMAG"}},
+    loadoutWeapon[] = { {WEAPON_1, {WEAPON_1_STUFF}},
                         {"rhs_weap_M136", {}},
-                        {"rhsusf_weap_m9", {"rhsusf_mag_15Rnd_9x19_FMJ"}},
+                        {HANDGUN_1, {HANDGUN_1_AMMO}},
                         {"", {}}};
     loadoutBackpackInvNew[] = {};
 };
@@ -327,10 +346,10 @@ class GVAR(USAM_MKM): GVAR(USAM_RFM) {
     loadoutBackpack[] = {};
     loadoutWeapon[] = { {"rhs_weap_sr25", {"rhsusf_acc_anpeq15side_bk", "optic_AMS", "rhsusf_acc_harris_bipod", "ACE_20Rnd_762x51_Mag_Tracer"}},
                         {"", {}},
-                        {"rhsusf_weap_m9", {"rhsusf_mag_15Rnd_9x19_FMJ"}},
+                        {HANDGUN_1, {HANDGUN_1_AMMO}},
                         {"ACE_Vector", {}}};
     loadoutUniformInvNew[] = {{"ACE_20Rnd_762x51_Mag_Tracer", 2}};
-    loadoutVestInv[] = {{"ACE_20Rnd_762x51_Mag_Tracer", 7}, {"rhsusf_mag_15Rnd_9x19_FMJ", 4}};
+    loadoutVestInv[] = {{"ACE_20Rnd_762x51_Mag_Tracer", 7}, {HANDGUN_1_AMMO, 4}};
     loadoutVestInvNew[] = {{"rhsusf_acc_acog", 1}, {"ACE_RangeCard", 1}};
     loadoutBackpackInvNew[] = {};
 };
@@ -342,7 +361,7 @@ class GVAR(USAM_WTL_MMG): GVAR(USAM_SQL) {
     loadout = "USAM_WTL_MMG";
     loadoutGroup = "WeaponSquad";
     loadoutGrenade[] = {{"rhs_mag_an_m8hc", 6}, {"HandGrenade", 2}};
-    loadoutVestInv[] = {{"rhs_mag_30Rnd_556x45_M855A1_PMAG", 6}, {"rhsusf_mag_15Rnd_9x19_FMJ", 2}, {"ACE_EntrenchingTool", 1}, {"rhsusf_100Rnd_762x51_m62_tracer", 1}};
+    loadoutVestInv[] = {{WEAPON_1_AMMO, 6}, {HANDGUN_1_AMMO, 2}, {"ACE_EntrenchingTool", 1}, {"rhsusf_100Rnd_762x51_m62_tracer", 1}};
     loadoutBackpackInvNew[] = {{"ACE_SpareBarrel", 1}, {"ACRE_PRC117F", 1}};
 };
 class GVAR(USAM_MMG): GVAR(USAM_RFM) {
@@ -350,14 +369,14 @@ class GVAR(USAM_MMG): GVAR(USAM_RFM) {
     description = "Machine Gunner";
     loadout = "USAM_MMG";
     loadoutGroup = "WeaponSquad";
-    loadoutUniform[] = {"VSM_Multicam_Crye_Tee_Camo"};
-    loadoutVest[] = {"VSM_LBT6094_MG_Multicam"};
+    loadoutUniform[] = {UNIFORM_2};
+    loadoutVest[] = {VEST_2};
     loadoutWeapon[] = { {"rhs_weap_m240B", {"rhsusf_acc_ARDEC_M240", "rhsusf_acc_anpeq15side_bk", "rhsusf_acc_ELCAN", "rhsusf_100Rnd_762x51_m62_tracer"}},
                         {"", {}}, // secondary
-                        {"rhsusf_weap_m9", {"rhsusf_mag_15Rnd_9x19_FMJ"}}, // handgun
+                        {HANDGUN_1, {HANDGUN_1_AMMO}}, // handgun
                         {"", {}}}; // binocular
     loadoutGrenade[] = {{"rhs_mag_an_m8hc", 6}, {"HandGrenade", 2}};
-    loadoutVestInv[] = {{"rhsusf_100Rnd_762x51_m62_tracer", 3}, {"rhsusf_mag_15Rnd_9x19_FMJ", 2}};
+    loadoutVestInv[] = {{"rhsusf_100Rnd_762x51_m62_tracer", 3}, {HANDGUN_1_AMMO, 2}};
     loadoutBackpackInvNew[] = {{"rhsusf_100Rnd_762x51_m62_tracer", 3}};
 };
 class GVAR(USAM_AMG): GVAR(USAM_RFM) {
@@ -365,13 +384,13 @@ class GVAR(USAM_AMG): GVAR(USAM_RFM) {
     description = "Assistant Machine Gunner";
     loadout = "USAM_AMG";
     loadoutGroup = "WeaponSquad";
-    loadoutBackpack[] = {"VSM_Multicam_carryall"};
-    loadoutWeapon[] = { {"rhs_weap_m4a1_carryhandle", {"rhsusf_acc_anpeq15side_bk", "rhsusf_acc_acog", "rhs_mag_30Rnd_556x45_M855A1_PMAG"}},
+    loadoutBackpack[] = {BACKPACK_CARRYALL};
+    loadoutWeapon[] = { {WEAPON_1, {WEAPON_1_STUFF}},
                         {"", {}}, // secondary
-                        {"rhsusf_weap_m9", {"rhsusf_mag_15Rnd_9x19_FMJ"}}, // handgun
+                        {HANDGUN_1, {HANDGUN_1_AMMO}}, // handgun
                         {"ACE_Vector", {}}}; // binocular
     loadoutGrenade[] = {{"rhs_mag_an_m8hc", 6}, {"HandGrenade", 2}};
-    loadoutVestInv[] = {{"rhs_mag_30Rnd_556x45_M855A1_PMAG", 6}, {"rhsusf_mag_15Rnd_9x19_FMJ", 2}};
+    loadoutVestInv[] = {{WEAPON_1_AMMO, 6}, {HANDGUN_1_AMMO, 2}};
     loadoutVestInvNew[] = {{"rhsusf_100Rnd_762x51_m62_tracer", 1}};
     loadoutBackpackInvNew[] = {{"ACE_EntrenchingTool", 1}, {"ACE_SpareBarrel", 1}, {"rhsusf_100Rnd_762x51_m62_tracer", 5}};
 };
@@ -380,9 +399,9 @@ class GVAR(USAM_WTL_HAT): GVAR(USAM_FTL) {
     description = "Weapon Team Leader";
     loadout = "USAM_WTL_HAT";
     loadoutGroup = "WeaponSquad";
-    loadoutBackpack[] = {"VSM_Multicam_carryall"};
+    loadoutBackpack[] = {BACKPACK_CARRYALL};
     loadoutGrenade[] = {{"rhs_mag_an_m8hc", 6}, {"HandGrenade", 2}};
-    loadoutVestInv[] = {{"rhs_mag_30Rnd_556x45_M855A1_PMAG", 6}, {"rhsusf_mag_15Rnd_9x19_FMJ", 2}};
+    loadoutVestInv[] = {{WEAPON_1_AMMO, 6}, {HANDGUN_1_AMMO, 2}};
     loadoutBackpackInvNew[] = {{"ACE_EntrenchingTool", 1}, {"rhs_fgm148_magazine_AT", 1}};
 };
 class GVAR(USAM_HAT): GVAR(USAM_RFM) {
@@ -391,12 +410,12 @@ class GVAR(USAM_HAT): GVAR(USAM_RFM) {
     loadout = "USAM_HAT";
     loadoutGroup = "WeaponSquad";
     loadoutBackpack[] = {};
-    loadoutWeapon[] = { {"rhs_weap_m4a1_carryhandle", {"rhsusf_acc_anpeq15side_bk", "rhsusf_acc_acog", "rhs_mag_30Rnd_556x45_M855A1_PMAG"}},
+    loadoutWeapon[] = { {WEAPON_1, {WEAPON_1_STUFF}},
                         {"rhs_weap_fgm148", {"rhs_fgm148_magazine_AT"}}, // secondary
-                        {"rhsusf_weap_m9", {"rhsusf_mag_15Rnd_9x19_FMJ"}}, // handgun
+                        {HANDGUN_1, {HANDGUN_1_AMMO}}, // handgun
                         {"", {}}}; // binocular
     loadoutGrenade[] = {{"rhs_mag_an_m8hc", 6}, {"HandGrenade", 2}};
-    loadoutVestInv[] = {{"rhs_mag_30Rnd_556x45_M855A1_PMAG", 6}, {"rhsusf_mag_15Rnd_9x19_FMJ", 2}};
+    loadoutVestInv[] = {{WEAPON_1_AMMO, 6}, {HANDGUN_1_AMMO, 2}};
     loadoutBackpackInvNew[] = {};
 };
 class GVAR(USAM_AAT): GVAR(USAM_RFM) {
@@ -404,9 +423,9 @@ class GVAR(USAM_AAT): GVAR(USAM_RFM) {
     description = "Assistant Antiarmor Gunner";
     loadout = "USAM_AAT";
     loadoutGroup = "WeaponSquad";
-    loadoutBackpack[] = {"VSM_Multicam_carryall"};
+    loadoutBackpack[] = {BACKPACK_CARRYALL};
     loadoutGrenade[] = {{"rhs_mag_an_m8hc", 6}, {"HandGrenade", 2}};
-    loadoutVestInv[] = {{"rhs_mag_30Rnd_556x45_M855A1_PMAG", 6}, {"rhsusf_mag_15Rnd_9x19_FMJ", 2}};
+    loadoutVestInv[] = {{WEAPON_1_AMMO, 6}, {HANDGUN_1_AMMO, 2}};
     loadoutBackpackInvNew[] = {{"ACE_EntrenchingTool", 1}, {"rhs_fgm148_magazine_AT", 1}};
 };
 
@@ -417,14 +436,14 @@ class GVAR(USAM_HWTL_HMG): GVAR(USAM_SQL) {
     loadout = "USAM_HWTL_HMG";
     loadoutGroup = "HeavyWeaponSquad";
     loadoutGrenade[] = {{"rhs_mag_an_m8hc", 6}, {"HandGrenade", 2}};
-    loadoutVestInv[] = {{"rhs_mag_30Rnd_556x45_M855A1_PMAG", 6}, {"rhsusf_mag_15Rnd_9x19_FMJ", 2}};
+    loadoutVestInv[] = {{WEAPON_1_AMMO, 6}, {HANDGUN_1_AMMO, 2}};
 };
 class GVAR(USAM_HMG): GVAR(USAM_RFM) {
     displayName = "Heavy Machine Gunner";
     description = "Heavy Machine Gunner";
     loadout = "USAM_HMG";
     loadoutGroup = "HeavyWeaponSquad";
-    loadoutUniform[] = {"VSM_Multicam_Crye_Tee_Camo"};
+    loadoutUniform[] = {UNIFORM_2};
     loadoutBackpack[] = {"RHS_M2_Gun_Bag"};
     loadoutGrenade[] = {{"rhs_mag_an_m8hc", 6}, {"HandGrenade", 2}};
     loadoutBackpackInvNew[] = {};
@@ -452,7 +471,7 @@ class GVAR(USAM_GMG): GVAR(USAM_RFM) {
     description = "Grenade Machine Gunnner";
     loadout = "USAM_GMG";
     loadoutGroup = "HeavyWeaponSquad";
-    loadoutUniform[] = {"VSM_Multicam_Crye_Tee_Camo"};
+    loadoutUniform[] = {UNIFORM_2};
     loadoutBackpack[] = {"RHS_Mk19_Gun_Bag"};
     loadoutGrenade[] = {{"rhs_mag_an_m8hc", 6}, {"HandGrenade", 2}};
     loadoutBackpackInvNew[] = {};
@@ -471,7 +490,7 @@ class GVAR(USAM_TOW): GVAR(USAM_RFM) {
     description = "TOW Gunner";
     loadout = "USAM_TOW";
     loadoutGroup = "HeavyWeaponSquad";
-    loadoutUniform[] = {"VSM_Multicam_Crye_Tee_Camo"};
+    loadoutUniform[] = {UNIFORM_2};
     loadoutBackpack[] = {"rhs_Tow_Gun_Bag"};
     loadoutGrenade[] = {{"rhs_mag_an_m8hc", 6}, {"HandGrenade", 2}};
     loadoutBackpackInvNew[] = {};
@@ -492,11 +511,11 @@ class GVAR(USAM_CRW_LEAD): GVAR(USAM_SQL) {
     description = "Tank Commander@Outlaw 1-X";
     loadout = "USAM_CRW_LEAD";
     loadoutGroup = "Crew";
-    loadoutVest[] = {"VSM_FAPC_Operator_Multicam"};
-    loadoutBackpack[] = {"VSM_Multicam_Backpack_Compact"};
-    loadoutHeadgear[] = {"rhsusf_cvc_alt_helmet"};
+    loadoutVest[] = {VEST_CREW};
+    loadoutBackpack[] = {BACKPACK_COMPACT};
+    loadoutHeadgear[] = {HELMET_CREW};
     loadoutGrenade[] = {{"rhs_mag_an_m8hc", 2}, {"rhs_mag_m18_green", 1}, {"rhs_mag_m18_purple", 1}, {"HandGrenade", 1}};
-    loadoutVestInv[] = {{"rhs_mag_30Rnd_556x45_M855A1_PMAG", 4}, {"rhsusf_mag_15Rnd_9x19_FMJ", 2}};
+    loadoutVestInv[] = {{WEAPON_1_AMMO, 4}, {HANDGUN_1_AMMO, 2}};
     loadoutBackpackInvNew[] = {{"ACE_DefusalKit", 1}, {"ACE_Clacker", 1}, {"SatchelCharge_Remote_Mag", 1}};
     loadoutVarEng = 1;
     loadoutVarEOD = 1;
@@ -506,11 +525,11 @@ class GVAR(USAM_CRW): GVAR(USAM_RFM) {
     description = "Tank Crew";
     loadout = "USAM_CRW";
     loadoutGroup = "Crew";
-    loadoutVest[] = {"VSM_FAPC_Operator_Multicam"};
+    loadoutVest[] = {VEST_CREW};
     loadoutBackpack[] = {};
-    loadoutHeadgear[] = {"rhsusf_cvc_alt_helmet"};
+    loadoutHeadgear[] = {HELMET_CREW};
     loadoutGrenade[] = {{"rhs_mag_an_m8hc", 2}, {"rhs_mag_m18_green", 1}, {"rhs_mag_m18_purple", 1}, {"HandGrenade", 1}};
-    loadoutVestInv[] = {{"rhs_mag_30Rnd_556x45_M855A1_PMAG", 4}, {"rhsusf_mag_15Rnd_9x19_FMJ", 2}};
+    loadoutVestInv[] = {{WEAPON_1_AMMO, 4}, {HANDGUN_1_AMMO, 2}};
     loadoutBackpackInvNew[] = {};
     loadoutVarEng = 1;
 };
@@ -521,14 +540,14 @@ class GVAR(USAM_HELI_PIL): GVAR(USAM_SQL) {
     loadoutGroup = "Crew";
     loadoutVest[] = {"V_TacVest_khk"};
     loadoutHeadgear[] = {"rhsusf_hgu56p"};
-    loadoutWeapon[] = { {"rhs_weap_m4a1_carryhandle", {"rhsusf_acc_anpeq15side_bk", "rhsusf_acc_acog", "rhs_mag_30Rnd_556x45_M855A1_PMAG"}},
+    loadoutWeapon[] = { {WEAPON_1, {WEAPON_1_STUFF}},
                         {"", {}}, // secondary
-                        {"rhsusf_weap_m9", {"rhsusf_mag_15Rnd_9x19_FMJ"}}, // handgun
+                        {HANDGUN_1, {HANDGUN_1_AMMO}}, // handgun
                         {"", {}}}; // binocular
     loadoutGrenade[] = {{"rhs_mag_an_m8hc", 2}, {"rhs_mag_m18_green", 1}, {"rhs_mag_m18_purple", 1}, {"HandGrenade", 1}};
     loadoutLinked[] = {"ItemMap", "ItemCompass", "ItemWatch", "ItemAndroid"};
-    loadoutUniformInvNew[] = {{"rhs_mag_30Rnd_556x45_M855A1_PMAG", 1}};
-    loadoutVestInv[] = {{"rhs_mag_30Rnd_556x45_M855A1_PMAG", 2}, {"rhsusf_mag_15Rnd_9x19_FMJ", 2}};
+    loadoutUniformInvNew[] = {{WEAPON_1_AMMO, 1}};
+    loadoutVestInv[] = {{WEAPON_1_AMMO, 2}, {HANDGUN_1_AMMO, 2}};
     loadoutBackpackInvNew[] = {{"ACRE_PRC117F", 1}};
     loadoutVarMedic = 1;
     loadoutVarG = 0.3;
@@ -556,8 +575,8 @@ class GVAR(USAM_HELI_CRW): GVAR(USAM_RFM) {
     loadoutBackpack[] = {};
     loadoutHeadgear[] = {"rhsusf_hgu56p_visor_mask_skull"};
     loadoutGrenade[] = {{"rhs_mag_an_m8hc", 2}, {"rhs_mag_m18_green", 1}, {"rhs_mag_m18_purple", 1}, {"HandGrenade", 1}};
-    loadoutUniformInvNew[] = {{"rhs_mag_30Rnd_556x45_M855A1_PMAG", 1}};
-    loadoutVestInv[] = {{"rhs_mag_30Rnd_556x45_M855A1_PMAG", 2}, {"rhsusf_mag_15Rnd_9x19_FMJ", 2}};
+    loadoutUniformInvNew[] = {{WEAPON_1_AMMO, 1}};
+    loadoutVestInv[] = {{WEAPON_1_AMMO, 2}, {HANDGUN_1_AMMO, 2}};
     loadoutBackpackInvNew[] = {};
     loadoutVarG = 0.3;
     loadoutVarEng = 1;
@@ -572,7 +591,7 @@ class GVAR(USAM_HELI_MED): GVAR(USAM_HELI_CRW) {
     displayName = "Helicopter Medic";
     description = "Helicopter Medic";
     loadout = "USAM_HELI_MED";
-    loadoutBackpack[] = {"VSM_Multicam_Backpack_Kitbag"};
+    loadoutBackpack[] = {BACKPACK_KITBAG};
     loadoutVestInvNew[] = {{"ACE_epinephrine", 8}, {"adv_aceCPR_AED", 1}, {"ACE_surgicalKit", 1}};
     loadoutBackpackInvNew[] = {{"ACE_packingBandage", 48}, {"ACE_elasticBandage", 48}, {"ACE_morphine", 10}, {"ACE_plasmaIV_500", 12}, {"ACE_tourniquet", 4}, {"adv_aceSplint_splint", 15}};
     loadoutVarMedic = 2;
@@ -589,7 +608,7 @@ class GVAR(USAM_JET): GVAR(USAM_SQL) {
     loadoutHeadgear[] = {"H_PilotHelmetFighter_B"};
     loadoutWeapon[] = { {"", {}},
                         {"", {}}, // secondary
-                        {"rhsusf_weap_m9", {"rhsusf_mag_15Rnd_9x19_FMJ"}}, // handgun
+                        {HANDGUN_1, {HANDGUN_1_AMMO}}, // handgun
                         {"", {}}}; // binocular
     loadoutGrenade[] = {};
     loadoutLinked[] = {"ItemMap", "ItemCompass", "ItemWatch", "ItemAndroid"};
@@ -610,13 +629,13 @@ class GVAR(USAM_SNI): GVAR(USAM_SQL) {
     loadout = "USAM_SNI";
     loadoutGroup = "Other";
     loadoutBackpack[] = {};
-    loadoutWeapon[] = { {"rhs_weap_m4_m320", {"rhsusf_acc_anpeq15side_bk", "rhsusf_acc_acog", "hlc_muzzle_556NATO_rotexiiic_grey", "rhs_mag_30Rnd_556x45_M855A1_PMAG", "1Rnd_HE_Grenade_shell"}},
+    loadoutWeapon[] = { {WEAPON_2, {"rhsusf_acc_anpeq15side_bk", "rhsusf_acc_acog", "hlc_muzzle_556NATO_rotexiiic_grey", WEAPON_1_AMMO, WEAPON_2_AMMO}},
                         {"", {}},
-                        {"rhsusf_weap_m9", {"rhsusf_mag_15Rnd_9x19_FMJ"}},
+                        {HANDGUN_1, {HANDGUN_1_AMMO}},
                         {"ACE_Vector", {}}};
     loadoutUniformInvNew[] = {};
-    loadoutVestInv[] = {{"rhs_mag_30Rnd_556x45_M855A1_PMAG", 6}, {"ACE_20Rnd_762x51_Mag_Tracer", 4}, {"rhsusf_mag_15Rnd_9x19_FMJ", 2}};
-    loadoutVestInvNew[] = {{"ACE_salineIV_500", 6}, {"1Rnd_HE_Grenade_shell", 2}, {"1Rnd_SmokeBlue_Grenade_shell", 2}, {"1Rnd_SmokePurple_Grenade_shell", 2}, {"1Rnd_SmokeRed_Grenade_shell", 2}};
+    loadoutVestInv[] = {{WEAPON_1_AMMO, 6}, {"ACE_20Rnd_762x51_Mag_Tracer", 4}, {HANDGUN_1_AMMO, 2}};
+    loadoutVestInvNew[] = {{"ACE_salineIV_500", 6}, {WEAPON_2_AMMO, 2}, {"1Rnd_SmokeBlue_Grenade_shell", 2}, {"1Rnd_SmokePurple_Grenade_shell", 2}, {"1Rnd_SmokeRed_Grenade_shell", 2}};
     loadoutBackpackInvNew[] = {};
     loadoutGunBackpack[] = {"ace_gunbag_tan", {"rhs_weap_M107_d", {"optic_LRPS"}, {{"rhsusf_mag_10Rnd_STD_50BMG_M33", 10}}}};
     loadoutScopeDMR[] = {{"LRPS", "optic_LRPS"}, {"DMS", "optic_DMS"}, {"Khalia", "optic_KHS_blk"}, {"AMS", "optic_AMS"}};
@@ -627,13 +646,13 @@ class GVAR(USAM_SPO): GVAR(USAM_SNI) {
     description = "Spotter";
     loadout = "USAM_SPO";
     loadoutGroup = "Other";
-    loadoutBackpack[] = {"VSM_Multicam_carryall"};
-    loadoutWeapon[] = { {"rhs_weap_m4a1_carryhandle", {"rhsusf_acc_anpeq15side_bk", "rhsusf_acc_acog", "hlc_muzzle_556NATO_rotexiiic_grey", "rhs_mag_30Rnd_556x45_M855A1_PMAG"}},
+    loadoutBackpack[] = {BACKPACK_CARRYALL};
+    loadoutWeapon[] = { {WEAPON_1, {"rhsusf_acc_anpeq15side_bk", "rhsusf_acc_acog", "hlc_muzzle_556NATO_rotexiiic_grey", WEAPON_1_AMMO}},
                         {"", {}},
-                        {"rhsusf_weap_m9", {"rhsusf_mag_15Rnd_9x19_FMJ"}},
+                        {HANDGUN_1, {HANDGUN_1_AMMO}},
                         {"ACE_Vector", {}}};
     loadoutGrenade[] = {{"rhs_mag_an_m8hc", 4}, {"HandGrenade", 2}};
-    loadoutVestInv[] = {{"rhs_mag_30Rnd_556x45_M855A1_PMAG", 6}, {"ACE_20Rnd_762x51_M993_AP_Mag", 2}, {"rhsusf_mag_15Rnd_9x19_FMJ", 2}};
+    loadoutVestInv[] = {{WEAPON_1_AMMO, 6}, {"ACE_20Rnd_762x51_M993_AP_Mag", 2}, {HANDGUN_1_AMMO, 2}};
     loadoutVestInvNew[] = {{"ACE_RangeCard", 1}, {"ACE_ATragMX", 1}, {"ACE_Kestrel4500", 1}, {"ACE_SpottingScope", 1}};
     loadoutBackpackInvNew[] = {{"ACRE_PRC117F", 1}, {"ACE_Tripod", 1}, {"ACE_DefusalKit", 1}, {"ACE_EntrenchingTool", 1}, {"ACE_Sandbag_empty", 5}, {"ACE_epinephrine", 10}, {"ACE_morphine", 10}, {"ACE_salineIV_500", 6}, {"ACE_surgicalKit", 1}};
     loadoutGunBackpack[] = {};
@@ -645,12 +664,12 @@ class GVAR(USAM_TL): GVAR(USAM_SPO) {
     loadout = "USAM_TL";
     loadoutGroup = "Other";
     loadoutBackpack[] = {};
-    loadoutWeapon[] = { {"rhs_weap_m4a1_carryhandle", {"rhsusf_acc_anpeq15side_bk", "rhsusf_acc_acog", "hlc_muzzle_556NATO_rotexiiic_grey", "rhs_mag_30Rnd_556x45_M855A1_PMAG"}},
+    loadoutWeapon[] = { {WEAPON_1, {"rhsusf_acc_anpeq15side_bk", "rhsusf_acc_acog", "hlc_muzzle_556NATO_rotexiiic_grey", WEAPON_1_AMMO}},
                         {"", {}},
-                        {"rhsusf_weap_m9", {"rhsusf_mag_15Rnd_9x19_FMJ"}},
+                        {HANDGUN_1, {HANDGUN_1_AMMO}},
                         {"ACE_Vector", {}}};
     loadoutGrenade[] = {{"rhs_mag_an_m8hc", 4}, {"HandGrenade", 2}};
-    loadoutVestInv[] = {{"rhs_mag_30Rnd_556x45_M855A1_PMAG", 2}, {"ACE_20Rnd_762x51_M993_AP_Mag", 2}, {"ACE_20Rnd_762x51_Mag_Tracer", 2}, {"rhsusf_mag_15Rnd_9x19_FMJ", 2}};
+    loadoutVestInv[] = {{WEAPON_1_AMMO, 2}, {"ACE_20Rnd_762x51_M993_AP_Mag", 2}, {"ACE_20Rnd_762x51_Mag_Tracer", 2}, {HANDGUN_1_AMMO, 2}};
     loadoutVestInvNew[] = {{"ACE_RangeCard", 1}, {"ACE_ATragMX", 1}, {"ACE_Kestrel4500", 1}, {"adv_aceCPR_AED", 1}};
     loadoutBackpackInvNew[] = {};
     loadoutGunBackpack[] = {"ace_gunbag_tan", {"rhs_weap_sr25", {"rhsusf_acc_SR25S", "rhsusf_acc_anpeq15side_bk", "rhsusf_acc_harris_bipod", "optic_LRPS"}, {{"ACE_20Rnd_762x51_Mag_Tracer", 20}}}};
@@ -666,7 +685,7 @@ class GVAR(USAM_MOR_SQL): GVAR(USAM_SQL) {
     loadout = "USAM_MOR_SQL";
     loadoutGroup = "Other";
     loadoutHeadgear[] = {"VSM_Multicam_Boonie"};
-    loadoutVestInv[] = {{"rhs_mag_30Rnd_556x45_M855A1_PMAG", 6}, {"rhsusf_mag_15Rnd_9x19_FMJ", 2}};
+    loadoutVestInv[] = {{WEAPON_1_AMMO, 6}, {HANDGUN_1_AMMO, 2}};
     loadoutVestInvNew[] = {{"VSM_OPS_2_multicam", 1}, {"ACE_RangeTable_82mm", 1}, {"KAT_artilleryTable", 1}, {"ACE_Kestrel4500", 1}};
 };
 class GVAR(USAM_MOR_ASS): GVAR(USAM_RFM) {
@@ -676,7 +695,7 @@ class GVAR(USAM_MOR_ASS): GVAR(USAM_RFM) {
     loadoutGroup = "Other";
     loadoutBackpack[] = {"rhs_M252_Gun_Bag"};
     loadoutHeadgear[] = {"VSM_Multicam_Boonie"};
-    loadoutVestInv[] = {{"rhs_mag_30Rnd_556x45_M855A1_PMAG", 6}, {"rhsusf_mag_15Rnd_9x19_FMJ", 2}};
+    loadoutVestInv[] = {{WEAPON_1_AMMO, 6}, {HANDGUN_1_AMMO, 2}};
     loadoutVestInvNew[] = {{"ACE_EntrenchingTool", 1}, {"VSM_OPS_2_multicam", 1}};
     loadoutBackpackInvNew[] = {};
 };
@@ -692,7 +711,7 @@ class GVAR(USAM_MOR_AMB): GVAR(USAM_MOR_GUN) {
     displayName = "Mortar Ammunition Bearer";
     description = "Ammunition Bearer";
     loadout = "USAM_MOR_AMB";
-    loadoutBackpack[] = {"VSM_Multicam_carryall"};
+    loadoutBackpack[] = {BACKPACK_CARRYALL};
     loadoutVestInvNew[] = {{"VSM_OPS_2_multicam", 1}};
     loadoutBackpackInvNew[] = {{"ACE_1Rnd_82mm_Mo_HE", 5}, {"ACE_1Rnd_82mm_Mo_Smoke", 1}};
 };
@@ -704,12 +723,12 @@ class GVAR(USAM_EOD): GVAR(USAM_RFM) {
     loadout = "USAM_EOD";
     loadoutGroup = "Other";
     loadoutBackpack[] = {};
-    loadoutWeapon[] = { {"rhs_weap_m4a1_carryhandle", {"rhsusf_acc_anpeq15side_bk", "rhsusf_acc_acog", "rhs_mag_30Rnd_556x45_M855A1_PMAG"}},
+    loadoutWeapon[] = { {WEAPON_1, {WEAPON_1_STUFF}},
                         {"ACE_VMM3", {}}, // secondary
-                        {"rhsusf_weap_m9", {"rhsusf_mag_15Rnd_9x19_FMJ"}}, // handgun
+                        {HANDGUN_1, {HANDGUN_1_AMMO}}, // handgun
                         {"", {}}}; // binocular
-    loadoutUniformInvNew[] = {{"ACE_Clacker", 1}, {"ACE_DefusalKit", 1}, {"rhs_mag_30Rnd_556x45_M855A1_PMAG", 2}};
-    loadoutVestInv[] = {{"rhs_mag_30Rnd_556x45_M855A1_PMAG", 8}};
+    loadoutUniformInvNew[] = {{"ACE_Clacker", 1}, {"ACE_DefusalKit", 1}, {WEAPON_1_AMMO, 2}};
+    loadoutVestInv[] = {{WEAPON_1_AMMO, 8}};
     loadoutVestInvNew[] = {{"DemoCharge_Remote_Mag", 2}};
     loadoutBackpackInv[] = {};
     loadoutBackpackInvNew[] = {};
@@ -732,10 +751,10 @@ class GVAR(USAM_LOG_LEAD): GVAR(USAM_SQL) {
     loadout = "USAM_LOG_LEAD";
     loadoutGroup = "Logistic";
     loadoutHeadgear[] = {"rhs_beanie"};
-    loadoutBackpack[] = {"VSM_Multicam_Backpack_Kitbag"};
+    loadoutBackpack[] = {BACKPACK_KITBAG};
     loadoutLinked[] = {"ItemMap", "ItemCompass", "ItemWatch", "ItemAndroid"};
     loadoutGrenade[] = {{"rhs_mag_an_m8hc", 2}, {"rhs_mag_m18_green", 1}, {"rhs_mag_m18_purple", 1}, {"HandGrenade", 1}};
-    loadoutVestInv[] = {{"rhs_mag_30Rnd_556x45_M855A1_PMAG", 6}, {"rhsusf_mag_15Rnd_9x19_FMJ", 2}};
+    loadoutVestInv[] = {{WEAPON_1_AMMO, 6}, {HANDGUN_1_AMMO, 2}};
     loadoutBackpackInvNew[] = {{"ACRE_PRC117F", 1}, {"Toolkit", 1}, {"VSM_OPS_2_multicam", 1}, {"H_Cap_usblack", 1}};
     loadoutVarEng = 2;
 };
@@ -746,7 +765,7 @@ class GVAR(USAM_LOG): GVAR(USAM_RFM) {
     loadoutGroup = "Logistic";
     loadoutHeadgear[] = {"rhs_beanie"};
     loadoutGrenade[] = {{"rhs_mag_an_m8hc", 2}, {"rhs_mag_m18_green", 1}, {"rhs_mag_m18_purple", 1}, {"HandGrenade", 1}};
-    loadoutVestInv[] = {{"rhs_mag_30Rnd_556x45_M855A1_PMAG", 6}, {"rhsusf_mag_15Rnd_9x19_FMJ", 2}};
+    loadoutVestInv[] = {{WEAPON_1_AMMO, 6}, {HANDGUN_1_AMMO, 2}};
     loadoutBackpackInvNew[] = {{"Toolkit", 1}, {"VSM_OPS_2_multicam", 1}, {"H_Cap_usblack", 1}};
     loadoutVarEng = 2;
 };
@@ -755,10 +774,10 @@ class GVAR(USAM_LOG_MED): GVAR(USAM_FTL) {
     description = "Logistic Medic";
     loadout = "USAM_LOG_MED";
     loadoutGroup = "Logistic";
-    loadoutBackpack[] = {"VSM_Multicam_Backpack_Compact"};
+    loadoutBackpack[] = {BACKPACK_COMPACT};
     loadoutHeadgear[] = {"rhs_beanie"};
     loadoutGrenade[] = {{"rhs_mag_an_m8hc", 2}, {"rhs_mag_m18_green", 1}, {"rhs_mag_m18_purple", 1}, {"HandGrenade", 1}};
-    loadoutVestInv[] = {{"rhs_mag_30Rnd_556x45_M855A1_PMAG", 6}, {"rhsusf_mag_15Rnd_9x19_FMJ", 2}};
+    loadoutVestInv[] = {{WEAPON_1_AMMO, 6}, {HANDGUN_1_AMMO, 2}};
     loadoutVestInvNew[] = {{"ACE_morphine", 6}, {"ACE_epinephrine", 8}, {"ACE_surgicalKit", 1}, {"adv_aceCPR_AED", 1}, {"ACE_tourniquet", 4}, {"H_Cap_usblack", 1}};
     loadoutBackpackInvNew[] = {{"Toolkit", 1}, {"VSM_OPS_2_multicam", 1}, {"ACE_packingBandage", 16}, {"ACE_elasticBandage", 16}, {"ACE_plasmaIV_500", 6}};
     loadoutVarMedic = 2;
