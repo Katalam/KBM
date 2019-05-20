@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="kat_10thmods">
+    <Package name="faction">
+        <Key ID="STR_kat_10thmods_faction_loadout">
+            <English>Loadout</English>
+            <German>Loadout</German>
+        </Key>
+    </Package>
+</Project>
