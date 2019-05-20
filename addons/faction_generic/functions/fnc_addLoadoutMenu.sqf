@@ -87,37 +87,37 @@ private _guiArray = _company + _platoon + _squad + _weaponSquad + _heavyWeaponSq
         ] call ace_interact_menu_fnc_addActionToObject;
     } else {
         [_object, 0, _currentParent,
-            [QGVAR(loadoutAction) + (str _forEachIndex), _x select 0, "", FUNC(applyPlayerLoadout), {true}, {}, _x select 1] call ace_interact_menu_fnc_createAction
+            [QGVAR(loadoutAction) + (str _forEachIndex), _x select 0, "", FUNC(applyPlayerLoadout), {true}, {}, [_x select 1, QGVAR(%1)]] call ace_interact_menu_fnc_createAction
         ] call ace_interact_menu_fnc_addActionToObject;
     };
 } forEach _guiArray;
 
 // Scope
 [_object, 0, [QGVAR(loadoutActionParent)],
-    [QGVAR(loadoutAction_S), localize LSTRING(scope), "", {}, {true}, FUNC(childrenScope)] call ace_interact_menu_fnc_createAction
+    [QGVAR(loadoutAction_S), localize LSTRING(scope), "", {}, {true}, FUNC(childrenScope), QGVAR(%1)] call ace_interact_menu_fnc_createAction
 ] call ace_interact_menu_fnc_addActionToObject;
 
 // Night Vision
 [_object, 0, [QGVAR(loadoutActionParent)],
-    [QGVAR(loadoutAction_N), localize LSTRING(nightvision), "", {}, {true}, FUNC(childrenNightvision)] call ace_interact_menu_fnc_createAction
+    [QGVAR(loadoutAction_N), localize LSTRING(nightvision), "", {}, {true}, FUNC(childrenNightvision), QGVAR(%1)] call ace_interact_menu_fnc_createAction
 ] call ace_interact_menu_fnc_addActionToObject;
 
 // Goggle
 [_object, 0, [QGVAR(loadoutActionParent)],
-    [QGVAR(loadoutAction_G), localize LSTRING(goggle), "", {}, {true}, FUNC(childrenGoggle)] call ace_interact_menu_fnc_createAction
+    [QGVAR(loadoutAction_G), localize LSTRING(goggle), "", {}, {true}, FUNC(childrenGoggle), QGVAR(%1)] call ace_interact_menu_fnc_createAction
 ] call ace_interact_menu_fnc_addActionToObject;
 
 // Silencer
 [_object, 0, [QGVAR(loadoutActionParent)],
-    [QGVAR(loadoutAction_silencer), localize LSTRING(silencer), "", {}, {true}, FUNC(childrenSilencer)] call ace_interact_menu_fnc_createAction
+    [QGVAR(loadoutAction_silencer), localize LSTRING(silencer), "", {}, {true}, FUNC(childrenSilencer), QGVAR(%1)] call ace_interact_menu_fnc_createAction
 ] call ace_interact_menu_fnc_addActionToObject;
 
 // launcher
 [_object, 0, [QGVAR(loadoutActionParent)],
-    [QGVAR(loadoutAction_L), localize LSTRING(launcher), "", {}, {true}, FUNC(childrenLauncher)] call ace_interact_menu_fnc_createAction
+    [QGVAR(loadoutAction_L), localize LSTRING(launcher), "", {}, {true}, FUNC(childrenLauncher), QGVAR(%1)] call ace_interact_menu_fnc_createAction
 ] call ace_interact_menu_fnc_addActionToObject;
 
 // Helmet
 [_object, 0, [QGVAR(loadoutActionParent)],
-    [QGVAR(loadoutAction_H), localize LSTRING(helmet), "", {}, {true}, FUNC(childrenHelmet)] call ace_interact_menu_fnc_createAction
+    [QGVAR(loadoutAction_H), localize LSTRING(helmet), "", {}, {true}, FUNC(childrenHelmet), QGVAR(%1)] call ace_interact_menu_fnc_createAction
 ] call ace_interact_menu_fnc_addActionToObject;

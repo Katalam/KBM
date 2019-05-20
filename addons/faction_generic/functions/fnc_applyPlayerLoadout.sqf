@@ -19,7 +19,12 @@
 params [
     "",
     ["_unit", objNull, [objNull]],
-    ["_loadout", "", [""]]
+    "_array"
+];
+
+_array params [
+    ["_loadout", "", [""]],
+    ["_typeFormat", "", [""]]
 ];
 
 if (is3DEN) exitWith {};
@@ -30,7 +35,7 @@ if !(local _unit) exitWith {
 
 private _type = typeOf _unit;
 if !(_loadout isEqualTo "") then {
-    _type = str formatText ["kat_10thMods_faction_generic_%1", _loadout];
+    _type = str formatText [_typeFormat, _loadout];
 };
 private _config = (configFile >> "CfgVehicles" >> _type);
 

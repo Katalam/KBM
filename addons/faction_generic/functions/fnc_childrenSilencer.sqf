@@ -17,12 +17,13 @@
 
 params [
     ["_target", objNull, [objNull]],
-    ["_player", objNull, [objNull]]
+    ["_player", objNull, [objNull]],
+    ["_typeFormat", "", [""]]
 ];
 
 private _actions = [];
 private _loadout = _player getVariable [QGVAR(loadout), "USAM_RFM"];
-private _type = str formatText ["kat_10thMods_faction_generic_%1", _loadout];
+private _type = str formatText [_typeFormat, _loadout];
 private _silencer = ((primaryWeaponItems _player) select 0) isEqualTo "";
 
 if (_silencer) then {
