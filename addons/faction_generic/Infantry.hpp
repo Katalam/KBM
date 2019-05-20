@@ -15,6 +15,60 @@ class GVAR(tank): I_Story_Crew_F {
     hiddenSelectionsTextures[] = {QPATHTOF(data\U_Tank_crew_F_CO.paa)};
 };
 */
+
+class GVAR(empty): B_Soldier_F {
+    author = "Katalam";
+    displayName = "empty";
+    description = "empty";
+    loadout = "empty";
+    loadoutGroup = ""; // CASE SENSITIVE !
+    loadoutRank = "PRIVATE";
+    loadoutUniform[] = {};
+    loadoutVest[] = {};
+    loadoutBackpack[] = {};
+    loadoutHeadgear[] = {};
+    loadoutWeapon[] = { {"", {}},
+                        {"", {}}, // secondary
+                        {"", {}}, // handgun
+                        {"", {}}}; // binocular
+    loadoutLinked[] = {"ItemMap", "ItemCompass", "ItemWatch"};
+    loadoutMedical[] = {{"ACE_packingBandage", 10}, {"ACE_elasticBandage", 8}, {"ACE_tourniquet", 2}, {"adv_aceSplint_splint", 2}, {"ACE_morphine", 1}};
+    loadoutNVG[] = {};
+    loadoutGrenade[] = {};
+    loadoutUniformInv[] = {{"ACE_MapTools", 1}, {"ACE_microDAGR", 1}, {"ACE_CableTie", 2}};
+    loadoutUniformInvNew[] = {};
+    loadoutVestInv[] = {};
+    loadoutVestInvNew[] = {};
+    loadoutBackpackInv[] = {};
+    loadoutBackpackInvNew[] = {};
+    loadoutVarMedic = 0;
+    loadoutVarG = 0.7;
+    loadoutVarEng = 0;
+    loadoutVarEOD = 0;
+    loadoutInsignia = QGVAR(private);
+    loadoutScope[] = {};
+    loadoutScopeDMR[] = {};
+    loadoutGoggle[] = {};
+    loadoutLauncher[] = {};
+    loadoutSilencer[] = {};
+    scope = 1;
+    curatorScope = 1;
+    faction = QGVAR(USAM_D);
+    uniformClass = "";
+    backpack = "";
+    weapons[] = {"Throw","Put"};
+    respawnWeapons[] = {"Throw","Put"};
+    linkedItems[] = {"ItemMap","ItemCompass","ItemWatch"};
+    respawnLinkedItems[] = {"ItemMap","ItemCompass","ItemWatch"};
+    items[] = {};
+    respawnItems[] = {};
+    magazines[] = {};
+    respawnMagazines[] = {};
+    class EventHandlers: EventHandlers {
+        AttributesChanged3DEN = QUOTE(_this call FUNC(addRoleDescription));
+    };
+};
+
 class GVAR(USAM_RFM): B_Soldier_F {
     author = "Katalam";
     displayName = "Rifleman";
