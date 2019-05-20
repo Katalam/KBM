@@ -38,27 +38,27 @@ class CfgVehicles {
         isDisposable = 0;
     };
     class GVAR(moduleAddLoadoutMenu3den): GVAR(moduleBase3den) {
-        displayName = "Add Loadout Menu";
+        displayName = "Add Loadout Menu USAM";
         category = QGVAR(Loadout);
         function = QFUNC(moduleAddLoadoutMenu3den);
         icon = QPATHTOF(data\icon_loadout_menu.paa);
     };
     class GVAR(moduleAddVehicleMenu3den): GVAR(moduleBase3den) {
-        displayName = "Add Vehicle Menu";
+        displayName = "Add Vehicle Menu USAM";
         category = QGVAR(Loadout);
         function = QFUNC(moduleAddVehicleMenu3den);
+        icon = QPATHTOF(data\icon_logistics.paa);
+    };
+    class GVAR(moduleAddPlaneMenu3den): GVAR(moduleBase3den) {
+        displayName = "Add Plane Menu USAM";
+        category = QGVAR(Loadout);
+        function = QFUNC(moduleAddPlaneMenu3den);
         icon = QPATHTOF(data\icon_logistics.paa);
     };
     class GVAR(moduleInitVehicleMenu3den): GVAR(moduleBase3den) {
         displayName = "Spawn position vehicle spawner";
         category = QGVAR(Loadout);
         function = QFUNC(vehiclePos);
-        icon = QPATHTOF(data\icon_logistics.paa);
-    };
-    class GVAR(moduleAddPlaneMenu3den): GVAR(moduleBase3den) {
-        displayName = "Add Plane Menu";
-        category = QGVAR(Loadout);
-        function = QFUNC(moduleAddPlaneMenu3den);
         icon = QPATHTOF(data\icon_logistics.paa);
     };
     class GVAR(moduleInitPlaneMenu3den): GVAR(moduleBase3den) {
