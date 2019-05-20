@@ -189,6 +189,6 @@ if (isText (_config >> "loadoutInsignia")) then {
     _unit setVariable [QGVAR(activeInsignia), _insignia];
 };
 
-[_unit] call FUNC(setChannels);
+//[_unit] call FUNC(setChannels);
 
 true;
