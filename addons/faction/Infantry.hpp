@@ -14,8 +14,8 @@
 #define HANDGUN_2 "rhs_weap_M320"
 #define HANDGUN_2_AMMO "1Rnd_HE_Grenade_shell"
 
-class EGVAR(faction_generic,empty);
-class GVAR(USMC_RFM): EGVAR(faction_generic,empty) {
+class EGVAR(faction_generic,B_empty);
+class GVAR(USMC_RFM): EGVAR(faction_generic,B_empty) {
     author = "Katalam";
     displayName = "Rifleman";
     description = "Rifleman";

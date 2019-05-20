@@ -1,9 +1,9 @@
-#define UNIFORM_1 "VSM_Multicam_Crye_Camo", "VSM_Multicam_Crye_SS_Camo"
+#define UNIFORM_1 "VSM_Multicam_Crye_Camo","VSM_Multicam_Crye_SS_Camo"
 #define UNIFORM_2 "VSM_Multicam_Crye_Tee_Camo"
 #define VEST_1 "VSM_LBT6094_operator_Multicam"
 #define VEST_2 "VSM_LBT6094_MG_Multicam"
 #define VEST_CREW "VSM_FAPC_Operator_Multicam"
-#define HELMET_1 "VSM_OPS_2_multicam", "VSM_OPS_multicam"
+#define HELMET_1 "VSM_OPS_2_multicam","VSM_OPS_multicam"
 #define HELMET_CREW "rhsusf_cvc_alt_helmet"
 #define BACKPACK_COMPACT "VSM_Multicam_Backpack_Compact"
 #define BACKPACK_KITBAG "VSM_Multicam_Backpack_Kitbag"
@@ -35,7 +35,7 @@ class GVAR(tank): I_Story_Crew_F {
 };
 */
 
-class GVAR(empty): B_Soldier_F {
+class GVAR(B_empty): B_Soldier_F {
     author = "Katalam";
     displayName = "empty";
     description = "empty";
