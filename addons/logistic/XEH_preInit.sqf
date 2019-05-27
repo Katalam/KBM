@@ -18,7 +18,7 @@ PREP_RECOMPILE_END;
     QGVAR(USAM_Crate_MED),
     QGVAR(USAM_Crate_MOR_HE),
     QGVAR(USAM_Crate_MOR_SMK),
-    QGVAR(USAM_Crate_FULL),
+    QGVAR(USAM_Crate_FULL)
 ] apply {
     [_x, "InitPost", EFUNC(faction_generic,applyVehicleLoadout), true, [], true] call CBA_fnc_addClassEventHandler;
 };
