@@ -650,7 +650,7 @@ class GVAR(USAM_SPO): GVAR(USAM_SNI) {
     loadoutWeapon[] = { {WEAPON_1, {"rhsusf_acc_anpeq15side_bk", "rhsusf_acc_acog", "hlc_muzzle_556NATO_rotexiiic_grey", WEAPON_1_AMMO}},
                         {"", {}},
                         {HANDGUN_1, {HANDGUN_1_AMMO}},
-                        {"ACE_Vector", {}}};
+                        {"ACE_Yardage450", {}}};
     loadoutGrenade[] = {{"rhs_mag_an_m8hc", 4}, {"HandGrenade", 2}};
     loadoutVestInv[] = {{WEAPON_1_AMMO, 6}, {"ACE_20Rnd_762x51_M993_AP_Mag", 2}, {HANDGUN_1_AMMO, 2}};
     loadoutVestInvNew[] = {{"ACE_RangeCard", 1}, {"ACE_ATragMX", 1}, {"ACE_Kestrel4500", 1}, {"ACE_SpottingScope", 1}};
