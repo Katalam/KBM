@@ -54,7 +54,7 @@
     "CHECKBOX",
     [localize LSTRING(enableForce), localize LSTRING(enableForceTooltip)],
     [CBA_SETTINGS_CAT, QUOTE(COMPONENT_BEAUTIFIED)],
-    true,
+    false,
     nil,
     {
         params ["_value"];

@@ -19,7 +19,7 @@
 params [
     "",
     ["_unit", objNull, [objNull]],
-    "_array"
+    ["_array", [], [[]]]
 ];
 
 _array params [
