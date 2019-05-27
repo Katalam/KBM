@@ -39,11 +39,11 @@ class CfgAmmo {
         GVAR(func) = QFUNC(SmallRocket);
     };
     class Grenade: Default {
-        GVAR(func) = QFUNC(Grenade);
+        //GVAR(func) = QFUNC(Grenade);
     };
     class GrenadeHand: Grenade{};
     class SmokeShell: GrenadeHand {
-        GVAR(func) = "";
+        //GVAR(func) = "";
     };
     class GrenadeBase: GrenadeCore {
         GVAR(func) = QFUNC(Grenade);
