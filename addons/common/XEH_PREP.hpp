@@ -1,8 +1,10 @@
 PREP(addBriefingEntries);
+PREP(addSpectatorMenu);
 PREP(breakWindow);
 PREP(canBreakWindow);
 PREP(changeGroupNameDialogCallback);
 PREP(changeGroupNameDialogInit);
 PREP(createZeus);
+PREP(moduleAddSpectatorMenu3den);
 PREP(spawnProtection);
 PREP(unflipVehicle);

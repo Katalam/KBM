@@ -58,6 +58,13 @@ class CfgVehicles {
         isTriggerActivated = 1;
         isDisposable = 0;
     };
+    class GVAR(moduleAddSpectatorMenu3den): EGVAR(common,moduleBase3den) {
+        displayName = "Add Spectator Menu";
+        category = QGVAR(Template);
+        function = QFUNC(moduleAddSpectatorMenu3den);
+        icon = "";
+    };
+
     class Man;
     class CAManBase: Man {
         class ACE_SelfActions {
