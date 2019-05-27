@@ -1,6 +1,6 @@
 class CfgVehicles {
-    class EGVAR(faction_generic,moduleBase3den);
-    class GVAR(moduleAddLogisticMenu3den): EGVAR(faction_generic,moduleBase3den) {
+    class EGVAR(common,moduleBase3den);
+    class GVAR(moduleAddLogisticMenu3den): EGVAR(common,moduleBase3den) {
         displayName = "Add Logistic Menu";
         category = QEGVAR(faction_generic,Loadout);
         function = QFUNC(moduleAddLogisticMenu3den);
