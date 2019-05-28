@@ -22,18 +22,27 @@ class B_Soldier_F: B_Soldier_base_F {
     class EventHandlers;
     modelsides[] = {3,2,1,0};
 };
-/*
+
 class I_Story_Crew_F;
-class GVAR(tank): I_Story_Crew_F {
+class GVAR(Uniform_Tank): I_Story_Crew_F {
     author = "Katalam";
     displayName = "Tank Uniform (American)";
-    scope = 2;
+    scope = 1;
     curatorScope = 1;
-    uniformClass = "KAT_Tank";
+    uniformClass = "KAT_Uniform_Tank";
     hiddenSelections[] = {"Camo","insignia"};
     hiddenSelectionsTextures[] = {QPATHTOF(data\U_Tank_crew_F_CO.paa)};
 };
-*/
+class rhsusf_army_acu_uniform;
+class GVAR(Uniform_OCP): rhsusf_army_acu_uniform {
+    author = "Katalam";
+    displayName = "Army Combat Uniform (OCP)";
+    scope = 2;
+    curatorScope = 2;
+    uniformClass = "KAT_Uniform_OCP";
+    hiddenSelections[] = {"camo1","camo2","camo3","identity","insignia"};
+    hiddenSelectionsTextures[] = {"rhsusf\addons\rhsusf_infantry2\acu\data\rhsusf_uniform_acu_01_ucp_co.paa",QPATHTOF(data\rhsusf_uniform_acu_02_ocp_co.paa),"rhsusf\addons\rhsusf_infantry2\acu\data\rhsusf_uniform_acu_03_ucp_co.paa"};
+};
 
 class GVAR(B_empty): B_Soldier_F {
     author = "Katalam";

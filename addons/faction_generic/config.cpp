@@ -70,7 +70,8 @@ class CfgPatches {
             QGVAR(USAM_Veh_FA18E)
         };
         weapons[] = {
-            QGVAR(KAT_Tank)
+            QUOTE(KAT_Uniform_Tank),
+            QUOTE(KAT_Uniform_OCP)
         };
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
@@ -87,7 +88,7 @@ class CfgPatches {
 #include "CfgFactionClasses.hpp"
 #include "CfgVehicleClasses.hpp"
 #include "CfgVehicles.hpp"
-//#include "CfgWeapons.hpp"
+#include "CfgWeapons.hpp"
 #include "CfgGroups.hpp"
 #include "CfgEventHandlers.hpp"
 #include "CfgUnitInsignia.hpp"
