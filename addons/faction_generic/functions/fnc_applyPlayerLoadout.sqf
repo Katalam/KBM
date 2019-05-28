@@ -11,7 +11,7 @@
  *
  * Example:
  * ["", player] call kat_10thMods_faction_generic_fnc_applyPlayerLoadout;
- * ["", player, "USAM_RFM"] call kat_10thMods_faction_generic_fnc_applyPlayerLoadout;
+ * ["", player, ["USAM_RFM", "kat_10thMods_faction"]] call kat_10thMods_faction_generic_fnc_applyPlayerLoadout;
  *
  * Public: Yes
  */

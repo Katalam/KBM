@@ -211,6 +211,17 @@ class GVAR(USMC_JTAC): GVAR(USMC_SQL) {
 };
 
 // Squad
+class GVAR(USMC_ASL): GVAR(USMC_FTL) {
+    displayName = "Assistant Squad Leader";
+    description = "Assistant Squad Leader";
+    loadout = "USMC_ASL";
+};
+class GVAR(USMC_SSO): GVAR(USMC_FTL) {
+    displayName = "Squad System Operator";
+    description = "Squad System Operator";
+    loadout = "USMC_SSO";
+    loadoutLinked[] = {"ItemMap", "ItemCompass", "ItemWatch", "ItemcTab"};
+};
 class GVAR(USMC_UGL): GVAR(USMC_RFM) {
     displayName = "Grenadier";
     description = "Grenadier";
@@ -576,7 +587,7 @@ class GVAR(USMC_MOR_SQL): GVAR(USMC_SQL) {
     loadoutGroup = "Other";
     loadoutHeadgear[] = {"VSM_Multicam_Boonie"};
     loadoutVestInv[] = {{WEAPON_1_AMMO, 6}, {HANDGUN_1_AMMO, 2}};
-    loadoutVestInvNew[] = {{"VSM_OPS_2_multicam", 1}, {"ACE_RangeTable_82mm", 1}, {"KAT_artilleryTable", 1}, {"ACE_Kestrel4500", 1}};
+    loadoutVestInvNew[] = {{"VSM_OPS_2_multicam", 1}, {"KAT_artilleryTable", 1}, {"ACE_Kestrel4500", 1}};
 };
 class GVAR(USMC_MOR_ASS): GVAR(USMC_RFM) {
     displayName = "Mortar Assistant Gunner";

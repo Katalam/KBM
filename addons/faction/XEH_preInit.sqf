@@ -14,6 +14,7 @@ PREP_RECOMPILE_END;
     QGVAR(USMC_Veh_M1237_M2),
     QGVAR(USMC_Veh_M1237_Mk19),
     QGVAR(USMC_Veh_Cargo_M2),
+    QGVAR(USMC_Veh_Cargo_Mortar_M2),
     QGVAR(USMC_Veh_EMPTY_M2),
     QGVAR(USMC_Veh_REPAIR_M2),
     QGVAR(USMC_Veh_AMMO_M2),
@@ -26,7 +27,10 @@ PREP_RECOMPILE_END;
     QGVAR(USMC_Veh_AH64),
     QGVAR(USMC_Veh_CH47),
     QGVAR(USMC_Veh_A10),
-    QGVAR(USMC_Veh_FA18E)
+    QGVAR(USMC_Veh_FA18E),
+    QGVAR(USMC_Veh_COUGAR),
+    QGVAR(USMC_Veh_COUGAR_M2),
+    QGVAR(USMC_Veh_COUGAR_Mk19)
 ] apply {
     [_x, "InitPost", EFUNC(faction_generic,applyVehicleLoadout), true, [], true] call CBA_fnc_addClassEventHandler;
 };

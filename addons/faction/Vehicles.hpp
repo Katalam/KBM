@@ -6,7 +6,7 @@ class GVAR(USMC_Veh_CAR): rhsusf_m1025_d {
     loadoutItems[] = {{"ACE_key_west", 1}, {"rhs_weap_M136", 4}};
     loadoutWeapon[] = {};
     loadoutMagazine[] = {};
-    loadoutBackpack[] = {{"VSM_Multicam_Backpack_Compact", 1}, {"VSM_Multicam_Backpack_Kitbag", 1}, {"VSM_Multicam_carryall", 1}};
+    loadoutBackpack[] = {{BACKPACK_COMPACT, 1}, {BACKPACK_KITBAG, 1}, {BACKPACK_CARRYALL, 1}};
     loadoutBackpackInv[] = {{
             {"ToolKit", 1}
         }, {
@@ -37,7 +37,7 @@ class GVAR(USMC_Veh_CAR_M2): rhsusf_m1025_d_m2 {
     loadoutItems[] = {{"ACE_key_west", 1}, {"rhs_weap_M136", 4}};
     loadoutWeapon[] = {};
     loadoutMagazine[] = {};
-    loadoutBackpack[] = {{"VSM_Multicam_Backpack_Compact", 1}, {"VSM_Multicam_Backpack_Kitbag", 1}, {"VSM_Multicam_carryall", 1}};
+    loadoutBackpack[] = {{BACKPACK_COMPACT, 1}, {BACKPACK_KITBAG, 1}, {BACKPACK_CARRYALL, 1}};
     loadoutBackpackInv[] = {{
             {"ToolKit", 1}
         }, {
@@ -68,7 +68,7 @@ class GVAR(USMC_Veh_CAR_Mk19): rhsusf_m1025_d_Mk19 {
     loadoutItems[] = {{"ACE_key_west", 1}, {"rhs_weap_M136", 4}};
     loadoutWeapon[] = {};
     loadoutMagazine[] = {};
-    loadoutBackpack[] = {{"VSM_Multicam_Backpack_Compact", 1}, {"VSM_Multicam_Backpack_Kitbag", 1}, {"VSM_Multicam_carryall", 1}};
+    loadoutBackpack[] = {{BACKPACK_COMPACT, 1}, {BACKPACK_KITBAG, 1}, {BACKPACK_CARRYALL, 1}};
     loadoutBackpackInv[] = {{
             {"ToolKit", 1}
         }, {
@@ -99,7 +99,7 @@ class GVAR(USMC_Veh_CAR_TOW): rhsusf_m966_d {
     loadoutItems[] = {{"ACE_key_west", 1}, {"rhs_weap_M136", 4}};
     loadoutWeapon[] = {};
     loadoutMagazine[] = {};
-    loadoutBackpack[] = {{"VSM_Multicam_Backpack_Compact", 1}, {"VSM_Multicam_Backpack_Kitbag", 1}, {"VSM_Multicam_carryall", 1}};
+    loadoutBackpack[] = {{BACKPACK_COMPACT, 1}, {BACKPACK_KITBAG, 1}, {BACKPACK_CARRYALL, 1}};
     loadoutBackpackInv[] = {{
             {"ToolKit", 1}
         }, {
@@ -114,6 +114,96 @@ class GVAR(USMC_Veh_CAR_TOW): rhsusf_m966_d {
             {"rhs_mag_30Rnd_556x45_M855A1_PMAG", 12},
             {"1Rnd_HE_Grenade_shell", 12},
             {"rhs_mag_30Rnd_556x45_M855A1_PMAG", 5}
+        }};
+    crew = QGVAR(USMC_RFM);
+    scope = 2;
+    curatorScope = 2;
+    faction = QGVAR(USMC_D);
+    class TransportBackpacks {};
+};
+
+// Cougar
+class rhsusf_CGRCAT1A2_usmc_d;
+class GVAR(USMC_Veh_COUGAR): rhsusf_CGRCAT1A2_usmc_d {
+    author = "Katalam";
+    displayName = "Cougar (Unarmed)";
+    loadoutCargo[] = {{"ACE_Wheel", 2}};
+    loadoutItems[] = {{"ACE_key_west", 1}, {"rhs_weap_M136", 4}};
+    loadoutWeapon[] = {};
+    loadoutMagazine[] = {};
+    loadoutBackpack[] = {{BACKPACK_COMPACT, 1}, {BACKPACK_KITBAG, 1}, {BACKPACK_CARRYALL, 1}};
+    loadoutBackpackInv[] = {{
+            {"ToolKit", 1}
+        }, {
+            {"ACE_packingBandage", 32},
+            {"ACE_elasticBandage", 32},
+            {"ACE_morphine", 8},
+            {"ACE_epinephrine", 8},
+            {"ACE_tourniquet", 4},
+            {"ACE_plasmaIV_500", 12},
+            {"adv_aceSplint_splint", 12}
+        }, {
+            {"rhs_mag_30Rnd_556x45_M855A1_PMAG", 16},
+            {"1Rnd_HE_Grenade_shell", 12}
+        }};
+    crew = QGVAR(USMC_RFM);
+    scope = 2;
+    curatorScope = 2;
+    faction = QGVAR(USMC_D);
+    class TransportBackpacks {};
+};
+class rhsusf_CGRCAT1A2_M2_usmc_d;
+class GVAR(USMC_Veh_COUGAR_M2): rhsusf_CGRCAT1A2_M2_usmc_d {
+    author = "Katalam";
+    displayName = "Cougar M2";
+    loadoutCargo[] = {{"ACE_Wheel", 2}};
+    loadoutItems[] = {{"ACE_key_west", 1}, {"rhs_weap_M136", 4}};
+    loadoutWeapon[] = {};
+    loadoutMagazine[] = {};
+    loadoutBackpack[] = {{BACKPACK_COMPACT, 1}, {BACKPACK_KITBAG, 1}, {BACKPACK_CARRYALL, 1}};
+    loadoutBackpackInv[] = {{
+            {"ToolKit", 1}
+        }, {
+            {"ACE_packingBandage", 32},
+            {"ACE_elasticBandage", 32},
+            {"ACE_morphine", 8},
+            {"ACE_epinephrine", 8},
+            {"ACE_tourniquet", 4},
+            {"ACE_plasmaIV_500", 12},
+            {"adv_aceSplint_splint", 12}
+        }, {
+            {"rhs_mag_30Rnd_556x45_M855A1_PMAG", 16},
+            {"1Rnd_HE_Grenade_shell", 12}
+        }};
+    crew = QGVAR(USMC_RFM);
+    scope = 2;
+    curatorScope = 2;
+    faction = QGVAR(USMC_D);
+    class TransportBackpacks {};
+};
+
+class rhsusf_CGRCAT1A2_Mk19_usmc_d;
+class GVAR(USMC_Veh_COUGAR_Mk19): rhsusf_CGRCAT1A2_Mk19_usmc_d {
+    author = "Katalam";
+    displayName = "Cougar Mk19";
+    loadoutCargo[] = {{"ACE_Wheel", 2}};
+    loadoutItems[] = {{"ACE_key_west", 1}, {"rhs_weap_M136", 4}};
+    loadoutWeapon[] = {};
+    loadoutMagazine[] = {};
+    loadoutBackpack[] = {{BACKPACK_COMPACT, 1}, {BACKPACK_KITBAG, 1}, {BACKPACK_CARRYALL, 1}};
+    loadoutBackpackInv[] = {{
+            {"ToolKit", 1}
+        }, {
+            {"ACE_packingBandage", 32},
+            {"ACE_elasticBandage", 32},
+            {"ACE_morphine", 8},
+            {"ACE_epinephrine", 8},
+            {"ACE_tourniquet", 4},
+            {"ACE_plasmaIV_500", 12},
+            {"adv_aceSplint_splint", 12}
+        }, {
+            {"rhs_mag_30Rnd_556x45_M855A1_PMAG", 16},
+            {"1Rnd_HE_Grenade_shell", 12}
         }};
     crew = QGVAR(USMC_RFM);
     scope = 2;
@@ -163,7 +253,7 @@ class GVAR(USMC_Veh_M1237_Mk19): rhsusf_M1237_MK19_usarmy_d {
     loadoutItems[] = {{"ACE_key_west", 1}, {"rhs_weap_M136", 4}};
     loadoutWeapon[] = {};
     loadoutMagazine[] = {};
-    loadoutBackpack[] = {{"VSM_Multicam_Backpack_Compact", 1}, {"VSM_Multicam_Backpack_Kitbag", 1}, {"VSM_Multicam_carryall", 1}};
+    loadoutBackpack[] = {{BACKPACK_COMPACT, 1}, {BACKPACK_KITBAG, 1}, {BACKPACK_CARRYALL, 1}};
     loadoutBackpackInv[] = {{
             {"ToolKit", 1}
         }, {
@@ -195,7 +285,7 @@ class GVAR(USMC_Veh_Cargo_M2): rhsusf_M1078A1P2_B_M2_D_fmtv_usarmy {
     loadoutItems[] = {{"ACE_key_west", 1}, {"rhs_weap_M136", 4}};
     loadoutWeapon[] = {};
     loadoutMagazine[] = {};
-    loadoutBackpack[] = {{"VSM_Multicam_Backpack_Compact", 1}, {"VSM_Multicam_Backpack_Kitbag", 1}, {"VSM_Multicam_carryall", 1}};
+    loadoutBackpack[] = {{BACKPACK_COMPACT, 1}, {BACKPACK_KITBAG, 1}, {BACKPACK_CARRYALL, 1}};
     loadoutBackpackInv[] = {{
             {"ToolKit", 1}
         }, {
@@ -218,6 +308,42 @@ class GVAR(USMC_Veh_Cargo_M2): rhsusf_M1078A1P2_B_M2_D_fmtv_usarmy {
     class TransportBackpacks {};
 };
 
+// Truck cargo w/ mortar
+class GVAR(USMC_Veh_Cargo_Mortar_M2): rhsusf_M1078A1P2_B_M2_D_fmtv_usarmy {
+    author = "Katalam";
+    displayName = "Cargo w/ mortar M2";
+    loadoutCargo[] = {{"ACE_Wheel", 2}, {QEGVAR(logistic,USAM_Crate_MOR_HE), 2}, {QEGVAR(logistic,USAM_Crate_MOR_SMK), 2}};
+    loadoutItems[] = {{"ACE_key_west", 1}, {"rhs_weap_M136", 4}, {"ACE_1Rnd_82mm_Mo_Smoke", 10}};
+    loadoutWeapon[] = {};
+    loadoutMagazine[] = {};
+    loadoutBackpack[] = {{BACKPACK_COMPACT, 1}, {BACKPACK_KITBAG, 1}, {BACKPACK_CARRYALL, 3}};
+    loadoutBackpackInv[] = {{
+            {"ToolKit", 1}
+        }, {
+            {"ACE_packingBandage", 32},
+            {"ACE_elasticBandage", 32},
+            {"ACE_morphine", 8},
+            {"ACE_epinephrine", 8},
+            {"ACE_tourniquet", 4},
+            {"ACE_plasmaIV_500", 12},
+            {"adv_aceSplint_splint", 12}
+        }, {
+            {"ACE_1Rnd_82mm_Mo_HE", 5},
+            {"ACE_1Rnd_82mm_Mo_Smoke", 1}
+        }, {
+            {"ACE_1Rnd_82mm_Mo_HE", 5},
+            {"ACE_1Rnd_82mm_Mo_Smoke", 1}
+        }, {
+            {"ACE_1Rnd_82mm_Mo_HE", 5},
+            {"ACE_1Rnd_82mm_Mo_Smoke", 1}
+        }};
+    crew = QGVAR(USMC_RFM);
+    scope = 2;
+    curatorScope = 2;
+    faction = QGVAR(USMC_D);
+    class TransportBackpacks {};
+};
+
 // Truck empty
 class rhsusf_M977A4_BKIT_usarmy_d;
 class GVAR(USMC_Veh_EMPTY_M2): rhsusf_M977A4_BKIT_usarmy_d {
@@ -227,7 +353,7 @@ class GVAR(USMC_Veh_EMPTY_M2): rhsusf_M977A4_BKIT_usarmy_d {
     loadoutItems[] = {{"ACE_key_west", 1}};
     loadoutWeapon[] = {};
     loadoutMagazine[] = {};
-    loadoutBackpack[] = {{"VSM_Multicam_Backpack_Compact", 1}};
+    loadoutBackpack[] = {{BACKPACK_COMPACT, 1}};
     loadoutBackpackInv[] = {{{"ToolKit", 1}}};
     crew = QGVAR(USMC_LOG);
     scope = 2;
@@ -245,7 +371,7 @@ class GVAR(USMC_Veh_REPAIR_M2): rhsusf_M977A4_REPAIR_BKIT_M2_usarmy_d {
     loadoutItems[] = {{"ACE_key_west", 1}};
     loadoutWeapon[] = {};
     loadoutMagazine[] = {};
-    loadoutBackpack[] = {{"VSM_Multicam_Backpack_Compact", 1}};
+    loadoutBackpack[] = {{BACKPACK_COMPACT, 1}};
     loadoutBackpackInv[] = {{{"ToolKit", 1}}};
     crew = QGVAR(USMC_LOG);
     scope = 2;
@@ -263,7 +389,7 @@ class GVAR(USMC_Veh_AMMO_M2): rhsusf_M977A4_AMMO_BKIT_M2_usarmy_d {
     loadoutItems[] = {{"ACE_key_west", 1}};
     loadoutWeapon[] = {};
     loadoutMagazine[] = {};
-    loadoutBackpack[] = {{"VSM_Multicam_Backpack_Compact", 1}};
+    loadoutBackpack[] = {{BACKPACK_COMPACT, 1}};
     loadoutBackpackInv[] = {{{"ToolKit", 1}}};
     crew = QGVAR(USMC_LOG);
     scope = 2;
@@ -281,7 +407,7 @@ class GVAR(USMC_Veh_FUEL): rhsusf_M978A4_BKIT_usarmy_d {
     loadoutItems[] = {{"ACE_key_west", 1}};
     loadoutWeapon[] = {};
     loadoutMagazine[] = {};
-    loadoutBackpack[] = {{"VSM_Multicam_Backpack_Compact", 1}};
+    loadoutBackpack[] = {{BACKPACK_COMPACT, 1}};
     loadoutBackpackInv[] = {{{"ToolKit", 1}}};
     crew = QGVAR(USMC_LOG);
     scope = 2;
@@ -307,7 +433,7 @@ class GVAR(USMC_Veh_MEDICAL): rhsusf_M1085A1P2_B_D_Medical_fmtv_usarmy {
         {"adv_aceSplint_splint", 12}};
     loadoutWeapon[] = {};
     loadoutMagazine[] = {};
-    loadoutBackpack[] = {{"VSM_Multicam_Backpack_Compact", 1}, {"VSM_Multicam_Backpack_Kitbag", 4}};
+    loadoutBackpack[] = {{BACKPACK_COMPACT, 1}, {BACKPACK_KITBAG, 4}};
     loadoutBackpackInv[] = {{
             {"ToolKit", 1}
         }, {
@@ -359,7 +485,7 @@ class GVAR(USMC_Veh_IFV): RHS_M2A3_BUSKIII {
     loadoutItems[] = {{"ACE_key_west", 1}, {"rhs_weap_M136", 4}};
     loadoutWeapon[] = {};
     loadoutMagazine[] = {};
-    loadoutBackpack[] = {{"VSM_Multicam_Backpack_Compact", 1}, {"VSM_Multicam_Backpack_Kitbag", 2}, {"VSM_Multicam_carryall", 1}};
+    loadoutBackpack[] = {{BACKPACK_COMPACT, 1}, {BACKPACK_KITBAG, 2}, {BACKPACK_CARRYALL, 1}};
     loadoutBackpackInv[] = {{
             {"ToolKit", 1}
         }, {
@@ -399,7 +525,7 @@ class GVAR(USMC_Veh_M109A6): rhsusf_m109d_usarmy {
     loadoutItems[] = {{"ACE_key_west", 1}};
     loadoutWeapon[] = {};
     loadoutMagazine[] = {};
-    loadoutBackpack[] = {{"VSM_Multicam_Backpack_Compact", 1}, {"VSM_Multicam_Backpack_Kitbag", 1}, {"VSM_Multicam_carryall", 1}};
+    loadoutBackpack[] = {{BACKPACK_COMPACT, 1}, {BACKPACK_KITBAG, 1}, {BACKPACK_CARRYALL, 1}};
     loadoutBackpackInv[] = {{
             {"ToolKit", 1}
         }, {
@@ -431,7 +557,7 @@ class GVAR(USMC_Veh_M142): rhsusf_M142_usarmy_D {
     loadoutItems[] = {{"ACE_key_west", 1}};
     loadoutWeapon[] = {};
     loadoutMagazine[] = {};
-    loadoutBackpack[] = {{"VSM_Multicam_Backpack_Compact", 1}, {"VSM_Multicam_Backpack_Kitbag", 1}, {"VSM_Multicam_carryall", 1}};
+    loadoutBackpack[] = {{BACKPACK_COMPACT, 1}, {BACKPACK_KITBAG, 1}, {BACKPACK_CARRYALL, 1}};
     loadoutBackpackInv[] = {{
             {"ToolKit", 1}
         }, {
