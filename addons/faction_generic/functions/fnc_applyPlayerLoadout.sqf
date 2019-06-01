@@ -11,7 +11,7 @@
  *
  * Example:
  * ["", player] call kat_10thMods_faction_generic_fnc_applyPlayerLoadout;
- * ["", player, ["USAM_RFM", "kat_10thMods_faction"]] call kat_10thMods_faction_generic_fnc_applyPlayerLoadout;
+ * ["", player, ["USAM_RFM", "kat_10thMods_faction_generic_%1"]] call kat_10thMods_faction_generic_fnc_applyPlayerLoadout;
  *
  * Public: Yes
  */
@@ -30,7 +30,7 @@ _array params [
 if (is3DEN) exitWith {};
 
 if !(local _unit) exitWith {
-    [0, _unit, _loadout] remoteExec [QFUNC(applyPlayerLoadout), _unit];
+    [0, _unit, [_loadout, _typeFormat]] remoteExec [QFUNC(applyPlayerLoadout), _unit];
 };
 
 private _type = typeOf _unit;

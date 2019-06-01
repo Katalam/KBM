@@ -33,4 +33,7 @@ PREP_RECOMPILE_END;
 
 [QGVAR(USAM_RFM), "InitPost", {[objNull, _this select 0] call FUNC(applyPlayerLoadout);}, true, [], true] call CBA_fnc_addClassEventHandler;
 
+["CAManBase", "Take", FUNC(setInsignia)] call CBA_fnc_addClassEventHandler;
+["CAManBase", "InventoryOpened", FUNC(getInsignia)] call CBA_fnc_addClassEventHandler;
+
 ADDON = true;
