@@ -30,6 +30,7 @@ PREP_RECOMPILE_END;
     QGVAR(USMC_Veh_FA18E),
     QGVAR(USMC_Veh_COUGAR),
     QGVAR(USMC_Veh_COUGAR_M2),
+    QGVAR(USMC_Veh_COUGAR_MOR),
     QGVAR(USMC_Veh_COUGAR_Mk19)
 ] apply {
     [_x, "InitPost", EFUNC(faction_generic,applyVehicleLoadout), true, [], true] call CBA_fnc_addClassEventHandler;

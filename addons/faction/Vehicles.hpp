@@ -182,6 +182,38 @@ class GVAR(USMC_Veh_COUGAR_M2): rhsusf_CGRCAT1A2_M2_usmc_d {
     class TransportBackpacks {};
 };
 
+class GVAR(USMC_Veh_COUGAR_MOR): rhsusf_CGRCAT1A2_M2_usmc_d {
+    author = "Katalam";
+    displayName = "Cougar w/ Mortar M2";
+    loadoutCargo[] = {{"ACE_Wheel", 2}, {QEGVAR(logistic,USAM_Crate_MOR_HE), 1}, {QEGVAR(logistic,USAM_Crate_MOR_SMK), 1}};
+    loadoutItems[] = {{"ACE_key_west", 1}, {"rhs_weap_M136", 4}, {"ACE_1Rnd_82mm_Mo_Smoke", 10}};
+    loadoutWeapon[] = {};
+    loadoutMagazine[] = {};
+    loadoutBackpack[] = {{BACKPACK_COMPACT, 1}, {BACKPACK_KITBAG, 1}, {BACKPACK_CARRYALL, 2}};
+    loadoutBackpackInv[] = {{
+            {"ToolKit", 1}
+        }, {
+            {"ACE_packingBandage", 32},
+            {"ACE_elasticBandage", 32},
+            {"ACE_morphine", 8},
+            {"ACE_epinephrine", 8},
+            {"ACE_tourniquet", 4},
+            {"ACE_plasmaIV_500", 12},
+            {"adv_aceSplint_splint", 12}
+        }, {
+            {"ACE_1Rnd_82mm_Mo_HE", 5},
+            {"ACE_1Rnd_82mm_Mo_Smoke", 1}
+        }, {
+            {"ACE_1Rnd_82mm_Mo_HE", 5},
+            {"ACE_1Rnd_82mm_Mo_Smoke", 1}
+        }};
+    crew = QGVAR(USMC_RFM);
+    scope = 2;
+    curatorScope = 2;
+    faction = QGVAR(USMC_D);
+    class TransportBackpacks {};
+};
+
 class rhsusf_CGRCAT1A2_Mk19_usmc_d;
 class GVAR(USMC_Veh_COUGAR_Mk19): rhsusf_CGRCAT1A2_Mk19_usmc_d {
     author = "Katalam";
@@ -311,7 +343,7 @@ class GVAR(USMC_Veh_Cargo_M2): rhsusf_M1078A1P2_B_M2_D_fmtv_usarmy {
 // Truck cargo w/ mortar
 class GVAR(USMC_Veh_Cargo_Mortar_M2): rhsusf_M1078A1P2_B_M2_D_fmtv_usarmy {
     author = "Katalam";
-    displayName = "Cargo w/ mortar M2";
+    displayName = "Cargo w/ Mortar M2";
     loadoutCargo[] = {{"ACE_Wheel", 2}, {QEGVAR(logistic,USAM_Crate_MOR_HE), 2}, {QEGVAR(logistic,USAM_Crate_MOR_SMK), 2}};
     loadoutItems[] = {{"ACE_key_west", 1}, {"rhs_weap_M136", 4}, {"ACE_1Rnd_82mm_Mo_Smoke", 10}};
     loadoutWeapon[] = {};

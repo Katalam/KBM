@@ -122,44 +122,6 @@ class GVAR(USMC_W_MKM): GVAR(USMC_MKM) {
     uniformClass = UNIFORM_1;
 };
 
-// Heavy Squad
-class GVAR(USMC_W_WTL_MMG): GVAR(USMC_WTL_MMG) {
-    loadout = "USMC_W_WTL_MMG";
-    loadoutUniform[] = {UNIFORM_1};
-    faction = QGVAR(USMC_W);
-    uniformClass = UNIFORM_1;
-};
-class GVAR(USMC_W_MMG): GVAR(USMC_MMG) {
-    loadout = "USMC_W_MMG";
-    loadoutUniform[] = {UNIFORM_1};
-    faction = QGVAR(USMC_W);
-    uniformClass = UNIFORM_1;
-};
-class GVAR(USMC_W_AMG): GVAR(USMC_AMG) {
-    loadout = "USMC_W_AMG";
-    loadoutUniform[] = {UNIFORM_1};
-    faction = QGVAR(USMC_W);
-    uniformClass = UNIFORM_1;
-};
-class GVAR(USMC_W_WTL_HAT): GVAR(USMC_WTL_HAT) {
-    loadout = "USMC_W_WTL_HAT";
-    loadoutUniform[] = {UNIFORM_1};
-    faction = QGVAR(USMC_W);
-    uniformClass = UNIFORM_1;
-};
-class GVAR(USMC_W_HAT): GVAR(USMC_HAT) {
-    loadout = "USMC_W_HAT";
-    loadoutUniform[] = {UNIFORM_1};
-    faction = QGVAR(USMC_W);
-    uniformClass = UNIFORM_1;
-};
-class GVAR(USMC_W_AAT): GVAR(USMC_AAT) {
-    loadout = "USMC_W_AAT";
-    loadoutUniform[] = {UNIFORM_1};
-    faction = QGVAR(USMC_W);
-    uniformClass = UNIFORM_1;
-};
-
 // Crew
 class GVAR(USMC_W_CRW_LEAD): GVAR(USMC_CRW_LEAD) {
     loadout = "USMC_W_CRW_LEAD";
@@ -211,31 +173,6 @@ class GVAR(USMC_W_SPO): GVAR(USMC_SPO) {
 };
 class GVAR(USMC_W_TL): GVAR(USMC_TL) {
     loadout = "USMC_W_TL";
-    loadoutUniform[] = {UNIFORM_1};
-    faction = QGVAR(USMC_W);
-    uniformClass = UNIFORM_1;
-};
-
-// Mortar
-class GVAR(USMC_W_MOR_SQL): GVAR(USMC_MOR_SQL) {
-    loadout = "USMC_W_MOR_SQL";
-    loadoutUniform[] = {UNIFORM_1};
-    faction = QGVAR(USMC_W);
-    uniformClass = UNIFORM_1;
-};
-class GVAR(USMC_W_MOR_ASS): GVAR(USMC_MOR_ASS) {
-    loadoutUniform[] = {UNIFORM_1};
-    faction = QGVAR(USMC_W);
-    uniformClass = UNIFORM_1;
-};
-class GVAR(USMC_W_MOR_GUN): GVAR(USMC_MOR_GUN) {
-    loadout = "USMC_W_MOR_GUN";
-    loadoutUniform[] = {UNIFORM_1};
-    faction = QGVAR(USMC_W);
-    uniformClass = UNIFORM_1;
-};
-class GVAR(USMC_W_MOR_AMB): GVAR(USMC_MOR_AMB) {
-    loadout = "USMC_W_MOR_AMB";
     loadoutUniform[] = {UNIFORM_1};
     faction = QGVAR(USMC_W);
     uniformClass = UNIFORM_1;
