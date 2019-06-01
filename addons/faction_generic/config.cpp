@@ -71,7 +71,10 @@ class CfgPatches {
         };
         weapons[] = {
             QUOTE(KAT_Uniform_Tank),
-            QUOTE(KAT_Uniform_OCP)
+            QUOTE(KAT_Uniform_OCP),
+            QUOTE(KAT_Headgear_OCP),
+            QUOTE(KAT_Vest_OCP),
+            QUOTE(KAT_Headgear_CAP_OCP)
         };
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {

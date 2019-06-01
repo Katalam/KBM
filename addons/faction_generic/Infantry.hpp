@@ -41,8 +41,11 @@ class GVAR(Uniform_OCP): rhsusf_army_acu_uniform {
     curatorScope = 2;
     uniformClass = "KAT_Uniform_OCP";
     hiddenSelections[] = {"camo1","camo2","camo3","identity","insignia"};
-    hiddenSelectionsTextures[] = {"rhsusf\addons\rhsusf_infantry2\acu\data\rhsusf_uniform_acu_01_ucp_co.paa",QPATHTOF(data\rhsusf_uniform_acu_02_ocp_co.paa),"rhsusf\addons\rhsusf_infantry2\acu\data\rhsusf_uniform_acu_03_ucp_co.paa"};
+    hiddenSelectionsTextures[] = {QPATHTOF(data\uniform_jacket_co.paa),QPATHTOF(data\uniform_trouser_co.paa),QPATHTOF(data\uniform_boots_co.paa)};
+    headgearList[] = {QUOTE(KAT_Headgear_CAP_OCP),1};
 };
+
+
 
 class GVAR(B_empty): B_Soldier_F {
     author = "Katalam";
