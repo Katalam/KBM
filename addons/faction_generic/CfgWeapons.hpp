@@ -36,8 +36,8 @@ class CfgWeapons {
         displayName = "ACH (OCP)";
         hiddenSelectionsTextures[] = {QPATHTOF(data\uniform_helmet_co.paa)};
     };
-    class rhsusf_patrolcap_ocp;
-    class KAT_Headgear_Cap_OCP: rhsusf_patrolcap_ocp {
+    class rhsusf_patrolcap_ucp;
+    class KAT_Headgear_Cap_OCP: rhsusf_patrolcap_ucp {
         author = "Katalam";
         displayName = "Fieldcap (OCP)";
         hiddenSelectionsTextures[] = {QPATHTOF(data\uniform_fieldcap_co.paa)};

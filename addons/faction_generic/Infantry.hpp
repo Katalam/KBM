@@ -40,9 +40,9 @@ class GVAR(Uniform_OCP): rhsusf_army_acu_uniform {
     scope = 2;
     curatorScope = 2;
     uniformClass = "KAT_Uniform_OCP";
+    linkedItems[] = {"KAT_Vest_OCP","KAT_Headgear_Cap_OCP","ItemGPS","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
     hiddenSelections[] = {"camo1","camo2","camo3","identity","insignia"};
     hiddenSelectionsTextures[] = {QPATHTOF(data\uniform_jacket_co.paa),QPATHTOF(data\uniform_trouser_co.paa),QPATHTOF(data\uniform_boots_co.paa)};
-    headgearList[] = {QUOTE(KAT_Headgear_CAP_OCP),1};
 };
 
 
