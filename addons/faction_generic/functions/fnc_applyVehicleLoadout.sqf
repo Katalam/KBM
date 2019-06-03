@@ -22,10 +22,7 @@ params [
 ];
 
 if (is3DEN) exitWith {};
-
-if !(local _box) exitWith {
-    [_box, 0, _loadout] remoteExec [QFUNC(applyVehicleLoadout), _box];
-};
+if !(isServer) exitWith {};
 
 private _type = typeOf _box;
 if !(_loadout isEqualTo "") then {

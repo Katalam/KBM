@@ -27,4 +27,5 @@ PREP(scope);
 PREP(setChannels);
 PREP(setInsignia);
 PREP(silencer);
+PREP(vehicleLoadoutLocal);
 PREP(vehiclePos);

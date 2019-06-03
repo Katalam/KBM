@@ -29,7 +29,8 @@ _array params [
 
 if (is3DEN) exitWith {};
 
-if (!local _unit || {_unit != player}) exitWith {};
+if ((!local _unit || {_unit != player}) && {isPlayer _unit}) exitWith {}; // not unit local or given unit is not the local player and given unit is a player
+if (!(isPlayer _unit) && {!(isNil {_unit getVariable QGVAR(loadout)})}) exitWith {}; // given unit is not a player and loadout variable is not nil
 
 private _type = typeOf _unit;
 if !(_loadout isEqualTo "") then {
