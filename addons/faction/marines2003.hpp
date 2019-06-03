@@ -267,10 +267,10 @@ class GVAR(USMC03_SNI): GVAR(USMC03_SQL) {
                         {"", {}},
                         {"ACE_Yardage450", {}}};
     loadoutUniformInvNew[] = {};
-    loadoutVestInv[] = {{WEAPON_1_AMMO, 6}, {"rhsusf_5Rnd_762x51_m118_special_Mag", 4}};
+    loadoutVestInv[] = {{WEAPON_1_AMMO, 6}, {"rhsusf_10Rnd_762x51_m62_Mag", 2}};
     loadoutVestInvNew[] = {{"ACE_salineIV_500", 6}};
-    loadoutBackpackInvNew[] = {};
-    loadoutGunBackpack[] = {"ace_gunbag_tan", {"rhs_weap_m24sws_d", {"optic_LRPS", "rhsusf_acc_harris_swivel"}, {{"rhsusf_5Rnd_762x51_m62_Mag", 10}}}};
+    loadoutBackpackInvNew[] = {{"rhsusf_mag_10Rnd_STD_50BMG_M33", 1}};
+    loadoutGunBackpack[] = {"ace_gunbag_tan", {"rhs_weap_M107_d", {"optic_LRPS"}, {{"rhsusf_mag_10Rnd_STD_50BMG_M33", 10}}}};
     loadoutScopeDMR[] = {{"LRPS", "optic_LRPS"}, {"DMS", "optic_DMS"}, {"Khalia", "optic_KHS_blk"}, {"AMS", "optic_AMS"}};
     loadoutVarMedic = 1;
 };
@@ -280,7 +280,7 @@ class GVAR(USMC03_SPO): GVAR(USMC03_SNI) {
     loadout = "USMC03_SPO";
     loadoutGroup = "Other";
     loadoutBackpack[] = {BACKPACK_77L};
-    loadoutVestInv[] = {{WEAPON_1_AMMO, 6}, {"rhsusf_5Rnd_762x51_m118_special_Mag", 2}};
+    loadoutVestInv[] = {{WEAPON_1_AMMO, 6}, {"rhsusf_10Rnd_762x51_m993_Mag", 2}};
     loadoutVestInvNew[] = {{"ACE_RangeCard", 1}, {"ACE_ATragMX", 1}, {"ACE_Kestrel4500", 1}, {"ACE_SpottingScope", 1}};
     loadoutBackpackInvNew[] = {{"ACRE_PRC77", 1}, {"ACE_Tripod", 1}, {"ACE_DefusalKit", 1}, {"ACE_EntrenchingTool", 1}, {"ACE_Sandbag_empty", 5}, {"ACE_epinephrine", 10}, {"ACE_morphine", 10}, {"ACE_salineIV_500", 6}, {"ACE_surgicalKit", 1}};
     loadoutGunBackpack[] = {};
@@ -292,10 +292,10 @@ class GVAR(USMC03_TL): GVAR(USMC03_SPO) {
     loadout = "USMC03_TL";
     loadoutGroup = "Other";
     loadoutBackpack[] = {};
-    loadoutVestInv[] = {{WEAPON_1_AMMO, 4}, {"rhsusf_5Rnd_762x51_m62_Mag", 4}, {"rhsusf_mag_10Rnd_STD_50BMG_M33", 2}};
+    loadoutVestInv[] = {{WEAPON_1_AMMO, 4}, {"rhsusf_10Rnd_762x51_m993_Mag", 2}, {"rhsusf_10Rnd_762x51_m62_Mag", 2}};
     loadoutVestInvNew[] = {{"ACE_RangeCard", 1}, {"ACE_ATragMX", 1}, {"ACE_Kestrel4500", 1}, {"adv_aceCPR_AED", 1}};
     loadoutBackpackInvNew[] = {};
-    loadoutGunBackpack[] = {"ace_gunbag_tan", {"rhs_weap_M107", {"rhsusf_acc_harris_bipod", "optic_LRPS"}, {{"rhsusf_mag_10Rnd_STD_50BMG_M33", 5}}}};
+    loadoutGunBackpack[] = {"ace_gunbag_tan", {"rhs_weap_m40a5_d", {"rhsusf_acc_harris_bipod", "optic_LRPS"}, {{"rhsusf_10Rnd_762x51_m62_Mag", 5}}}};
     loadoutVarMedic = 2;
     loadoutVarEOD = 1;
     loadoutScopeDMR[] = {{"LRPS", "optic_LRPS"}, {"DMS", "optic_DMS"}, {"Khalia", "optic_KHS_blk"}, {"AMS", "optic_AMS"}};
