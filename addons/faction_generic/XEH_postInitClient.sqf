@@ -7,10 +7,10 @@ if ((typeOf player find "kat_10thmods") >= 0) then {
         private "_typeFormat";
         switch (true) do {
             case ((_loadout find "USAM") >= 0): {
-                _typeFormat = "kat_10thMods_faction_generic_%1";
+                _typeFormat = QGVAR(%1);
             };
             case ((_loadout find "USMC") >= 0): {
-                _typeFormat = "kat_10thMods_faction_%1";
+                _typeFormat = QEGVAR(faction,%1);
             };
         };
         [objNull, _unit, [_loadout, _typeFormat]] call FUNC(applyPlayerLoadout);

@@ -19,11 +19,11 @@
         </Key>
         <Key ID="STR_kat_10thmods_faction_generic_weaponsquad">
             <English>Weapon Squad</English>
-            <German>schwer. Waffengruppe</German>
+            <German>Waffengruppe</German>
         </Key>
         <Key ID="STR_kat_10thmods_faction_generic_heavyWeaponsquad">
             <English>Heavy Weapon Squad</English>
-            <German>sehr schwer. Waffengruppe</German>
+            <German>schwer. Waffengruppe</German>
         </Key>
         <Key ID="STR_kat_10thmods_faction_generic_logistic">
             <English>Logistic</English>
@@ -42,16 +42,16 @@
             <German>Optik</German>
         </Key>
         <Key ID="STR_kat_10thmods_faction_generic_nightvision">
-            <English>Nightvision</English>
-            <German>Nachtsicht</German>
+            <English>Night combat equipment</English>
+            <German>Nachtkampfausrüstung</German>
         </Key>
         <Key ID="STR_kat_10thmods_faction_generic_nightvision_add">
-            <English>Add Nightvision</English>
-            <German>Nachtsicht hinzufügen</German>
+            <English>Add Night combat equipment</English>
+            <German>Nachtkampfausrüstung hinzufügen</German>
         </Key>
         <Key ID="STR_kat_10thmods_faction_generic_nightvision_remove">
-            <English>Remove Nightvision</English>
-            <German>Entferne Nachtsicht</German>
+            <English>Remove Night combat equipment</English>
+            <German>Entferne Nachtkampfausrüstung</German>
         </Key>
         <Key ID="STR_kat_10thmods_faction_generic_goggle">
             <English>Goggle</English>

@@ -22,6 +22,7 @@ PREP(moduleAddPlaneMenu3den);
 PREP(moduleAddVehicleMenu3den);
 PREP(nightvision);
 PREP(planePos);
+PREP(playerLoadoutLocal);
 PREP(scope);
 PREP(setChannels);
 PREP(setInsignia);

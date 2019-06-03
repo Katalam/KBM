@@ -13,7 +13,7 @@
  * ["", player] call kat_10thMods_faction_generic_fnc_applyPlayerLoadout;
  * ["", player, ["USAM_RFM", "kat_10thMods_faction_generic_%1"]] call kat_10thMods_faction_generic_fnc_applyPlayerLoadout;
  *
- * Public: Yes
+ * Public: No
  */
 
 params [
@@ -29,9 +29,7 @@ _array params [
 
 if (is3DEN) exitWith {};
 
-if !(local _unit) exitWith {
-    [0, _unit, [_loadout, _typeFormat]] remoteExec [QFUNC(applyPlayerLoadout), _unit];
-};
+if (!local _unit || {_unit != player}) exitWith {};
 
 private _type = typeOf _unit;
 if !(_loadout isEqualTo "") then {
