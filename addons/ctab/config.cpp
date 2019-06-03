@@ -16,9 +16,9 @@ class CfgPatches {
 
 class cTab_RscPicture;
 class cTab_Tablet_dlg {
-	class controlsBackground {
-		class windowsBG: cTab_RscPicture {
-			text = QPATHTOF(data\wallpaper.paa);
-		};
+    class controlsBackground {
+        class windowsBG: cTab_RscPicture {
+            text = QPATHTOF(data\wallpaper.paa);
+        };
     };
 };
