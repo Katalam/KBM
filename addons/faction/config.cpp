@@ -37,7 +37,6 @@ class CfgPatches {
             QGVAR(USMC_TL),
             QGVAR(USMC_WSL_MOR),
             QGVAR(USMC_MOR_ASS),
-            QGVAR(USMC_MOR_GUN),
             QGVAR(USMC_MOR_AMB),
             QGVAR(USMC_EOD),
             QGVAR(USMC_ESP),

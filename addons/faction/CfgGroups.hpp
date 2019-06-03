@@ -129,34 +129,29 @@ class CfgGroups {
                         position[] = {0,0,0};
                     };
                     class Unit1 {
-                        vehicle = QGVAR(USMC_MOR_GUN);
+                        vehicle = QGVAR(USMC_MOR_ASS);
                         rank = "PRIVATE";
                         position[] = {0,-2,0};
                     };
                     class Unit2 {
-                        vehicle = QGVAR(USMC_MOR_ASS);
+                        vehicle = QGVAR(USMC_MOR_AMB);
                         rank = "PRIVATE";
                         position[] = {-2,-2,0};
                     };
                     class Unit3 {
-                        vehicle = QGVAR(USMC_MOR_AMB);
-                        rank = "PRIVATE";
+                        vehicle = QGVAR(USMC_WSL_MOR);
+                        rank = "SERGEANT";
                         position[] = {0,-4,0};
                     };
                     class Unit4 {
-                        vehicle = QGVAR(USMC_MOR_GUN);
+                        vehicle = QGVAR(USMC_MOR_ASS);
                         rank = "PRIVATE";
                         position[] = {-2,-4,0};
                     };
                     class Unit5 {
-                        vehicle = QGVAR(USMC_MOR_ASS);
-                        rank = "PRIVATE";
-                        position[] = {0,-6,0};
-                    };
-                    class Unit6 {
                         vehicle = QGVAR(USMC_MOR_AMB);
                         rank = "PRIVATE";
-                        position[] = {-2,-6,0};
+                        position[] = {0,-6,0};
                     };
                 };
                 class GVAR(USMC_D_LOG) {
