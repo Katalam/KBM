@@ -233,7 +233,7 @@ class GVAR(USAM_MED): GVAR(USAM_FTL) {
     loadoutGrenade[] = {{"rhs_mag_an_m8hc", 4}, {"rhs_mag_m18_green", 4}};
     loadoutUniformInvNew[] = {{"ACE_surgicalKit", 1}, {"adv_aceCPR_AED", 1}};
     loadoutVestInvNew[] = {{"ACE_epinephrine", 8}};
-    loadoutBackpackInvNew[] = {{"ACE_packingBandage", 48}, {"ACE_elasticBandage", 48}, {"ACE_morphine", 10}, {"ACE_plasmaIV_500", 12}, {"ACE_tourniquet", 4}, {"adv_aceSplint_splint", 15}};
+    loadoutBackpackInvNew[] = {{"ACE_packingBandage", 48}, {"ACE_elasticBandage", 48}, {"ACE_morphine", 10}, {"ACE_plasmaIV_500", 12}, {"ACE_tourniquet", 6}, {"adv_aceSplint_splint", 15}};
     loadoutVarMedic = 2;
     loadoutInsignia = QGVAR(medic);
 };
@@ -244,9 +244,9 @@ class GVAR(USAM_MED_LEAD): GVAR(USAM_MED) {
     loadoutGroup = "Platoon";
     loadoutMedical[] = {};
     loadoutGrenade[] = {{"rhs_mag_an_m8hc", 4}, {"rhs_mag_m18_green", 2}};
-    loadoutUniformInvNew[] = {{"ACE_epinephrine", 16}};
+    loadoutUniformInvNew[] = {{"ACE_epinephrine", 22}};
     loadoutVestInvNew[] = {{"adv_aceCPR_AED", 1}, {"ACE_surgicalKit", 1}};
-    loadoutBackpackInvNew[] = {{"ACE_packingBandage", 48}, {"ACE_elasticBandage", 48}, {"ACE_morphine", 10}, {"ACE_plasmaIV_500", 12}, {"ACE_tourniquet", 4}, {"adv_aceSplint_splint", 15}};
+    loadoutBackpackInvNew[] = {{"ACE_packingBandage", 26}, {"ACE_elasticBandage", 26}, {"ACE_morphine", 20}, {"ACE_plasmaIV_500", 22}, {"ACE_tourniquet", 4}, {"adv_aceSplint_splint", 15}};
 };
 class GVAR(USAM_MED_LEAD_C): GVAR(USAM_SQL) {
     displayName = "Company Medic";
@@ -256,9 +256,9 @@ class GVAR(USAM_MED_LEAD_C): GVAR(USAM_SQL) {
     loadoutBackpack[] = {BACKPACK_KITBAG};
     loadoutMedical[] = {};
     loadoutGrenade[] = {{"rhs_mag_an_m8hc", 4}, {"rhs_mag_m18_green", 2}};
-    loadoutUniformInvNew[] = {{"ACE_epinephrine", 16}};
+    loadoutUniformInvNew[] = {{"ACE_epinephrine", 22}};
     loadoutVestInvNew[] = {{"adv_aceCPR_AED", 1}};
-    loadoutBackpackInvNew[] = {{"ACE_packingBandage", 48}, {"ACE_elasticBandage", 48}, {"ACE_morphine", 10}, {"ACE_plasmaIV_500", 12}, {"ACE_tourniquet", 4}, {"adv_aceSplint_splint", 15}};
+    loadoutBackpackInvNew[] = {{"ACE_packingBandage", 26}, {"ACE_elasticBandage", 26}, {"ACE_morphine", 20}, {"ACE_plasmaIV_500", 22}, {"ACE_tourniquet", 6}, {"adv_aceSplint_splint", 15}};
     loadoutInsignia = QGVAR(medic);
 };
 
