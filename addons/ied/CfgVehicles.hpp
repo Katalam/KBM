@@ -16,8 +16,8 @@ class CfgVehicles {
             expression = "_this setVariable ['%s',_value];";
         };
     };
-    class EGVAR(faction_generic,moduleBase);
-    class GVAR(moduleAddIED): EGVAR(faction_generic,moduleBase) {
+    class EGVAR(common,moduleBase);
+    class GVAR(moduleAddIED): EGVAR(common,moduleBase) {
         displayName = "Add IED";
         category = QGVAR(Bomb);
         function = QFUNC(moduleAddIED);
