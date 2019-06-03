@@ -22,5 +22,3 @@ class cTab_Tablet_dlg {
 		};
     };
 };
-
-#include "CfgEventHandlers.hpp"
