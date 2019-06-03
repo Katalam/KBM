@@ -124,7 +124,7 @@ class CfgGroups {
                 class GVAR(USMC_D_MOR) {
                     name = "Mortar Section";
                     class Unit0 {
-                        vehicle = QGVAR(USMC_MOR_SQL);
+                        vehicle = QGVAR(USMC_WSL_MOR);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
