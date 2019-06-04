@@ -186,47 +186,47 @@ class GVAR(USAM_D_PT_1) {
         position[] = {+12,-6,0};
     };
     class Unit37 {
-        vehicle = QGVAR(USAM_MMG);
-        rank = "PRIVATE";
+        vehicle = QGVAR(USAM_MED);
+        rank = "CORPORAL";
         position[] = {+12,-8,0};
     };
     class Unit38 {
-        vehicle = QGVAR(USAM_AMG);
+        vehicle = QGVAR(USAM_MMG);
         rank = "PRIVATE";
         position[] = {+12,-10,0};
     };
     class Unit39 {
-        vehicle = QGVAR(USAM_MMG);
+        vehicle = QGVAR(USAM_AMG);
         rank = "PRIVATE";
         position[] = {+12,-12,0};
     };
     class Unit40 {
-        vehicle = QGVAR(USAM_AMG);
+        vehicle = QGVAR(USAM_MMG);
         rank = "PRIVATE";
         position[] = {+12,-14,0};
     };
     class Unit41 {
-        vehicle = QGVAR(USAM_WTL_HAT);
+        vehicle = QGVAR(USAM_AMG);
         rank = "CORPORAL";
         position[] = {+14,-6,0};
     };
     class Unit42 {
-        vehicle = QGVAR(USAM_HAT);
+        vehicle = QGVAR(USAM_WTL_HAT);
         rank = "PRIVATE";
         position[] = {+14,-8,0};
     };
     class Unit43 {
-        vehicle = QGVAR(USAM_AAT);
+        vehicle = QGVAR(USAM_HAT);
         rank = "PRIVATE";
         position[] = {+14,-10,0};
     };
     class Unit44 {
-        vehicle = QGVAR(USAM_HAT);
+        vehicle = QGVAR(USAM_AAT);
         rank = "PRIVATE";
         position[] = {+14,-12,0};
     };
     class Unit45 {
-        vehicle = QGVAR(USAM_AAT);
+        vehicle = QGVAR(USAM_HAT);
         rank = "PRIVATE";
         position[] = {+14,-14,0};
     };

@@ -7,24 +7,24 @@ class CfgGroups {
                 class GVAR(USAM_D_FT) {
                     name = "Fire Team";
                     class Unit0 {
-                        vehicle = QGVAR(USAM_RFM);
+                        vehicle = QGVAR(USAM_FTL);
                         rank = "CORPORAL";
                         position[] = {0,0,0};
                     };
                     class Unit1 {
-                        vehicle = QGVAR(USAM_RFM);
+                        vehicle = QGVAR(USAM_LMG);
                         rank = "PRIVATE";
                         position[] = {0,-2,0};
                     };
                     class Unit2 {
-                        vehicle = QGVAR(USAM_RFM);
+                        vehicle = QGVAR(USAM_UGL);
                         rank = "PRIVATE";
-                        position[] = {0,-4,0};
+                        position[] = {-2,0,0};
                     };
                     class Unit3 {
                         vehicle = QGVAR(USAM_RFM);
                         rank = "PRIVATE";
-                        position[] = {0,-8,0};
+                        position[] = {-2,-2,0};
                     };
                 };
                 class GVAR(USAM_D_SQ_1) {
@@ -36,7 +36,7 @@ class CfgGroups {
                     };
                     class Unit1 {
                         vehicle = QGVAR(USAM_MED);
-                        rank = "PRIVATE";
+                        rank = "CORPORAL";
                         position[] = {-2,0,0};
                     };
                     class Unit2 {
@@ -133,6 +133,122 @@ class CfgGroups {
                         position[] = {-2,-8,0};
                     };
                 };
+                class GVAR(USAM_D_SQ_3) {
+                    name = "Weapon Squad";
+                    class Unit0 {
+                        vehicle = QGVAR(USAM_WTL_MMG);
+                        rank = "SERGEANT";
+                        position[] = {0,0,0};
+                    };
+                    class Unit1 {
+                        vehicle = QGVAR(USAM_MED);
+                        rank = "CORPORAL";
+                        position[] = {-2,0,0};
+                    };
+                    class Unit2 {
+                        vehicle = QGVAR(USAM_MMG);
+                        rank = "CORPORAL";
+                        position[] = {0,-2,0};
+                    };
+                    class Unit3 {
+                        vehicle = QGVAR(USAM_AMG);
+                        rank = "PRIVATE";
+                        position[] = {0,-4,0};
+                    };
+                    class Unit4 {
+                        vehicle = QGVAR(USAM_MMG);
+                        rank = "PRIVATE";
+                        position[] = {0,-6,0};
+                    };
+                    class Unit5 {
+                        vehicle = QGVAR(USAM_AMG);
+                        rank = "PRIVATE";
+                        position[] = {0,-8,0};
+                    };
+                    class Unit6 {
+                        vehicle = QGVAR(USAM_WTL_HAT);
+                        rank = "CORPORAL";
+                        position[] = {-2,-2,0};
+                    };
+                    class Unit7 {
+                        vehicle = QGVAR(USAM_HAT);
+                        rank = "PRIVATE";
+                        position[] = {-2,-4,0};
+                    };
+                    class Unit8 {
+                        vehicle = QGVAR(USAM_AAT);
+                        rank = "PRIVATE";
+                        position[] = {-2,-6,0};
+                    };
+                    class Unit9 {
+                        vehicle = QGVAR(USAM_HAT);
+                        rank = "PRIVATE";
+                        position[] = {-2,-8,0};
+                    };
+                };
+                class GVAR(USAM_D_SQ_4) {
+                    name = "Heavy Weapon Squad";
+                    class Unit0 {
+                        vehicle = QGVAR(USAM_HWTL_HMG);
+                        rank = "SERGEANT";
+                        position[] = {0,0,0};
+                    };
+                    class Unit1 {
+                        vehicle = QGVAR(USAM_MED);
+                        rank = "PRIVATE";
+                        position[] = {-2,0,0};
+                    };
+                    class Unit2 {
+                        vehicle = QGVAR(USAM_HMG);
+                        rank = "CORPORAL";
+                        position[] = {0,-2,0};
+                    };
+                    class Unit3 {
+                        vehicle = QGVAR(USAM_AHG);
+                        rank = "PRIVATE";
+                        position[] = {0,-4,0};
+                    };
+                    class Unit4 {
+                        vehicle = QGVAR(USAM_HMG);
+                        rank = "PRIVATE";
+                        position[] = {0,-6,0};
+                    };
+                    class Unit5 {
+                        vehicle = QGVAR(USAM_AHG);
+                        rank = "PRIVATE";
+                        position[] = {0,-8,0};
+                    };
+                    class Unit6 {
+                        vehicle = QGVAR(USAM_HWTL_GMG);
+                        rank = "CORPORAL";
+                        position[] = {-2,-2,0};
+                    };
+                    class Unit7 {
+                        vehicle = QGVAR(USAM_GMG);
+                        rank = "PRIVATE";
+                        position[] = {-2,-4,0};
+                    };
+                    class Unit8 {
+                        vehicle = QGVAR(USAM_AGG);
+                        rank = "PRIVATE";
+                        position[] = {-2,-6,0};
+                    };
+                    class Unit9 {
+                        vehicle = QGVAR(USAM_GMG);
+                        rank = "PRIVATE";
+                        position[] = {-2,-8,0};
+                    };
+                    class Unit10 {
+                        vehicle = QGVAR(USAM_ATW);
+                        rank = "PRIVATE";
+                        position[] = {-2,-6,0};
+                    };
+                    class Unit11 {
+                        vehicle = QGVAR(USAM_TOW);
+                        rank = "PRIVATE";
+                        position[] = {-2,-8,0};
+                    };
+                };
                 class GVAR(USAM_D_MOR) {
                     name = "Mortar Section";
                     class Unit0 {
@@ -223,7 +339,7 @@ class CfgGroups {
                     };
                 };
                 class GVAR(USAM_D_HELI) {
-                    name = "Helicopter Crew";
+                    name = "Helicopter Crew w/o Med";
                     class Unit0 {
                         vehicle = QGVAR(USAM_HELI_PIL);
                         rank = "SERGEANT";
@@ -241,6 +357,29 @@ class CfgGroups {
                     };
                     class Unit3 {
                         vehicle = QGVAR(USAM_HELI_CRW);
+                        rank = "PRIVATE";
+                        position[] = {-2,-2,0};
+                    };
+                };
+                class GVAR(USAM_D_HELI_MED) {
+                    name = "Helicopter Crew w/ Med";
+                    class Unit0 {
+                        vehicle = QGVAR(USAM_HELI_PIL);
+                        rank = "SERGEANT";
+                        position[] = {0,0,0};
+                    };
+                    class Unit1 {
+                        vehicle = QGVAR(USAM_HELI_PIL);
+                        rank = "SERGEANT";
+                        position[] = {-2,0,0};
+                    };
+                    class Unit2 {
+                        vehicle = QGVAR(USAM_HELI_CRW);
+                        rank = "PRIVATE";
+                        position[] = {0,-2,0};
+                    };
+                    class Unit3 {
+                        vehicle = QGVAR(USAM_HELI_MED);
                         rank = "PRIVATE";
                         position[] = {-2,-2,0};
                     };
