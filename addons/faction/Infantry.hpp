@@ -309,9 +309,18 @@ class GVAR(USMC_AMG): GVAR(USMC_RFM) {
     loadoutVestInvNew[] = {{"rhsusf_100Rnd_762x51_m62_tracer", 1}};
     loadoutBackpackInvNew[] = {{"ACE_EntrenchingTool", 1}, {"ACE_SpareBarrel", 1}, {"rhsusf_100Rnd_762x51_m62_tracer", 5}};
 };
+class GVAR(USMC_WSL_HAT): GVAR(USMC_SQL) {
+    displayName = "Anti Armor Squad Leader";
+    description = "Anti Armor Squad Leader@Warrior 1-4";
+    loadout = "USMC_WSL_HAT";
+    loadoutGroup = "WeaponSquad";
+    loadoutGrenade[] = {{"rhs_mag_an_m8hc", 6}, {"HandGrenade", 2}};
+    loadoutVestInv[] = {{WEAPON_1_AMMO, 6}, {HANDGUN_1_AMMO, 2}, {"ACE_EntrenchingTool", 1}, {"rhsusf_100Rnd_762x51_m62_tracer", 1}};
+    loadoutBackpackInvNew[] = {{"ACE_SpareBarrel", 1}, {"ACRE_PRC117F", 1}};
+};
 class GVAR(USMC_WTL_HAT): GVAR(USMC_FTL) { // SMAW
-    displayName = "Weapon Team Leader";
-    description = "Weapon Team Leader";
+    displayName = "Anti Armor Team Leader";
+    description = "Anti Armor Team Leader";
     loadout = "USMC_WTL_HAT";
     loadoutGroup = "WeaponSquad";
     loadoutBackpack[] = {BACKPACK_CARRYALL};
@@ -353,6 +362,8 @@ class GVAR(USMC_WSL_MOR): GVAR(USMC_SQL) {
     loadoutHeadgear[] = {"rhs_booniehat2_marpatd"};
     loadoutVestInv[] = {{WEAPON_1_AMMO, 6}, {HANDGUN_1_AMMO, 2}};
     loadoutVestInvNew[] = {{HELMET_2, 1}, {"KAT_artilleryTable", 1}, {"ACE_Kestrel4500", 1}};
+    loadoutBackpackInv[] = {};
+    loadoutBackpackInvNew[] = {};
 };
 class GVAR(USMC_MOR_ASS): GVAR(USMC_RFM) {
     displayName = "Mortar Assistant Gunner";
@@ -586,7 +597,7 @@ class GVAR(USMC_LOG_LEAD): GVAR(USMC_SQL) {
     loadoutLinked[] = {"ItemMap", "ItemCompass", "ItemWatch", "ItemAndroid"};
     loadoutGrenade[] = {{"rhs_mag_an_m8hc", 2}, {"rhs_mag_m18_green", 1}, {"rhs_mag_m18_purple", 1}, {"HandGrenade", 1}};
     loadoutVestInv[] = {{WEAPON_1_AMMO, 6}, {HANDGUN_1_AMMO, 2}};
-    loadoutBackpackInvNew[] = {{"ACRE_PRC117F", 1}, {"Toolkit", 1}, {"VSM_OPS_2_multicam", 1}, {"H_Cap_usblack", 1}};
+    loadoutBackpackInvNew[] = {{"ACRE_PRC117F", 1}, {"Toolkit", 1}, {HELMET_3, 1}, {"H_Cap_usblack", 1}};
     loadoutVarEng = 2;
 };
 class GVAR(USMC_LOG): GVAR(USMC_RFM) {

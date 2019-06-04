@@ -68,12 +68,12 @@ class CfgGroups {
                     class Unit1 {
                         vehicle = QGVAR(USMC_ASL);
                         rank = "CORPORAL";
-                        position[] = {-2,0,0};
+                        position[] = {0,2,0};
                     };
                     class Unit2 {
                         vehicle = QGVAR(USMC_SSO);
                         rank = "CORPORAL";
-                        position[] = {0,-2,0};
+                        position[] = {-2,0,0};
                     };
                     class Unit3 {
                         vehicle = QGVAR(USMC_FTL);
@@ -83,42 +83,148 @@ class CfgGroups {
                     class Unit4 {
                         vehicle = QGVAR(USMC_UGL);
                         rank = "PRIVATE";
-                        position[] = {-4,0,0};
+                        position[] = {0,-4,0};
                     };
                     class Unit5 {
                         vehicle = QGVAR(USMC_RFM);
                         rank = "PRIVATE";
-                        position[] = {-4,-2,0};
+                        position[] = {-2,-4,0};
                     };
                     class Unit6 {
                         vehicle = QGVAR(USMC_FTL);
                         rank = "CORPORAL";
-                        position[] = {-6,0,0};
+                        position[] = {0,-6,0};
                     };
                     class Unit7 {
                         vehicle = QGVAR(USMC_UGL);
                         rank = "PRIVATE";
-                        position[] = {-6,-2,0};
+                        position[] = {-2,-6,0};
                     };
                     class Unit8 {
                         vehicle = QGVAR(USMC_RFM);
                         rank = "PRIVATE";
-                        position[] = {-8,0,0};
+                        position[] = {0,-8,0};
                     };
                     class Unit9 {
                         vehicle = QGVAR(USMC_MKM);
                         rank = "CORPORAL";
-                        position[] = {-8,-2,0};
+                        position[] = {-2,-8,0};
                     };
                     class Unit10 {
                         vehicle = QGVAR(USMC_UGL);
                         rank = "PRIVATE";
-                        position[] = {-10,0,0};
+                        position[] = {0,-10,0};
                     };
                     class Unit11 {
                         vehicle = QGVAR(USMC_LAT);
                         rank = "PRIVATE";
-                        position[] = {-10,-2,0};
+                        position[] = {-2,-10,0};
+                    };
+                };
+                class GVAR(USMC_D_SQ_2) {
+                    name = "Machine Gun Squad";
+                    class Unit0 {
+                        vehicle = QGVAR(USMC_WSL_MMG);
+                        rank = "SERGEANT";
+                        position[] = {0,0,0};
+                    };
+                    class Unit1 {
+                        vehicle = QGVAR(USMC_WTL_MMG);
+                        rank = "CORPORAL";
+                        position[] = {0,-2,0};
+                    };
+                    class Unit2 {
+                        vehicle = QGVAR(USMC_MMG);
+                        rank = "PRIVATE";
+                        position[] = {-2,0,0};
+                    };
+                    class Unit3 {
+                        vehicle = QGVAR(USMC_AMG);
+                        rank = "PRIVATE";
+                        position[] = {-2,-2,0};
+                    };
+                    class Unit4 {
+                        vehicle = QGVAR(USMC_WTL_MMG);
+                        rank = "CORPORAL";
+                        position[] = {0,-4,0};
+                    };
+                    class Unit5 {
+                        vehicle = QGVAR(USMC_MMG);
+                        rank = "PRIVATE";
+                        position[] = {-2,-4,0};
+                    };
+                    class Unit6 {
+                        vehicle = QGVAR(USMC_AMG);
+                        rank = "PRIVATE";
+                        position[] = {0,-6,0};
+                    };
+                    class Unit7 {
+                        vehicle = QGVAR(USMC_WTL_MMG);
+                        rank = "CORPORAL";
+                        position[] = {-2,-6,0};
+                    };
+                    class Unit8 {
+                        vehicle = QGVAR(USMC_MMG);
+                        rank = "PRIVATE";
+                        position[] = {0,-8,0};
+                    };
+                    class Unit9 {
+                        vehicle = QGVAR(USMC_AMG);
+                        rank = "PRIVATE";
+                        position[] = {-2,-8,0};
+                    };
+                };
+                class GVAR(USMC_D_SQ_3) {
+                    name = "Anti Armor Squad";
+                    class Unit0 {
+                        vehicle = QGVAR(USMC_WSL_HAT);
+                        rank = "SERGEANT";
+                        position[] = {0,0,0};
+                    };
+                    class Unit1 {
+                        vehicle = QGVAR(USMC_WTL_HAT);
+                        rank = "CORPORAL";
+                        position[] = {0,-2,0};
+                    };
+                    class Unit2 {
+                        vehicle = QGVAR(USMC_HAT);
+                        rank = "PRIVATE";
+                        position[] = {-2,0,0};
+                    };
+                    class Unit3 {
+                        vehicle = QGVAR(USMC_AAT);
+                        rank = "PRIVATE";
+                        position[] = {-2,-2,0};
+                    };
+                    class Unit4 {
+                        vehicle = QGVAR(USMC_WTL_HAT);
+                        rank = "CORPORAL";
+                        position[] = {0,-4,0};
+                    };
+                    class Unit5 {
+                        vehicle = QGVAR(USMC_HAT);
+                        rank = "PRIVATE";
+                        position[] = {-2,-4,0};
+                    };
+                    class Unit6 {
+                        vehicle = QGVAR(USMC_AAT);
+                        rank = "PRIVATE";
+                        position[] = {0,-6,0};
+                    };
+                    class Unit7 {
+                        vehicle = QGVAR(USMC_WTL_HAT);
+                        rank = "CORPORAL";
+                        position[] = {-2,-6,0};
+                    };
+                    class Unit8 {
+                        vehicle = QGVAR(USMC_HAT);
+                        rank = "PRIVATE";
+                        position[] = {0,-8,0};
+                    };
+                    class Unit9 {
+                        vehicle = QGVAR(USMC_AAT);
+                        rank = "PRIVATE";
+                        position[] = {-2,-8,0};
                     };
                 };
                 class GVAR(USMC_D_MOR) {
@@ -152,6 +258,21 @@ class CfgGroups {
                         vehicle = QGVAR(USMC_MOR_AMB);
                         rank = "PRIVATE";
                         position[] = {0,-6,0};
+                    };
+                    class Unit6 {
+                        vehicle = QGVAR(USMC_WSL_MOR);
+                        rank = "SERGEANT";
+                        position[] = {-2,-6,0};
+                    };
+                    class Unit7 {
+                        vehicle = QGVAR(USMC_MOR_ASS);
+                        rank = "PRIVATE";
+                        position[] = {0,-8,0};
+                    };
+                    class Unit8 {
+                        vehicle = QGVAR(USMC_MOR_AMB);
+                        rank = "PRIVATE";
+                        position[] = {-2,-8,0};
                     };
                 };
                 class GVAR(USMC_D_LOG) {
@@ -206,7 +327,7 @@ class CfgGroups {
                     };
                 };
                 class GVAR(USMC_D_HELI) {
-                    name = "Helicopter Crew";
+                    name = "Helicopter Crew w/o Med";
                     class Unit0 {
                         vehicle = QGVAR(USMC_HELI_PIL);
                         rank = "SERGEANT";
@@ -224,6 +345,29 @@ class CfgGroups {
                     };
                     class Unit3 {
                         vehicle = QGVAR(USMC_HELI_CRW);
+                        rank = "PRIVATE";
+                        position[] = {-2,-2,0};
+                    };
+                };
+                class GVAR(USMC_D_HELI_MED) {
+                    name = "Helicopter Crew w/ Med";
+                    class Unit0 {
+                        vehicle = QGVAR(USMC_HELI_PIL);
+                        rank = "SERGEANT";
+                        position[] = {0,0,0};
+                    };
+                    class Unit1 {
+                        vehicle = QGVAR(USMC_HELI_PIL);
+                        rank = "SERGEANT";
+                        position[] = {-2,0,0};
+                    };
+                    class Unit2 {
+                        vehicle = QGVAR(USMC_HELI_CRW);
+                        rank = "PRIVATE";
+                        position[] = {0,-2,0};
+                    };
+                    class Unit3 {
+                        vehicle = QGVAR(USMC_HELI_MED);
                         rank = "PRIVATE";
                         position[] = {-2,-2,0};
                     };
