@@ -29,6 +29,9 @@ switch (true) do {
     case ((_loadout find "USMC") >= 0): {
         _typeFormat = QEGVAR(faction,%1);
     };
+    case ((_loadout find "BUND") >= 0): {
+        _typeFormat = QEGVAR(faction,%1);
+    };
 };
 
 [0, _unit, [_loadout, _typeFormat]] remoteExec [QFUNC(applyPlayerLoadout), _unit];

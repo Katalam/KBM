@@ -29,4 +29,5 @@ class CfgVehicles {
     #include "Vehicles.hpp"
     #include "USMC_W.hpp"
     #include "marines2003.hpp"
+    #include "germany.hpp"
 };

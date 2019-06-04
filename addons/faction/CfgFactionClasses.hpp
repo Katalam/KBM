@@ -20,4 +20,11 @@ class cfgFactionClasses {
         icon = "\A3\data_f\cfgfactionclasses_blu_ca.paa";
         scopeCurator = 1;
     };
+    class GVAR(BUND_W) {
+        displayName = "KAT German EGB-Fallschirmjägerzug";
+        priority = 1;
+        side = 1;
+        icon = "\A3\data_f\cfgfactionclasses_blu_ca.paa";
+        scopeCurator = 1;
+    };
 };
