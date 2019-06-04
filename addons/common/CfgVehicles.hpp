@@ -106,9 +106,9 @@ class CfgVehicles {
     };
 
     #define CONTAINERSPACE maximumLoad = 8000;\
-	transportMaxWeapons = 25;\
-	transportMaxMagazines = 320;\
-	transportMaxBackpacks = 25;
+    transportMaxWeapons = 25;\
+    transportMaxMagazines = 320;\
+    transportMaxBackpacks = 25;
 
     class ThingX;
     class Items_base_F: ThingX {
