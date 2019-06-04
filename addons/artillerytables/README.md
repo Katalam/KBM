@@ -1,10 +1,10 @@
-ace_artillerytables
+artillerytables
 ==========
 
 Universal artillertables.
 
 #### Items Added:
-`ACE_artilleryTable`
+`KAT_artilleryTable`
 
 
 ## Maintainers
