@@ -1,3 +1,4 @@
+PREP(addBin);
 PREP(addBriefingEntries);
 PREP(addSpectatorMenu);
 PREP(breakWindow);

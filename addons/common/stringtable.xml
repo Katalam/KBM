@@ -21,5 +21,9 @@
             <English>Unflip vehicle</English>
             <German>Richte Fahrzeug auf</German>
         </Key>
+        <Key ID="STR_kat_10thmods_common_clearbin">
+            <English>Clear bin</English>
+            <German>Mülleimer leeren</German>
+        </Key>
     </Package>
 </Project>

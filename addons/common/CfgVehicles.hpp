@@ -104,4 +104,20 @@ class CfgVehicles {
             };
         };
     };
+
+    #define CONTAINERSPACE maximumLoad = 8000;\
+	transportMaxWeapons = 25;\
+	transportMaxMagazines = 320;\
+	transportMaxBackpacks = 25;
+
+    class ThingX;
+    class Items_base_F: ThingX {
+        class EventHandlers;
+    };
+    class Land_WheelieBin_01_F : Items_base_F {
+        CONTAINERSPACE
+        class EventHandlers: EventHandlers {
+            init = QUOTE(_this call FUNC(addBin));
+        };
+    };
 };
