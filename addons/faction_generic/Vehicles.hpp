@@ -26,6 +26,7 @@ class GVAR(USAM_Veh_CAR): rhsusf_m1025_d {
     scope = 2;
     curatorScope = 2;
     faction = QGVAR(USAM_D);
+    #include "acre\CfgAcre_Racks.hpp"
     class TransportBackpacks {};
 };
 
@@ -57,6 +58,7 @@ class GVAR(USAM_Veh_CAR_M2): rhsusf_m1025_d_m2 {
     scope = 2;
     curatorScope = 2;
     faction = QGVAR(USAM_D);
+    #include "acre\CfgAcre_Racks.hpp"
     class TransportBackpacks {};
 };
 
@@ -88,6 +90,7 @@ class GVAR(USAM_Veh_CAR_Mk19): rhsusf_m1025_d_Mk19 {
     scope = 2;
     curatorScope = 2;
     faction = QGVAR(USAM_D);
+    #include "acre\CfgAcre_Racks.hpp"
     class TransportBackpacks {};
 };
 
@@ -119,6 +122,7 @@ class GVAR(USAM_Veh_CAR_TOW): rhsusf_m966_d {
     scope = 2;
     curatorScope = 2;
     faction = QGVAR(USAM_D);
+    #include "acre\CfgAcre_Racks.hpp"
     class TransportBackpacks {};
 };
 
@@ -151,6 +155,7 @@ class GVAR(USAM_Veh_M1237_M2): rhsusf_M1237_M2_usarmy_d {
     scope = 2;
     curatorScope = 2;
     faction = QGVAR(USAM_D);
+    #include "acre\CfgAcre_Mrap.hpp"
     class TransportBackpacks {};
 };
 
@@ -183,6 +188,7 @@ class GVAR(USAM_Veh_M1237_Mk19): rhsusf_M1237_MK19_usarmy_d {
     scope = 2;
     curatorScope = 2;
     faction = QGVAR(USAM_D);
+    #include "acre\CfgAcre_Mrap.hpp"
     class TransportBackpacks {};
 };
 
@@ -215,6 +221,7 @@ class GVAR(USAM_Veh_Cargo_M2): rhsusf_M1078A1P2_B_M2_D_fmtv_usarmy {
     scope = 2;
     curatorScope = 2;
     faction = QGVAR(USAM_D);
+    #include "acre\CfgAcre_Racks.hpp"
     class TransportBackpacks {};
 };
 
@@ -233,6 +240,7 @@ class GVAR(USAM_Veh_EMPTY_M2): rhsusf_M977A4_BKIT_usarmy_d {
     scope = 2;
     curatorScope = 2;
     faction = QGVAR(USAM_D);
+    #include "acre\CfgAcre_Racks.hpp"
     class TransportBackpacks {};
 };
 
@@ -251,6 +259,7 @@ class GVAR(USAM_Veh_REPAIR_M2): rhsusf_M977A4_REPAIR_BKIT_M2_usarmy_d {
     scope = 2;
     curatorScope = 2;
     faction = QGVAR(USAM_D);
+    #include "acre\CfgAcre_Racks.hpp"
     class TransportBackpacks {};
 };
 
@@ -269,6 +278,7 @@ class GVAR(USAM_Veh_AMMO_M2): rhsusf_M977A4_AMMO_BKIT_M2_usarmy_d {
     scope = 2;
     curatorScope = 2;
     faction = QGVAR(USAM_D);
+    #include "acre\CfgAcre_Racks.hpp"
     class TransportBackpacks {};
 };
 
@@ -287,6 +297,7 @@ class GVAR(USAM_Veh_FUEL): rhsusf_M978A4_BKIT_usarmy_d {
     scope = 2;
     curatorScope = 2;
     faction = QGVAR(USAM_D);
+    #include "acre\CfgAcre_Racks.hpp"
     class TransportBackpacks {};
 };
 
@@ -347,6 +358,7 @@ class GVAR(USAM_Veh_MEDICAL): rhsusf_M1085A1P2_B_D_Medical_fmtv_usarmy {
     scope = 2;
     curatorScope = 2;
     faction = QGVAR(USAM_D);
+    #include "acre\CfgAcre_Racks.hpp"
     class TransportBackpacks {};
 };
 
@@ -387,6 +399,7 @@ class GVAR(USAM_Veh_IFV): RHS_M2A3_BUSKIII {
     scope = 2;
     curatorScope = 2;
     faction = QGVAR(USAM_D);
+    #include "acre\CfgAcre_IFV.hpp"
     class TransportBackpacks {};
 };
 
@@ -419,6 +432,7 @@ class GVAR(USAM_Veh_M109A6): rhsusf_m109d_usarmy {
     scope = 2;
     curatorScope = 2;
     faction = QGVAR(USAM_D);
+    #include "acre\CfgAcre_IFV.hpp"
     class TransportBackpacks {};
 };
 
@@ -451,6 +465,7 @@ class GVAR(USAM_Veh_M142): rhsusf_M142_usarmy_D {
     scope = 2;
     curatorScope = 2;
     faction = QGVAR(USAM_D);
+    #include "acre\CfgAcre_IFV.hpp"
     class TransportBackpacks {};
 };
 
@@ -477,27 +492,12 @@ class GVAR(USAM_Veh_UH60): RHS_UH60M_d {
     scope = 2;
     curatorScope = 2;
     faction = QGVAR(USAM_D);
+    #include "acre\CfgAcre_UH60.hpp"
     class TransportBackpacks {};
 };
 
 // AH-64D
-class RHS_AH64_base;
-class RHS_AH64D: RHS_AH64_base {
-    /*
-    class Components {
-        class TransportPylonsComponent {
-            class pylons {
-                class pylon2;
-                class pylon3;
-                class pylon4;
-                class pylon5;
-                class pylonTip1;
-                class pylonTip6;
-            };
-        };
-    };
-    */
-};
+class RHS_AH64D;
 class GVAR(USAM_Veh_AH64): RHS_AH64D {
     author = "Katalam";
     displayName = "AH-64D";
@@ -511,27 +511,8 @@ class GVAR(USAM_Veh_AH64): RHS_AH64D {
     scope = 2;
     curatorScope = 2;
     faction = QGVAR(USAM_D);
+    #include "acre\CfgAcre_AH64.hpp"
     class TransportBackpacks {};
-    /*
-    class Components: Components {
-        class TransportPylonsComponent: TransportPylonsComponent {
-            class pylons: pylons {
-                class pylon4: pylon4 {
-                    attachment = "rhs_mag_AGM114L_4";
-                };
-                class pylon5: pylon5 {
-                    attachment = "rhs_mag_AGM114L_4";
-                };
-                class pylonTip1: pylonTip1 {
-                    attachment = "rhs_mag_Sidewinder_heli";
-                };
-                class pylonTip6: pylonTip6 {
-                    attachment = "rhs_mag_Sidewinder_heli";
-                };
-            };
-        };
-    };
-    */
 };
 
 // CH-47F
@@ -557,6 +538,7 @@ class GVAR(USAM_Veh_CH47): RHS_CH_47F_10 {
     scope = 2;
     curatorScope = 2;
     faction = QGVAR(USAM_D);
+    #include "acre\CfgAcre_UH60.hpp"
     class TransportBackpacks {};
 };
 
@@ -576,6 +558,7 @@ class GVAR(USAM_Veh_A10): FIR_A10C {
     scope = 2;
     curatorScope = 2;
     faction = QGVAR(USAM_D);
+    #include "acre\CfgAcre_Jet.hpp"
     class TransportBackpacks {};
 };
 
@@ -595,6 +578,7 @@ class GVAR(USAM_Veh_FA18E): JS_JC_FA18E {
     scope = 2;
     curatorScope = 2;
     faction = QGVAR(USAM_D);
+    #include "acre\CfgAcre_Jet.hpp"
     class TransportBackpacks {};
 };
 
@@ -614,5 +598,6 @@ class GVAR(USAM_Veh_FA18F): JS_JC_FA18F {
     scope = 2;
     curatorScope = 2;
     faction = QGVAR(USAM_D);
+    #include "acre\CfgAcre_Jet.hpp"
     class TransportBackpacks {};
 };
