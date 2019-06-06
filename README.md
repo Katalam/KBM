@@ -15,6 +15,9 @@
     <a href="https://circleci.com/gh/Katalam/kat_10thmods">
         <img src="https://circleci.com/gh/Katalam/kat_10thmods.svg?style=svg" alt="KAT 10thMods Build Status">
     </a>
+    <a href="http://localhost/project/AppVeyor/kat-10thmods">
+        <img src="http://localhost/api/projects/status/sx9r9cx7amlt9lo9?svg=true" alt="KAT 10thMods Build Status">
+    </a>
 </p>
 
 <p align="center">
