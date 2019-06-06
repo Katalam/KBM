@@ -42,6 +42,12 @@ The build process is base on the [HEMTT build process](https://synixebrett.githu
 
 For building release builds see [ACE3 reference](https://ace3mod.com/wiki/development/setting-up-the-development-environment.html).
 
+## Using HEMTT
+
+HEMTT is a CLI tool that must be called from the root of your project. HEMTT needs to be placed in the project root and called with `./hemtt` on Linux or `hemtt.exe` on Windows. You can install HEMTT system wide on Windows by using `setup.exe` in the download.
+
+Below is just a showcase, read the [documentation](https://synixebrett.github.io/HEMTT) to learn about more features and reasonings.
+
 ### Submitting issues and requesting features
 
 Please, use my [Issue Tracker](https://github.com/Katalam/kat_10thmods/issues) to report a bug, propose a feature, or suggest changes to the existing ones.
