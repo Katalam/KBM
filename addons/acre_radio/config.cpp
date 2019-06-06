@@ -6,11 +6,7 @@ class CfgPatches {
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {
-            "kat_10thmods_main",
-            "acre_sys_radio",
-            "acre_sys_prc152"
-        };
+        requiredAddons[] = {"kat_10thmods_main"};
         author = "Katalam";
         authors[] = {"Katalam"};
         url = ECSTRING(main,URL);
@@ -19,4 +15,3 @@ class CfgPatches {
 };
 
 #include "CfgEventHandlers.hpp"
-#include "Prc152_RadioDialog.hpp"
