@@ -1,1 +1,1 @@
-powershell -Executionpolicy Bypass -Command ".\hemtt --release"
+powershell -Executionpolicy Bypass -Command ".\hemtt build --release"
