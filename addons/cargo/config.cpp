@@ -2,7 +2,7 @@
 
 class CfgPatches {
     class ADDON {
-        name = COMPONENT_NAME;
+        name = QUOTE(COMPONENT_NAME);
         requiredVersion = REQUIRED_VERSION;
         units[] = {
             KAT_Mortar_M252
