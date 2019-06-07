@@ -2,7 +2,7 @@
 
 class CfgPatches {
     class ADDON {
-        name = COMPONENT_NAME;
+        name = QUOTE(COMPONENT_NAME);
         units[] = {
             QGVAR(BOKO_RFM),
             QGVAR(BOKO_LAT),

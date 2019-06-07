@@ -2,6 +2,7 @@
 
 class CfgPatches {
     class ADDON {
+        name = QUOTE(COMPONENT_NAME);
         units[] = {
             QGVAR(USMC_RFM),
             QGVAR(USMC_FTL),
