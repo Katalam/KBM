@@ -25,6 +25,6 @@ cache:
   - .\extension\target
 
 artifacts:
-  - path: .\releases\synixe.zip
+  - path: .\releases\kat_10thmods.zip
 
 build: false
