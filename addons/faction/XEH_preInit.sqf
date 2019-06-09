@@ -36,8 +36,4 @@ PREP_RECOMPILE_END;
     [_x, "InitPost", EFUNC(faction_generic,applyVehicleLoadout), true, [], true] call CBA_fnc_addClassEventHandler;
 };
 
-[QGVAR(USMC_RFM), "InitPost", {[objNull, _this select 0] call EFUNC(faction_generic,applyPlayerLoadout);}, true, [], true] call CBA_fnc_addClassEventHandler;
-
-[QGVAR(USMC03_RFM), "InitPost", {[objNull, _this select 0] call EFUNC(faction_generic,applyPlayerLoadout);}, true, [], true] call CBA_fnc_addClassEventHandler;
-
 ADDON = true;

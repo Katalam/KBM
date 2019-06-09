@@ -100,8 +100,7 @@ class GVAR(B_empty): B_Soldier_F {
     };
 };
 
-class GVAR(USAM_RFM): B_Soldier_F {
-    author = "Katalam";
+class GVAR(USAM_RFM): GVAR(B_empty) {
     displayName = "Rifleman";
     description = "Rifleman";
     loadout = "USAM_RFM";
@@ -125,11 +124,6 @@ class GVAR(USAM_RFM): B_Soldier_F {
     loadoutVestInvNew[] = {};
     loadoutBackpackInv[] = {};
     loadoutBackpackInvNew[] = {{"rhsusf_200Rnd_556x45_soft_pouch", 2}};
-    loadoutVarMedic = 0;
-    loadoutVarG = 0.7;
-    loadoutVarEng = 0;
-    loadoutVarEOD = 0;
-    loadoutInsignia = QGVAR(private);
     loadoutScope[] = {  {"RCO","optic_hamr"}, {"ACOG RMR","rhsusf_acc_ACOG_RMR"}, {"G33 + XPS3","rhsusf_acc_g33_xps3"},
                         {"EOTECH","rhsusf_acc_eotech_552"}, {"ELCAN SpectreDR","rhsusf_acc_su230a_mrds"},
                         {"ACOG","rhsusf_acc_acog"}};
@@ -147,13 +141,6 @@ class GVAR(USAM_RFM): B_Soldier_F {
     respawnWeapons[] = {"Throw","Put"};
     linkedItems[] = {"ItemMap","ItemCompass","ItemWatch"};
     respawnLinkedItems[] = {"ItemMap","ItemCompass","ItemWatch"};
-    items[] = {};
-    respawnItems[] = {};
-    magazines[] = {};
-    respawnMagazines[] = {};
-    class EventHandlers: EventHandlers {
-        AttributesChanged3DEN = QUOTE(_this call FUNC(addRoleDescription));
-    };
 };
 class GVAR(USAM_FTL): GVAR(USAM_RFM) {
     displayName = "Fire Team Leader";
