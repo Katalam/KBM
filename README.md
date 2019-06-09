@@ -12,9 +12,6 @@
     <a href="https://github.com/Katalam/kat_10thmods/releases">
         <img src="https://img.shields.io/github/downloads/Katalam/kat_10thmods/total.svg?style=flat-square&label=Downloads" alt="KAT 10thMods Downloads">
     </a>
-    <a href="https://circleci.com/gh/Katalam/kat_10thmods">
-        <img src="https://circleci.com/gh/Katalam/kat_10thmods.svg?style=svg" alt="KAT 10thMods Build Status">
-    </a>
     <a href="https://ci.appveyor.com/project/Katalam/kat-10thmods">
         <img src="https://ci.appveyor.com/api/projects/status/aq2ihs6ri50c5k12?svg=true" alt="KAT 10thMods Build Status">
     </a>
