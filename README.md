@@ -35,6 +35,7 @@ The build process is base on the [HEMTT build process](https://synixebrett.githu
 + download/clone kat_10thmods GitHub repo
 + right-click in the root folder and open power shell
 + you can build by executing ```.\hemtt build``` from the tools folder
++ you have to setup the data link with admin cmd: mklink /J "A:\SteamLibrary\steamapps\common\Arma 3\z\kat_10thmods" "P:\kat_10thmods"
 + for testing include your mod by adding ```-mod=x\kat_10thmods``` as start parameter
 
 For building release builds see [ACE3 reference](https://ace3mod.com/wiki/development/setting-up-the-development-environment.html).

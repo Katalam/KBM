@@ -53,6 +53,7 @@ class GVAR(USMC03_RFM): EGVAR(faction_generic,B_empty) {
                         {"", {}}, // handgun
                         {"", {}}}; // binocular
     loadoutNVG[] = {"", {}};
+    loadoutMedical[] = {{"ACE_packingBandage", 10}, {"ACE_elasticBandage", 8}, {"kat_Painkiller", 1}, {"ACE_tourniquet", 2}, {"adv_aceSplint_splint", 2}, {"ACE_morphine", 1}};
     loadoutGrenade[] = {{"SmokeShell", 2}, {"HandGrenade", 2}};
     loadoutUniformInv[] = {{"ACRE_PRC343", 1}};
     loadoutUniformInvNew[] = {};
@@ -131,11 +132,20 @@ class GVAR(USMC03_MED): GVAR(USMC03_FTL) {
     loadoutBackpack[] = {BACKPACK_CLS};
     loadoutMedical[] = {};
     loadoutGrenade[] = {{"SmokeShell", 2}, {"SmokeShellGreen", 2}};
-    loadoutUniformInvNew[] = {{"ACE_surgicalKit", 1}, {"adv_aceCPR_AED", 1}};
+    loadoutUniformInvNew[] = {{"ACE_surgicalKit", 1}, {"kat_accuvac", 1}};
     loadoutVestInvNew[] = {{"ACE_epinephrine", 8}};
-    loadoutBackpackInvNew[] = {{"ACE_packingBandage", 48}, {"ACE_elasticBandage", 48}, {"ACE_morphine", 10}, {"ACE_plasmaIV_500", 12}, {"ACE_tourniquet", 4}, {"adv_aceSplint_splint", 15}};
+    loadoutBackpackInvNew[] = {{"ACE_packingBandage", 48}, {"ACE_elasticBandage", 48}, {"ACE_morphine", 10}, {"kat_Painkiller", 5}, {"kat_larynx", 15}, {"ACE_plasmaIV_500", 12}, {"ACE_tourniquet", 4}, {"adv_aceSplint_splint", 15}};
     loadoutVarMedic = 2;
     loadoutInsignia = QEGVAR(faction_generic,medic);
+};
+class GVAR(USMC03_MED_LEAD): GVAR(USMC03_MED) {
+    displayName = "Platoon Medic";
+    description = "Platoon Medic";
+    loadout = "USMC03_MED_LEAD";
+    loadoutGroup = "Platoon";
+    loadoutUniformInvNew[] = {{"ACE_epinephrine", 22}};
+    loadoutVestInvNew[] = {{"ACE_surgicalKit", 1}, {"kat_accuvac", 1}, {"ACE_plasmaIV_500", 14}};
+    loadoutBackpackInvNew[] = {{"ACE_packingBandage", 26}, {"ACE_elasticBandage", 26}, {"ACE_morphine", 20}, {"kat_Painkiller", 5}, {"kat_larynx", 15}, {"ACE_plasmaIV_500", 8}, {"ACE_tourniquet", 4}, {"adv_aceSplint_splint", 15}};
 };
 class GVAR(USMC03_PSG): GVAR(USMC03_SQL) {
     displayName = "Platoon Sergeant";
