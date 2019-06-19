@@ -103,6 +103,7 @@ if (isArray (_config >> "loadoutGunBackpack")) then {
 };
 
 private _containerBackpack = backpackContainer _unit;
+[_containerBackpack] call FUNC(clearVehicleLoadout);
 
 if (isArray (_config >> "loadoutHeadgear")) then {
     private _loadoutHeadgear = getArray (_config >> "loadoutHeadgear");
