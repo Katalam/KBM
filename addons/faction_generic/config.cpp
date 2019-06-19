@@ -92,7 +92,6 @@ class CfgPatches {
 #include "CfgFactionClasses.hpp"
 #include "CfgVehicleClasses.hpp"
 #include "CfgVehicles.hpp"
-#include "CfgWeapons.hpp"
 #include "CfgGroups.hpp"
 #include "CfgEventHandlers.hpp"
 #include "CfgUnitInsignia.hpp"

@@ -23,30 +23,6 @@ class B_Soldier_F: B_Soldier_base_F {
     modelsides[] = {3,2,1,0};
 };
 
-class I_Story_Crew_F;
-class GVAR(Uniform_Tank): I_Story_Crew_F {
-    author = "Katalam";
-    displayName = "Tank Uniform (American)";
-    scope = 1;
-    curatorScope = 1;
-    uniformClass = "KAT_Uniform_Tank";
-    hiddenSelections[] = {"Camo","insignia"};
-    hiddenSelectionsTextures[] = {QPATHTOF(data\U_Tank_crew_F_CO.paa)};
-};
-class rhsusf_army_acu_uniform;
-class GVAR(Uniform_OCP): rhsusf_army_acu_uniform {
-    author = "Katalam";
-    displayName = "Army Combat Uniform (OCP)";
-    scope = 2;
-    curatorScope = 2;
-    uniformClass = "KAT_Uniform_OCP";
-    linkedItems[] = {"KAT_Vest_OCP","KAT_Headgear_Cap_OCP","ItemGPS","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
-    hiddenSelections[] = {"camo1","camo2","camo3","identity","insignia"};
-    hiddenSelectionsTextures[] = {QPATHTOF(data\uniform_jacket_co.paa),QPATHTOF(data\uniform_trouser_co.paa),QPATHTOF(data\uniform_boots_co.paa)};
-};
-
-
-
 class GVAR(B_empty): B_Soldier_F {
     author = "Katalam";
     displayName = "empty";
