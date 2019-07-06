@@ -1,3 +1,5 @@
+# kat_10thmods
+
 <p align="center">
     <img src="https://raw.githubusercontent.com/Katalam/kat_10thmods/master/logo.png">
 </p>
@@ -22,34 +24,50 @@
     Visit me on <a href="https://discord.gg/HbA93HK">Discord</a></strong></sup>
 </p>
 
+Sometimes you wanna have small enhancements or change another mod. If you build missions for Arma you will realize that having things in a mod config is way better then using templates for missions.
 
-*Created by Katalam*
+## Getting Started
 
-## Contributing
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-You can help out with the ongoing development by looking for potential bugs in my code base, or by contributing new features. I am always welcome to new pull requests containing bug fixes, refactors and new features.
 
-### Building
+## Deployment
+
 The build process is base on the [HEMTT build process](https://synixebrett.github.io/HEMTT/#/), so you can follow the steps there. Basically the following is needed:
 + correctly setup project drive (P: drive)
 + download/clone kat_10thmods GitHub repo
 + right-click in the root folder and open power shell
 + you can build by executing ```.\hemtt build``` from the tools folder
 + you have to setup the data link with admin cmd: mklink /J "A:\SteamLibrary\steamapps\common\Arma 3\z\kat_10thmods" "P:\kat_10thmods"
-+ for testing include your mod by adding ```-mod=x\kat_10thmods``` as start parameter
++ for testing include your mod by adding ```-mod=z\kat_10thmods``` as start parameter
 
-For building release builds see [ACE3 reference](https://ace3mod.com/wiki/development/setting-up-the-development-environment.html).
+## Built With
 
-## Using HEMTT
-
+[CBA_A3](https://github.com/CBATeam/CBA_A3) - Community Based Addons for Arma 3 needs to be installed for MACRO usage<br/>
 HEMTT is a CLI tool that must be called from the root of your project. HEMTT needs to be placed in the project root and called with `./hemtt` on Linux or `hemtt.exe` on Windows. You can install HEMTT system wide on Windows by using `setup.exe` in the download.
 
 Below is just a showcase, read the [documentation](https://synixebrett.github.io/HEMTT) to learn about more features and reasonings.
 
-### Submitting issues and requesting features
+## Contributing
 
-Please, use my [Issue Tracker](https://github.com/Katalam/kat_10thmods/issues) to report a bug, propose a feature, or suggest changes to the existing ones.
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
+
+## Issues
+
+Please, use my [Issue Tracker](https://github.com/Katalam/templates/issues) to report a bug, propose a feature, or suggest changes to the existing ones.
+
+## Versioning
+
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
+
+## Authors
+
+- **Katalam** - *Initial work*
+
+<!---
+See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+-->
 
 ## License
 
-kat_10thmods is licensed under the GNU General Public License ([GPLv3](https://github.com/Katalam/kat_10thmods/blob/master/LICENSE)).
+This project is licensed under the GPLv3 License - see the [LICENSE](LICENSE) file for details
