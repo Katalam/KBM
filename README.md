@@ -17,6 +17,9 @@
     <a href="https://ci.appveyor.com/project/Katalam/kat-10thmods">
         <img src="https://ci.appveyor.com/api/projects/status/aq2ihs6ri50c5k12?svg=true" alt="KAT 10thMods Build Status">
     </a>
+    <a href="CONTRIBUTING.md">
+        <img src="https://img.shields.io/badge/Contributor%20Covenant-v1.4%20adopted-ff69b4.svg" alt="Contributor Covenant">
+    </a>
 </p>
 
 <p align="center">
