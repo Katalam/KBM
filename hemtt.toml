@@ -1,7 +1,7 @@
 name = "kat_10thmods"
 prefix = "kat_10thmods"
 author = "Katalam"
-version = "1.1.5.32"
+version = "1.1.6.32"
 files = ["mod.cpp", "kat_artillerytables_x64.dll", "kat_10thmods_x64.dll"]
 include = ["./include"]
 
