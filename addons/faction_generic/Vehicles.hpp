@@ -404,8 +404,8 @@ class GVAR(USAM_Veh_IFV): RHS_M2A3_BUSKIII {
 };
 
 // M109A6
-class rhsusf_m109d_usarmy;
-class GVAR(USAM_Veh_M109A6): rhsusf_m109d_usarmy {
+class itc_land_rhsusf_m109d_usarmy;
+class GVAR(USAM_Veh_M109A6): itc_land_rhsusf_m109d_usarmy {
     author = "Katalam";
     displayName = "M109A6";
     loadoutCargo[] = {{"ACE_Track", 2}};
