@@ -4,7 +4,8 @@ class CfgORBAT {
     #include "101ad.hpp"
     #include "csg2.hpp"
 };
-// configFile >> "CfgORBAT" >> "AC", configFile >> "CfgORBAT" >> "MD"
+// configFile >> "CfgORBAT" >> "AC"
+// configFile >> "CfgORBAT" >> "MD"
 // configFile >> "CfgORBAT" >> "ID"
 // configFile >> "CfgORBAT" >> "AD"
 // configFile >> "CfgORBAT" >> "CSG"
