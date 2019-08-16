@@ -57,6 +57,7 @@ fabric.properties
 *.iml
 *.xcf
 *.psd
+hemtt.exe
 
 # ArmA 3
 *.pbo
