@@ -94,4 +94,3 @@ class CfgPatches {
 #include "CfgVehicles.hpp"
 #include "CfgGroups.hpp"
 #include "CfgEventHandlers.hpp"
-#include "CfgUnitInsignia.hpp"

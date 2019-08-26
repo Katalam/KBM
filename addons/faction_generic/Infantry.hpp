@@ -52,7 +52,7 @@ class GVAR(B_empty): B_Soldier_F {
     loadoutVarG = 0.7;
     loadoutVarEng = 0;
     loadoutVarEOD = 0;
-    loadoutInsignia = QGVAR(private);
+    loadoutInsignia = QEGVAR(insignia,private);
     loadoutScope[] = {};
     loadoutScopeDMR[] = {};
     loadoutGoggle[] = {};
@@ -130,7 +130,7 @@ class GVAR(USAM_FTL): GVAR(USAM_RFM) {
     loadoutLinked[] = {"ItemMap", "ItemCompass", "ItemWatch", "ItemAndroid"};
     loadoutUniformInv[] = {{"ACE_MapTools", 1}, {"ACE_microDAGR", 1}, {"ACE_CableTie", 2}, {"ACRE_PRC152", 2}};
     loadoutGrenade[] = {{"rhs_mag_an_m8hc", 2}, {"rhs_mag_mk84", 2}, {"rhs_mag_m18_green", 1}, {"rhs_mag_m18_purple", 1}, {"HandGrenade", 2}};
-    loadoutInsignia = QGVAR(corporal);
+    loadoutInsignia = QEGVAR(insignia,corporal);
 };
 class GVAR(USAM_SQL): GVAR(USAM_FTL) {
     displayName = "Squad Leader";
@@ -144,7 +144,7 @@ class GVAR(USAM_SQL): GVAR(USAM_FTL) {
     loadoutLinked[] = {"ItemMap", "ItemCompass", "ItemWatch", "ItemcTab"};
     loadoutUniformInv[] = {{"ACE_MapTools", 1}, {"ACE_microDAGR", 1}, {"ACE_CableTie", 2}, {"ItemcTabHCam", 1}, {"ACRE_PRC152", 1}};
     loadoutBackpackInvNew[] = {{"ACRE_PRC117F", 1}, {"rhs_mag_m18_yellow", 1}, {"rhs_mag_m18_purple", 1}, {"ItemAndroid", 1}};
-    loadoutInsignia = QGVAR(sergeant);
+    loadoutInsignia = QEGVAR(insignia,sergeant);
 };
 class GVAR(USAM_PTL): GVAR(USAM_SQL) {
     displayName = "Platoon Leader";
@@ -153,7 +153,7 @@ class GVAR(USAM_PTL): GVAR(USAM_SQL) {
     loadoutGroup = "Platoon";
     loadoutRank = "LIEUTENANT";
     loadoutBackpackInvNew[] = {{"ACRE_PRC117F", 1}, {"ItemAndroid", 1}};
-    loadoutInsignia = QGVAR(lieutenant);
+    loadoutInsignia = QEGVAR(insignia,lieutenant);
 };
 class GVAR(USAM_CO): GVAR(USAM_PTL) {
     displayName = "Company Commander";
@@ -161,7 +161,7 @@ class GVAR(USAM_CO): GVAR(USAM_PTL) {
     loadout = "USAM_CO";
     loadoutGroup = "Company";
     loadoutRank = "CAPTAIN";
-    loadoutInsignia = QGVAR(captain);
+    loadoutInsignia = QEGVAR(insignia,captain);
 };
 class GVAR(USAM_ADM): GVAR(USAM_PTL) {
     displayName = "Zeus";
@@ -198,7 +198,7 @@ class GVAR(USAM_MED): GVAR(USAM_FTL) {
     loadoutVestInvNew[] = {{"ACE_epinephrine", 8}};
     loadoutBackpackInvNew[] = {{"ACE_packingBandage", 48}, {"ACE_elasticBandage", 48}, {"ACE_morphine", 10}, {"ACE_plasmaIV_500", 12}, {"ACE_tourniquet", 6}, {"adv_aceSplint_splint", 15}};
     loadoutVarMedic = 2;
-    loadoutInsignia = QGVAR(medic);
+    loadoutInsignia = QEGVAR(insignia,medic);
 };
 class GVAR(USAM_MED_LEAD): GVAR(USAM_MED) {
     displayName = "Platoon Medic";
@@ -222,7 +222,7 @@ class GVAR(USAM_MED_LEAD_C): GVAR(USAM_SQL) {
     loadoutUniformInvNew[] = {{"ACE_epinephrine", 22}};
     loadoutVestInvNew[] = {{"adv_aceCPR_AED", 1}};
     loadoutBackpackInvNew[] = {{"ACE_packingBandage", 26}, {"ACE_elasticBandage", 26}, {"ACE_morphine", 20}, {"ACE_plasmaIV_500", 22}, {"ACE_tourniquet", 6}, {"adv_aceSplint_splint", 15}};
-    loadoutInsignia = QGVAR(medic);
+    loadoutInsignia = QEGVAR(insignia,medic);
 };
 
 // Platoon
@@ -253,14 +253,14 @@ class GVAR(USAM_ATC): GVAR(USAM_PSG) {
     loadoutGroup = "Platoon";
     loadoutHeadgear[] = {"VSM_Peltor_coyote"};
     loadoutBackpackInvNew[] = {{"ACRE_PRC117F", 1}, {"B_UavTerminal", 1}};
-    loadoutInsignia = QGVAR(atc);
+    loadoutInsignia = QEGVAR(insignia,atc);
 };
 class GVAR(USAM_FO): GVAR(USAM_SQL) {
     displayName = "Joint Fires Observer";
     description = "JFO - Warrior 1-F";
     loadout = "USAM_FO";
     loadoutGroup = "Platoon";
-    loadoutInsignia = QGVAR(jfo);
+    loadoutInsignia = QEGVAR(insignia,jfo);
 };
 class GVAR(USAM_JTAC): GVAR(USAM_SQL) {
     displayName = "JTAC";
@@ -275,7 +275,7 @@ class GVAR(USAM_JTAC): GVAR(USAM_SQL) {
     loadoutVestInv[] = {{WEAPON_1_AMMO, 6}, {HANDGUN_1_AMMO, 2}};
     loadoutVestInvNew[] = {{WEAPON_2_AMMO, 3}};
     loadoutBackpackInvNew[] = {{"ACRE_PRC117F", 1},{"1Rnd_SmokeBlue_Grenade_shell", 3}, {"1Rnd_SmokePurple_Grenade_shell", 3}, {"1Rnd_SmokeRed_Grenade_shell", 3}};
-    loadoutInsignia = QGVAR(jtac);
+    loadoutInsignia = QEGVAR(insignia,jtac);
 };
 
 // Squad
@@ -570,7 +570,7 @@ class GVAR(USAM_HELI_MED): GVAR(USAM_HELI_CRW) {
     loadoutVestInvNew[] = {{"ACE_epinephrine", 8}, {"adv_aceCPR_AED", 1}, {"ACE_surgicalKit", 1}};
     loadoutBackpackInvNew[] = {{"ACE_packingBandage", 48}, {"ACE_elasticBandage", 48}, {"ACE_morphine", 10}, {"ACE_plasmaIV_500", 12}, {"ACE_tourniquet", 4}, {"adv_aceSplint_splint", 15}};
     loadoutVarMedic = 2;
-    loadoutInsignia = QGVAR(medic);
+    loadoutInsignia = QEGVAR(insignia,medic);
 };
 class GVAR(USAM_JET): GVAR(USAM_SQL) {
     displayName = "Jet Pilot";
@@ -757,5 +757,5 @@ class GVAR(USAM_LOG_MED): GVAR(USAM_FTL) {
     loadoutBackpackInvNew[] = {{"Toolkit", 1}, {"VSM_OPS_2_multicam", 1}, {"ACE_packingBandage", 16}, {"ACE_elasticBandage", 16}, {"ACE_plasmaIV_500", 6}};
     loadoutVarMedic = 2;
     loadoutVarEng = 2;
-    loadoutInsignia = QGVAR(medic);
+    loadoutInsignia = QEGVAR(insignia,medic);
 };
