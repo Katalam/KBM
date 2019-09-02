@@ -80,23 +80,24 @@ if (hasInterface) then {
             params ["_vehicle", "_player"];
 
             private _isPlaying = _vehicle getVariable [QGVAR(radioIsOn), false];
+            private _isPlayingLoud = _vehicle getVariable [QGVAR(radioIsOnLoud), false];
 
-            !_isPlaying && {driver _vehicle == _player} && {!visibleMap}
+            !_isPlaying && {!_isPlayingLoud} && {driver _vehicle == _player} && {!visibleMap}
         }] call ace_interact_menu_fnc_createAction
     ] call ace_interact_menu_fnc_addActionToObject;
-    /*
+
     // Loud off
     [_vehicle, 1, ["ACE_SelfActions", QGVAR(radioActions)],
         [QGVAR(turnLoudRadioOff), "Turn Loudspeaker Off", QPATHTOF(data\loud_off.paa), {
             params ["_vehicle"];
 
-            true;
+            [_vehicle, false] call FUNC(playMusicLoud);
         }, {
             params ["_vehicle", "_player"];
 
-            private _isPlaying = _vehicle getVariable [QGVAR(loudRadioIsOn), false];
+            private _isPlayingLoud = _vehicle getVariable [QGVAR(radioIsOnLoud), false];
 
-            _isPlaying && {driver _vehicle == _player} && {!visibleMap}
+            _isPlayingLoud && {driver _vehicle == _player} && {!visibleMap}
         }] call ace_interact_menu_fnc_createAction
     ] call ace_interact_menu_fnc_addActionToObject;
 
@@ -105,14 +106,14 @@ if (hasInterface) then {
         [QGVAR(turnLoudRadioOn), "Turn Loudspeaker On", QPATHTOF(data\loud_on.paa), {
             params ["_vehicle"];
 
-            true;
+            [_vehicle] call FUNC(playMusicLoud);
         }, {
             params ["_vehicle", "_player"];
 
-            private _isPlaying = _vehicle getVariable [QGVAR(loudRadioIsOn), false];
+            private _isPlaying = _vehicle getVariable [QGVAR(radioIsOn), false];
+            private _isPlayingLoud = _vehicle getVariable [QGVAR(radioIsOnLoud), false];
 
-            !_isPlaying && {driver _vehicle == _player} && {!visibleMap}
+            !_isPlaying && !_isPlayingLoud && {driver _vehicle == _player} && {!visibleMap}
         }] call ace_interact_menu_fnc_createAction
     ] call ace_interact_menu_fnc_addActionToObject;
-    */
 };

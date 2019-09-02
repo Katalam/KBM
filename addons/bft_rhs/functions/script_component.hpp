@@ -1,1 +1,1 @@
-#include "\x\kat_10thmods\addons\bft_rhs\script_component.hpp"
+#include "\z\kat_10thmods\addons\bft_rhs\script_component.hpp"

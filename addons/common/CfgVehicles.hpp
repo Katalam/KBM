@@ -7,7 +7,7 @@ class CfgVehicles {
         scopeCurator = 2;
         editorPreview = QPATHTOF(data\10th_flag.paa);
         class EventHandlers {
-            init = QUOTE((_this select 0) setFlagTexture '\x\kat_10thmods\addons\common\data\10th_flag.paa');
+            init = QUOTE((_this select 0) setFlagTexture '\z\kat_10thmods\addons\common\data\10th_flag.paa');
         };
     };
     class Banner_01_base_F;

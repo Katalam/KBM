@@ -1,1 +1,1 @@
-#include "\x\kat_10thmods\addons\faction\script_component.hpp"
+#include "\z\kat_10thmods\addons\faction\script_component.hpp"

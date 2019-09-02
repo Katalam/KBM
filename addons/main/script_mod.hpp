@@ -1,6 +1,6 @@
 // COMPONENT should be defined in the script_component.hpp and included BEFORE this hpp
 
-#define MAINPREFIX x
+#define MAINPREFIX z
 #define PREFIX kat_10thmods
 
 #define MAJOR 1

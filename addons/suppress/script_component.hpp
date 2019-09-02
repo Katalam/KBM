@@ -1,6 +1,6 @@
 #define COMPONENT suppress
 #define COMPONENT_BEAUTIFIED Suppress
-#include "\x\kat_10thmods\addons\main\script_mod.hpp"
+#include "\z\kat_10thmods\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL
 // #define DISABLE_COMPILE_CACHE
@@ -14,7 +14,7 @@
     #define DEBUG_SETTINGS DEBUG_SETTINGS_SUPPRESS
 #endif
 
-#include "\x\kat_10thmods\addons\main\script_macros.hpp"
+#include "\z\kat_10thmods\addons\main\script_macros.hpp"
 
 #define MAXSUPP 30
 #define BORDER 8
