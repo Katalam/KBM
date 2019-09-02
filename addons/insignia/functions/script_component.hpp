@@ -1,1 +1,1 @@
-#include "\x\kat_10thmods\addons\insignia\script_component.hpp"
+#include "\z\kat_10thmods\addons\insignia\script_component.hpp"
