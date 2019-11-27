@@ -1,25 +1,20 @@
 #include "script_component.hpp"
-
-class CfgPatches {
-    class ADDON {
-        name = QUOTE(COMPONENT_NAME);
-        requiredVersion = REQUIRED_VERSION;
-        units[] = {
-            KAT_Mortar_M252
+    class CfgPatches {
+        class ADDON {
+            name = COMPONENT;
+            units[] = {};
+            weapons[] = {};
+            requiredVersion = REQUIRED_VERSION;
+            requiredAddons[] = {
+                "ace_cargo",
+                "KBM_main"
+            };
+            author = ECSTRING(main,author);
+            url = ECSTRING(main,url);
+            VERSION_CONFIG;
         };
-        weapons[] = {};
-        magazines[] = {};
-        requiredAddons[] = {
-            "ace_cargo",
-            "cba_settings",
-            "kat_10thmods_main"
-        };
-        author = "Katalam";
-        authors[] = {"Katalam"};
-        url = ECSTRING(main,URL);
-        VERSION_CONFIG;
     };
-};
+
 
 #include "CfgVehicles.hpp"
 #include "CfgMagazines.hpp"

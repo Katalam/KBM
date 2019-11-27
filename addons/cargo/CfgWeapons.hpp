@@ -9,13 +9,4 @@ class CfgWeapons {
             containerClass = Supply60;
         };
     };
-
-    class usm_bdu_w: Uniform_Base {
-        class ItemInfo;
-    };
-    class usm_bdu_dcu_m: usm_bdu_w {
-        class ItemInfo: UniformItem {
-            containerClass = Supply60;
-        };
-    };
 };
