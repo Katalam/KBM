@@ -5,7 +5,7 @@ class CfgVehicles {
             class ACE_Equipment {
                 class ace_gunbag_actions {
                     class GVAR(weaponSwitch) {
-                        displayName = "Switch Gunbag";
+                        displayName = CSTRING(switchgunbag);
                         condition = QUOTE([_player] call FUNC(canSwitch));
                         statement = QUOTE([_player] call FUNC(switchGunbag));
                         showDisabled = 0;

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="KBM">
+    <Package name="gunbag">
+        <Key ID="STR_KBM_gunbag_switchgunbag">
+            <English>Switch weapons</English>
+            <German>Wechsle Waffen</German>
+        </Key>
+    </Package>
+</Project>
