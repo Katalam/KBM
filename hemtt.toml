@@ -1,19 +1,8 @@
-name = "kat_10thmods"
-prefix = "kat_10thmods"
+name = "KAT 10th Basemods"
+prefix = "KBM"
 author = "Katalam"
-version = "1.1.6.33"
-files = ["mod.cpp", "mod_logo.paa", "kat_artillerytables_x64.dll", "kat_10thmods_x64.dll"]
+version = "0.1.0.0"
+files = ["mod.cpp", "logo_kbm_ca.paa"]
 include = ["./include"]
-
-postbuild = ["!extension"]
-releasebuild = ["@zip kat_10thmods"]
-
-[scripts.extension]
-show_output = true
-steps_windows = [
-    "cd extension && cargo build --release",
-    "copy extension\\target\\release\\kat_10thmods.dll kat_10thmods_x64.dll"
-]
-steps_linux = [
-    "echo \"Unable to build extension on Linux\""
-]
+releasebuild = ["@zip KBM"]
+sigversion = 3
