@@ -6,6 +6,7 @@ PREP(canUnflip);
 PREP(changeGroupNameDialogCallback);
 PREP(changeGroupNameDialogInit);
 PREP(dummy);
+PREP(getPosition);
 PREP(moduleAddSpectatorMenu3den);
 PREP(spawnProtection);
 PREP(unflipVehicle);

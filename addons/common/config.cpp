@@ -22,7 +22,8 @@
     };
 
 
-    #include "CfgEventHandlers.hpp"
-    #include "CfgFactionClasses.hpp"
-    #include "CfgVehicles.hpp"
-    #include "CfgAmmo.hpp"
+#include "CfgEventHandlers.hpp"
+#include "CfgFactionClasses.hpp"
+#include "CfgVehicles.hpp"
+#include "CfgAmmo.hpp"
+#include "CfgInteractionPositions.hpp"
