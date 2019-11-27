@@ -1,9 +1,13 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project name="kat">
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="KBM">
     <Package name="main">
-        <Key ID="STR_kat_main_URL">
-            <English>https://github.com/Katalam/</English>
-            <German>https://github.com/Katalam/</German>
+        <Key ID="STR_KBM_main_author">
+            <English>Katalam</English>
+            <German>Katalam</German>
+        </Key>
+        <Key ID="STR_KBM_main_url">
+            <English>https://github.com/Katalam/KBM</English>
+            <German>https://github.com/Katalam/KBM</German>
         </Key>
     </Package>
 </Project>

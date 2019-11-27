@@ -1,5 +1,5 @@
 #define MAINPREFIX z
-#define PREFIX kat_10thmods
+#define PREFIX KBM
 
 #include "script_version.hpp"
 
