@@ -1,9 +1,29 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project name="kat_10thmods">
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="KBM">
     <Package name="zeusfpsmonitor">
-        <Key ID="STR_kat_10thmods_zeusfpsmonitor_cbaSettingsCategory">
-            <English>KAT 10th Mods - Zeus FPS Monitor</English>
-            <German>KAT 10th Mods - Zeus FPS Monitor</German>
+        <Key ID="STR_KBM_zeusfpsmonitor_enable">
+            <English>Zeus FPS Monitor</English>
+            <German>Zeus FPS Monitor</German>
+        </Key>
+        <Key ID="STR_KBM_zeusfpsmonitor_enable_tooltip">
+            <English>Enable/ Disable Zeus FPS Monitor</English>
+            <German>Aktiviere/ Deaktiviere Zeus FPS Monitor</German>
+        </Key>
+        <Key ID="STR_KBM_zeusfpsmonitor_updateInterval">
+            <English>Update interval</English>
+            <German>Aktualisierungsinterval</German>
+        </Key>
+        <Key ID="STR_KBM_zeusfpsmonitor_updateInterval_tooltip">
+            <English>Set the FPS update interval in seconds</English>
+            <German>Setzt den FPS Aktualisierungsinterval in Sekunden</German>
+        </Key>
+        <Key ID="STR_KBM_zeusfpsmonitor_showui">
+            <English>Show Zeus UI</English>
+            <German>Zeige Zeus UI</German>
+        </Key>
+        <Key ID="STR_KBM_zeusfpsmonitor_showui_tooltip">
+            <English>Show or hide frame display for Zeus</English>
+            <German>Zeige oder verstecke die Zeus FPS Anzeige</German>
         </Key>
     </Package>
 </Project>
