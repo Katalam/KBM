@@ -25,5 +25,13 @@
             <English>Clear bin</English>
             <German>Mülleimer leeren</German>
         </Key>
+        <Key ID="STR_KBM_common_spectator">
+            <English>Spectator</English>
+            <German>Zuschauer</German>
+        </Key>
+        <Key ID="STR_KBM_common_beSpectator">
+            <English>Be a spectator</English>
+            <German>Zuschauer werden</German>
+        </Key>
     </Package>
 </Project>
