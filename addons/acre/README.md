@@ -1,4 +1,4 @@
-acre_tape
+acre
 ==========
 
 Adds pre defined channels for PRC152 and PRC117F.

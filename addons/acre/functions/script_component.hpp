@@ -1,0 +1,1 @@
+#include "\z\KBM\addons\acre\script_component.hpp"
