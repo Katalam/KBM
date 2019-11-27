@@ -1,1 +1,2 @@
-powershell -Executionpolicy Bypass -Command ".\hemtt build"
+@echo off
+hemtt build
