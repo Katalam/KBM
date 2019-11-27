@@ -1,21 +1,18 @@
-# kat_10thmods
+# KBM
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/Katalam/kat_10thmods/master/logo.png">
+    <img src="https://raw.githubusercontent.com/Katalam/KBM/master/logo.png" width="480">
 </p>
 
 <p align="center">
-    <a href="https://github.com/Katalam/kat_10thmods/releases/latest">
-        <img src="https://img.shields.io/badge/Version-1.1.5-blue.svg?style=flat-square" alt="KAT 10thMods Version">
+    <a href="https://github.com/Katalam/KBM/releases/latest">
+        <img src="https://img.shields.io/badge/Version-1.1.5-blue.svg?style=flat-square" alt="KBM Version">
     </a>
-    <a href="https://github.com/Katalam/kat_10thmods/issues">
-        <img src="https://img.shields.io/github/issues-raw/Katalam/kat_10thmods.svg?style=flat-square&label=Issues" alt="KAT 10thMods Issues">
+    <a href="https://github.com/Katalam/KBM/issues">
+        <img src="https://img.shields.io/github/issues-raw/Katalam/KBM.svg?style=flat-square&label=Issues" alt="KBM Issues">
     </a>
-    <a href="https://github.com/Katalam/kat_10thmods/releases">
-        <img src="https://img.shields.io/github/downloads/Katalam/kat_10thmods/total.svg?style=flat-square&label=Downloads" alt="KAT 10thMods Downloads">
-    </a>
-    <a href="https://ci.appveyor.com/project/Katalam/kat-10thmods">
-        <img src="https://ci.appveyor.com/api/projects/status/aq2ihs6ri50c5k12?svg=true" alt="KAT 10thMods Build Status">
+    <a href="https://github.com/Katalam/KBM/releases">
+        <img src="https://img.shields.io/github/downloads/Katalam/KBM/total.svg?style=flat-square&label=Downloads" alt="KBM Downloads">
     </a>
     <a href="CONTRIBUTING.md">
         <img src="https://img.shields.io/badge/Contributor%20Covenant-v1.4%20adopted-ff69b4.svg" alt="Contributor Covenant">
@@ -38,11 +35,11 @@ These instructions will get you a copy of the project up and running on your loc
 
 The build process is base on the [HEMTT build process](https://synixebrett.github.io/HEMTT/#/), so you can follow the steps there. Basically the following is needed:
 + correctly setup project drive (P: drive)
-+ download/clone kat_10thmods GitHub repo
++ download/clone KBM GitHub repo
 + right-click in the root folder and open power shell
 + you can build by executing ```.\hemtt build``` from the tools folder
-+ you have to setup the data link with admin cmd: mklink /J "A:\SteamLibrary\steamapps\common\Arma 3\z\kat_10thmods" "P:\kat_10thmods"
-+ for testing include your mod by adding ```-mod=z\kat_10thmods``` as start parameter
++ you have to setup the data link with admin cmd: mklink /J "A:\SteamLibrary\steamapps\common\Arma 3\z\KBM" "P:\KBM"
++ for testing include your mod by adding ```-mod=z\KBM``` as start parameter
 
 ## Built With
 
