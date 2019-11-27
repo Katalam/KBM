@@ -1,2 +1,0 @@
-PREP(onEntityKilled);
-PREP(transferToVehicle);
