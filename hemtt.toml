@@ -4,5 +4,5 @@ author = "Katalam"
 version = "0.1.0.0"
 files = ["mod.cpp", "logo_kbm_ca.paa"]
 include = ["./include"]
-releasebuild = ["@zip KBM"]
+#releasebuild = ["@zip KBM"]
 sigversion = 3
