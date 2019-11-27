@@ -12,7 +12,7 @@
  * None
  *
  * Example:
- * [tv, "marker_teleport_spectator"] call kat_10thmods_common_fnc_addSpectatorMenu;
+ * [tv, "marker_teleport_spectator"] call KBM_common_fnc_addSpectatorMenu;
  *
  * Public: Yes
  */

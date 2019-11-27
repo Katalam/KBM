@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * call kat_10thmods_common_fnc_breakWindow;
+ * call KBM_common_fnc_breakWindow;
  *
  * Public: No
  */

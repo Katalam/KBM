@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [cursorTarget] call kat_10thmods_common_fnc_unflipVehicle
+ * [cursorTarget] call KBM_common_fnc_unflipVehicle
  *
  * Public: No
  */

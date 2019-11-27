@@ -1,7 +1,7 @@
 class CfgVehicles {
     class FlagCarrier;
     class GVAR(flag): FlagCarrier {
-        author = "Katalam";
+        author = ECSTRING(author);
         displayName = CSTRING(flag);
         scope = 2;
         scopeCurator = 2;
@@ -12,7 +12,7 @@ class CfgVehicles {
     };
     class Banner_01_base_F;
     class GVAR(banner): Banner_01_base_F {
-        author = "Katalam";
+        author = ECSTRING(author);
         displayName = CSTRING(banner);
         scope = 2;
         scopeCurator = 2;
@@ -38,9 +38,9 @@ class CfgVehicles {
         };
     };
     class GVAR(moduleBase): Module_F {
-        author = "Katalam";
+        author = ECSTRING(author);
         category = "KAT";
-        function = QEFUNC(main,dummy);
+        function = QEFUNC(dummy);
         scope = 1;
         scopeCurator = 2;
         functionPriority = 1;
@@ -48,9 +48,9 @@ class CfgVehicles {
         isTriggerActivated = 0;
     };
     class GVAR(moduleBase3den): Module_F {
-        author = "Katalam";
+        author = ECSTRING(author);
         category = "KAT";
-        function = QEFUNC(common,dummy);
+        function = QFUNC(dummy);
         scope = 2;
         scopeCurator = 1;
         functionPriority = 2;
@@ -95,7 +95,7 @@ class CfgVehicles {
             class ACE_MainActions {
                 class GVAR(unflipVehicle) {
                     displayName = CSTRING(unflipVehicle);
-                    condition = QUOTE(true);
+                    condition = QUOTE(_this call FUNC(canUnflip));
                     exceptions[] = {};
                     statement = QUOTE(_this spawn FUNC(unflipVehicle));
                     showDisabled = 0;

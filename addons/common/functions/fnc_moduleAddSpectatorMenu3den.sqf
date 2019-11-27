@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [_logic] call kat_10thMods_common_fnc_moduleAddSpectatorMenu3den;
+ * [_logic] call KBM_common_fnc_moduleAddSpectatorMenu3den;
  *
  * Public: No
  */
@@ -20,8 +20,10 @@ params ["_logic"];
 if !(isServer) exitWith {};
 
 private _objects = synchronizedObjects _logic;
+// No fallback for marker n/a, [0,0,0] will be used
+private _marker = "marker_spectator";
 {
-    [_x, "marker_spectator"] remoteExec [QFUNC(addSpectatorMenu), 0, true];
+    [_x, _marker] remoteExec [QFUNC(addSpectatorMenu), 0, true];
 } forEach _objects;
 
 deleteVehicle _logic;

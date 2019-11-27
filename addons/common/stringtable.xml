@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project name="kat_10thmods">
+<Project name="KBM">
     <Package name="common">
-        <Key ID="STR_kat_10thmods_common_flag">
+        <Key ID="STR_KBM_common_flag">
             <English>10th MntD Flag</English>
             <German>10th MntD Flagge</German>
         </Key>
-        <Key ID="STR_kat_10thmods_common_banner">
+        <Key ID="STR_KBM_common_banner">
             <English>10th MntD Banner</English>
             <German>10th MntD Banner</German>
         </Key>
-        <Key ID="STR_kat_10thmods_common_break">
+        <Key ID="STR_KBM_common_break">
             <English>Break window</English>
             <German>Zerstöre Fenster</German>
         </Key>
-        <Key ID="STR_kat_10thmods_common_changeGroupName">
+        <Key ID="STR_KBM_common_changeGroupName">
             <English>Change groupname</English>
             <German>Gruppennamen ändern</German>
         </Key>
-        <Key ID="STR_kat_10thmods_common_unflipVehicle">
+        <Key ID="STR_KBM_common_unflipVehicle">
             <English>Unflip vehicle</English>
             <German>Richte Fahrzeug auf</German>
         </Key>
-        <Key ID="STR_kat_10thmods_common_clearbin">
+        <Key ID="STR_KBM_common_clearbin">
             <English>Clear bin</English>
             <German>Mülleimer leeren</German>
         </Key>

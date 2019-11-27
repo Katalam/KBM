@@ -10,7 +10,7 @@
  * True if there is a window to break, False otherwise <BOOL>
  *
  * Example:
- * call kat_10thmods_common_fnc_canBreakWindow
+ * call KBM_common_fnc_canBreakWindow
  *
  * Public: No
  */

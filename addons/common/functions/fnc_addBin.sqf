@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * call kat_10thmods_common_fnc_addBin;
+ * call KBM_common_fnc_addBin;
  *
  * Public: No
  */

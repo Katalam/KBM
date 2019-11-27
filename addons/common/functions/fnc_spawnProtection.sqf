@@ -11,7 +11,7 @@
  * None
  *
  * Example:
- * call kat_10thmods_common_fnc_spawnProtection;
+ * call KBM_common_fnc_spawnProtection;
  *
  * Public: Yes
  */

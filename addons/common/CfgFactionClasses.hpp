@@ -1,6 +1,6 @@
 class cfgFactionClasses {
     class GVAR(Template) {
-        displayName = "KAT Template";
+        displayName = "KAT Helper";
         priority = 2;
         side = 7;
     };
