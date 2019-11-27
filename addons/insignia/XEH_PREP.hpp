@@ -1,0 +1,2 @@
+PREP(getInsignia);
+PREP(setInsignia);
