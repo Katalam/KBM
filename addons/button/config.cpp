@@ -1,21 +1,19 @@
-// Original by Ampersand https://github.com/ampersand38/Server-Spotlight
 #include "script_component.hpp"
-
-class CfgPatches {
-    class ADDON {
-        name = QUOTE(COMPONENT_NAME);
-        units[] = {};
-        weapons[] = {};
-        requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {
-            "kat_10thmods_main"
+    class CfgPatches {
+        class ADDON {
+            name = COMPONENT;
+            units[] = {};
+            weapons[] = {};
+            requiredVersion = REQUIRED_VERSION;
+            requiredAddons[] = {
+                "KBM_main"
+            };
+            author = ECSTRING(main,author);
+            url = ECSTRING(main,url);
+            VERSION_CONFIG;
         };
-        author = "Katalam";
-        authors[] = {"Katalam"};
-        url = ECSTRING(main,URL);
-        VERSION_CONFIG;
     };
-};
+
 
 class RscStandardDisplay;
 class RscDisplayMain: RscStandardDisplay {
