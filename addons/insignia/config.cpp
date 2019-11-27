@@ -5,8 +5,11 @@
             units[] = {};
             weapons[] = {};
             requiredVersion = REQUIRED_VERSION;
-            requiredAddons[] = {};
-            author = "Katalam";
+            requiredAddons[] = {
+                "KBM_main"
+            };
+            author = ECSTRING(main,author);
+            url = ECSTRING(main,url);
             VERSION_CONFIG;
         };
     };

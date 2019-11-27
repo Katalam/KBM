@@ -2,7 +2,7 @@ class CfgUnitInsignia {
     class GVAR(medic) {
         displayName = "Medic";
         texture = QPATHTOF(data\multicam\medic.paa);
-        author = "Katalam";
+        author = ECSTRING(main,author);
         textureVehicle = "";
     };
     class GVAR(jfo): GVAR(medic) {
