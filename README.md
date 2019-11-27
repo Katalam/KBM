@@ -14,6 +14,15 @@
     <a href="https://github.com/Katalam/KBM/releases">
         <img src="https://img.shields.io/github/downloads/Katalam/KBM/total.svg?style=flat-square&label=Downloads" alt="KBM Downloads">
     </a>
+    <a href="https://github.com/Katalam/KBM/actions">
+        <img src="https://github.com/Katalam/KBM/workflows/CI/badge.svg" alt="KBM CI Status">
+    </a>
+    <a href="https://github.com/Katalam/KBM/actions">
+        <img src="https://github.com/Katalam/KBM/workflows/build/badge.svg" alt="KBM Build Status">
+    </a>
+    <a href="https://discord.gg/HbA93HK">
+        <img src="https://img.shields.io/discord/308323056592486420?logo=discord" alt="chat on Discord">
+    </a>
     <a href="CONTRIBUTING.md">
         <img src="https://img.shields.io/badge/Contributor%20Covenant-v1.4%20adopted-ff69b4.svg" alt="Contributor Covenant">
     </a>
