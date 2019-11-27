@@ -1,11 +1,11 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project name="kat_10thmods">
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="KBM">
     <Package name="cartridge">
-        <Key ID="STR_kat_10thmods_cartridge_setting_amount">
+        <Key ID="STR_KBM_cartridge_setting_amount">
             <English>Max cartridge amount</English>
             <German>Maximale Hülsenanzahl</German>
         </Key>
-        <Key ID="STR_kat_10thmods_cartridge_setting_stop">
+        <Key ID="STR_KBM_cartridge_setting_stop">
             <English>Stop cartridge creating</English>
             <German>Stoppe Hülsenerstellung</German>
         </Key>

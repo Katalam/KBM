@@ -1,3 +1,3 @@
 #include "script_component.hpp"
 
-player addEventHandler ["Fired", FUNC(createCartridge)];
+player addEventHandler ["Fired", LINKFUNC(createCartridge)];

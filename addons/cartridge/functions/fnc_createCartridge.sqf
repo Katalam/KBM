@@ -14,7 +14,7 @@
  * None
  *
  * Example:
- * [player, 0, 0, 0, "FxCartridge_65"] call kat_10thmods_cartridge_fnc_createCatridge;
+ * [player, 0, 0, 0, "FxCartridge_65"] call KBM_cartridge_fnc_createCatridge;
  *
  * Public: No
  */
@@ -35,21 +35,28 @@ if !(_cartridgeType in _oldCartridge) then {
 private "_pos";
 switch (stance _unit) do {
     case "STAND": {
-        _pos = _unit getRelPos [3, 85]; // meter, direction
+        private _posUnit = (getPosWorld _unit) vectorAdd [0, 0, 1.3];
+        private _return = lineIntersectsSurfaces [_posUnit, AGLToASL ((_unit getRelPos [3, 85]) vectorAdd [0, 0, -1]), _unit];
+        _pos = _return select 0 select 0; // meter, direction
     };
     case "CROUCH": {
-        _pos = _unit getRelPos [2.2, 75]; // meter, direction
+        private _posUnit = (getPosWorld _unit) vectorAdd [0, 0, 0.9];
+        private _return = lineIntersectsSurfaces [_posUnit, AGLToASL ((_unit getRelPos [2.2, 75]) vectorAdd [0, 0, -1]), _unit];
+        _pos = _return select 0 select 0; // meter, direction
     };
     default {
-        _pos = _unit getRelPos [1.5, 55]; // meter, direction
+        private _posUnit = (getPosWorld _unit) vectorAdd [0, 0, 0.3];
+        private _return = lineIntersectsSurfaces [_posUnit, AGLToASL ((_unit getRelPos [5, 20]) vectorAdd [0, 0, -1]), _unit];
+        _pos = _return select 0 select 0; // meter, direction
     };
 };
 
-// createVehicle ["Sign_Sphere10cm_Geometry_F", (player getRelPos [1.5, 55]), [], 0, "CAN_COLLIDE"];
-
+if (_pos isEqualTo []) exitWith {};
 _pos params ["_xa", "_ya", "_za"];
+// createVehicle ["Sign_Sphere10cm_Geometry_F", [_xa, _ya, _za], [], 0, "CAN_COLLIDE"];
 
-private _cartridge = createVehicle [_cartridgeType, [_xa + random 0.2 - random 0.2, _ya + random 0.2 - random 0.2, _za], [], 0, "CAN_COLLIDE"];
+//private _cartridge = createVehicle [_cartridgeType, [_xa + random 0.3 - random 0.3, _ya + random 0.3 - random 0.3, _za], [], 0, "CAN_COLLIDE"];
+private _cartridge = createSimpleObject [_cartridgeType, [_xa + random 0.3 - random 0.3, _ya + random 0.3 - random 0.3, _za + 0.01], false];
 _cartridge enableSimulation false;
 _cartridge setDir random 360;
 private _vector = surfaceNormal position _cartridge;

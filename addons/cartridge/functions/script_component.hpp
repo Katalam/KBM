@@ -1,1 +1,1 @@
-#include "\z\kat_10thmods\addons\cartridge\script_component.hpp"
+#include "\z\KBM\addons\cartridge\script_component.hpp"
