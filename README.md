@@ -1,7 +1,7 @@
 # KBM
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/Katalam/KBM/master/logo.png" width="480">
+    <img src="https://raw.githubusercontent.com/Katalam/KBM/master/logo.png">
 </p>
 
 <p align="center">
