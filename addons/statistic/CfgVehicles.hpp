@@ -6,4 +6,10 @@ class CfgVehicles {
         function = QFUNC(moduleMissionEndSuccess);
         icon = QPATHTOF(data\icon_success.paa);
     };
+    class GVAR(moduleMissionEndFailure): EGVAR(common,moduleBase) {
+        displayName = "End Mission (Failure)";
+        category = QGVAR(ScenarioFlow);
+        function = QFUNC(moduleMissionEndFailure);
+        //icon = QPATHTOF(data\icon_success.paa);
+    };
 };

@@ -5,65 +5,76 @@
  * and stuff. Also notifies server to write into database.
  *
  * Arguments:
- * =: Logic <LOGIC>
+ * None
  *
  * Return Value:
  * None
  *
  * Example:
- * _logic call kat_10thmods_statistic_fnc_moduleMissionEndSuccess
+ * call KBM_statistic_fnc_moduleMissionEndSuccess
  *
  */
 
-if (isServer) then {
+if !(isServer) then {
+    [GVAR(end_bandagesApplied), GVAR(end_pulseChecked), GVAR(end_cprPerformed)] remoteExec [QFUNC(addStatisticValues), 2, false];
+} else {
+    publicVariable QGVAR(end_shotsFired);
+    publicVariable QGVAR(end_aiKilled);
+    publicVariable QGVAR(end_fragsOut);
+    publicVariable QGVAR(end_launcherFired);
+    publicVariable QGVAR(end_handGunFired);
+    publicVariable QGVAR(end_vehicleFired);
+    [{
+        publicVariable QGVAR(end_pulseChecked);
+        publicVariable QGVAR(end_bandagesApplied);
+        publicVariable QGVAR(end_cprPerformed);
+    }, [], 8] call CBA_fnc_waitAndExecute;
+
     ["CAManBase", "Fired", {
         params ["_unit", "", "", "", "", "", "_projectile"];
-
         deleteVehicle _projectile;
-        ["ace_captives_setHandcuffed", [_unit, true], [_unit]] call CBA_fnc_targetEvent;
+        private _oldPos = getPos _unit;
+        _unit setPos [0,0,0];
+        [{
+            params ["_unit", "_oldPos"];
+            ["ACE_G_M84" createVehicle (GetPos _unit)] call ace_grenades_fnc_flashbangThrownFuze;
+            [{
+                params ["_unit", "_oldPos"];
+                _unit setPos _oldPos;
+            }, [_unit, _oldPos], 1] call CBA_fnc_waitAndExecute;
+        }, [_unit, _oldPos], 1] call CBA_fnc_waitAndExecute;
+        _unit action ["SWITCHWEAPON", player, player, -1];
     }] call CBA_fnc_addClassEventHandler;
-
-    publicVariable QGVAR(aiKilled);
-    publicVariable QGVAR(civsKilled);
-    [{
-        publicVariable QGVAR(pulseChecked);
-        publicVariable QGVAR(bandagesApplied);
-        publicVariable QGVAR(cprPerformed);
-        publicVariable QGVAR(fragsOut);
-        publicVariable QGVAR(shotsFired);
-    }, [], 8] call CBA_fnc_waitAndExecute;
-} else {
-    [GVAR(bandagesApplied), GVAR(pulseChecked), GVAR(cprPerformed), GVAR(fragsOut), GVAR(shotsFired)] remoteExec [QFUNC(addStatisticValues), 2, false];
 };
 
-if (hasInterface) then {
-    [] spawn {
-        playMusic "SkyNet";
-        sleep 2;
-        [localize LSTRING(statsMissionWin), 1, 0.8] spawn BIS_fnc_dynamicText;
-        sleep 3;
-        [
-            [format [localize LSTRING(statsPlayers), playersNumber playerSide], 1, 2],
-            [format [localize LSTRING(statsMinutes), floor (time / 60)], 1, 2]
-        ] spawn BIS_fnc_EXP_camp_SITREP;
-        sleep 5;
-        [
-            [format [localize LSTRING(statsBullets), GVAR(shotsFired)], 1, 2],
-            [format [localize LSTRING(statsGrenades), GVAR(fragsOut)], 1, 2],
-            [format [localize LSTRING(statsEnemies), GVAR(aiKilled)], 1, 2]
-        ] spawn BIS_fnc_EXP_camp_SITREP;
-        sleep 5;
-        [
-            [format [localize LSTRING(statsCivilians), GVAR(civsKilled)], 1, 2]
-        ] spawn BIS_fnc_EXP_camp_SITREP;
-        sleep 5;
-        [
-            [format [localize LSTRING(statsPulse), GVAR(pulseChecked)], 1, 2],
-            [format [localize LSTRING(statsBandages), GVAR(bandagesApplied)], 1, 2],
-            [format [localize LSTRING(statsCPR), GVAR(cprPerformed)], 1, 2]
-        ] spawn BIS_fnc_EXP_camp_SITREP;
-        sleep 5;
-        5 fadeMusic 0;
-        [QGVAR(endNice), true, 5] spawn BIS_fnc_endMission;
-    };
+[] spawn {
+    playMusic "LeadTrack01_F_Tank";
+    sleep 3;
+    ["<t color='#00ff00'>Mission erfolgreich</t>", 1, 0.8] spawn bis_fnc_dynamicText;
+    sleep 5;
+    [
+        [(format ["%1 Spieler", playersNumber playerSide]), 1, 2],
+        [(format ["%1min im Kampf", floor (time / 60)]), 1, 3]
+    ] spawn bis_fnc_EXP_camp_SITREP;
+    sleep 9;
+    [
+        [format ["%1 Kugeln abgegeben", GVAR(end_shotsFired)], 1, 2],
+        [format ["%1 Granaten geworfen", GVAR(end_fragsOut)], 1, 2],
+        [format ["%1 Feinde bekämpft", GVAR(end_aiKilled)], 1, 3]
+    ] spawn bis_fnc_EXP_camp_SITREP;
+    sleep 12;
+    [
+        [format ["%1 Werfer benutzt", GVAR(end_launcherFired)], 1, 2],
+        [format ["%1 Pistolenkugeln verschossen", GVAR(end_handGunFired)], 1, 2],
+        [format ["%1 Fahrzeugkugeln abgegeben", GVAR(end_vehicleFired)], 1, 3]
+    ] spawn bis_fnc_EXP_camp_SITREP;
+    sleep 12;
+    [
+        [format ["%1 mal Puls gemessen", GVAR(end_pulseChecked)], 1, 2],
+        [format ["%1 Bandagen angelegt", GVAR(end_bandagesApplied)], 1, 2],
+        [format ["%1 mal CPR durchgeführt", GVAR(end_cprPerformed)], 1, 3]
+        ] spawn bis_fnc_EXP_camp_SITREP;
+    sleep 12;
+    5 fadeMusic 0;
+    ["end1", true, 5] spawn bis_fnc_endMission;
 };

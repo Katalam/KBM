@@ -1,51 +1,51 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project name="kat_10thmods">
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="KBM">
     <Package name="statistic">
-        <Key ID="STR_kat_10thmods_statistic_statsMissionWin">
+        <Key ID="STR_KBM_statistic_statsMissionWin">
             <English>&lt;t color='#00ff00'&gt;Mission accomplished&lt;/t&gt;</English>
             <German>&lt;t color='#00ff00'&gt;Mission erfolgreich&lt;/t&gt;</German>
         </Key>
-        <Key ID="STR_kat_10thmods_statistic_statsMissionFail">
+        <Key ID="STR_KBM_statistic_statsMissionFail">
             <English>&lt;t color='#00ff00'&gt;Mission failed&lt;/t&gt;</English>
             <German>&lt;t color='#00ff00'&gt;Mission fehlgeschlagen&lt;/t&gt;</German>
         </Key>
-        <Key ID="STR_kat_10thmods_statistic_statsKills">
+        <Key ID="STR_KBM_statistic_statsKills">
             <English>Your kill statistics</English>
             <German>Deine Kill Statistik</German>
         </Key>
-        <Key ID="STR_kat_10thmods_statistic_statsPlayers">
+        <Key ID="STR_KBM_statistic_statsPlayers">
             <English>%1 players</English>
             <German>%1 Spieler</German>
         </Key>
-        <Key ID="STR_kat_10thmods_statistic_statsMinutes">
+        <Key ID="STR_KBM_statistic_statsMinutes">
             <English>%1 min in battle</English>
             <German>%1 min im Kampf</German>
         </Key>
-        <Key ID="STR_kat_10thmods_statistic_statsBullets">
+        <Key ID="STR_KBM_statistic_statsBullets">
             <English>%1 bullets shot</English>
             <German>%1 Kugeln abgegeben</German>
         </Key>
-        <Key ID="STR_kat_10thmods_statistic_statsGrenades">
+        <Key ID="STR_KBM_statistic_statsGrenades">
             <English>%1 grenades thrown</English>
             <German>%1 Granaten geworfen</German>
         </Key>
-        <Key ID="STR_kat_10thmods_statistic_statsEnemies">
+        <Key ID="STR_KBM_statistic_statsEnemies">
             <English>%1 enemies killed</English>
             <German>%1 Feinde bekämpft</German>
         </Key>
-        <Key ID="STR_kat_10thmods_statistic_statsCivilians">
+        <Key ID="STR_KBM_statistic_statsCivilians">
             <English>%1 civilians killed</English>
             <German>%1 Zivilisten gemeuchelt</German>
         </Key>
-        <Key ID="STR_kat_10thmods_statistic_statsPulse">
+        <Key ID="STR_KBM_statistic_statsPulse">
             <English>measured pulse %1 times</English>
             <German>%1 mal Puls gemessen</German>
         </Key>
-        <Key ID="STR_kat_10thmods_statistic_statsBandages">
+        <Key ID="STR_KBM_statistic_statsBandages">
             <English>%1 bandages applied</English>
             <German>%1 Bandagen angelegt</German>
         </Key>
-        <Key ID="STR_kat_10thmods_statistic_statsCPR">
+        <Key ID="STR_KBM_statistic_statsCPR">
             <English>%1 times CPR </English>
             <German>%1 mal CPR durchgeführt</German>
         </Key>

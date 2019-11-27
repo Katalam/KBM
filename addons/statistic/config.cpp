@@ -1,22 +1,23 @@
 #include "script_component.hpp"
-
-class CfgPatches {
-    class ADDON {
-        name = QUOTE(COMPONENT_NAME);
-        units[] = {
-            QGVAR(moduleMissionEndSuccess)
+    class CfgPatches {
+        class ADDON {
+            name = COMPONENT;
+            units[] = {
+                QGVAR(moduleMissionEndSuccess),
+                QGVAR(moduleMissionEndFailure)
+            };
+            weapons[] = {};
+            requiredVersion = REQUIRED_VERSION;
+            requiredAddons[] = {
+                "KBM_main",
+                "A3_Modules_F"
+            };
+            author = ECSTRING(main,author);
+            url = ECSTRING(main,url);
+            VERSION_CONFIG;
         };
-        weapons[] = {};
-        requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {
-            "kat_10thmods_main"
-        };
-        author = "Katalam";
-        authors[] = {"Katalam"};
-        url = ECSTRING(main,URL);
-        VERSION_CONFIG;
     };
-};
+
 
 #include "CfgEventHandlers.hpp"
 #include "CfgFactionClasses.hpp"
