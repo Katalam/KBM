@@ -22,10 +22,6 @@
 // PRC 117F Presets
 ["ACRE_PRC117F", "master1", 1, "name", "Warrior"] call acre_api_fnc_setPresetChannelField;
 ["ACRE_PRC117F", "master1", 2, "name", "Warrior 1"] call acre_api_fnc_setPresetChannelField;
-["ACRE_PRC117F", "master1", 3, "name", "Warrior 1-1"] call acre_api_fnc_setPresetChannelField;
-["ACRE_PRC117F", "master1", 4, "name", "Warrior 1-2"] call acre_api_fnc_setPresetChannelField;
-["ACRE_PRC117F", "master1", 5, "name", "Warrior 1-3"] call acre_api_fnc_setPresetChannelField;
-["ACRE_PRC117F", "master1", 6, "name", "Warrior 1-4"] call acre_api_fnc_setPresetChannelField;
 ["ACRE_PRC117F", "master1", 7, "name", "Super 1-1"] call acre_api_fnc_setPresetChannelField;
 ["ACRE_PRC117F", "master1", 8, "name", "Super 1-2"] call acre_api_fnc_setPresetChannelField;
 ["ACRE_PRC117F", "master1", 9, "name", "Super 1-3"] call acre_api_fnc_setPresetChannelField;
