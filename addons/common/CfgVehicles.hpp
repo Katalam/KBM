@@ -100,6 +100,7 @@ class CfgVehicles {
                     statement = QUOTE(_this spawn FUNC(unflipVehicle));
                     showDisabled = 0;
                     priority = 2.5;
+                    icon = QPATHTOF(data\unflipVehicle.paa);
                 };
             };
         };
